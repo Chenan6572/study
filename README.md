@@ -1,3 +1,2 @@
 # study
-just exercise
-just exercise2
+testtest
