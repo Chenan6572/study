@@ -1,0 +1,14 @@
+/* pages/cook/cookinformation/cook.wxss */
+.itemView{
+  display: flex;
+  font-size: 36rpx;
+  font-family: "宋体";
+  color: dodgerblue
+}
+.itemView label{
+  color:black;
+}
+.savebtn{
+  width:90%;
+  margin-top: 20rpx;
+}

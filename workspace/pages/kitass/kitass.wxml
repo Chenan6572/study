@@ -1,0 +1,27 @@
+<!--pages/kitass/kitass/kitass.wxml-->
+<view class="conter">
+  <button type="primary" bindtap="logBtn">添加帮厨</button>
+</view>
+<view wx:if="{{ishavedata}}">
+
+  <block wx:for="{{cooklist}}">
+    <view class="navigate" data-index="{{index}}">
+      <view class="name">姓名</view>
+      <view class="tel">电话</view>
+    </view>
+    <view class='item'>
+      <view class='message'>
+        <view class='name'>{{item.cookName}}</view>
+        <view class='tel'>{{item.cookTel}}</view>
+      </view>
+      <view class="operate">
+        <view class="editbtn">
+          <text class='edit' bindtap="editbtn">编辑 |</text>
+        </view>
+        <view class="dlebtn">
+          <text class="edit" bindtap="delbtn"> 删除</text>
+        </view>
+      </view>
+    </view>
+  </block>
+</view>

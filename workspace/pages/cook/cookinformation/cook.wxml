@@ -1,0 +1,38 @@
+<!--pages/cook/cookinformation/cook.wxml-->
+
+<view class="itemView">登录账号：
+  <view>
+    <input class="input" name="account" placeholder="请输入登录账号" bindinput="account" />
+  </view>
+</view>
+<view class="itemView">姓名：
+  <view>
+    <input class="input" name="cookname" placeholder="请输入厨师姓名" bindinput="setCookname" />
+  </view>
+</view>
+<view class="itemView">电话：
+  <view>
+    <input class="input" name="cooktel" placeholder="请输入厨师电话" type="tel" maxlength="11" bindinput="setCooktel" />
+  </view>
+</view>
+<form bindsubmit="formSubmit" bindreset="formReset">
+  <view class="itemView">
+    <view class="itemView">是否经过培训：</view>
+    <radio-group name="cookpei">
+      <label>
+        <radio value="Yes" />是</label>
+      <label>
+        <radio value="No" /> 否</label>
+    </radio-group>
+  </view>
+  <view class="itemView">
+    <view class="itemView">是否有健康证：</view>
+    <radio-group name="cookhealth">
+      <label>
+        <radio value="Yes" />是</label>
+      <label>
+        <radio value="No" /> 否</label>
+    </radio-group>
+  </view>
+</form>
+<button type="primary" bindtap="subMission" class="savebtn">保存并提交</button>
