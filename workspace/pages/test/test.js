@@ -120,5 +120,46 @@ Page({
     this.setData({
       cooklist:e
     })
+  },
+  choose: function () {
+    var that = this
+    wx.chooseImage({
+      count: 1,
+      sizeType: ['original', 'compressed'], // 可以指定是原图还是压缩图，默认二者都有
+      sourceType: ['album', 'camera'], // 可以指定来源是相册还是相机，默认二者都有
+      success: function (res) {
+        var tempFilePaths = res.tempFilePaths
+        that.setData({
+          tempFilePaths: res.tempFilePaths
+        })
+        // wx.uploadFile({
+        //   url:'http://localhost:8080/upload/uploadpic',
+        //   filePath: tempFilePaths[0],
+        //   name: 'file',
+        //   header:{
+        //     "Content-Type": "multipart/form-data",
+        //     'accept': 'application/json',
+        //   },
+        //   method:"POST",
+        //   success:function(res){
+        //     const data = res.data
+
+        //     console.log(res)
+        //     // that.setData({
+        //     //   avatar: res.data
+        //     // })
+        //     // console.log(avatar)
+        //   },
+        //   fail:function(e){
+        //     wx.showToast({
+        //       title: '服务器错误，提交失败',
+        //       icon: "none",
+        //       duration: 2000
+        //     })
+        //     console.log(res.data)
+        //   }
+        // })
+      }
+    })
   }
 })

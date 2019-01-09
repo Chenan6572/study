@@ -1,19 +1,44 @@
 {
   "pages": [
-    "upload/uploadppic",
-    "pages/kitass/kitass",
-    "pages/test/test",
-    "pages/cook/cookinformation/cook",
-    "pages/baobei/baobei",
-    "presonal/personal/personal",
     "pages/index/index",
+    "pages/cook/cookinformation/cook",
+    
+    "pages/cookedit/cookedit",
+    "pages/test/test",
     "pages/logs/logs",
-    "pages/cookedit/cookedit"
+    "pages/baobei/baobei",
+    "pages/kitass/kitass",
+    "presonal/personal/personal"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#000000",
     "navigationBarTitleText": "个人中心",
     "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#11cd6e",
+    "borderStyle": "black",
+    "list": [
+      {
+        "selectedIconPath": "resource/主页.png",
+        "iconPath": "resource/jason.jpeg",
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath": "resource/jason.jpeg",
+        "iconPath": "resource/jason.jpeg",
+        "pagePath": "pages/logs/logs",
+        "text": "一元投"
+      },
+      {
+        "selectedIconPath": "resource/jason.jpeg",
+        "iconPath": "resource/jason.jpeg",
+        "pagePath": "pages/cook/cookinformation/cook",
+        "text": "我的"
+      }
+    ]
   }
 }

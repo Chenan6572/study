@@ -1,7 +1,0 @@
-<view><text>头像</text></view>
-<view class='my-item' bindtap='gotoshow'>
-  <button>上传</button>
-  <view class="language">
-    <image class="userinfo-avatar" src="{{user.avatar}}" background-size="cover"></image>
-  </view>
-</view>

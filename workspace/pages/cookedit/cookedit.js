@@ -1,11 +1,41 @@
 // pages/cookedit/cookedit.js
+
+let app = getApp();
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
+    isSubmit: false,
+    warn: "",
+    phone: "",
+    pwd: "",
+    isPub: false,
+    sex:"女"
 
+  },
+  formSubmit: function (e) {
+    console.log(e.detail.value);
+    let { phone, pwd, isPub, sex } = e.detail.value;
+    if (!phone || !pwd) {
+      this.setData({
+        warn: "手机号或密码为空！",
+        isSubmit: true
+      })
+      return;
+    }
+    this.setData({
+      warn: "",
+      isSubmit: true,
+      phone,
+      pwd,
+      isPub,
+      sex
+    })
+  },
+  formReset: function () {
+    console.log('form发生了reset事件')
   },
 
   /**
