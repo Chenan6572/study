@@ -1,0 +1,23 @@
+*{
+	margin:0;
+}
+.title {
+	background-color: rgba(231, 64, 58, 1);
+}
+.list_table{	
+}
+.list_name{
+	font-size:1.7rem;
+    height:3rem;	
+	color:#535353;
+	font-weight:400;
+}
+.list_mechanism{
+	font-size:1.3rem;
+	black:#999999
+}
+.list_ta{
+	border-bottom:1px solid #999999;
+	margin:1.5rem 2rem 1.5rem 2rem;
+	height:5rem;
+}

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/window/window" design="device:m;" xid="window" class="window cAbmuMr" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cAbmuMr" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">.cAbmuMr{margin: 0} .back.cAbmuMr{background-color: rgba(242, 242, 242, 1)} .title.cAbmuMr{background-color: rgba(231, 64, 58, 1)} .list_top.cAbmuMr{height: 4rem; display: flex; padding-left: 1.5rem; padding-right: 1.5rem; justify-content: space-between; align-items: center} .top_left.cAbmuMr{font-size: 1.5rem} .top_right.cAbmuMr{font-size: 1.5rem} .item.cAbmuMr{margin-left: 1.5rem; margin-right: 1.5rem; margin-bottom: 1rem; height: 8rem; display: flex; align-items: center; background-color: white; border-radius: 1rem; border: 1px solid rgba(121, 121, 121, 1)} .media_container.cAbmuMr{padding-left: 1rem; padding-bottom: 1rem; padding-right: 1rem; padding-top: 1rem; width: 6rem; height: 6rem; border-radius: 6rem} .media_img.cAbmuMr{width: 100%; height: 100%} .media_cont.cAbmuMr{display: flex; flex-direction: column; padding-left: 2rem; width: 16rem; height: 5rem; line-height: 2.5rem} .media_name.cAbmuMr{width: 5rem; height: 10rem; line-height: 10rem}</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cAbmuMr" class="cAbmuMr"/>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full body pc2y6Fnm-iosstatusbar cAbmuMr" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cAbmuMr"> 
+    <div class="x-panel-top title cAbmuMr" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cAbmuMr"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar title cAbmuMr" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;我的证件&quot;}" __cid="cAbmuMr"> 
+        <div class="x-titlebar-left cAbmuMr" __cid="cAbmuMr"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cAbmuMr" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'window.close'}" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;,&quot;label&quot;:&quot;&quot;}" __cid="cAbmuMr"> 
+            <i class="icon-chevron-left cAbmuMr" __cid="cAbmuMr"/>  
+            <span __cid="cAbmuMr" class="cAbmuMr"/> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cAbmuMr" __cid="cAbmuMr">我的证件</div>  
+        <div class="x-titlebar-right  cAbmuMr" __cid="cAbmuMr">
+          <div class="empty cAbmuMr" __cid="cAbmuMr"/>
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content back cAbmuMr" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cAbmuMr"> 
+      <div class="list_top cAbmuMr" __cid="cAbmuMr"> 
+        <span class="top_left cAbmuMr" __cid="cAbmuMr">证件列表</span>  
+        <div class="top_right cAbmuMr" bind-click="add" __cid="cAbmuMr"> 
+          <img src="$model/UI2/zupu/img/u12321.png" class=" cAbmuMr" __cid="cAbmuMr"/>  
+          <a bind-click="" __cid="cAbmuMr" class="cAbmuMr">添加</a> 
+        </div> 
+      </div>  
+      <div class="list cAbmuMr" id="zj" __cid="cAbmuMr"> 
+        <div class="item cAbmuMr" __cid="cAbmuMr"> 
+          <div class="media_container cAbmuMr" __cid="cAbmuMr"> 
+            <img src="$model/UI2/zupu/img/yuan.png" class="media_img cAbmuMr" __cid="cAbmuMr"/> 
+          </div>  
+          <div class="media_cont cAbmuMr" __cid="cAbmuMr"> 
+            <span id="" __cid="cAbmuMr" class="cAbmuMr">身份证</span>  
+            <span id="" __cid="cAbmuMr" class="cAbmuMr">123132121231321</span> 
+          </div>  
+          <span class="media_name cAbmuMr" id="idcard_name" __cid="cAbmuMr">某某</span> 
+        </div> 
+      </div> 
+    </div>  
+    <style __cid="cAbmuMr" class="cAbmuMr">.x-panel.pc2y6Fnm-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pc2y6Fnm-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pc2y6Fnm-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pc2y6Fnm-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pc2y6Fnm-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pc2y6Fnm-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pc2y6Fnm-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pc2y6Fnm-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pc2y6Fnm-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+  </div> 
+</div>

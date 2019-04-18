@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" component="$UI/system/components/justep/window/window" design="device:m;"
+  xid="window" class="window">  
+  <div component="$UI/system/components/justep/model/model" xid="model" style="height:auto;top:434px;left:243px;"
+    onActive="modelActive" onParamsReceive="modelParamsReceive"> 
+    <div component="$UI/system/components/justep/data/baasData" autoLoad="true"
+      xid="baasWork" queryAction="queryWorkhistory" saveAction="saveWorkhistory" url="/zupu/Workhistory"
+      tableName="workhistory" idColumn="Id" directDelete="true" confirmDelete="false"> 
+      <column label="Id" name="Id" type="Integer" xid="default9"/>  
+      <column label="用户ID" name="userid" type="Integer" xid="default10"/>  
+      <column label="公司" name="company" type="String" xid="default11"/>  
+      <column label="部门" name="depart" type="String" xid="default12"/>  
+      <column label="职位" name="job" type="String" xid="default13"/>  
+      <column label="开始时间" name="starttime" type="Date" xid="default14"/>  
+      <column label="结束时间" name="finishtime" type="Date" xid="default15"/>  
+      <column label="工作时长" name="howlong" type="String" xid="default16"/> 
+    </div>  
+    <div component="$UI/system/components/justep/data/baasData" autoLoad="true"
+      xid="baasData1" queryAction="queryCensus" saveAction="saveCensus" url="/zupu/ZupuCRUD"
+      tableName="census" idColumn="Id"> 
+      <column label="Id" name="Id" type="Integer" xid="default1"/>  
+      <column label="户号" name="code" type="String" xid="default2"/>  
+      <column label="与户主关系" name="relation" type="String" xid="default3"/>  
+      <column label="姓名" name="name" type="String" xid="default4"/>  
+      <column label="身份证" name="idcard" type="String" xid="default5"/>  
+      <column label="性别" name="sex" type="String" xid="default6"/>  
+      <column label="出生日期" name="birthday" type="Date" xid="default7"/>  
+      <column label="民族" name="nation" type="String" xid="default8"/>  
+      <column label="村委会" name="village" type="String" xid="default17"/>  
+      <column label="居民组" name="group" type="String" xid="default18"/> 
+    </div> 
+  </div>  
+  <div component="$UI/system/components/justep/panel/panel" class="x-panel x-full"
+    style="background-color:rgba(242, 242, 242, 1)" xid="panel1"> 
+    <div class="x-panel-top" xid="top1"> 
+      <div component="$UI/system/components/justep/titleBar/titleBar" title="工作经历"
+        class="x-titlebar" style="background-color:#FF0000;"> 
+        <div class="x-titlebar-left"> 
+          <a component="$UI/system/components/justep/button/button" label=""
+            class="btn btn-link btn-only-icon" icon="icon-chevron-left" onClick="{operation:'window.close'}"
+            xid="backBtn"> 
+            <i class="icon-chevron-left"/>  
+            <span/> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title"><![CDATA[工作经历]]></div>  
+        <div class="x-titlebar-right reverse"/> 
+      </div> 
+    </div>  
+    <div class="x-panel-content" xid="content1" bind-load="content1Load"> 
+      <ul style="background-color:white;"> 
+        <li style="display:block"/>  
+        <li class="list-group-item" xid="li1" style="padding:10px 0;margin-left:15px;"> 
+          <div component="$UI/system/components/justep/labelEdit/labelEdit"
+            style="border:1px sloid red" class="x-label-edit x-label30" xid="labelEdit3"> 
+            <label class="x-label" xid="label3"><![CDATA[公司]]></label>  
+            <input component="$UI/system/components/justep/input/input" style="border:none;outline:none"
+              class="form-control x-edit" placeholder="请输入公司（必填）" xid="inCompany"
+              dataType="String"/> 
+          </div>  
+          <div component="$UI/system/components/justep/labelEdit/labelEdit"
+            class="x-label-edit x-label30" xid="labelEdit2"> 
+            <label class="x-label" xid="label2"><![CDATA[部门]]></label>  
+            <input component="$UI/system/components/justep/input/input" style="border:none;outline:none"
+              class="form-control x-edit" placeholder="请输入部门（必填）" xid="inDepart" valueUpdateMode="input"/> 
+          </div>  
+          <div component="$UI/system/components/justep/labelEdit/labelEdit"
+            class="x-label-edit x-label30" xid="labelEdit3"> 
+            <label class="x-label" xid="label3"><![CDATA[职位]]></label>  
+            <input component="$UI/system/components/justep/input/input" style="border:none;outline:none"
+              class="form-control x-edit" placeholder="请输入职位（必填）" xid="inJob"/> 
+          </div>  
+          <div component="$UI/system/components/justep/labelEdit/labelEdit"
+            class="x-label-edit x-label30" xid="labelEdit3"> 
+            <label class="x-label" xid="label3"><![CDATA[时间]]></label>  
+            <!-- <input component="$UI/system/components/justep/input/input" class="form-control x-edit" placeholder="开始时间"
+              xid="inStart" format="yyyy-MM-dd" dataType="Date"/>   -->  
+            <input id="start_date" class="form-control x-edit" style="border:none;outline:none"
+              placeholder="开始时间"/>  
+            <span>至</span>  
+            <input id="end_date" class="form-control x-edit" style="border:none;outline:none"
+              placeholder="结束时间"/> 
+          </div> 
+        </li>  
+        <div class="aa" style="background-color:rgba(242, 242, 242, 1)"> 
+          <li> 
+            <div xid="div5" class="list-group-item"> 
+              <a component="$UI/system/components/justep/button/button" class="btn x-red btn-block"
+                label="提交 " xid="btnSubmit" onClick="btnSaveWork" style="border-radius:50px;width:60%;margin:0 auto "> 
+                <i xid="i1"/>  
+                <span xid="span2" style="marin-top:10rem;">提交</span> 
+              </a> 
+            </div> 
+          </li>  
+          <li> 
+            <div xid="div5" class="list-group-item"> 
+              <a component="$UI/system/components/justep/button/button" class="btn x-gray btn-block"
+                label="删除" xid="btnDelete" style="border-radius:50px;width:60%;margin:0 auto;background-color:#C0C0C0;"
+                onClick="btnDeleteClick"> 
+                <i xid="i1"/>  
+                <span xid="span2">删除</span> 
+              </a> 
+            </div> 
+          </li>  
+          <li class="list-group-item" xid="li1" style="text-align:center"> 
+            <input component="$UI/system/components/justep/input/input" class="form-control"
+              xid="input1" bind-ref="$model.baasData1.ref(&quot;name&quot;)" bind-visible="false"/> 
+          </li> 
+        </div> 
+      </ul> 
+    </div>&gt;
+  </div> 
+</div>

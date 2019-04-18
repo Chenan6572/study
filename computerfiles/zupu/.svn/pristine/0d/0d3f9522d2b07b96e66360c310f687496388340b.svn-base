@@ -1,0 +1,51 @@
+/*导航*/
+.x-nav-guide{ margin-top:8px;}
+.x-nav-guide .btn-link{ font-weight:normal; color:#000000;}
+.x-nav-guide .btn{height:40px; border-top:0;}
+.x-nav-guide .btn.active{ border-bottom:2px solid #ff0000; color:#ff0000; }
+.basic{
+    margin-top: 1rem;
+    margin-right: 5px;
+    width: 8px;
+    height: 22px;
+    background-color: rgba(231, 64, 58, 1);
+    float: left;
+}
+.all{
+    margin-top: 12px;
+    margin-left: 0px;
+    width: 6px;
+    height: 16px;
+    background-color: rgba(231, 64, 58, 1);
+    float: left;
+}
+.frames{
+    width: 100%;
+    height: 14px;
+    background-color: rgba(242, 242, 242, 1);
+    border: 1px solid rgba(242, 242, 242, 1);
+}
+.imgs{
+    float: right;
+    /* margin-top:- 5rem; */
+    margin-right: 2rem;
+}
+.imgs img{
+    height: 2rem;
+    width: 2rem;
+}
+.spans{
+    position:absolute;
+    display: block;
+    margin-bottom: 0.5rem;
+    bottom:10px;
+    right:10px;
+    width:6rem;
+    height:6rem;
+    border-radius:3rem;
+    font-size:1.5rem;
+    color: white;
+}
+.list_tables{
+    border-top:1px solid rgba(215, 215, 215, 1);
+}

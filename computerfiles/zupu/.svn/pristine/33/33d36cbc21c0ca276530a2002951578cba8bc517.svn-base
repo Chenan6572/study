@@ -1,0 +1,18 @@
+input {
+	outline: none;
+	border: 0;
+	text-align: right;
+	direction: ltr;
+}
+input:focus {
+	border: 1px solid #03a9f4;
+	/* box-shadow: 0 0 15px #03a9f4; */
+}
+input::-webkit-input-placeholder {
+	/* placeholder颜色  */ 
+	color: red;  
+	/* placeholder字体大小  */ 
+	font-size: 120px;  
+	/* placeholder位置  */ 
+	text-align: right;
+}

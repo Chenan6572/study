@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/window/window" design="device:m;" xid="window" class="window cM3QNZf" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cM3QNZf" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">null</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cM3QNZf" class="cM3QNZf"></div>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcINRBNv-iosstatusbar cM3QNZf" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cM3QNZf"> 
+    <div class="x-panel-top cM3QNZf" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cM3QNZf"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cM3QNZf" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;标题&quot;}" __cid="cM3QNZf"> 
+        <div class="x-titlebar-left cM3QNZf" __cid="cM3QNZf"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cM3QNZf" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'window.close'}" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;,&quot;label&quot;:&quot;&quot;}" __cid="cM3QNZf"> 
+            <i class="icon-chevron-left cM3QNZf" __cid="cM3QNZf"/>  
+            <span __cid="cM3QNZf" class="cM3QNZf"/> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cM3QNZf" __cid="cM3QNZf">标题</div>  
+        <div class="x-titlebar-right  cM3QNZf" __cid="cM3QNZf">
+          <div class="empty cM3QNZf" __cid="cM3QNZf"/>
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content cM3QNZf" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cM3QNZf"/>  
+    <style __cid="cM3QNZf" class="cM3QNZf">.x-panel.pcINRBNv-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcINRBNv-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcINRBNv-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcINRBNv-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcINRBNv-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcINRBNv-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcINRBNv-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcINRBNv-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcINRBNv-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+  </div> 
+</div>

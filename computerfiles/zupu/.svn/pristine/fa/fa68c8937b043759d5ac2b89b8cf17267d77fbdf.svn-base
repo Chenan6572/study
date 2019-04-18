@@ -1,0 +1,64 @@
+{
+					"familymember": [
+						{
+							"ID" : 1,
+							"familyCode" : "100000",
+							"memberID" : 0,
+							"memberName" : "我",
+							"memberphone" : "15944229500",
+							"memberidcard" : "22021119890213",
+							"parentmember" : 0,
+							"parentrelation" : "自己",
+							"memberGeneration" : 100,
+							"membersex" : "男",
+							"memberliving" : 1,
+							"memberstate" : 0,
+							"memberPhoto" : null
+						},
+						{
+							"ID" : 2,
+							"familyCode" : "100000",
+							"memberID" : 0,
+							"memberName" : "我的父亲",
+							"memberphone" : null,
+							"memberidcard" : null,
+							"parentmember" : 1,
+							"parentrelation" : "父亲",
+							"memberGeneration" : 99,
+							"membersex" : "男",
+							"memberliving" : 1,
+							"memberstate" : 0,
+							"memberPhoto" : null
+						},
+						{
+							"ID" : 3,
+							"familyCode" : "100000",
+							"memberID" : 0,
+							"memberName" : "我的母亲",
+							"memberphone" : null,
+							"memberidcard" : null,
+							"parentmember" : 1,
+							"parentrelation" : "母亲",
+							"memberGeneration" : 99,
+							"membersex" : "女",
+							"memberliving" : 1,
+							"memberstate" : 0,
+							"memberPhoto" : null
+						},
+						{
+							"ID" : 4,
+							"familyCode" : "100000",
+							"memberID" : 0,
+							"memberName" : "我的儿子",
+							"memberphone" : null,
+							"memberidcard" : null,
+							"parentmember" : 101,
+							"parentrelation" : "儿子",
+							"memberGeneration" : 101,
+							"membersex" : "男",
+							"memberliving" : 1,
+							"memberstate" : 0,
+							"memberPhoto" : null
+						}
+					]
+}

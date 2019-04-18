@@ -1,0 +1,111 @@
+.clear:after {
+    content: '';
+    display: block;
+    clear: both;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+.clear {
+    zoom: 1;
+}
+
+.up_content,
+.middle_content,
+.down_content {
+    width: 100%;
+    padding: 0.5rem 2rem;
+
+}
+
+.txt_tips {
+    margin-top: 2rem;
+}
+
+.txt_tips img {
+    margin-top: -6px;
+    width: 2rem;
+    height: 2rem;
+    margin-left: 1rem;
+}
+
+.txt_tips span {
+    font-size: 2rem;
+}
+
+.inputs {
+    margin-top: 2rem;
+    width: 100%;
+    height: 5.6rem;
+    direction: ltr;
+    border: 1px solid rgba(201, 201, 201, 1);
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.inputs:hover {
+    border: 1px solid rgba(231, 64, 58, 1);
+}
+
+.name_inputs {
+    width: 30%;
+    margin-top: 1rem;
+    height: 2rem;
+    line-height: 1.8rem;
+    font-size: 2rem;
+}
+
+input {
+    margin-top: -3.2rem;
+    float: right;
+    width: 69%;
+    height: 4rem;
+    border: none;
+    outline: none;
+    font-size: 1.5rem;
+}
+
+.up_de {
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.upload_imgs {
+    float: left;
+    width: 80%
+}
+
+.delete_tips {
+    float: left;
+    width: 20%;
+}
+
+.delete_tips img {
+    width: 30%;
+    margin-top: 3rem;
+    margin-left: 1rem;
+}
+.delete_tips img{
+    display: block;
+}
+
+.upload_imgs img {
+    width: 90%;
+    margin-left: 1rem;
+}
+
+.down_content {
+    width: 80%;
+    height: 4rem;
+    background-color:rgba(231, 64, 58, 1);
+    border-radius: 2rem;
+    text-align: center;
+    margin: 2rem auto;
+}
+.down_content span{
+    font-size: 2rem;
+    color: white;
+    margin: 0 auto;
+    line-height: 3rem;
+}

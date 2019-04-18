@@ -1,0 +1,52 @@
+@layout("/common/_container.html"){
+<div class="ibox float-e-margins">
+    <div class="ibox-content">
+        <div class="form-horizontal">
+
+            <div class="row">
+                <div class="col-sm-6 b-r">
+                    <#input id="id" name="主键" value="${item.id}" underline="true" readonly="readonly"/>
+                    <#input id="useraccount" name="关联用户" value="${item.useraccount}" underline="true" readonly="readonly"/>
+                    <#input id="name" name="姓名" value="${item.name}" underline="true" readonly="readonly"/>
+                    <#input id="tel" name="手机号" underline="true" value="${item.tel}" readonly="readonly"/>
+                    <#input id="administrative" name="行政区划" underline="true" value="${item.administrative}" readonly="readonly"/>
+                    <#input id="address" name="详细地址" underline="true" value="${item.address}" readonly="readonly"/>
+                    <#input id="banquetstart" name="办宴开始时间" underline="true" value="${item.banquetstart}" readonly="readonly"/>
+                    <#input id="banquetdays" name="办宴天数" underline="true" value="${item.banquetdays}" readonly="readonly"/>
+                    <#input id="banquettype" name="办宴类型" underline="true" value="${item.banquettype}" readonly="readonly"/>
+                    <#input id="numbereat" name="就餐人数" underline="true" value="${item.numbereat}" readonly="readonly"/>
+                    <#input id="choosehelper" name="选择帮厨" underline="true" value="${item.choosehelper}" readonly="readonly"/>
+                    <#input id="watersource" name="水源" underline="true" value="${item.watersource}" readonly="readonly"/>
+                    <#input id="tablewaredis" name="餐具消毒方式" underline="true" value="${item.tablewaredis}" readonly="readonly"/>
+                    <#input id="retaining" name="留样设施" value="${item.retaining}" readonly="readonly"/>
+                </div>
+
+                <div class="col-sm-6">
+                    <#input id="toxicwup" name="有毒有害物品" underline="true" value="${item.toxicwup}" readonly="readonly"/>
+                    <#input id="tablewareclean" name="餐具保洁柜" underline="true" value="${item.tablewareclean}" readonly="readonly"/>
+                    <#input id="refrigeratornum" name="冰箱数量" underline="true" value="${item.refrigeratornum}" readonly="readonly"/>
+                    <#input id="disinfectionnum" name="专用消毒柜数量" underline="true" value="${item.disinfectionnum}" readonly="readonly"/>
+                    <#input id="retainingnum" name="食品留样柜数量" underline="true" value="${item.retainingnum}" readonly="readonly"/>
+                    <#input id="trashnum" name="垃圾桶数量" underline="true" value="${item.trashnum}" readonly="readonly"/>
+                    <#input id="protectnum" name="防鼠防蝇防尘设施数量" underline="true" value="${item.protectnum}" readonly="readonly"/>
+                    <#input id="washnum" name="专用洗菜洗肉洗鱼池数量" underline="true" value="${item.washnum}" readonly="readonly"/>
+                    <#input id="auditor" name="审核人" underline="true" value="${item.auditor}" readonly="readonly"/>
+                    <#input id="audittime" name="审核时间" underline="true" value="${item.audittime}" readonly="readonly"/>
+                    <#input id="auditstate" name="审核状态" underline="true" value="${item.auditstate}" readonly="readonly"/>
+                    <#input id="audiopinion" name="审核意见" underline="true" value="${item.audiopinion}" readonly="readonly"/>
+                    <#input id="audiresults" name="审核结果" underline="true" value="${item.audiresults}" readonly="readonly"/>
+                </div>
+            </div>
+
+            <!--<div class="row btn-group-m-t">-->
+            <!--<div class="col-sm-10">-->
+            <!--<#button btnCss="info" name="提交" id="ensure" icon="fa-check" clickFun="QyAgritainmentinfoInfoDlg.editSubmit()"/>-->
+            <!--<#button btnCss="danger" name="取消" id="cancel" icon="fa-eraser" clickFun="QyAgritainmentinfoInfoDlg.close()"/>-->
+            <!--</div>-->
+            <!--</div>-->
+        </div>
+
+    </div>
+</div>
+<script src="${ctxPath}/static/modular/rtagmt/reportAgritainment/reportAgritainment_info.js"></script>
+@}

@@ -1,0 +1,118 @@
+define(function(require){
+	var $ = require("jquery");
+	var justep = require("$UI/system/lib/justep");
+	var jsonsql = require("$UI/zupu/lib/jsonsql");
+		 
+	var Model = function(){
+		this.callParent();          
+	};
+	
+	//图片路径转换
+	Model.prototype.toUrl = function(url){
+		return url ? require.toUrl(url) : "";
+	};
+  
+
+	//页面初始化
+	Model.prototype.modelLoad = function(event){
+		 console.log("login");
+		 document.addEventListener("deviceready", onDeviceReady, false);
+	}
+	
+	function onDeviceReady() {
+		// 按钮事件
+		document.addEventListener("backbutton", function(){}, false); // 返回键
+	 }
+	
+	Model.prototype.loginBtnClick = function(event) {
+		var me = this;
+		var sjh = this.comp("nameInput").val();
+		var yzm = this.comp("passwordInput").val();
+		
+		//验证
+		if(sjh==""){
+			alert("请输入手机号！");
+			return;
+		}
+		if(yzm == ""){
+			alert("请输入验证码！");
+			return;
+		}
+		//if(!isPhoneNo(sjh)) {  justep.Util.hint("手机号格式错误！", {type: 'danger'}); return;};
+		
+		justep.Baas.sendRequest({
+			 "url" : "/zupu/User",
+			 "action" : "isLogin",
+			"async" : false,
+			"params" : {
+				"sjh" : sjh,
+				"yzm" : yzm
+			},
+			"success" : function(data) {
+                if(data.isLogin=="1") {
+                	localStorage.setItem('ID', data.ID);
+		            localStorage.setItem('Loginname', data.Loginname);
+		            localStorage.setItem('Username', data.Username);
+		            localStorage.setItem('Password', data.Password);
+		            localStorage.setItem('Nickname', data.Nickname);
+		            localStorage.setItem('Token', data.Token);
+		            localStorage.setItem('Familycode', data.FamilyCode);
+		            localStorage.setItem('Photo',data.Photo); 
+		            console.log(localStorage.getItem("Token"));
+                	justep.Shell.showPage("bind");
+                }
+                if(data.isLogin=="0")
+                {
+                	justep.Util.hint("登录错误，请重新输入用户名或验证码！", {type: 'danger'});
+                	//justep.Util.showMsg();  Util.showErrMsg();
+                }
+			}
+		});
+	};
+
+	
+	// 验证身份证
+	function isCardNo(card) {
+	    var pattern = /(^\d{15}$)|(^\d{18}$)|(^\d{17}(\d|X|x)$)/;
+	    return pattern.test(card);
+	}
+	/*姓名身份证，手机号提交*/
+	function isChinaName(name) {
+	    var pattern = /^[\u4E00-\u9FA5]{1,6}$/;
+	    return pattern.test(name);
+	}
+	
+	// 验证手机号
+	function isPhoneNo(phone) {
+	    var pattern = /^1[34578]\d{9}$/;
+	    return pattern.test(phone);
+	}
+
+	Model.prototype.btnGetCodeClick = function(event){
+		
+		var loginName = this.comp("nameInput").val();
+		if(!isPhoneNo(loginName)) {  justep.Util.hint("手机号码格式错误！", {type: 'danger'}); return;};
+		
+		justep.Baas.sendRequest({
+			"url" : "/zupu/User",
+			"action" : "SMSCode",
+			"params" : {
+				//"columns" : Baas.getDataColumns(data)
+				loginName: loginName
+			},
+			"success" : function(resultData) {
+				if(resultData.smscode=="123456") 
+					justep.Util.hint("验证码已发送到您手机,请在5分钟内完成登录！", {type: 'danger'});
+			}
+		}); 
+		
+	};
+
+	Model.prototype.modelActive = function(event){
+		console.log("loginActive");
+		justep.Shell.closeAll();
+	};
+
+ 
+	return Model;
+});

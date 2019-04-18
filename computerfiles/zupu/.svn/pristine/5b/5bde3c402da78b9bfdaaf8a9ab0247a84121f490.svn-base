@@ -1,0 +1,164 @@
+define(function(require){
+	var $ = require("jquery");
+	var justep = require("$UI/system/lib/justep");
+	var Data = require("$UI/system/components/justep/data/data");
+	
+	var Model = function(){
+		this.callParent();
+	};
+
+	Model.prototype.btnSaveWork = function(event){
+		
+		var userid = localStorage.getItem("ID");
+		var company = this.comp('inCompany').val();
+		var depart = this.comp('inDepart').val();
+		var job = this.comp('inJob').val();
+		var starttime=this.comp('inStart').val();
+		var finishtime=this.comp('inFinish').val();
+		
+		
+		
+		
+		
+		var data = this.comp("baasWork");
+		
+		if(this.params.data)
+		{
+			
+			if(data.find(['Id'],[this.params.data.Id]).length!=0)
+			{
+				var row = data.getRowByID(this.params.data.Id);
+				data.setValue("userid",userid,row);
+				data.setValue("company",company,row);
+				data.setValue("depart",depart,row);
+				data.setValue("job",job,row);
+				data.setValue("starttime",starttime,row);
+				data.setValue("finishtime",finishtime,row);
+			}
+		}
+		else
+			data.newData({
+				        	"defaultValues" : //array - 新增行的默认值数组 ，数组的长度决定新增行数，数组中的对象是列的默认值
+					            [
+					                {
+					                    userid : userid,
+					                    company : company,
+					                    depart : depart,
+					                    job	   :job,
+					                    starttime:starttime,
+					                    finishtime:finishtime
+					                }
+					            ],
+					        "onError" : function(e){},
+					        "onSuccess" : function (e){}
+			 });
+		
+		
+		console.log(starttime);
+		var option={"onSuccess":function(e){ justep.Util.hint("保存成功！", {type: 'danger'});}};
+		data.saveData(option);
+		
+		 justep.Shell.fireEvent("onWorkChanged", {
+             "classData" :"abc"
+		 });
+		 
+		 justep.Shell.closePage();
+		
+	/*	 justep.Baas.sendRequest({
+			"url" : "/zupu/Workhistory",
+			"action" : "queryWorkhistory",
+			"params" : {
+				//"columns" : Baas.getDataColumns(data)
+				limit: 1
+			},
+			"success" : function(resultData) {
+				var data = new Data();
+				console.log(resultData);
+				data.loadData(resultData);
+				//var row = data.getFirstRow();
+				//row.setValue("howlong","1个月");
+				data.newData({
+			        	"defaultValues" : //array - 新增行的默认值数组 ，数组的长度决定新增行数，数组中的对象是列的默认值
+				            [
+				                {
+				                    UserID : '1',
+				                    Company : '1',
+				                    depart : '1'
+				                }
+				            ],
+				        "onError" : function(e){},
+				        "onSuccess" : function (e){}
+			    });
+		        
+			    // 通过Baas保存数据]
+			    //console.log();
+				return;
+				Baas.sendRequest({
+					"url" : "/zupu/Workhistory",
+					"action" : "saveWorkhistory",
+					"params" : {
+						"data" : data.toJson(true)
+					},
+					"success" : function(resultData) {
+						console.log(resultData);
+					}
+				});
+				
+			  
+			  
+			}
+		});
+	*/
+	
+		
+	};
+
+	Model.prototype.content1Load = function(event){
+		console.log("fdasfdsfdsafdsfd");
+	};
+
+	Model.prototype.modelActive = function(event){
+		console.log("workActivite");
+	};
+
+	Model.prototype.modelParamsReceive = function(event){
+		
+		if(this.params.data)
+		{
+			console.log(this.params.data.Id);
+			this.comp("inCompany").val(this.params.data.rowData.company.value);
+			this.comp("inDepart").val(this.params.data.rowData.depart.value);
+			this.comp("inJob").val(this.params.data.rowData.job.value);
+			this.comp("inStart").val(this.params.data.rowData.starttime.value);
+			this.comp("inFinish").val(this.params.data.rowData.finishtime.value);
+		}
+		else
+		;
+	};
+
+	Model.prototype.btnDeleteClick = function(event){
+		var data = this.comp("baasWork");
+		//data.refreshData();
+		//console.log(this.params.data.Id + "B");
+		//Data.getRowByID(rowid)
+		//var r = data.getCurrentRow();
+		//console.log(r.val('Id'));
+		var rows = data.find(['Id'],[this.params.data.Id],false,false,false);
+		if(rows.length>=0)
+		{
+			var row = rows[0]; // data.getCurrentRow();  //data.getFirstRow();
+			data.deleteData(row);
+			
+			justep.Shell.fireEvent("onWorkChanged", {
+             "classData" :$("#input1").val(),
+             "schoolName":"fdsdfdsfasf",
+             "isSuccess":"0",
+			});
+			justep.Shell.closePage();
+			justep.Util.hint("删除成功！", {type: 'success'});
+		}
+			  
+	};
+
+	return Model;
+});

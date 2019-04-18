@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.stylefeng.guns.modular.system.dao.CkrelationMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="cn.stylefeng.guns.modular.system.model.Ckrelation">
+        <id column="id" property="id" />
+        <result column="relationrpid" property="relationrpid" />
+        <result column="realtionid" property="realtionid" />
+        <result column="name" property="name" />
+        <result column="age" property="age" />
+        <result column="sex" property="sex" />
+        <result column="healthcard" property="healthcard" />
+        <result column="istrain" property="istrain" />
+        <result column="examinetime" property="examinetime" />
+        <result column="examinestate" property="examinestate" />
+        <result column="examinetpop" property="examinetpop" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, relationrpid, realtionid, name, age, sex, healthcard, istrain, examinetime, examinestate, examinetpop
+    </sql>
+
+</mapper>

@@ -1,0 +1,43 @@
+@layout("/common/_container.html"){
+<div class="ibox float-e-margins">
+    <div class="ibox-content">
+        <div class="form-horizontal">
+
+            <div class="row">
+                <div class="col-sm-6 b-r">
+                    <#input id="id" name="主键" value="${item.id}" underline="true" readonly="readonly" />
+                    <#input id="name" name="姓名" value="${item.name}" underline="true" readonly="readonly"/>
+                    <#input id="sex" name="性别" value="${item.sex}" underline="true" readonly="readonly"/>
+                    <#input id="image" name="头像" value="${item.image}" underline="true" readonly="readonly"/>
+                    <#input id="minzu" name="民族" value="${item.minzu}" underline="true" readonly="readonly"/>
+                    <#input id="birsthday" name="出生日期" value="${item.birsthday}" underline="true" readonly="readonly"/>
+                    <#input id="idnum" name="身份证号" value="${item.idnum}" underline="true" readonly="readonly"/>
+                    <#input id="address" name="地址" value="${item.address}" underline="true" readonly="readonly"/>
+                    <#input id="fazhengjg" name="发证机关" value="${item.fazhengjg}" underline="true" readonly="readonly"/>
+                    <#input id="guoqidate" name="过期时间" value="${item.guoqidate}" underline="true" readonly="readonly"/>
+                    <#input id="xinzghengqh" name="行政区划" value="${item.xinzghengqh}" underline="true" readonly="readonly"/>
+                </div>
+
+                <div class="col-sm-6">
+                    <#input id="healthdate" name="健康证有效期" value="${item.healthdate}" underline="true" readonly="readonly"/>
+                    <#input id="idzheng" name="身份证正面照" value="${item.idzheng}" underline="true" readonly="readonly"/>
+                    <#input id="idfan" name="身份证反面照" value="${item.idfan}" underline="true" readonly="readonly"/>
+                    <#input id="healthy" name="健康证" value="${item.healthy}" underline="true" readonly="readonly"/>
+                    <#input id="singincard" name="登记卡" value="${item.singincard}" underline="true" readonly="readonly"/>
+                    <#input id="peixuncard" name="培训证" value="${item.peixuncard}" underline="true" readonly="readonly"/>
+                    <#input id="examinetime" name="审核时间" value="${item.examinetime}" underline="true" readonly="readonly"/>
+                    <#input id="examinestate" name="审核状态" value="${item.examinestate}" underline="true" readonly="readonly"/>
+                    <#input id="examinepop" name="审核人" value="${item.examinepop}" underline="true" readonly="readonly"/>
+                    <#input id="audiopinion" name="审核意见" value="${item.audiopinion}" underline="true" readonly="readonly"/>
+                    <#input id="audiresults" name="审核结果" value="${item.audiresults}" underline="true" readonly="readonly"/>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+</div>
+
+<script src="${ctxPath}/static/modular/cook/qyCookinfo/qyCookinfo_info.js"></script>
+@}

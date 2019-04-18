@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/window/window" design="device:m;" xid="window" class="window cniYZNv" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cniYZNv" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/data/baasData,$model/UI2/system/components/justep/labelEdit/labelEdit,$model/UI2/system/components/justep/panel/panel,">  
+  <style xmlns="" xmlns:xhtml="http://www.w3.org/1999/xhtml">input.cniYZNv{outline: none; border: none; text-align: right; direction: ltr} input.cniYZNv:focus{border: 1px solid rgb(3, 169, 244)} input.cniYZNv:-webkit-input-placeholder{color: red; font-size: 120px; text-align: right}</style>  
+  <div xmlns="" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onParamsReceive:modelParamsReceive" __cid="cniYZNv" class="cniYZNv"/>  
+  <div xmlns="" component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pciieQNr-iosstatusbar cniYZNv" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cniYZNv"> 
+    <div class="x-panel-top cniYZNv" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cniYZNv"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cniYZNv" style="background-color:#FF0000;" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;教育经历&quot;}" __cid="cniYZNv"> 
+        <div class="x-titlebar-left cniYZNv" __cid="cniYZNv"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cniYZNv" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'window.close'}" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;,&quot;label&quot;:&quot;&quot;}" __cid="cniYZNv"> 
+            <i class="icon-chevron-left cniYZNv" __cid="cniYZNv"/>  
+            <span __cid="cniYZNv" class="cniYZNv"/> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cniYZNv" __cid="cniYZNv">教育经历</div>  
+        <div class="x-titlebar-right  cniYZNv" __cid="cniYZNv"> 
+          <div class="empty cniYZNv" __cid="cniYZNv"/> 
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content cniYZNv" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cniYZNv"> 
+      <ul xid="ul1" class=" cniYZNv" __cid="cniYZNv"> 
+        <li style="display:block" __cid="cniYZNv" class="cniYZNv"/>  
+        <li class="list-group-item cniYZNv" xid="li1" __cid="cniYZNv"> 
+          <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cniYZNv" xid="labelEdit3" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cniYZNv"> 
+            <label class="x-label cniYZNv" xid="label3" style="width:18%" __cid="cniYZNv">学校</label>  
+            <input component="$model/UI2/system/components/justep/input/input" class=" x-edit cniYZNv" xid="inCompany" style="border:none;outline:none;" placeholder="请输入学校（必填）" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" data-config="{&quot;dataType&quot;:&quot;String&quot;}" __cid="cniYZNv"/> 
+          </div>  
+          <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cniYZNv" xid="labelEdit2" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cniYZNv"> 
+            <label class="x-label cniYZNv" xid="label2" style="width:18%" __cid="cniYZNv">专业</label>  
+            <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cniYZNv" xid="inDepart" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" data-config="{&quot;placeHolder&quot;:&quot;请选择专业（必填）&quot;,&quot;valueUpdateMode&quot;:&quot;input&quot;}" __cid="cniYZNv"/> 
+          </div>  
+          <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cniYZNv" xid="labelEdit3" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cniYZNv"> 
+            <label class="x-label cniYZNv" xid="label3" style="width:18%" __cid="cniYZNv">学历</label>  
+            <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cniYZNv" xid="inJob" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" data-config="{&quot;placeHolder&quot;:&quot;请选择学历（必填）&quot;}" __cid="cniYZNv"/> 
+          </div>  
+          <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cniYZNv" xid="labelEdit3" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cniYZNv"> 
+            <label class="x-label cniYZNv" xid="label3" style="width:18%" __cid="cniYZNv">时间</label>  
+            <input id="start_date" class="form-control x-edit cniYZNv" readonly="readnoly" placeholder="选择入校时间" __cid="cniYZNv"/>  
+            <span __cid="cniYZNv" class="cniYZNv">至</span>  
+            <input id="end_date" class="form-control x-edit cniYZNv" readonly="readnoly" placeholder="选择毕业时间" __cid="cniYZNv"/> 
+          </div> 
+        </li>  
+        <li __cid="cniYZNv" class="cniYZNv"> 
+          <div xid="div5" class="list-group-item cniYZNv" __cid="cniYZNv"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn x-red btn-block cniYZNv" xid="btnSubmit" style="border-radius:50px;width:60%;margin:0 auto" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:btnSaveEducation" data-config="{&quot;label&quot;:&quot;保存&quot;}" __cid="cniYZNv"> 
+              <i xid="i1" __cid="cniYZNv" class="cniYZNv"/>  
+              <span xid="span2" __cid="cniYZNv" class="cniYZNv">保存</span> 
+            </a> 
+          </div> 
+        </li>  
+        <li __cid="cniYZNv" class="cniYZNv"> 
+          <div xid="div5" class="list-group-item cniYZNv" __cid="cniYZNv"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn x-gray btn-block cniYZNv" xid="btnDelete" style="border-radius:50px;width:60%;margin:0 auto;background-color:#C0C0C0;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:btnDeleteClick" data-config="{&quot;label&quot;:&quot;删除&quot;}" __cid="cniYZNv"> 
+              <i xid="i1" __cid="cniYZNv" class="cniYZNv"/>  
+              <span xid="span2" __cid="cniYZNv" class="cniYZNv">删除</span> 
+            </a> 
+          </div> 
+        </li> 
+      </ul> 
+    </div>  
+    <style __cid="cniYZNv" class="cniYZNv">.x-panel.pciieQNr-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pciieQNr-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pciieQNr-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pciieQNr-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pciieQNr-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pciieQNr-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pciieQNr-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pciieQNr-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pciieQNr-iosstatusbar &gt;.x-panel-content {top: 48px;}</style> 
+  </div> 
+</div>

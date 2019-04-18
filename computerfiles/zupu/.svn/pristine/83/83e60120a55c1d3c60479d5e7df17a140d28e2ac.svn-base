@@ -1,0 +1,52 @@
+* {
+	margin: 0px;
+}
+
+.back {
+	display:flex;
+	background-color: rgba(228, 228, 228, 1);
+}
+
+.title {
+	background-color: rgba(231, 64, 58, 1);
+}
+
+
+ul {
+	list-style: none;
+}
+
+li {
+	height: 4.5rem;
+	font-size: 1.5rem;
+	font-weight:600;
+	line-height: 4.5rem;
+	text-align: center;
+	cursor: default;
+}
+._left{
+	width:7rem;
+	height:100%;
+}
+._right{
+	height:100%;
+	flex-grow:3;
+}
+.p {	
+	height:100%;
+	display: none;
+}
+
+.bg_color {
+	background: white;
+	color: black;
+}
+
+.line {
+	padding-left:1rem;
+	font-size:1.3rem;
+	height: 4.7rem;
+	background:white;
+	line-height: 4.5rem;
+	border-bottom: rgba(228, 228, 228, 1) solid 2px;
+}

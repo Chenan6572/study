@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/window/window" design="device:m;" xid="window" class="window cyEFF7j" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cyEFF7j" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">.cyEFF7j{margin: 0} .back.cyEFF7j{background-color: rgba(242, 242, 242, 1)} .title.cyEFF7j{background-color: rgba(231, 64, 58, 1)} .list.cyEFF7j{height: 6rem; border-bottom: 1px solid rgba(121, 121, 121, 1); display: flex; align-items: center; padding-left: 1rem; padding-right: 2rem; background-color: white} .media_cont.cyEFF7j{font-size: 1.8rem; flex-grow: 3} .zj.cyEFF7j{padding-left: 2rem}</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cyEFF7j" class="cyEFF7j"/>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full body pc3miaei-iosstatusbar cyEFF7j" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cyEFF7j"> 
+    <div class="x-panel-top title cyEFF7j" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cyEFF7j"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar title cyEFF7j" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;添加证件&quot;}" __cid="cyEFF7j"> 
+        <div class="x-titlebar-left cyEFF7j" __cid="cyEFF7j"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cyEFF7j" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'window.close'}" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;,&quot;label&quot;:&quot;&quot;}" __cid="cyEFF7j"> 
+            <i class="icon-chevron-left cyEFF7j" __cid="cyEFF7j"/>  
+            <span __cid="cyEFF7j" class="cyEFF7j"/> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cyEFF7j" __cid="cyEFF7j">添加证件</div>  
+        <div class="x-titlebar-right  cyEFF7j" __cid="cyEFF7j">
+          <div class="empty cyEFF7j" __cid="cyEFF7j"/>
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content back cyEFF7j" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cyEFF7j"> 
+      <div class="list cyEFF7j" __cid="cyEFF7j"> 
+        <img src="$model/UI2/zupu/img/yuan.png" class="media_img cyEFF7j" __cid="cyEFF7j"/>  
+        <div class="media_cont cyEFF7j" __cid="cyEFF7j"> 
+          <span id="" class="zj cyEFF7j" __cid="cyEFF7j">身份证</span> 
+        </div>  
+        <img class="media_right cyEFF7j" src="$model/UI2/zupu/img/u13.png" __cid="cyEFF7j"/> 
+      </div> 
+    </div>  
+    <style __cid="cyEFF7j" class="cyEFF7j">.x-panel.pc3miaei-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pc3miaei-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pc3miaei-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pc3miaei-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pc3miaei-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pc3miaei-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pc3miaei-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pc3miaei-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pc3miaei-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+  </div> 
+</div>

@@ -1,0 +1,105 @@
+.top_image {
+	width: 100%;
+	text-align: center;
+	margin-top:2.5rem;
+	margin-bottom:2.5rem;
+}
+
+.image_tou {
+	vertical-align: middle;
+}
+
+.title {
+	background-color: rgba(231, 64, 58, 1)
+}
+
+.line {
+	height: 4rem;
+	width: 90%;
+	margin-left: 5%;
+	margin-right: 5%;
+	display: flex;
+}
+
+.line_ {
+	height: 4rem;
+	width: 90%;
+	margin-top: 1rem;
+	margin-left: 5%;
+	margin-right: 5%;
+	display: flex;
+}
+
+.frame {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+	border: 1px solid rgba(228, 228, 228, 1);
+}
+
+.left {
+	font-size: 2rem;
+	font-weight: 300;
+	height: 3.5rem;
+	line-height: 3.5rem;
+	text-align: center;
+	flex-grow: 0.25;
+	border-right: solid 2px rgba(228, 228, 228, 1);
+}
+
+.input {
+	font-size: 1.6rem;
+	font-weight: 400;
+	height: 3rem;
+	outline: none;
+	text-align: center;
+	border-width: 0;
+}
+
+.frame_ {
+	display: flex;
+	flex-grow: 1;
+	align-items: center;
+	border: 1px solid rgba(228, 228, 228, 1);
+}
+
+.button_ {
+	display: flex;
+	flex-grow: 0.5;
+	align-items: center;
+	justify-content: center;
+	margin-top: 1%;
+	padding-left: 3%;
+	padding-right: 3%;
+	margin-bottom: 1%;
+	border-radius: 1rem;
+	background: rgba(231, 64, 58, 1);
+	color: white;
+	font-size: 1.4rem;
+	margin-left: 3%;
+}
+
+.bangding {
+	height: 4rem;
+	margin-left: 10%;
+	width: 80%;
+	margin-bottom: 1rem;
+	margin-top: 3rem;
+	border-radius: 5rem;
+	background: rgba(231, 64, 58, 1);
+	color: white;
+	font-size: 1.5rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.clause {
+	margin-left: 15%;
+	font-size: 1.3rem;
+	margin-top: 1rem;
+	color: #999999;
+	font-weight: 300
+}

@@ -1,0 +1,58 @@
+define(function(require) {
+	var $ = require("jquery");
+	var justep = require("$UI/system/lib/justep");
+
+	var li = document.getElementsByTagName('li');
+	var p = document.getElementsByName('p');
+	
+	li[0].classList.add('bg_color');
+	p[0].style.display = 'block';
+
+	// 点击效果
+/*	for (var i = 0; i < li.length; i++) {
+		(function(n) {
+			li[n].addEventListener('click', function() {
+				for (var j = 0; j < li.length; j++) {
+					li[j].classList.remove('bg_color');
+					p[j].style.display = 'none';
+				}
+				this.classList.add('bg_color');
+				p[n].style.display = 'block';
+			}, false)
+		}(i))
+	};
+	
+*/
+	var banshi ;
+	var bumen;
+	//获取点击元素信息
+	$(document).ready(function(e){
+		//更改颜色，获取值
+		$("#display").bind("click",function(){
+			$("#display").attr("class","bg_color");
+				banshi = $("#display").text();
+				alert(banshi);
+			});
+		//更改颜色，获取值	
+		$("#tab1").bind("click",function(){
+			$("tab1").css("display","none");
+			
+			 bumen = $("#tab1").text();
+			alert(bumen)
+		});
+	})
+
+	//帶参跳转
+/*	Model.prototype.reference = function(event) {
+	var url =require.toUrl('./wdzp/bszn/condition.w');
+	var params={
+		banshi:this.banshi,
+		bumen:this.bumen
+	};
+		justep.Shell.showPage(url, params);
+	};	*/	
+	var Model = function() {
+		this.callParent();
+	};
+	return Model;
+});

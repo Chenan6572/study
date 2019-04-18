@@ -1,0 +1,29 @@
+define(function(require){
+	var $ = require("jquery");
+	var justep = require("$UI/system/lib/justep");
+
+	require("$UI/zupu/lib/jquery.qrcode");
+	var jQuery= require("$UI/zupu/lib/qrcode");
+	
+	var Model = function(){
+		this.callParent();
+	};
+
+	Model.prototype.modelParamsReceive = function(event){
+			
+		if(this.params.data)
+		{
+			console.log(this.params.data);
+			$("#qrcode").html("");
+			$("#qrcode").qrcode({
+			render:"canvas",
+			width:200,
+			height:200,
+			text:this.params.data
+		});
+		}
+			
+	};
+
+	return Model;
+});

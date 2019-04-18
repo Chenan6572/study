@@ -1,0 +1,472 @@
+<!DOCTYPE HTML>
+<div xid="window" class="window cZf6z6v" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cZf6z6v" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/button/toggle,$model/UI2/system/components/justep/windowDialog/windowDialog,$model/UI2/system/components/justep/labelEdit/labelEdit,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/popOver/popOver,$model/UI2/system/components/justep/contents/content,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/select/select,$model/UI2/system/components/bootstrap/carousel/carousel,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/contents/contents,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/data/baasData,$model/UI2/system/components/justep/button/buttonGroup,">
+  <style>.cZf6z6v{margin: 0} .bdyground.cZf6z6v{background-color: white} h5.cZf6z6v, .h5.cZf6z6v{color: rgb(0, 0, 0); font-size: 16px} .text-danger.cZf6z6v{color: rgb(234, 65, 60)} .text-black.cZf6z6v{color: rgb(0, 0, 0)} .back.cZf6z6v{background: red} .x-panel-top.cZf6z6v .x-titlebar.cZf6z6v{background-color: rgb(234, 65, 60)} .x-bar.cZf6z6v{background-color: rgb(225, 225, 225); border: none} .x-titlebar.cZf6z6v .x-titlebar-right.cZf6z6v .btn.cZf6z6v{padding-left: 30px} .img1.cZf6z6v{height: 200px} .img3.cZf6z6v{height: 60px} .img_new.cZf6z6v{width: 100px; height: 70px} .img_small.cZf6z6v{height: 15px} .img_cloud.cZf6z6v{height: 30px} .btn.cZf6z6v i.cZf6z6v{font-size: 20px} .o-nomargintop.cZf6z6v{margin-top: 0} .x-nav.x-row.cZf6z6v, .x-nav.cZf6z6v .x-col.cZf6z6v{padding: 0; background-color: rgb(250, 250, 250)} .x-nav.cZf6z6v .x-col.cZf6z6v:nth-child(1){height: 41px; overflow: hidden} .x-nav.cZf6z6v .x-col.cZf6z6v:nth-child(2){width: 50px} .x-nav.cZf6z6v .x-col.cZf6z6v .x-navbox.cZf6z6v{height: 61px; overflow-x: scroll; overflow-y: hidden} .x-nav.cZf6z6v .x-col.cZf6z6v .x-navbox.cZf6z6v .btn-group.cZf6z6v{width: 480px} .x-nav.cZf6z6v .btn-group.cZf6z6v .btn.cZf6z6v{height: 41px; border-top: 0; font-weight: normal; color: rgb(153, 153, 153)} .x-nav.cZf6z6v .btn-group.cZf6z6v .btn.active.cZf6z6v{height: 41px; border-bottom: 2px solid rgb(234, 65, 60); color: rgb(234, 65, 60)} .x-nav.cZf6z6v .navMoreBtn.cZf6z6v{background-color: rgb(225, 225, 225)} .x-popOver-overlay.cZf6z6v{background-color: rgb(0, 0, 0)} .x-popOver-content.cZf6z6v{border-radius: 0} .x-wangyiOver.cZf6z6v h5.cZf6z6v{padding-left: 15px} .x-wangyiOver.cZf6z6v .x-titlebar.cZf6z6v{height: 40px; background-color: rgb(241, 241, 241)} .x-wangyiOver.cZf6z6v .x-navGroup.cZf6z6v{padding-bottom: 0} .x-wangyiOver.cZf6z6v .x-navGroup.cZf6z6v .col-xs-3.cZf6z6v{padding-left: 3px; padding-right: 3px} .x-wangyiOver.cZf6z6v .x-navGroup.cZf6z6v .btn.cZf6z6v{border-color: rgb(204, 204, 204); border-radius: 3px; margin-bottom: 10px; color: rgb(102, 102, 102); display: block} .x-wangyiOver.cZf6z6v .x-navGroup.cZf6z6v .btn.active.cZf6z6v{border-color: red; background-color: rgb(234, 65, 60); color: rgb(255, 255, 255)} .x-seach.cZf6z6v{background-color: rgb(246, 246, 246); display: none} .x-seach.cZf6z6v span.cZf6z6v{margin: 10px 10px 0 0} .x-wangyi.btn-group.cZf6z6v{background-color: rgb(255, 255, 255)} .x-wangyi.btn-group.cZf6z6v .btn.cZf6z6v{border-top: 0} .x-wangyi.btn-group.cZf6z6v .btn.cZf6z6v span.cZf6z6v{font-size: 12px; font-weight: normal} .x-card.btn-group.cZf6z6v .btn.active.cZf6z6v{color: rgb(234, 65, 60); padding: 0; border-top: 0} .x-banner.cZf6z6v{overflow-x: hidden} .x-banner.cZf6z6v .carousel-indicators.cZf6z6v{bottom: 20px; margin-left: 10%} .x-banner.cZf6z6v .carousel-indicators.cZf6z6v .active.cZf6z6v{width: 8px; height: 8px} .x-banner.cZf6z6v .carousel-indicators.cZf6z6v li.cZf6z6v{width: 6px; height: 6px} .x-banner.cZf6z6v .x-contents.cZf6z6v .x-contents-content.cZf6z6v .x-title.cZf6z6v{background-color: rgb(255, 255, 255); padding: 5px} .x-wangyi.panel.cZf6z6v{margin-bottom: 10px} .x-wangyi.panel.cZf6z6v > .panel-heading.cZf6z6v .panel-title.cZf6z6v{color: rgb(51, 51, 51)} .x-wangyi.cZf6z6v .list-group-item.cZf6z6v{border-radius: 0} .x-wangyi.cZf6z6v .list-group-item.cZf6z6v:last-child{border-bottom: 0} .o-nomargin.cZf6z6v{margin-left: 0; margin-right: 0} .o-nopadding.cZf6z6v{padding-left: 0; padding-right: 0} .setting.cZf6z6v{} .angleBox.cZf6z6v{position: relative} .angle.cZf6z6v{position: absolute; right: 0px; top: 0; background-color: rgb(199, 28, 34)} .top.cZf6z6v{padding-left: 5%; padding-right: 5%; padding-bottom: 5%; padding-top: 5%; display: flex; align-items: center; justify-content: center; background: rgba(231, 64, 58, 1); border-bottom: solid 7px rgba(242, 242, 242, 1)} .media_right.cZf6z6v{padding-left: 5%; padding-right: 5%; width: 75%; display: flex; align-items: baseline; flex-direction: column} .middle.cZf6z6v{padding-left: 1.5%; margin-bottom: 0.5rem; padding-top: 0.3rem; padding-bottom: 0.3rem; display: flex; align-items: center; justify-content: space-around; background-color: white} .image_box.cZf6z6v{width: 6.5rem; height: 6.5rem; border-radius: 6.5rem; border: none; background-color: white; padding: 1px} .image_paved.cZf6z6v{width: 100%; height: 100%; border-radius: 7rem} .jump_table.cZf6z6v{padding-left: 5%; padding-right: 5%; display: flex; background-color: white; justify-content: space-between; align-items: center; padding-top: 1.1rem; padding-bottom: 1.1rem; border-bottom: 1px solid rgba(242, 242, 242, 1); height: 6rem} .ui_home.cZf6z6v{background-color: rgba(242, 242, 242, 1); height: 16rem; position: relative} .top_background.cZf6z6v{width: 100%; height: 65%; background-color: rgba(231, 64, 58, 1); border-radius: 0 0 6vw 6vw} .search.cZf6z6v{height: 3rem; padding-top: 1rem; padding-left: 4%; display: flex; align-items: center} .search_container.cZf6z6v{width: 2rem; height: 2rem} .click_work.cZf6z6v{height: 60%; background-color: white; position: absolute; left: 1.5%; right: 1.5%; top: 26%; border-radius: 1rem 1rem 1rem 1rem; display: flex; align-items: center; justify-content: space-around; flex-grow: 0.25} .click_box_.cZf6z6v{display: flex; flex-direction: column; width: 5rem; height: 7.5rem; align-items: center; justify-content: space-around} .image_container_.cZf6z6v{width: 5rem; height: 5rem; border-radius: 5px} .span_container.cZf6z6v{height: 2.5rem; width: 5rem; display: flex; justify-content: center; align-items: center} .image_container_element.cZf6z6v{width: 100%; height: 100%} .media-top.cZf6z6v{margin-bottom: 0.5rem} .size_small.cZf6z6v{font-size: 1.2rem} .size_big.cZf6z6v{font-size: 1.5rem} .font_weight.cZf6z6v{font-weight: 600} .size_normal.cZf6z6v{font-size: 1.5rem} .size_normal1.cZf6z6v{font-size: 1.6rem} .margin_top.cZf6z6v{margin-top: 0.4rem} .size_jilin.cZf6z6v{padding-left: 2vw; font-size: 5vw; color: white; font-weight: 800} .size-color.cZf6z6v{color: white} .size_name.cZf6z6v{font-size: 2rem; font-weight: 1000} .image_container.cZf6z6v{width: 10vw; height: 10vw} .serve.cZf6z6v{display: flex; flex-direction: column; border-bottom: 2vh solid rgba(242, 242, 242, 1)} .click_.cZf6z6v{display: flex; justify-content: space-around; flex-grow: 0.25} .click_box.cZf6z6v{display: flex; flex-direction: column; width: 25vw; height: 10vh; align-items: center; justify-content: space-around} .up_center.cZf6z6v{padding-bottom: 1rem; display: flex; justify-content: center} .trapezoid_left.cZf6z6v{border-right: 6rem solid rgba(0, 0, 0, 0); border-top: 1.5rem solid rgba(231, 64, 58, 1); border-left: 1rem solid rgba(0, 0, 0, 0); position: relative; left: 3rem} .trapezoid_middle.cZf6z6v{width: 6rem; height: 1.5rem; display: flex; align-items: center; justify-content: center; background-color: rgba(231, 64, 58, 1); position: absolute} .trapezoid_right.cZf6z6v{border-right: 1rem solid rgba(0, 0, 0, 0); border-top: 1.5rem solid rgba(231, 64, 58, 1); border-left: 6rem solid rgba(0, 0, 0, 0); position: relative; right: 3rem} .down.cZf6z6v{text-align: center; margin: 0.2rem} .height.cZf6z6v{height: 7rem} .news_titles.cZf6z6v{margin: 0.2rem 1rem 0.2rem 1rem; border-left: 5px solid rgba(231, 64, 58, 1); height: 2.5rem} .title_left.cZf6z6v{height: 2.5rem; margin-left: 0.5rem; font-size: 1.8rem; line-height: 2.5rem; float: left; font-weight: 500} .title.cZf6z6v{background-color: rgba(231, 64, 58, 1)} .news_link.cZf6z6v{height: 2.5rem; font-size: 1.6rem; line-height: 2.5rem; float: right; color: rgb(0, 102, 255)} .news_list.cZf6z6v{margin: 0.2rem; margin-left: 1rem; height: 6.4rem; border-bottom: 1px solid rgba(242, 242, 242, 1); display: flex} .news_left.cZf6z6v{width: 12rem; height: 6rem} .news_cont.cZf6z6v{padding-left: 1rem; padding-top: 0.8rem; padding-bottom: 0.2rem; margin-right: 1rem; width: 25rem; display: flex; flex-direction: column} .news_img.cZf6z6v{height: 100%; width: 100%} .news_text.cZf6z6v{height: 4rem} .news_data.cZf6z6v{height: 1rem; line-height: 1rem; float: right; align-self: flex-end} .condition.cZf6z6v{border-bottom: 2vw solid rgba(242, 242, 242, 1)} .span_left.cZf6z6v{flex-grow: 8} .span_right.cZf6z6v{flex-grow: 1} .a.cZf6z6v{flex-grow: 6} .input.cZf6z6v{flex-grow: 0.5} .redian.cZf6z6v{padding-top: 2vw; padding-bottom: 2vw; border-bottom: 2px solid rgba(242, 242, 242, 1); display: flex} .left_redian.cZf6z6v{width: 10%; text-align: center} .right_redian.cZf6z6v{font-size: 5vw} .image_redian.cZf6z6v{} .input_css.cZf6z6v{width: 50%; border: none; text-align: center} .font-color.cZf6z6v{color: red} .btn_.cZf6z6v{margin-left: 5vw; margin-right: 5vw; padding-top: 3vw; padding-bottom: 3vw; display: -webkit-box; -webkit-box-pack: center; -webkit-box-align: center; width: 100%; border-radius: 30px; background: rgba(231, 64, 58, 1); color: white; font-size: 4vw} .chaxun.cZf6z6v{display: flex; padding-top: 10px; padding-bottom: 10px; padding-left: 10%; padding-right: 10%; border-bottom: 2px solid rgba(242, 242, 242, 1)} .backcolor.cZf6z6v{background: white}</style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onActive:modelActive;onLoad:modelLoad" __cid="cZf6z6v" class="cZf6z6v"></div>  
+  <div component="$model/UI2/system/components/justep/popOver/popOver" class="x-popOver cZf6z6v" xid="popOver1" data-bind="component:{name:'$model/UI2/system/components/justep/popOver/popOver'}" data-config="{&#34;direction&#34;:&#34;auto&#34;}" __cid="cZf6z6v"> 
+    <div class="x-popOver-overlay cZf6z6v" xid="div6" __cid="cZf6z6v"></div>  
+    <div class="x-popOver-content cZf6z6v" xid="div5" __cid="cZf6z6v"> 
+      <div id="idOperation" __cid="cZf6z6v" class="cZf6z6v"> 
+        <div component="$model/UI2/system/components/justep/row/row" class="x-row cZf6z6v" xid="row9" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cZf6z6v"> 
+          <div class="x-col cZf6z6v" xid="col13" __cid="cZf6z6v"> 
+            <img src="@justepContextPath@/v_6257_nol_zh_CNs_desktopd_pc/zupu/img/invite.png" alt="" xid="imageInvite" style="width:60px;height:60px" __cid="cZf6z6v" class="cZf6z6v" data-bind="event:{click:$model._callModelFn.bind($model, 'btnInvitClick')}"> 
+          </div>  
+          <div class="x-col cZf6z6v" xid="col16" __cid="cZf6z6v"> 
+            <img src="@justepContextPath@/v_6257_nol_zh_CNs_desktopd_pc/zupu/img/detail.png" alt="" xid="imageDetail" style="width:60px;height:60px" __cid="cZf6z6v" class="cZf6z6v" data-bind="event:{click:$model._callModelFn.bind($model, 'btnShowMemberDetail')}"> 
+          </div>  
+          <div class="x-col cZf6z6v" xid="col9" __cid="cZf6z6v"> 
+            <img src="@justepContextPath@/v_6257_nol_zh_CNs_desktopd_pc/zupu/img/addmember.png" alt="" xid="imageAdd" style="width:60px;height:60px" __cid="cZf6z6v" class="cZf6z6v" data-bind="event:{click:$model._callModelFn.bind($model, 'btnAddMember')}"> 
+          </div>  
+          <div class="x-col cZf6z6v" xid="col17" __cid="cZf6z6v"> 
+            <img src="@justepContextPath@/v_6257_nol_zh_CNs_desktopd_pc/zupu/img/viewrel.png" alt="" xid="imageViewRel" style="width:60px;height:60px" __cid="cZf6z6v" class="cZf6z6v" data-bind="event:{click:$model._callModelFn.bind($model, 'btnViewRela')}"> 
+          </div> 
+        </div>  
+        <div component="$model/UI2/system/components/justep/row/row" class="x-row cZf6z6v" xid="row9" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cZf6z6v"> 
+          <div class="x-col cZf6z6v" xid="col13" style="text-align:center;color:#EEFFE8;" __cid="cZf6z6v">邀请亲友</div>  
+          <div class="x-col cZf6z6v" xid="col16" style="text-align:center;color:#EEFFE8;" __cid="cZf6z6v">查看资料</div>  
+          <div class="x-col cZf6z6v" xid="col9" style="text-align:center;color:#EEFFE8;" __cid="cZf6z6v">添加亲人</div>  
+          <div class="x-col cZf6z6v" xid="col18" style="text-align:center;color:#EEFFE8;" __cid="cZf6z6v">查看关系</div> 
+        </div> 
+      </div> 
+    </div> 
+  </div>  
+  <div component="$model/UI2/system/components/justep/popOver/popOver" class="x-popOver x-wangyiOver cZf6z6v" xid="popOverAdd" style="height:100%;" data-bind="component:{name:'$model/UI2/system/components/justep/popOver/popOver'}" data-config="{&#34;anchor&#34;:&#34;navMenuTop&#34;,&#34;direction&#34;:&#34;right-bottom&#34;,&#34;opacity&#34;:0.5}" __cid="cZf6z6v"> 
+    <div class="x-popOver-overlay cZf6z6v" xid="div2" __cid="cZf6z6v"></div>  
+    <div xid="div4" class="x-full x-popOver-content cZf6z6v" __cid="cZf6z6v"> 
+      <h5 class="text-muted cZf6z6v" __cid="cZf6z6v"></h5>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cZf6z6v" xid="row12" style="height:100px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cZf6z6v"> 
+        <div class="x-col cZf6z6v" xid="col12" __cid="cZf6z6v"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn x-orange btn-icon-top pull-right cZf6z6v" xid="menuAddFather" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:btnAddFatherClick" data-config="{&#34;icon&#34;:&#34;linear linear-user&#34;,&#34;label&#34;:&#34;父亲&#34;}" __cid="cZf6z6v"> 
+            <i xid="i8" class="linear linear-user cZf6z6v" __cid="cZf6z6v"></i>  
+            <span xid="span222" __cid="cZf6z6v" class="cZf6z6v">父亲</span> 
+          </a> 
+        </div>  
+        <div class="x-col cZf6z6v" xid="col19" __cid="cZf6z6v"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn x-orange btn-icon-top cZf6z6v" xid="menuAddMother" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:btnAddFatherClick" data-config="{&#34;icon&#34;:&#34;linear linear-user&#34;,&#34;label&#34;:&#34;母亲&#34;}" __cid="cZf6z6v"> 
+            <i xid="i8" class="linear linear-user cZf6z6v" __cid="cZf6z6v"></i>  
+            <span xid="span222" __cid="cZf6z6v" class="cZf6z6v">母亲</span> 
+          </a> 
+        </div> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cZf6z6v" xid="row10" style="height:100px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cZf6z6v"> 
+        <div class="x-col cZf6z6v" xid="col21" __cid="cZf6z6v"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn x-orange btn-icon-top pull-right cZf6z6v" xid="menuAddBrotherAndSiste" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:btnAddFatherClick" data-config="{&#34;icon&#34;:&#34;linear linear-user&#34;,&#34;label&#34;:&#34;兄妹&#34;}" __cid="cZf6z6v"> 
+            <i xid="i8" class="linear linear-user cZf6z6v" __cid="cZf6z6v"></i>  
+            <span xid="span222" __cid="cZf6z6v" class="cZf6z6v">兄妹</span> 
+          </a> 
+        </div>  
+        <div class="x-col cZf6z6v" xid="col22" style="text-align:center" __cid="cZf6z6v"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn x-orange btn-icon-top cZf6z6v" xid="menuSelect" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;icon&#34;:&#34;linear linear-user&#34;,&#34;label&#34;:&#34;我&#34;}" __cid="cZf6z6v"> 
+            <i xid="i8" class="linear linear-user cZf6z6v" __cid="cZf6z6v"></i>  
+            <span xid="span222" __cid="cZf6z6v" class="cZf6z6v">我</span> 
+          </a> 
+        </div>  
+        <div class="x-col cZf6z6v" xid="col23" __cid="cZf6z6v"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn x-orange btn-icon-top cZf6z6v" xid="menuAddMate" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:btnAddFatherClick" data-config="{&#34;icon&#34;:&#34;linear linear-user&#34;,&#34;label&#34;:&#34;妻子&#34;}" __cid="cZf6z6v"> 
+            <i xid="i8" class="linear linear-user cZf6z6v" __cid="cZf6z6v"></i>  
+            <span xid="span222" __cid="cZf6z6v" class="cZf6z6v">妻子</span> 
+          </a> 
+        </div> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cZf6z6v" xid="row11" style="height:100px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cZf6z6v"> 
+        <div class="x-col cZf6z6v" xid="col24" __cid="cZf6z6v"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn x-orange btn-icon-top pull-right cZf6z6v" xid="button8" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:btnAddFatherClick" data-config="{&#34;icon&#34;:&#34;linear linear-user&#34;,&#34;label&#34;:&#34;儿子&#34;}" __cid="cZf6z6v"> 
+            <i xid="i8" class="linear linear-user cZf6z6v" __cid="cZf6z6v"></i>  
+            <span xid="span222" __cid="cZf6z6v" class="cZf6z6v">儿子</span> 
+          </a> 
+        </div>  
+        <div class="x-col cZf6z6v" xid="col25" __cid="cZf6z6v"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn x-orange btn-icon-top cZf6z6v" xid="button8" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:btnAddFatherClick" data-config="{&#34;icon&#34;:&#34;linear linear-user&#34;,&#34;label&#34;:&#34;女儿&#34;}" __cid="cZf6z6v"> 
+            <i xid="i8" class="linear linear-user cZf6z6v" __cid="cZf6z6v"></i>  
+            <span xid="span222" __cid="cZf6z6v" class="cZf6z6v">女儿</span> 
+          </a> 
+        </div> 
+      </div> 
+    </div> 
+  </div>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full x-card top-trans pcaqaqia-iosstatusbar cZf6z6v" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cZf6z6v"> 
+    <div class="x-panel-content x-cards cZf6z6v" xid="content" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cZf6z6v"> 
+      <div component="$model/UI2/system/components/justep/contents/contents" class="x-contents x-full cZf6z6v" xid="contents1" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&#34;active&#34;:1,&#34;routable&#34;:true,&#34;swipe&#34;:false,&#34;wrap&#34;:false}" __cid="cZf6z6v"> 
+        <div class="x-contents-content bdyground cZf6z6v" xid="newsContent" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cZf6z6v"> 
+          <div class="ui_home cZf6z6v" __cid="cZf6z6v"> 
+            <div class="top_background cZf6z6v" __cid="cZf6z6v"> 
+              <div class="search cZf6z6v" __cid="cZf6z6v"> 
+                <div class="search_container cZf6z6v" __cid="cZf6z6v"> 
+                  <img src="@justepContextPath@/v_6257_nol_zh_CNs_desktopd_pc/zupu/img/33333.png" style="width:90%;height:100%;float:right;" __cid="cZf6z6v" class="cZf6z6v"> 
+                </div>  
+                <span class="size_jilin cZf6z6v" __cid="cZf6z6v">吉林市</span> 
+              </div>  
+              <div class="click_work cZf6z6v" __cid="cZf6z6v"> 
+                <div class="click_box_ cZf6z6v" __cid="cZf6z6v" data-bind="event:{click:$model._callModelFn.bind($model, 'zfsx')}"> 
+                  <div class="image_container_ cZf6z6v" __cid="cZf6z6v"> 
+                    <img src="@justepContextPath@/v_6257_nol_zh_CNs_desktopd_pc/zupu/img/sx.png" alt="" xid="image1" class=" image_container_element cZf6z6v" __cid="cZf6z6v"> 
+                  </div>  
+                  <div class="span_container cZf6z6v" __cid="cZf6z6v"> 
+                    <span class="size_small font_weight cZf6z6v" __cid="cZf6z6v">政府事项</span> 
+                  </div> 
+                </div>  
+                <div class="click_box_ cZf6z6v" __cid="cZf6z6v" data-bind="event:{click:$model._callModelFn.bind($model, 'appointment')}"> 
+                  <div class="image_container_ cZf6z6v" __cid="cZf6z6v"> 
+                    <img src="@justepContextPath@/v_6257_nol_zh_CNs_desktopd_pc/zupu/img/yuyue.png" alt="" xid="image1" class=" image_container_element cZf6z6v" __cid="cZf6z6v"> 
+                  </div>  
+                  <div class="span_container cZf6z6v" __cid="cZf6z6v"> 
+                    <span class="size_small font_weight cZf6z6v" __cid="cZf6z6v">我的预约</span> 
+                  </div> 
+                </div>  
+                <div class="click_box_ cZf6z6v" __cid="cZf6z6v"> 
+                  <div class="image_container_ cZf6z6v" __cid="cZf6z6v"> 
+                    <img src="@justepContextPath@/v_6257_nol_zh_CNs_desktopd_pc/zupu/img/home_group.png" alt="" xid="image1" class=" image_container_element cZf6z6v" __cid="cZf6z6v"> 
+                  </div>  
+                  <div class="span_container cZf6z6v" __cid="cZf6z6v"> 
+                    <span class="size_small font_weight cZf6z6v" __cid="cZf6z6v">咨询专题</span> 
+                  </div> 
+                </div>  
+                <div class="click_box_ cZf6z6v" __cid="cZf6z6v"> 
+                  <div class="image_container_ cZf6z6v" __cid="cZf6z6v"> 
+                    <img src="@justepContextPath@/v_6257_nol_zh_CNs_desktopd_pc/zupu/img/family.png" alt="" xid="image1" class=" image_container_element cZf6z6v" __cid="cZf6z6v"> 
+                  </div>  
+                  <div class="span_container cZf6z6v" __cid="cZf6z6v"> 
+                    <span class="size_small font_weight cZf6z6v" __cid="cZf6z6v">更多</span> 
+                  </div> 
+                </div> 
+              </div> 
+            </div> 
+          </div>  
+          <div class="serve cZf6z6v" __cid="cZf6z6v"> 
+            <div class="up_center cZf6z6v" __cid="cZf6z6v"> 
+              <div class="trapezoid_left cZf6z6v" __cid="cZf6z6v"></div>  
+              <div class="trapezoid_right cZf6z6v" __cid="cZf6z6v"></div>  
+              <div class="trapezoid_middle cZf6z6v" __cid="cZf6z6v"> 
+                <span class="size-color size_small cZf6z6v" __cid="cZf6z6v">服务推广</span> 
+              </div> 
+            </div>  
+            <div class="click_ cZf6z6v" __cid="cZf6z6v"> 
+              <div class="click_box cZf6z6v" __cid="cZf6z6v"> 
+                <div class="image_container cZf6z6v" __cid="cZf6z6v"> 
+                  <img src="@justepContextPath@/v_6257_nol_zh_CNs_desktopd_pc/zupu/img/u152.png" alt="" xid="image1" class=" image_container_element cZf6z6v" __cid="cZf6z6v"> 
+                </div>  
+                <span class="size_normal cZf6z6v" __cid="cZf6z6v">户籍</span> 
+              </div>  
+              <div class="click_box cZf6z6v" __cid="cZf6z6v"> 
+                <div class="image_container cZf6z6v" __cid="cZf6z6v"> 
+                  <img src="@justepContextPath@/v_6257_nol_zh_CNs_desktopd_pc/zupu/img/u152.png" alt="" xid="image1" class=" image_container_element cZf6z6v" __cid="cZf6z6v"> 
+                </div>  
+                <span class="size_normal  cZf6z6v" __cid="cZf6z6v">公积金</span> 
+              </div>  
+              <div class="click_box cZf6z6v" __cid="cZf6z6v"> 
+                <div class="image_container cZf6z6v" __cid="cZf6z6v"> 
+                  <img src="@justepContextPath@/v_6257_nol_zh_CNs_desktopd_pc/zupu/img/u152.png" alt="" xid="image1" class=" image_container_element cZf6z6v" __cid="cZf6z6v"> 
+                </div>  
+                <span class="size_normal  cZf6z6v" __cid="cZf6z6v">医保</span> 
+              </div>  
+              <div class="click_box cZf6z6v" __cid="cZf6z6v"> 
+                <div class="image_container cZf6z6v" __cid="cZf6z6v"> 
+                  <img src="@justepContextPath@/v_6257_nol_zh_CNs_desktopd_pc/zupu/img/u152.png" alt="" xid="image1" class=" image_container_element cZf6z6v" __cid="cZf6z6v"> 
+                </div>  
+                <span class="size_normal cZf6z6v" __cid="cZf6z6v">养老</span> 
+              </div> 
+            </div>  
+            <a class="down cZf6z6v" __cid="cZf6z6v"> 
+              <img src="@justepContextPath@/v_6257_nol_zh_CNs_desktopd_pc/zupu/img/down.png" __cid="cZf6z6v" class="cZf6z6v"> 
+            </a> 
+          </div>  
+          <div class="news cZf6z6v" __cid="cZf6z6v"> 
+            <div class="news_titles cZf6z6v" __cid="cZf6z6v"> 
+              <span class="title_left cZf6z6v" __cid="cZf6z6v">最新资讯</span>  
+              <span href="" class="news_link cZf6z6v" __cid="cZf6z6v">更多&gt;&gt;</span> 
+            </div>  
+            <div class="app cZf6z6v" __cid="cZf6z6v"> 
+              <div v-for="item in items" __cid="cZf6z6v" class="cZf6z6v"> 
+                <div class="news_list cZf6z6v" __cid="cZf6z6v"> 
+                  <div class="news_left cZf6z6v" __cid="cZf6z6v"> 
+                    <span style="display:none" v-text="item.image" class="news_illustration cZf6z6v" __cid="cZf6z6v"></span>  
+                    <img class="news_img cZf6z6v" alt="新闻插图" src="@justepContextPath@/v_6257_nol_zh_CNs_desktopd_pc/zupu/img/news/1.png" __cid="cZf6z6v"> 
+                  </div>  
+                  <div class="news_cont cZf6z6v" __cid="cZf6z6v"> 
+                    <div class="news_text cZf6z6v" v-text="item.news" __cid="cZf6z6v">新闻内容</div>  
+                    <div class="news_data cZf6z6v" v-text="item.news_data" __cid="cZf6z6v">新闻日期</div> 
+                  </div> 
+                </div> 
+              </div> 
+            </div> 
+          </div> 
+        </div>  
+        <div class="x-contents-content active cZf6z6v" xid="readContent" style="background-color:white;" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" data-events="onActive:readContentActive" __cid="cZf6z6v"> 
+          <style type="text/css" __cid="cZf6z6v" class="cZf6z6v">body{margin:20px auto; padding:0; width:1000px } canvas{border:dashed 0px #ccc} span{font-size:16px; cursor:pointer}</style>  
+          <script type="text/javascript" __cid="cZf6z6v" class="cZf6z6v">function $$(id){ return document.getElementById(id); } $("#test").html("初始化"); function drawRect(co){ var can = $$('can'); cans = can.getContext('2d'); cans.strokeStyle = co; cans.lineWidth = 3; cans.strokeRect(100,50,80,40); } function drawCircle(co){ cans.beginPath(); cans.arc(30,30,30,0,Math.PI*2,1); cans.closePath(); cans.strokeStyle = co; cans.lineWidth = 3; cans.stroke(); } function mv_click(){ var can = $$('can'); var cans = can.getContext('2d'); cans.clearRect(-200, -200, 800, 800); cans.translate(10,10); //drawRect('black'); } function zoom_click(){ var can = $$('can'); var cans = can.getContext('2d'); drawCircle('red'); cans.scale(1.1,1.1); drawCircle('green'); } function rotate_click(){ var can = $$('can'); var cans = can.getContext('2d'); cans.rotate(Math.PI*2/360*45); drawRect('green'); cans.rotate(-Math.PI/4); drawRect('black'); } drawCircle('red'); function abc() { $("#test").html($model.transURL('../img')); var can = $$('can'); cans = can.getContext('2d'); //cans.scale(1.1,1.1); cans.translate(10,10); //cans.fillStyle = 'red'; cans.clearRect(-100, -100, 800, 800); //cans.rect(50, 100, 200, 100); //cxt.stroke(); cans.fill(); cans.fillRect(0,0,22,22); var img = new Image(); img.src = "http://localhost:8080/x5/UI2/v_eb3e398a146e4c548e9bcc610a89699dl_zh_CNs_d_m/zupu/main/img/menu1.png"; cans.drawImage(img,10,10); }</script>  
+          <style type="text/css" __cid="cZf6z6v" class="cZf6z6v">.abc { -webkit-transform:matrix(1,0,0,1,0,0); }</style>  
+          <div id="divFamilyCanvas" style="width:500px;height:800px" __cid="cZf6z6v" class="cZf6z6v"> 
+            <canvas id="can" width="500" height="800" __cid="cZf6z6v" class="cZf6z6v"></canvas>  
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-warning cZf6z6v" xid="btnMyReleation" style="border-radius:100px;position:fixed;bottom:60px;right:20px;transform: translateZ(1em);" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:btnMyReleationClick" data-config="{&#34;label&#34;:&#34;我&#34;}" __cid="cZf6z6v"> 
+              <i xid="i7" __cid="cZf6z6v" class="cZf6z6v"></i>  
+              <span xid="span2" __cid="cZf6z6v" class="cZf6z6v">我</span> 
+            </a>  
+            <div id="tet" class="abc cZf6z6v" style="position:fixed;bottom:60px;right:80px; z-index:100px" __cid="cZf6z6v"></div>  
+            <br __cid="cZf6z6v" class="cZf6z6v">  
+            <span id="test" __cid="cZf6z6v" class="cZf6z6v"></span>  
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cZf6z6v" xid="button2" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'},visible:false" data-events="onClick:showFamily" data-config="{&#34;label&#34;:&#34;展示族谱&#34;}" __cid="cZf6z6v"> 
+              <i xid="i1" __cid="cZf6z6v" class="cZf6z6v"></i>  
+              <span xid="span1" __cid="cZf6z6v" class="cZf6z6v">展示族谱</span> 
+            </a>  
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cZf6z6v" xid="btnShowLocalFamily" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'},visible:false" data-events="onClick:btnShowLocalFamilyClick" data-config="{&#34;label&#34;:&#34;button&#34;}" __cid="cZf6z6v"> 
+              <i xid="i5" __cid="cZf6z6v" class="cZf6z6v"></i>  
+              <span xid="span3" __cid="cZf6z6v" class="cZf6z6v"></span> 
+            </a> 
+          </div>  
+          <input id="hidMemberID" xid="hidMemberID" style="display:none" data="baasFamilyMember" disabled="true" __cid="cZf6z6v" class="cZf6z6v" data-bind="ref:$model.baasFamilyMember.ref(&#34;memberName&#34;),value:$model.baasFamilyMember.ref(&#34;ID&#34;)">  
+          <div id="divViewMember" __cid="cZf6z6v" class="cZf6z6v"> 
+            <ul xid="ul1" class="list-group cZf6z6v" style="margin-top:20px;margin-left:20px;margin-right:20px" __cid="cZf6z6v"> 
+              <li style="display:block" __cid="cZf6z6v" class="cZf6z6v"></li>  
+              <li class="list-group-item cZf6z6v" xid="li1" style="border:0px" __cid="cZf6z6v"> 
+                <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cZf6z6v" xid="labelEdit3" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cZf6z6v"> 
+                  <label class="x-label cZf6z6v" xid="label3" __cid="cZf6z6v">姓名</label>  
+                  <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cZf6z6v" xid="inNameView" data-bind="component:{ref:$model.baasFamilyMember.ref(&#34;memberName&#34;),name:'$model/UI2/system/components/justep/input/input'}" data-config="{&#34;readonly&#34;:true}" __cid="cZf6z6v"> 
+                </div>  
+                <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cZf6z6v" xid="labelEdit2" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cZf6z6v"> 
+                  <label class="x-label cZf6z6v" xid="label2" __cid="cZf6z6v">性别</label>  
+                  <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cZf6z6v" xid="inputSexView" data-bind="component:{ref:$model.baasFamilyMember.ref(&#34;memberSex&#34;),name:'$model/UI2/system/components/justep/input/input'}" data-config="{&#34;readonly&#34;:true,&#34;valueUpdateMode&#34;:&#34;input&#34;}" __cid="cZf6z6v">  
+                  <span component="$model/UI2/system/components/justep/button/toggle" class="x-toggle cZf6z6v" xid="inSexView" ON="男" OFF="女" checked="true" checkedValue="男" uncheckedValue="女" value="男" disabled="true" data-config="{&#34;checked&#34;:true,&#34;checkedValue&#34;:&#34;男&#34;,&#34;disabled&#34;:true,&#34;label&#34;:{&#34;off&#34;:&#34;女&#34;,&#34;on&#34;:&#34;男&#34;},&#34;uncheckedValue&#34;:&#34;女&#34;,&#34;value&#34;:&#34;男&#34;}" data-bind="component:{ref:$model.baasFamilyMember.ref(&#34;memberSex&#34;),name:'$model/UI2/system/components/justep/button/toggle'}" __cid="cZf6z6v">
+                    <input type="checkbox" value="男" __cid="cZf6z6v" class="cZf6z6v">
+                    <label data-on="男" data-off="女" __cid="cZf6z6v" class="cZf6z6v">
+                      <span __cid="cZf6z6v" class="cZf6z6v"></span>
+                    </label>
+                  </span> 
+                </div>  
+                <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cZf6z6v" xid="labelEdit3" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cZf6z6v"> 
+                  <label class="x-label cZf6z6v" xid="label3" __cid="cZf6z6v">手机号</label>  
+                  <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cZf6z6v" xid="inPhoneView" data-bind="component:{ref:$model.baasFamilyMember.ref(&#34;memberPhone&#34;),name:'$model/UI2/system/components/justep/input/input'}" data-config="{&#34;readonly&#34;:true}" __cid="cZf6z6v"> 
+                </div>  
+                <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cZf6z6v" xid="labelEdit3" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cZf6z6v"> 
+                  <label class="x-label cZf6z6v" xid="label3" __cid="cZf6z6v">出生</label>  
+                  <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cZf6z6v" xid="inBirthView" data-bind="component:{ref:$model.baasFamilyMember.ref(&#34;memberBirthday&#34;),name:'$model/UI2/system/components/justep/input/input'}" data-config="{&#34;readonly&#34;:true}" __cid="cZf6z6v"> 
+                </div>  
+                <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cZf6z6v" xid="labelEdit2" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cZf6z6v"> 
+                  <label class="x-label cZf6z6v" xid="label2" __cid="cZf6z6v">健在</label>  
+                  <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cZf6z6v" xid="inputLivingView" data-bind="component:{ref:$model.baasFamilyMember.val(&#34;memberLiving&#34;)==1?&#34;健在&#34;:&#34;已故&#34;,name:'$model/UI2/system/components/justep/input/input'},value:&#34;键在&#34;" data-config="{&#34;readonly&#34;:true,&#34;valueUpdateMode&#34;:&#34;input&#34;}" __cid="cZf6z6v">  
+                  <span component="$model/UI2/system/components/justep/button/toggle" class="x-toggle cZf6z6v" xid="inLivingView" ON="键在" OFF="已故" checked="true" checkedValue="1" uncheckedValue="0" value="1" disabled="true" data-config="{&#34;checked&#34;:true,&#34;checkedValue&#34;:&#34;1&#34;,&#34;disabled&#34;:true,&#34;label&#34;:{&#34;off&#34;:&#34;已故&#34;,&#34;on&#34;:&#34;键在&#34;},&#34;uncheckedValue&#34;:&#34;0&#34;,&#34;value&#34;:&#34;1&#34;}" data-bind="component:{ref:$model.baasFamilyMember.ref(&#34;memberLiving&#34;),name:'$model/UI2/system/components/justep/button/toggle'}" __cid="cZf6z6v">
+                    <input type="checkbox" value="1" __cid="cZf6z6v" class="cZf6z6v">
+                    <label data-on="键在" data-off="已故" __cid="cZf6z6v" class="cZf6z6v">
+                      <span __cid="cZf6z6v" class="cZf6z6v"></span>
+                    </label>
+                  </span> 
+                </div> 
+              </li>  
+              <li class="list-group-item cZf6z6v" xid="li1" __cid="cZf6z6v"> 
+                <div component="$model/UI2/system/components/justep/button/buttonGroup" class="btn-group btn-group-justified cZf6z6v" xid="buttonGroup2" data-bind="component:{name:'$model/UI2/system/components/justep/button/buttonGroup'}" data-config="{&#34;tabbed&#34;:true}" __cid="cZf6z6v"> 
+                  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cZf6z6v" xid="btnEditX" style="background-color:rgb(234, 65, 60);;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:btnEditMemberDetail" data-config="{&#34;label&#34;:&#34;编辑资料&#34;}" __cid="cZf6z6v"> 
+                    <i xid="i13" __cid="cZf6z6v" class="cZf6z6v"></i>  
+                    <span xid="span15" __cid="cZf6z6v" class="cZf6z6v">编辑资料</span> 
+                  </a>  
+                  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cZf6z6v" xid="button6" style="background-color:rgb(234, 65, 60);;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:btnDeleteClick" data-config="{&#34;label&#34;:&#34;删除关系&#34;}" __cid="cZf6z6v"> 
+                    <i xid="i14" __cid="cZf6z6v" class="cZf6z6v"></i>  
+                    <span xid="span24" __cid="cZf6z6v" class="cZf6z6v">删除关系</span> 
+                  </a>  
+                  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cZf6z6v" xid="btnCloseX" style="background-color:rgb(234, 65, 60);;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:btnCloseClick" data-config="{&#34;label&#34;:&#34;返回族谱&#34;}" __cid="cZf6z6v"> 
+                    <i xid="i15" __cid="cZf6z6v" class="cZf6z6v"></i>  
+                    <span xid="span26" __cid="cZf6z6v" class="cZf6z6v">返回族谱</span> 
+                  </a> 
+                </div> 
+              </li> 
+            </ul> 
+          </div>  
+          <div id="divEditMember" __cid="cZf6z6v" class="cZf6z6v"> 
+            <ul xid="ul1" class="list-group cZf6z6v" style="margin-top:20px;margin-left:20px;margin-right:20px;" __cid="cZf6z6v"> 
+              <li class="list-group-item cZf6z6v" xid="li1" __cid="cZf6z6v"> 
+                <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cZf6z6v" xid="labelReleation" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cZf6z6v"> 
+                  <label class="x-label cZf6z6v" xid="label1" __cid="cZf6z6v">他的</label>  
+                  <select component="$model/UI2/system/components/justep/select/select" class="form-control x-edit cZf6z6v" xid="inReleation" data-bind="component:{name:'$model/UI2/system/components/justep/select/select'},options:data1.datas,optionsValue:'dname',optionsText:'name',optionsAfterRender2:$model.__justep__.selectOptionsAfterRender.bind($model,$element),optionsBeforeRender:$model.__justep__.selectOptionsBeforeRender.bind($model,$element)" __cid="cZf6z6v"></select> 
+                </div>  
+                <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cZf6z6v" xid="labelEdit3" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cZf6z6v"> 
+                  <label class="x-label cZf6z6v" xid="label3" __cid="cZf6z6v">姓名</label>  
+                  <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cZf6z6v" xid="inName" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="cZf6z6v"> 
+                </div>  
+                <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cZf6z6v" xid="labelEdit2" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cZf6z6v"> 
+                  <label class="x-label cZf6z6v" xid="label2" __cid="cZf6z6v">性别</label>  
+                  <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cZf6z6v" xid="inputSex" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" data-config="{&#34;readonly&#34;:true,&#34;valueUpdateMode&#34;:&#34;input&#34;}" __cid="cZf6z6v">  
+                  <span component="$model/UI2/system/components/justep/button/toggle" class="x-toggle cZf6z6v" xid="inSex" ON="男" OFF="女" checked="true" checkedValue="男" uncheckedValue="女" value="男" data-config="{&#34;checked&#34;:true,&#34;checkedValue&#34;:&#34;男&#34;,&#34;disabled&#34;:false,&#34;label&#34;:{&#34;off&#34;:&#34;女&#34;,&#34;on&#34;:&#34;男&#34;},&#34;uncheckedValue&#34;:&#34;女&#34;,&#34;value&#34;:&#34;男&#34;}" data-bind="component:{name:'$model/UI2/system/components/justep/button/toggle'}" data-events="onChange:inSexChange" __cid="cZf6z6v">
+                    <input type="checkbox" value="男" __cid="cZf6z6v" class="cZf6z6v">
+                    <label data-on="男" data-off="女" __cid="cZf6z6v" class="cZf6z6v">
+                      <span __cid="cZf6z6v" class="cZf6z6v"></span>
+                    </label>
+                  </span> 
+                </div>  
+                <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cZf6z6v" xid="labelEdit3" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cZf6z6v"> 
+                  <label class="x-label cZf6z6v" xid="label3" __cid="cZf6z6v">手机号</label>  
+                  <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cZf6z6v" xid="inPhone" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="cZf6z6v"> 
+                </div>  
+                <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cZf6z6v" xid="labelEdit3" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cZf6z6v"> 
+                  <label class="x-label cZf6z6v" xid="label3" __cid="cZf6z6v">出生</label>  
+                  <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cZf6z6v" xid="inBirth" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'},value:&#34;1985-01-01&#34;" data-config="{&#34;dataType&#34;:&#34;Date&#34;,&#34;format&#34;:&#34;yyyy-MM-dd&#34;}" __cid="cZf6z6v"> 
+                </div>  
+                <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cZf6z6v" xid="labelEdit2" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cZf6z6v"> 
+                  <label class="x-label cZf6z6v" xid="label2" __cid="cZf6z6v">健在</label>  
+                  <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cZf6z6v" xid="inputLiving" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" data-config="{&#34;readonly&#34;:true,&#34;valueUpdateMode&#34;:&#34;input&#34;}" __cid="cZf6z6v">  
+                  <span component="$model/UI2/system/components/justep/button/toggle" class="x-toggle cZf6z6v" xid="inLiving" ON="健在" OFF="已故" checked="true" value="1" checkedValue="1" uncheckedValue="0" data-config="{&#34;checked&#34;:true,&#34;checkedValue&#34;:&#34;1&#34;,&#34;disabled&#34;:false,&#34;label&#34;:{&#34;off&#34;:&#34;已故&#34;,&#34;on&#34;:&#34;健在&#34;},&#34;uncheckedValue&#34;:&#34;0&#34;,&#34;value&#34;:&#34;1&#34;}" data-bind="component:{name:'$model/UI2/system/components/justep/button/toggle'}" data-events="onChange:inLivingChange" __cid="cZf6z6v">
+                    <input type="checkbox" value="1" __cid="cZf6z6v" class="cZf6z6v">
+                    <label data-on="健在" data-off="已故" __cid="cZf6z6v" class="cZf6z6v">
+                      <span __cid="cZf6z6v" class="cZf6z6v"></span>
+                    </label>
+                  </span> 
+                </div> 
+              </li>  
+              <li __cid="cZf6z6v" class="cZf6z6v"></li>  
+              <li __cid="cZf6z6v" class="cZf6z6v"></li>  
+              <li class="list-group-item cZf6z6v" __cid="cZf6z6v"> 
+                <div component="$model/UI2/system/components/justep/button/buttonGroup" class="btn-group btn-group-justified cZf6z6v" xid="buttonGroup3" data-bind="component:{name:'$model/UI2/system/components/justep/button/buttonGroup'}" data-config="{&#34;tabbed&#34;:true}" __cid="cZf6z6v"> 
+                  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cZf6z6v" xid="btnSubmitX" style="background-color:rgb(234, 65, 60);" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:btnSubmitClick" data-config="{&#34;label&#34;:&#34;提交&#34;}" __cid="cZf6z6v"> 
+                    <i xid="i16" __cid="cZf6z6v" class="cZf6z6v"></i>  
+                    <span xid="span27" __cid="cZf6z6v" class="cZf6z6v">提交</span> 
+                  </a>  
+                  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cZf6z6v" xid="btnCloseXX" style="background-color:rgb(234, 65, 60);;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:btnCloseClick" data-config="{&#34;label&#34;:&#34;关闭&#34;}" __cid="cZf6z6v"> 
+                    <i xid="i17" __cid="cZf6z6v" class="cZf6z6v"></i>  
+                    <span xid="span28" __cid="cZf6z6v" class="cZf6z6v">关闭</span> 
+                  </a> 
+                </div> 
+              </li> 
+            </ul> 
+          </div> 
+        </div>  
+        <div class="x-contents-content backcolor cZf6z6v" xid="foundContent" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cZf6z6v"> 
+          <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar title cZf6z6v" xid="titleBar1" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" __cid="cZf6z6v"> 
+            <div class="x-titlebar-title cZf6z6v" xid="title1" __cid="cZf6z6v">我的预约</div> 
+          </div>  
+          <div class="condition cZf6z6v" __cid="cZf6z6v"> 
+            <div class="chaxun cZf6z6v" __cid="cZf6z6v"> 
+              <span class="span_left  cZf6z6v" __cid="cZf6z6v">地区</span>  
+              <span class="span_right font-color cZf6z6v" __cid="cZf6z6v">吉林省</span>  
+              <a __cid="cZf6z6v" class="cZf6z6v"> 
+                <img src="@justepContextPath@/v_6257_nol_zh_CNs_desktopd_pc/zupu/img/sj.png" alt="" xid="image2" __cid="cZf6z6v" class="cZf6z6v"> 
+              </a> 
+            </div>  
+            <div class="chaxun cZf6z6v" __cid="cZf6z6v" data-bind="event:{click:$model._callModelFn.bind($model, 'bumenclick')}"> 
+              <span class="span_left cZf6z6v" id="bumen_leixing" __cid="cZf6z6v">部门</span>  
+              <span class="span_right font-color cZf6z6v" id="bumen_classification" __cid="cZf6z6v">全部</span>  
+              <a __cid="cZf6z6v" class="cZf6z6v"> 
+                <img src="@justepContextPath@/v_6257_nol_zh_CNs_desktopd_pc/zupu/img/sj.png" alt="" __cid="cZf6z6v" class="cZf6z6v"> 
+              </a> 
+            </div>  
+            <div class="chaxun cZf6z6v" __cid="cZf6z6v"> 
+              <span class="span_left cZf6z6v" __cid="cZf6z6v">关键词</span>  
+              <input type="text" placeholder="请输入关键词,如教育等" class="input_css cZf6z6v" __cid="cZf6z6v"> 
+            </div>  
+            <div class="chaxun cZf6z6v" style="padding-left:8%; padding-right:8%;" __cid="cZf6z6v"> 
+              <div class="btn_ cZf6z6v" __cid="cZf6z6v" data-bind="event:{click:$model._callModelFn.bind($model, 'search')}">查询</div> 
+            </div> 
+          </div> 
+        </div>  
+        <div class="x-contents-content cZf6z6v" xid="userContent" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" data-events="onActive:userContentActive;onInactive:userContentInactive" __cid="cZf6z6v"> 
+          <div component="$model/UI2/system/components/bootstrap/carousel/carousel" class="x-carousel carousel x-banner  cZf6z6v" xid="carousel1" data-bind="component:{name:'$model/UI2/system/components/bootstrap/carousel/carousel'}" __cid="cZf6z6v"> 
+            <div class="x-contents carousel-inner cZf6z6v" role="listbox" component="$model/UI2/system/components/justep/contents/contents" xid="bannerContents" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&#34;active&#34;:0,&#34;slidable&#34;:true,&#34;swipe&#34;:true,&#34;wrap&#34;:true}" __cid="cZf6z6v"> 
+              <div class="top active cZf6z6v" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'},event:{click:$model._callModelFn.bind($model, 'jump_edit')}" __cid="cZf6z6v"> 
+                <div class="image_box cZf6z6v" __cid="cZf6z6v"> 
+                  <img src="@justepContextPath@/v_6257_nol_zh_CNs_desktopd_pc/zupu/img/women.png" class="image_paved cZf6z6v" id="image_head" __cid="cZf6z6v"> 
+                </div>  
+                <div class="media_right cZf6z6v" __cid="cZf6z6v"> 
+                  <span class="media-top size_name size-color cZf6z6v" id="zupuname" __cid="cZf6z6v">某某某</span>  
+                  <span class="size_normal  size-color  cZf6z6v" id="introduction" __cid="cZf6z6v">设置我的个人信息...</span> 
+                </div> 
+              </div> 
+            </div> 
+          </div>  
+          <div class="middle cZf6z6v" __cid="cZf6z6v"> 
+            <div class="click_box cZf6z6v" __cid="cZf6z6v"> 
+              <div class="image_container cZf6z6v" __cid="cZf6z6v"> 
+                <img src="@justepContextPath@/v_6257_nol_zh_CNs_desktopd_pc/zupu/img/lishi.png" alt="" xid="image1" class=" image_container_element cZf6z6v" __cid="cZf6z6v"> 
+              </div>  
+              <span class="size_normal1 font_weight cZf6z6v" __cid="cZf6z6v">历史事项</span> 
+            </div>  
+            <div class="click_box cZf6z6v" __cid="cZf6z6v"> 
+              <div class="image_container cZf6z6v" __cid="cZf6z6v"> 
+                <img src="@justepContextPath@/v_6257_nol_zh_CNs_desktopd_pc/zupu/img/daishen.png" alt="" xid="image1" class=" image_container_element cZf6z6v" __cid="cZf6z6v"> 
+              </div>  
+              <span class="size_normal1 font_weight cZf6z6v" __cid="cZf6z6v">待审事项</span> 
+            </div>  
+            <div class="click_box cZf6z6v" __cid="cZf6z6v"> 
+              <div class="image_container cZf6z6v" __cid="cZf6z6v"> 
+                <img src="@justepContextPath@/v_6257_nol_zh_CNs_desktopd_pc/zupu/img/jieguo.jpg" alt="" xid="image1" class=" image_container_element cZf6z6v" __cid="cZf6z6v"> 
+              </div>  
+              <span class="size_normal1 font_weight cZf6z6v" __cid="cZf6z6v">审核结果</span> 
+            </div>  
+            <div class="click_box cZf6z6v" __cid="cZf6z6v"> 
+              <div class="image_container cZf6z6v" __cid="cZf6z6v"> 
+                <img src="@justepContextPath@/v_6257_nol_zh_CNs_desktopd_pc/zupu/img/xiaoxi.png" alt="" xid="image1" class=" image_container_element cZf6z6v" __cid="cZf6z6v"> 
+              </div>  
+              <span class="size_normal1 font_weight cZf6z6v" __cid="cZf6z6v">我的消息</span> 
+            </div> 
+          </div>  
+          <div style="border-bottom: solid 0.5vw rgba(242, 242, 242, 1)" __cid="cZf6z6v" class="cZf6z6v"> 
+            <div class="jump_table cZf6z6v" __cid="cZf6z6v"> 
+              <span class="size_normal1 cZf6z6v" __cid="cZf6z6v">我的二维码</span>  
+              <div __cid="cZf6z6v" class="cZf6z6v"> 
+                <img src="@justepContextPath@/v_6257_nol_zh_CNs_desktopd_pc/zupu/img/u13.png" clas="" __cid="cZf6z6v" class="cZf6z6v"> 
+              </div> 
+            </div>  
+            <div class="jump_table cZf6z6v" __cid="cZf6z6v" data-bind="event:{click:$model._callModelFn.bind($model, 'wdzj')}"> 
+              <span class="size_normal1 cZf6z6v" __cid="cZf6z6v">我的证件</span>  
+              <div __cid="cZf6z6v" class="cZf6z6v"> 
+                <img src="@justepContextPath@/v_6257_nol_zh_CNs_desktopd_pc/zupu/img/u13.png" clas="" __cid="cZf6z6v" class="cZf6z6v"> 
+              </div> 
+            </div>  
+            <div class="jump_table cZf6z6v" __cid="cZf6z6v"> 
+              <span class="size_normal1 cZf6z6v" __cid="cZf6z6v">我的政务信息</span>  
+              <div __cid="cZf6z6v" class="cZf6z6v"> 
+                <img src="@justepContextPath@/v_6257_nol_zh_CNs_desktopd_pc/zupu/img/u13.png" clas="" __cid="cZf6z6v" class="cZf6z6v"> 
+              </div> 
+            </div>  
+            <div class="jump_table cZf6z6v" __cid="cZf6z6v"> 
+              <span class="size_normal1 cZf6z6v" __cid="cZf6z6v">我的收藏</span>  
+              <div __cid="cZf6z6v" class="cZf6z6v"> 
+                <img src="@justepContextPath@/v_6257_nol_zh_CNs_desktopd_pc/zupu/img/u13.png" clas="" __cid="cZf6z6v" class="cZf6z6v"> 
+              </div> 
+            </div>  
+            <div class="jump_table cZf6z6v" __cid="cZf6z6v"> 
+              <span class="size_normal1 cZf6z6v" __cid="cZf6z6v">我的建议</span>  
+              <div __cid="cZf6z6v" class="cZf6z6v"> 
+                <img src="@justepContextPath@/v_6257_nol_zh_CNs_desktopd_pc/zupu/img/u13.png" clas="" __cid="cZf6z6v" class="cZf6z6v"> 
+              </div> 
+            </div> 
+          </div>  
+          <div class="jump_table margin_top cZf6z6v" __cid="cZf6z6v" data-bind="event:{click:$model._callModelFn.bind($model, 'div9Click')}"> 
+            <span class="size_normal1 cZf6z6v" __cid="cZf6z6v">设置</span>  
+            <div __cid="cZf6z6v" class="cZf6z6v"> 
+              <img src="@justepContextPath@/v_6257_nol_zh_CNs_desktopd_pc/zupu/img/u13.png" clas="" __cid="cZf6z6v" class="cZf6z6v"> 
+            </div> 
+          </div> 
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-bottom cZf6z6v" xid="bottom1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cZf6z6v"> 
+      <div component="$model/UI2/system/components/justep/button/buttonGroup" class="btn-group btn-group-justified x-card x-wangyi cZf6z6v" xid="buttonGroup1" data-bind="component:{name:'$model/UI2/system/components/justep/button/buttonGroup'}" data-config="{&#34;tabbed&#34;:true}" __cid="cZf6z6v"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top active cZf6z6v" xid="newsBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;icon&#34;:&#34;icon-android-note&#34;,&#34;label&#34;:&#34;首页&#34;,&#34;target&#34;:&#34;newsContent&#34;}" __cid="cZf6z6v"> 
+          <i xid="i4" class="icon icon-android-note cZf6z6v" __cid="cZf6z6v"></i>  
+          <span xid="span6" __cid="cZf6z6v" class="cZf6z6v">首页</span> 
+        </a>  
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top cZf6z6v" xid="readBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;icon&#34;:&#34;icon-ios7-bookmarks-outline&#34;,&#34;label&#34;:&#34;族谱&#34;,&#34;target&#34;:&#34;readContent&#34;}" __cid="cZf6z6v"> 
+          <i xid="i3" class="icon icon-ios7-bookmarks-outline cZf6z6v" __cid="cZf6z6v"></i>  
+          <span xid="span5" __cid="cZf6z6v" class="cZf6z6v">族谱</span> 
+        </a>  
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top cZf6z6v" xid="foundBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;icon&#34;:&#34;icon-android-locate&#34;,&#34;label&#34;:&#34;预约&#34;,&#34;target&#34;:&#34;foundContent&#34;}" __cid="cZf6z6v"> 
+          <i xid="i3" class="icon icon-android-locate cZf6z6v" __cid="cZf6z6v"></i>  
+          <span xid="span4" __cid="cZf6z6v" class="cZf6z6v">预约</span> 
+        </a>  
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top cZf6z6v" xid="userBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;icon&#34;:&#34;icon-ios7-contact-outline&#34;,&#34;label&#34;:&#34;我的&#34;,&#34;target&#34;:&#34;userContent&#34;}" __cid="cZf6z6v"> 
+          <i xid="i6" class="icon icon-ios7-contact-outline cZf6z6v" __cid="cZf6z6v"></i>  
+          <span xid="span71" __cid="cZf6z6v" class="cZf6z6v">我的</span> 
+        </a> 
+      </div> 
+    </div>  
+    <style __cid="cZf6z6v" class="cZf6z6v">.x-panel.pcaqaqia-iosstatusbar >.x-panel-top {height: 0px;}.x-panel.pcaqaqia-iosstatusbar >.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.pcaqaqia-iosstatusbar >.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcaqaqia-iosstatusbar >.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcaqaqia-iosstatusbar >.x-panel-top {height: 0px;}.iosstatusbar .x-panel.pcaqaqia-iosstatusbar >.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcaqaqia-iosstatusbar >.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcaqaqia-iosstatusbar >.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcaqaqia-iosstatusbar >.x-panel-content {top: 0px;}</style>
+  </div>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model1" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cZf6z6v" class="cZf6z6v"></div>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="dlgQrCode" style="top:679px;left:410px;" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-config="{&#34;src&#34;:&#34;$model/UI2/zupu/my/myQRcode.w&#34;}" __cid="cZf6z6v" class="cZf6z6v">
+    <div class="x-dialog-overlay cZf6z6v" __cid="cZf6z6v"></div>
+    <div class="x-dialog cZf6z6v" style="display:none;" __cid="cZf6z6v">
+      <div class="x-dialog-title cZf6z6v" __cid="cZf6z6v">
+        <button class="close cZf6z6v" __cid="cZf6z6v">
+          <span __cid="cZf6z6v" class="cZf6z6v">×</span>
+        </button>
+        <div class="x-dialog-title-text cZf6z6v" __cid="cZf6z6v"></div>
+      </div>
+      <div class="x-dialog-body cZf6z6v" __cid="cZf6z6v"></div>
+    </div>
+  </span> 
+</div>

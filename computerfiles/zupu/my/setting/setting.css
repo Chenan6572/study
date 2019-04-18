@@ -1,0 +1,39 @@
+.first_content{
+    margin-top: 1rem;
+    width: 100%;
+    background-color: white;
+}
+.up_message{
+    font-size: 1.6rem;
+    font-weight: 500;
+    width: 100%;
+    height: 6rem;
+    line-height: 3.8rem;
+    padding: 1rem 1.3rem;  
+    background:white;
+    font-weight: 100;
+   
+    background:white;
+    border-bottom: 1px solid rgba(242, 242, 242, 1);
+}
+.second_content,
+.third_content,
+.forth_content{
+    margin-top: 1.5rem;
+    width: 100%;
+    background-color: white;
+}
+.forth_content{
+    margin: 3rem 0;
+    text-align: center;
+}
+.forth_content span{
+    text-align: center;
+    margin: 0 auto;
+}
+img{
+    width: 1rem;
+    height: 1.5rem;
+    float: right;
+    margin-top: 1.3rem;
+}

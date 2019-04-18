@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/window/window" design="device:m;" xid="window" class="window c6fEnI3" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="c6fEnI3" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">  
+  <style xmlns="" xmlns:xhtml="http://www.w3.org/1999/xhtml">.first_content.c6fEnI3{margin-top: 1rem; width: 100%; background-color: white} .up_message.c6fEnI3{font-size: 1.6rem; font-weight: 500; width: 100%; height: 6rem; line-height: 3.8rem; padding: 1rem 1.3rem; background: white; font-weight: 100; background: white; border-bottom: 1px solid rgba(242, 242, 242, 1)} .second_content.c6fEnI3, .third_content.c6fEnI3, .forth_content.c6fEnI3{margin-top: 1.5rem; width: 100%; background-color: white} .forth_content.c6fEnI3{margin: 3rem 0; text-align: center} .forth_content.c6fEnI3 span.c6fEnI3{text-align: center; margin: 0 auto} img.c6fEnI3{width: 1rem; height: 1.5rem; float: right; margin-top: 1.3rem}</style>  
+  <div xmlns="" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="c6fEnI3" class="c6fEnI3"/>  
+  <div xmlns="" component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcuYfqYn-iosstatusbar c6fEnI3" style="background-color:rgba(242, 242, 242, 1)" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="c6fEnI3"> 
+    <div class="x-panel-top c6fEnI3" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="c6fEnI3"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" style="background-color:rgba(231, 64, 58, 1)" class="x-titlebar c6fEnI3" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;设置&quot;}" __cid="c6fEnI3"> 
+        <div class="x-titlebar-left c6fEnI3" __cid="c6fEnI3"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon c6fEnI3" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'window.close'}" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;,&quot;label&quot;:&quot;&quot;}" __cid="c6fEnI3"> 
+            <i class="icon-chevron-left c6fEnI3" __cid="c6fEnI3"/>  
+            <span __cid="c6fEnI3" class="c6fEnI3"/> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title c6fEnI3" __cid="c6fEnI3">设置</div>  
+        <div class="x-titlebar-right  c6fEnI3" __cid="c6fEnI3"> 
+          <div class="empty c6fEnI3" __cid="c6fEnI3"/> 
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content c6fEnI3" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="c6fEnI3"> 
+      <div class="first_content c6fEnI3" __cid="c6fEnI3"> 
+        <div class="up_message c6fEnI3" __cid="c6fEnI3" data-bind="event:{click:$model._callModelFn.bind($model, 'perinfo')}">个人信息
+          <img src="@justepContextPath@/v_9f62c958f6f9455182cb178b8f7ca991l_zh_CNs_d_m/zupu/img/u13.png" alt="" __cid="c6fEnI3" class="c6fEnI3"/> 
+        </div>  
+        <div class="up_message c6fEnI3" __cid="c6fEnI3" data-bind="event:{click:$model._callModelFn.bind($model, 'phone')}">联系方式
+          <img src="@justepContextPath@/v_e5f1eb2685a94ac093b2ff08e7036adcl_zh_CNs_d_m/zupu/img/u13.png" alt="" __cid="c6fEnI3" class="c6fEnI3"/> 
+        </div>  
+        <div class="up_message c6fEnI3" __cid="c6fEnI3" data-bind="event:{click:$model._callModelFn.bind($model, 'selecttype')}">修改密码
+          <img src="@justepContextPath@/v_ad3c7e911d634f9096ef212d385af54cl_zh_CNs_d_m/zupu/img/u13.png" alt="" __cid="c6fEnI3" class="c6fEnI3"/> 
+        </div> 
+      </div>  
+      <div class="second_content c6fEnI3" __cid="c6fEnI3"> 
+        <div class="up_message c6fEnI3" __cid="c6fEnI3">消息与推送通知
+          <img src="@justepContextPath@/v_14e90ed6bacd4765ab694156da07e4f1l_zh_CNs_d_m/zupu/img/u13.png" alt="" __cid="c6fEnI3" class="c6fEnI3"/> 
+        </div>  
+        <div class="up_message c6fEnI3" __cid="c6fEnI3">清理缓存
+          <img src="@justepContextPath@/v_c27bd0178a9846c78e0d1e7d8a10e204l_zh_CNs_d_m/zupu/img/u13.png" alt="" __cid="c6fEnI3" class="c6fEnI3"/> 
+        </div> 
+      </div>  
+      <div class="third_content c6fEnI3" __cid="c6fEnI3"> 
+        <div class="up_message c6fEnI3" __cid="c6fEnI3">关于我们
+          <img src="@justepContextPath@/v_f8544af6909d4552a7a7ce39cd53de79l_zh_CNs_d_m/zupu/img/u13.png" alt="" __cid="c6fEnI3" class="c6fEnI3"/> 
+        </div> 
+      </div>  
+      <div class="forth_content c6fEnI3" __cid="c6fEnI3"> 
+        <div class="up_message c6fEnI3" __cid="c6fEnI3" data-bind="event:{click:$model._callModelFn.bind($model, 'setting')}"> 
+          <span __cid="c6fEnI3" class="c6fEnI3">退出登录</span> 
+        </div> 
+      </div> 
+    </div>  
+    <style __cid="c6fEnI3" class="c6fEnI3">.x-panel.pcuYfqYn-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcuYfqYn-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcuYfqYn-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcuYfqYn-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcuYfqYn-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcuYfqYn-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcuYfqYn-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcuYfqYn-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcuYfqYn-iosstatusbar &gt;.x-panel-content {top: 48px;}</style> 
+  </div> 
+</div>

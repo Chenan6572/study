@@ -1,0 +1,41 @@
+.input-group-addon {
+	border: none;
+	background-color: transparent;
+}
+
+.form-control {
+	border: none;
+}
+
+.x-panel-content>.list-group-item {
+	border: none;
+}
+
+.spacing {
+	margin-bottom: 10px;
+}
+
+.x-toggle {
+	margin-top: -8px;
+}
+
+.input-group {
+	padding-left: 40px;
+}
+
+.aa {
+	/*margin-left:50px;*/
+	
+}
+.clear:after {
+	content: '';
+	display: block;
+	clear: both;
+	height: 0;
+	overflow: hidden;
+	visibility: hidden;
+}
+
+.clear {
+	zoom: 1;
+}

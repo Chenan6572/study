@@ -1,0 +1,46 @@
+define(function(require) {
+	var $ = require("jquery");
+	var justep = require("$UI/system/lib/justep");
+
+	var Model = function() {
+		this.callParent();
+	};
+	var is_pass;
+	// $UI/zupu/img/sh_fail.png 未通过图片
+	// $UI/zupu/img/sh_succ.png 未通过图片
+	// $UI/zupu/img/sh_ongo.png 审核中图片
+	if (is_pass === 0) {
+		document.getElementById('album').src = '$UI/zupu/img/fail_ongo.png';
+		document.getElementById('material').style.color = "rgb(56, 137, 255)";
+		document.getElementById('is_color_2').style.color = "rgb(56, 137, 255)";
+		document.getElementById('is_color_3').style.color = "rgb(56, 137, 255)";
+	} else if (is_pass === 1) {
+		document.getElementById('album').src = '$UI/zupu/img/sh_succ.png';
+		document.getElementById('is_color_1').style.color = "red";
+		document.getElementById('is_color_2').style.color = "red";
+		document.getElementById('is_color_3').style.color = "red";
+	} else if (is_pass === 2) {
+		document.getElementById('album').src = '$UI/zupu/img/sh_ongo.png';
+		document.getElementById('is_color_1').style.color = "#999999";
+		document.getElementById('is_color_2').style.color = "#999999";
+		document.getElementById('is_color_3').style.color = "#999999";
+	}
+
+	// 跳转事项页面
+	Model.prototype.matter = function(event) {
+		justep.Shell.showPage("matter");
+	};
+	// 跳转已上传的材料
+	Model.prototype.material = function(event) {
+		justep.Shell.showPage("material");
+	};
+	return Model;
+});
+
+// 自定义审核详情功能弹窗
+// onclick matter
+function matter() {
+	myWindow = window.open('');
+	myWindow.document.write("这是一个窗体");
+	myWindow.focus();
+};

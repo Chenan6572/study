@@ -1,0 +1,94 @@
+define(function(require) {
+	var $ = require("jquery");
+	var justep = require("$UI/system/lib/justep");
+
+	var Model = function() {
+		this.callParent();
+	};
+
+	// 跳转个人信息页
+	Model.prototype.div1Click = function(event) {
+		justep.Shell.showPage("jibenxinxi");
+
+	};
+	// 绑定手机号界面
+	Model.prototype.div2Click = function(event) {
+		justep.Shell.showPage("bindphone");
+	};
+	// 编辑户籍信息
+	Model.prototype.div3Click = function(event) {
+		justep.Shell.showPage("bindhuji");
+	};
+	// 编辑教育信息
+	Model.prototype.div4Click = function(event) {
+		justep.Shell.showPage("bindedu");
+	};
+	// 编辑工作经历
+	Model.prototype.div5Click = function(event) {
+		justep.Shell.showPage("bindwork");
+	};
+	// 添加教育信息
+	Model.prototype.sumedu = function(event) {
+		justep.Shell.showPage("bindedu");
+	};
+	// 添加工作经历
+	Model.prototype.sumwork = function(event) {
+		justep.Shell.showPage("bindwork");
+	};
+	// json数据
+	 testData = [ {
+		fschool_name : '北华大学',
+		fschool_start_data : '1997',
+		fschool_end_data : '2000',
+		frelated_major : '软件工程',
+		feducation : '本科',
+	}, {
+		fschool_name : '55555',
+		fschool_start_data : '201309',
+		fschool_end_data : '201507',
+		frelated_major : '222',
+		feducation : '3333',
+	} ];
+
+	// 访问后台数据
+	var loginName = localStorage.getItem("loginName");
+
+	$.ajax({
+		headers : {
+			Authorization : "Bearer " + localStorage.getItem('Token'),
+		},
+		url : 'http://10.10.1.232:8088/YProject/api/query?login_name=' + loginName,
+		processData : false,
+		cache : false,
+		async : true,
+		global : false,
+		contentType : "application/json; charset=utf-8",
+		datatype : "json",
+		type : 'post',
+		success : function(res) {
+			// 打印数据
+			console.log(res.data);
+			// 测试
+			$("#name").val(3333);
+
+			/* $("#name").html(res.data.name); */
+			$("#doornum").html(res.data.doornum);
+			$("#birthday").html(res.data.birthday);
+			$("#address").html(res.data.address);
+			$("#phone").html(res.data.phone);
+			$("#register_category").html(res.data.register_category);
+			localStorage.setItem("id", res.data.id);
+		},
+		error : function(res) {
+			justep.Util.hint(res.message, {
+				type : 'danger',
+			});
+			console.log("测试失败");
+		}
+	});
+	var Model = function() {
+		this.callParent();
+		this.accountData = testData;
+	};
+	return Model;
+});

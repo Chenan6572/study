@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<div component="$model/UI2/system/components/justep/window/window" design="device:m;" xid="window" class="window cYBN7fe" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cYBN7fe" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">
+  <style>.clear.cYBN7fe:after{content: ""; display: block; clear: both; height: 0; overflow: hidden; visibility: hidden} .clear.cYBN7fe{zoom: 1} .up_content.cYBN7fe{width: 100%; padding: 0.5rem 2rem} .inputs.cYBN7fe{margin-top: 2rem; width: 100%; height: 5rem; direction: ltr; border: 1px solid rgba(201, 201, 201, 1); border-radius: 0.5rem} .inputs.cYBN7fe:hover{border: 1px solid rgba(231, 64, 58, 1); box-shadow: 3px 3px 5px rgba(255, 215, 215, 1)} input.cYBN7fe{border-radius: 1rem; margin-top: 0.5rem; margin-left: 0.5rem; width: 98%; height: 4rem; border: none; outline: none; font-size: 1.6rem} img.cYBN7fe{width: 1.5rem; height: 1.5rem} .tips.cYBN7fe{padding: 1rem 1rem 1rem 0.5rem} .tips.cYBN7fe span.cYBN7fe{color: rgb(153, 153, 153)} .down_content.cYBN7fe{width: 80%; height: 4rem; background-color: rgba(231, 64, 58, 1); border-radius: 2rem; text-align: center; margin: 5rem auto} .down_content.cYBN7fe span.cYBN7fe{font-size: 2rem; color: white; margin: 0 auto; line-height: 4rem}</style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cYBN7fe" class="cYBN7fe"></div>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcQFbuEv-iosstatusbar cYBN7fe" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cYBN7fe"> 
+    <div class="x-panel-top cYBN7fe" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cYBN7fe"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" style="background-color:rgba(231, 64, 58, 1)" class="x-titlebar cYBN7fe" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&#34;title&#34;:&#34;修改密码&#34;}" __cid="cYBN7fe"> 
+        <div class="x-titlebar-left cYBN7fe" __cid="cYBN7fe"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cYBN7fe" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'window.close'}" data-config="{&#34;icon&#34;:&#34;icon-chevron-left&#34;,&#34;label&#34;:&#34;&#34;}" __cid="cYBN7fe"> 
+            <i class="icon-chevron-left cYBN7fe" __cid="cYBN7fe"></i>  
+            <span __cid="cYBN7fe" class="cYBN7fe"></span> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cYBN7fe" __cid="cYBN7fe">修改密码</div>  
+        <div class="x-titlebar-right  cYBN7fe" __cid="cYBN7fe">
+          <div class="empty cYBN7fe" __cid="cYBN7fe"></div>
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content cYBN7fe" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cYBN7fe"> 
+      <div class="up_content cYBN7fe" __cid="cYBN7fe"> 
+        <div class="inputs cYBN7fe" __cid="cYBN7fe"> 
+          <input type="text" placeholder="请输入原密码" id="old_pwd" __cid="cYBN7fe" class="cYBN7fe"> 
+        </div>  
+        <div class="inputs cYBN7fe" __cid="cYBN7fe"> 
+          <input type="password" placeholder="请输入新密码" id="new_pwd" __cid="cYBN7fe" class="cYBN7fe"> 
+        </div>  
+        <div class="inputs cYBN7fe" __cid="cYBN7fe"> 
+          <input type="password" placeholder="请确认新密码" id="sure_new_pwd" __cid="cYBN7fe" class="cYBN7fe"> 
+        </div>  
+        <div class="tips cYBN7fe" __cid="cYBN7fe"> 
+          <img src="@justepContextPath@/v_6257_nol_zh_CNs_desktopd_pc/zupu/img/u19.png" __cid="cYBN7fe" class="cYBN7fe">  
+          <span __cid="cYBN7fe" class="cYBN7fe">密码长度规则说明</span> 
+        </div> 
+      </div>  
+      <div class="down_content cYBN7fe" __cid="cYBN7fe" data-bind="event:{click:$model._callModelFn.bind($model, 'savebtn')}"> 
+        <span __cid="cYBN7fe" class="cYBN7fe">确认修改密码</span> 
+      </div> 
+    </div>  
+    <style __cid="cYBN7fe" class="cYBN7fe">.x-panel.pcQFbuEv-iosstatusbar >.x-panel-top {height: 48px;}.x-panel.pcQFbuEv-iosstatusbar >.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcQFbuEv-iosstatusbar >.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcQFbuEv-iosstatusbar >.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcQFbuEv-iosstatusbar >.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcQFbuEv-iosstatusbar >.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcQFbuEv-iosstatusbar >.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcQFbuEv-iosstatusbar >.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcQFbuEv-iosstatusbar >.x-panel-content {top: 48px;}</style>
+  </div> 
+</div>

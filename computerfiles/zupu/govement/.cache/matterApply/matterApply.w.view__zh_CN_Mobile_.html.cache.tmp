@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/window/window" design="device:m;" xid="window" class="window ceqUJ7j" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="ceqUJ7j" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/bootstrap/table/table,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/data/baasData,$model/UI2/system/components/justep/panel/panel,">  
+  <style xmlns="" xmlns:xhtml="http://www.w3.org/1999/xhtml">null</style>  
+  <div xmlns="" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="ceqUJ7j" class="ceqUJ7j"/>  
+  <div xmlns="" component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pc7JNvme-iosstatusbar ceqUJ7j" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="ceqUJ7j"> 
+    <div class="x-panel-top ceqUJ7j" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="ceqUJ7j"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar ceqUJ7j" style="background-color:#FF0000;" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;预约填写&quot;}" __cid="ceqUJ7j"> 
+        <div class="x-titlebar-left ceqUJ7j" __cid="ceqUJ7j"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon ceqUJ7j" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'window.close'}" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;,&quot;label&quot;:&quot;&quot;}" __cid="ceqUJ7j"> 
+            <i class="icon-chevron-left ceqUJ7j" __cid="ceqUJ7j"/>  
+            <span __cid="ceqUJ7j" class="ceqUJ7j"/> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title ceqUJ7j" __cid="ceqUJ7j">预约填写</div>  
+        <div class="x-titlebar-right  ceqUJ7j" __cid="ceqUJ7j"> 
+          <div class="empty ceqUJ7j" __cid="ceqUJ7j"/> 
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content ceqUJ7j" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="ceqUJ7j"> 
+      <div class="panel panel-default x-card ceqUJ7j" __cid="ceqUJ7j"> 
+        <div class="panel-heading clearfix ceqUJ7j" __cid="ceqUJ7j"> 
+          <h3 class="panel-title pull-left ceqUJ7j" __cid="ceqUJ7j">个人信息</h3> 
+        </div>  
+        <div class="modal-body ceqUJ7j" __cid="ceqUJ7j"> 
+          <form class="form-horizontal ceqUJ7j" __cid="ceqUJ7j"> 
+            <div class="form-group ceqUJ7j" __cid="ceqUJ7j"> 
+              <label class="col-xs-4 control-label ceqUJ7j" style="word-spacing:20px;padding-top: 12px;" __cid="ceqUJ7j">申请人</label>  
+              <div class="col-sm-8 col-xs-8 ceqUJ7j" __cid="ceqUJ7j"> 
+                <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit ceqUJ7j" xid="input9" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="ceqUJ7j"/> 
+              </div> 
+            </div>  
+            <div class="form-group ceqUJ7j" __cid="ceqUJ7j"> 
+              <label class="col-xs-4 control-label ceqUJ7j" style="word-spacing:20px;padding-top: 12px;" __cid="ceqUJ7j">申请人电话</label>  
+              <div class="col-sm-8 col-xs-8 ceqUJ7j" __cid="ceqUJ7j"> 
+                <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit ceqUJ7j" xid="input8" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="ceqUJ7j"/> 
+              </div> 
+            </div> 
+          </form> 
+        </div>  
+        <div class="modal-body ceqUJ7j" __cid="ceqUJ7j"> 
+          <table class="table table-bordered table-hover table-striped ceqUJ7j" component="$model/UI2/system/components/bootstrap/table/table" xid="table1" data-bind="component:{name:'$model/UI2/system/components/bootstrap/table/table'}" __cid="ceqUJ7j"> 
+            <thead xid="thead1" __cid="ceqUJ7j" class="ceqUJ7j"> 
+              <tr xid="tr1" __cid="ceqUJ7j" class="ceqUJ7j"> 
+                <th xid="col1" __cid="ceqUJ7j" class="ceqUJ7j">序号</th>  
+                <th xid="col2" __cid="ceqUJ7j" class="ceqUJ7j">材料名称</th>  
+                <th xid="col3" __cid="ceqUJ7j" class="ceqUJ7j">选择上传</th> 
+              </tr> 
+            </thead>  
+            <tbody xid="tbody1" __cid="ceqUJ7j" class="ceqUJ7j"> 
+              <tr xid="tr2" __cid="ceqUJ7j" class="ceqUJ7j"> 
+                <td xid="td1" __cid="ceqUJ7j" class="ceqUJ7j">1</td>  
+                <td xid="td2" __cid="ceqUJ7j" class="ceqUJ7j"> 
+                  <span class="label label-default ceqUJ7j" xid="label3" __cid="ceqUJ7j">身份证正面复印件</span> 
+                </td>  
+                <td xid="td3" __cid="ceqUJ7j" class="ceqUJ7j"> 
+                  <span xid="span2" __cid="ceqUJ7j" class="ceqUJ7j">上传</span>  
+                  <span xid="span3" style="margin-left:10px" __cid="ceqUJ7j" class="ceqUJ7j">说明</span>  
+                  <span xid="span4" style="margin-left:10px" __cid="ceqUJ7j" class="ceqUJ7j">删除</span> 
+                </td> 
+              </tr>  
+              <tr xid="tr2" __cid="ceqUJ7j" class="ceqUJ7j"> 
+                <td xid="td1" __cid="ceqUJ7j" class="ceqUJ7j">2</td>  
+                <td xid="td2" __cid="ceqUJ7j" class="ceqUJ7j"> 
+                  <span class="label label-default ceqUJ7j" xid="label3" __cid="ceqUJ7j">身份证反面复印件</span> 
+                </td>  
+                <td xid="td3" __cid="ceqUJ7j" class="ceqUJ7j"> 
+                  <span xid="span5" __cid="ceqUJ7j" class="ceqUJ7j">上传</span>  
+                  <span xid="span6" style="margin-left:10px" __cid="ceqUJ7j" class="ceqUJ7j">说明</span>  
+                  <span xid="span7" style="margin-left:10px" __cid="ceqUJ7j" class="ceqUJ7j">删除</span> 
+                </td> 
+              </tr> 
+            </tbody> 
+          </table> 
+        </div>  
+        <div class="panel-footer clearfix ceqUJ7j" __cid="ceqUJ7j"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-success btn-sm ceqUJ7j" xid="saveUserBtn" style="float: right;width:100px;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:saveUserBtnClick" data-config="{&quot;label&quot;:&quot;提交&quot;}" __cid="ceqUJ7j"> 
+            <i xid="i2" __cid="ceqUJ7j" class="ceqUJ7j"/>  
+            <span xid="span1" __cid="ceqUJ7j" class="ceqUJ7j">提交</span> 
+          </a> 
+        </div> 
+      </div> 
+    </div>  
+    <style __cid="ceqUJ7j" class="ceqUJ7j">.x-panel.pc7JNvme-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pc7JNvme-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pc7JNvme-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pc7JNvme-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pc7JNvme-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pc7JNvme-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pc7JNvme-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pc7JNvme-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pc7JNvme-iosstatusbar &gt;.x-panel-content {top: 48px;}</style> 
+  </div> 
+</div>

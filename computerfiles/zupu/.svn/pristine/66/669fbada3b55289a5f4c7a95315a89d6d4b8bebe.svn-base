@@ -1,0 +1,131 @@
+define(function (require) {
+	var $ = require("jquery");
+	var justep = require("$UI/system/lib/justep");
+	require("$UI/zupu/js/date/datePicker");
+	require("css!$UI/zupu/css/LCalendar").load();
+
+	require("cordova!com.synconset.imagepicker");
+	// var ImagesZoom = require("plugin/scale");
+	require("$UI/system/lib/cordova/cordova");
+	require("cordova!cordova-plugin-camera"); //调用摄像头类
+	require("cordova!cordova-plugin-file"); //调用本地文件上传类
+	require("cordova!cordova-plugin-file-transfer"); //调用文件上传转换类
+	var UUID = require("$UI/system/lib/base/uuid");
+
+	//日期格式
+	var calendar = new datePicker();
+	calendar.init({
+		'trigger': '#birthdate',
+		/* 按钮选择器，用于触发弹出插件 */
+		'type': 'date',
+		/* 模式：date日期；datetime日期时间；time时间；ym年月； */
+		'minDate': '1900-1-1',
+		/* 最小日期 */
+		'maxDate': '2100-12-31',
+		/* 最大日期 */
+		'onSubmit': function () {
+			/* 确认时触发事件 */
+			var theSelectData = calendar.value;
+		},
+		'onClose': function () {
+			/* 取消时触发事件 */
+		}
+	});
+	var Model = function () {
+		this.callParent();
+	};
+	//图库选择图片
+	Model.prototype.getPicturesClick = function (event) {
+		document.addEventListener("deviceready", androidOnDeviceReady, false);
+
+		function androidOnDeviceReady() {
+			imagePicker.getPictures(androidSuccessCallback, errorCallback, {
+				"maximumImagesCount": 1,
+				"width": 800,
+				"height": 800,
+				"quallity": 100,
+				"outputType": window.imagePicker.OutputType.FILE_URI
+			});
+			
+		}
+
+		function androidSuccessCallback(result) {
+			console.log(result);
+			if (result.length > 0) {
+				var content = '';
+				var dfds = [];
+				for (var i = 0; i < result.length; i++) {
+					(function () {
+						var dfd = $.Deferred();
+						dfds.push(dfd);
+						window.resolveLocalFileSystemURI(result[i], function (entry) {
+							content += '<img src="' + entry.toInternalURL() + '" style="max-width:10rem;max-height:10rem;float:right;margin-top:0.5rem;margin-right:2rem"/>';
+							dfd.resolve();
+						}, function () {
+							dfd.resolve();
+						});
+					})();
+				}
+				$.when.apply($, dfds).done(function () {
+					document.getElementById("imageOutput").innerHTML = content;
+				});
+				console.log("result = "+result);
+				var $Blob= getBlobBydataURI(result+"",'image/jpg'); 
+				var formData = new FormData(); 
+				formData.append("files", $Blob ,"file_"+Date.parse(new Date())+".jpeg"); 
+				$.ajax({
+					headers: {
+						Authorization: "Bearer " + localStorage.getItem('Token'),
+					},
+					url: 'http://10.10.1.232:8088/YProject/api/upload',
+					// data:formData,
+					processData: false,
+					cache: false,
+					async: true,
+					global: false,
+					contentType: "application/json; charset=utf-8",
+					datatype: "json",
+					type: 'POST',
+					success: function (res) {
+						console.log(res);
+						console.log("测试上传");
+					},
+					error: function (res) {
+						console.log(res);
+						justep.Util.hint(res.message, {
+							type: 'danger'
+						
+						});
+					}
+				});
+				return;
+			} else {
+				// picker was cancelled
+				console.log("没有选择图片");
+			}
+		}
+
+		function errorCallback(error) {
+			alert("错误信息: " + JSON.stringify(error));
+		}
+	}
+
+	/** 
+	 * 根据base64 内容 取得 bolb 
+	 * 
+	 */
+	function getBlobBydataURI(dataURI, type) {
+		var binary = atob(dataURI.split(',')[1]);
+		console.log("test b "+binary);
+		var array = [];
+		for (var i = 0; i < binary.length; i++) {
+			array.push(binary.charCodeAt(i));
+		}
+		return new Blob([new Uint8Array(array)], {
+			type: type
+		});
+	}; 
+
+
+	return Model;
+});

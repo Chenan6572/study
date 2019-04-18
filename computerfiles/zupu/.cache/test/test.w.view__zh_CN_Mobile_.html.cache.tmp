@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cJjE3Mr" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cJjE3Mr" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/button/toggle,$model/UI2/system/components/justep/labelEdit/labelEdit,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/popOver/popOver,$model/UI2/system/components/justep/contents/content,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/select/select,$model/UI2/system/components/justep/contents/contents,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/data/baasData,">  
+  <div xmlns="" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad" __cid="cJjE3Mr" class="cJjE3Mr"/>  
+  <div xmlns="" component="$model/UI2/system/components/justep/popOver/popOver" class="x-popOver cJjE3Mr" xid="popOver1" data-bind="component:{name:'$model/UI2/system/components/justep/popOver/popOver'}" data-config="{&quot;direction&quot;:&quot;auto&quot;}" __cid="cJjE3Mr"> 
+    <div class="x-popOver-overlay cJjE3Mr" xid="div1" __cid="cJjE3Mr"/>  
+    <div class="x-popOver-content cJjE3Mr" xid="div2" __cid="cJjE3Mr"> 
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cJjE3Mr" xid="row2" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cJjE3Mr"> 
+        <div class="x-col cJjE3Mr" xid="col4" __cid="cJjE3Mr"> 
+          <img src="@justepContextPath@/v_d782224f89b94ccfbe766bbcfcd13845l_zh_CNs_d_m/zupu/img/h12.png" alt="" xid="imageInvite" style="width:100px;" __cid="cJjE3Mr" class="cJjE3Mr" data-bind="event:{click:$model._callModelFn.bind($model, 'btnInvitClick')}"/> 
+        </div>  
+        <div class="x-col cJjE3Mr" xid="col5" __cid="cJjE3Mr"> 
+          <img src="@justepContextPath@/v_8d3eb45055294dcaa7ad9ad49be39162l_zh_CNs_d_m/zupu/img/h13.png" alt="" xid="imageDetail" style="width:100px;" __cid="cJjE3Mr" class="cJjE3Mr" data-bind="event:{click:$model._callModelFn.bind($model, 'btnShowMemberDetail')}"/> 
+        </div>  
+        <div class="x-col cJjE3Mr" xid="col6" __cid="cJjE3Mr"> 
+          <img src="@justepContextPath@/v_761e6874eafe4a9b8c28b8eccce348eal_zh_CNs_d_m/zupu/img/h14.png" alt="" xid="imageAdd" style="width:100px;" __cid="cJjE3Mr" class="cJjE3Mr" data-bind="event:{click:$model._callModelFn.bind($model, 'btnAddMember')}"/> 
+        </div> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cJjE3Mr" xid="row2" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cJjE3Mr"> 
+        <div class="x-col cJjE3Mr" xid="col4" style="text-align:center" __cid="cJjE3Mr">邀请亲友</div>  
+        <div class="x-col cJjE3Mr" xid="col5" style="text-align:center" __cid="cJjE3Mr">查看资料</div>  
+        <div class="x-col cJjE3Mr" xid="col6" style="text-align:center" __cid="cJjE3Mr">添加亲人</div> 
+      </div> 
+    </div> 
+  </div>  
+  <div xmlns="" component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pc3Y363a-iosstatusbar cJjE3Mr" xid="panel2" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cJjE3Mr"> 
+    <div class="x-panel-top cJjE3Mr" xid="top2" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cJjE3Mr"/>  
+    <div class="x-panel-content cJjE3Mr" xid="content4" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cJjE3Mr"> 
+      <div component="$model/UI2/system/components/justep/contents/contents" class="x-contents x-full cJjE3Mr" xid="contents3" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&quot;active&quot;:0}" __cid="cJjE3Mr"> 
+        <div class="x-contents-content active cJjE3Mr" xid="content5" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cJjE3Mr"> 
+          <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcIfY7fu-iosstatusbar cJjE3Mr" xid="panel4" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cJjE3Mr"> 
+            <div class="x-panel-content cJjE3Mr" xid="content6" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cJjE3Mr"> 
+              <input id="hidMemberID" xid="hidMemberID" style="display:block" data="baasFamilyMember" disabled="true" __cid="cJjE3Mr" class="cJjE3Mr" data-bind="ref:$model.baasFamilyMember.ref(&quot;memberName&quot;),value:$model.baasFamilyMember.ref(&quot;ID&quot;)"/>  
+              <div id="divViewMember" __cid="cJjE3Mr" class="cJjE3Mr"> 
+                <ul xid="ul1" class="list-group cJjE3Mr" __cid="cJjE3Mr"> 
+                  <li style="display:block" __cid="cJjE3Mr" class="cJjE3Mr"/>  
+                  <li class="list-group-item cJjE3Mr" xid="li1" __cid="cJjE3Mr"> 
+                    <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cJjE3Mr" xid="labelEdit3" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cJjE3Mr"> 
+                      <label class="x-label cJjE3Mr" xid="label3" __cid="cJjE3Mr">姓名</label>  
+                      <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cJjE3Mr" xid="inNameView" data-bind="component:{ref:$model.baasFamilyMember.ref(&quot;memberName&quot;),name:'$model/UI2/system/components/justep/input/input'}" data-config="{&quot;readonly&quot;:true}" __cid="cJjE3Mr"/> 
+                    </div>  
+                    <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cJjE3Mr" xid="labelEdit2" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cJjE3Mr"> 
+                      <label class="x-label cJjE3Mr" xid="label2" __cid="cJjE3Mr">性别</label>  
+                      <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cJjE3Mr" xid="input1" style="visibility:hidden;" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" data-config="{&quot;valueUpdateMode&quot;:&quot;input&quot;}" __cid="cJjE3Mr"/>  
+                      <span component="$model/UI2/system/components/justep/button/toggle" class="x-toggle cJjE3Mr" xid="inSexView" ON="男" OFF="女" checked="true" checkedValue="男" uncheckedValue="女" value="男" disabled="true" data-config="{&quot;checked&quot;:true,&quot;checkedValue&quot;:&quot;男&quot;,&quot;disabled&quot;:true,&quot;label&quot;:{&quot;off&quot;:&quot;女&quot;,&quot;on&quot;:&quot;男&quot;},&quot;uncheckedValue&quot;:&quot;女&quot;,&quot;value&quot;:&quot;男&quot;}" data-bind="component:{ref:$model.baasFamilyMember.ref(&quot;memberSex&quot;),name:'$model/UI2/system/components/justep/button/toggle'}" __cid="cJjE3Mr"> 
+                        <input xmlns:xhtml="http://www.w3.org/1999/xhtml" type="checkbox" value="男" __cid="cJjE3Mr" class="cJjE3Mr"></input>  
+                        <label xmlns:xhtml="http://www.w3.org/1999/xhtml" data-on="男" data-off="女" __cid="cJjE3Mr" class="cJjE3Mr">  
+                          <span __cid="cJjE3Mr" class="cJjE3Mr"/> 
+                        </label> 
+                      </span> 
+                    </div>  
+                    <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cJjE3Mr" xid="labelEdit3" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cJjE3Mr"> 
+                      <label class="x-label cJjE3Mr" xid="label3" __cid="cJjE3Mr">手机号</label>  
+                      <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cJjE3Mr" xid="inPhoneView" data-bind="component:{ref:$model.baasFamilyMember.ref(&quot;memberPhone&quot;),name:'$model/UI2/system/components/justep/input/input'}" data-config="{&quot;readonly&quot;:true}" __cid="cJjE3Mr"/> 
+                    </div>  
+                    <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cJjE3Mr" xid="labelEdit3" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cJjE3Mr"> 
+                      <label class="x-label cJjE3Mr" xid="label3" __cid="cJjE3Mr">出生</label>  
+                      <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cJjE3Mr" xid="inBirthView" data-bind="component:{ref:$model.baasFamilyMember.ref(&quot;memberBirthday&quot;),name:'$model/UI2/system/components/justep/input/input'}" data-config="{&quot;readonly&quot;:true}" __cid="cJjE3Mr"/> 
+                    </div>  
+                    <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cJjE3Mr" xid="labelEdit2" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cJjE3Mr"> 
+                      <label class="x-label cJjE3Mr" xid="label2" __cid="cJjE3Mr">健在</label>  
+                      <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cJjE3Mr" xid="input1" style="visibility:hidden;" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" data-config="{&quot;valueUpdateMode&quot;:&quot;input&quot;}" __cid="cJjE3Mr"/>  
+                      <span component="$model/UI2/system/components/justep/button/toggle" class="x-toggle cJjE3Mr" xid="inLivingView" ON="键在" OFF="已故" checked="true" checkedValue="1" uncheckedValue="0" value="1" disabled="true" data-config="{&quot;checked&quot;:true,&quot;checkedValue&quot;:&quot;1&quot;,&quot;disabled&quot;:true,&quot;label&quot;:{&quot;off&quot;:&quot;已故&quot;,&quot;on&quot;:&quot;键在&quot;},&quot;uncheckedValue&quot;:&quot;0&quot;,&quot;value&quot;:&quot;1&quot;}" data-bind="component:{ref:$model.baasFamilyMember.ref(&quot;memberLiving&quot;),name:'$model/UI2/system/components/justep/button/toggle'}" __cid="cJjE3Mr"> 
+                        <input xmlns:xhtml="http://www.w3.org/1999/xhtml" type="checkbox" value="1" __cid="cJjE3Mr" class="cJjE3Mr"></input>  
+                        <label xmlns:xhtml="http://www.w3.org/1999/xhtml" data-on="键在" data-off="已故" __cid="cJjE3Mr" class="cJjE3Mr">  
+                          <span __cid="cJjE3Mr" class="cJjE3Mr"/> 
+                        </label> 
+                      </span> 
+                    </div> 
+                  </li>  
+                  <li class="list-group-item cJjE3Mr" xid="li1" __cid="cJjE3Mr"> 
+                    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cJjE3Mr" xid="btnEdit" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:btnEditMemberDetail" data-config="{&quot;label&quot;:&quot;编辑&quot;}" __cid="cJjE3Mr"> 
+                      <i xid="i1" __cid="cJjE3Mr" class="cJjE3Mr"/>  
+                      <span xid="span1" __cid="cJjE3Mr" class="cJjE3Mr">编辑</span> 
+                    </a>  
+                    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cJjE3Mr" xid="btnClose" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:btnCloseClick" data-config="{&quot;label&quot;:&quot;关闭&quot;}" __cid="cJjE3Mr"> 
+                      <i xid="i1" __cid="cJjE3Mr" class="cJjE3Mr"/>  
+                      <span xid="span1" __cid="cJjE3Mr" class="cJjE3Mr">关闭</span> 
+                    </a> 
+                  </li> 
+                </ul> 
+              </div>  
+              <div id="divEditMember" __cid="cJjE3Mr" class="cJjE3Mr"> 
+                <ul xid="ul1" class="list-group cJjE3Mr" __cid="cJjE3Mr"> 
+                  <li class="list-group-item cJjE3Mr" xid="li1" __cid="cJjE3Mr"> 
+                    <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cJjE3Mr" xid="labelReleation" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cJjE3Mr"> 
+                      <label class="x-label cJjE3Mr" xid="label1" __cid="cJjE3Mr">他的</label>  
+                      <select component="$model/UI2/system/components/justep/select/select" class="form-control x-edit cJjE3Mr" xid="inReleation" data-bind="component:{name:'$model/UI2/system/components/justep/select/select'},options:data1.datas,optionsValue:'value',optionsText:'name',optionsAfterRender2:$model.__justep__.selectOptionsAfterRender.bind($model,$element),optionsBeforeRender:$model.__justep__.selectOptionsBeforeRender.bind($model,$element)" __cid="cJjE3Mr"/> 
+                    </div>  
+                    <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cJjE3Mr" xid="labelEdit3" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cJjE3Mr"> 
+                      <label class="x-label cJjE3Mr" xid="label3" __cid="cJjE3Mr">姓名</label>  
+                      <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cJjE3Mr" xid="inName" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="cJjE3Mr"/> 
+                    </div>  
+                    <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cJjE3Mr" xid="labelEdit2" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cJjE3Mr"> 
+                      <label class="x-label cJjE3Mr" xid="label2" __cid="cJjE3Mr">性别</label>  
+                      <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cJjE3Mr" xid="input1" style="visibility:hidden;" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" data-config="{&quot;valueUpdateMode&quot;:&quot;input&quot;}" __cid="cJjE3Mr"/>  
+                      <span component="$model/UI2/system/components/justep/button/toggle" class="x-toggle cJjE3Mr" xid="inSex" ON="男" OFF="女" checked="true" checkedValue="男" uncheckedValue="女" value="男" data-config="{&quot;checked&quot;:true,&quot;checkedValue&quot;:&quot;男&quot;,&quot;disabled&quot;:false,&quot;label&quot;:{&quot;off&quot;:&quot;女&quot;,&quot;on&quot;:&quot;男&quot;},&quot;uncheckedValue&quot;:&quot;女&quot;,&quot;value&quot;:&quot;男&quot;}" data-bind="component:{name:'$model/UI2/system/components/justep/button/toggle'}" __cid="cJjE3Mr"> 
+                        <input xmlns:xhtml="http://www.w3.org/1999/xhtml" type="checkbox" value="男" __cid="cJjE3Mr" class="cJjE3Mr"></input>  
+                        <label xmlns:xhtml="http://www.w3.org/1999/xhtml" data-on="男" data-off="女" __cid="cJjE3Mr" class="cJjE3Mr">  
+                          <span __cid="cJjE3Mr" class="cJjE3Mr"/> 
+                        </label> 
+                      </span> 
+                    </div>  
+                    <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cJjE3Mr" xid="labelEdit3" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cJjE3Mr"> 
+                      <label class="x-label cJjE3Mr" xid="label3" __cid="cJjE3Mr">手机号</label>  
+                      <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cJjE3Mr" xid="inPhone" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="cJjE3Mr"/> 
+                    </div> 
+                  </li>  
+                  <li __cid="cJjE3Mr" class="cJjE3Mr"> 
+                    <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cJjE3Mr" xid="labelEdit3" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cJjE3Mr"> 
+                      <label class="x-label cJjE3Mr" xid="label3" __cid="cJjE3Mr">出生</label>  
+                      <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cJjE3Mr" xid="inBirth" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'},value:&quot;1985-01-01&quot;" data-config="{&quot;dataType&quot;:&quot;Date&quot;,&quot;format&quot;:&quot;yyyy-MM-dd&quot;}" __cid="cJjE3Mr"/> 
+                    </div> 
+                  </li>  
+                  <li __cid="cJjE3Mr" class="cJjE3Mr"> 
+                    <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cJjE3Mr" xid="labelEdit2" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cJjE3Mr"> 
+                      <label class="x-label cJjE3Mr" xid="label2" __cid="cJjE3Mr">健在</label>  
+                      <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cJjE3Mr" xid="input1" style="visibility:hidden;" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" data-config="{&quot;valueUpdateMode&quot;:&quot;input&quot;}" __cid="cJjE3Mr"/>  
+                      <span component="$model/UI2/system/components/justep/button/toggle" class="x-toggle cJjE3Mr" xid="inLiving" ON="健在" OFF="已故" checked="true" value="1" checkedValue="1" uncheckedValue="0" data-config="{&quot;checked&quot;:true,&quot;checkedValue&quot;:&quot;1&quot;,&quot;disabled&quot;:false,&quot;label&quot;:{&quot;off&quot;:&quot;已故&quot;,&quot;on&quot;:&quot;健在&quot;},&quot;uncheckedValue&quot;:&quot;0&quot;,&quot;value&quot;:&quot;1&quot;}" data-bind="component:{name:'$model/UI2/system/components/justep/button/toggle'}" __cid="cJjE3Mr"> 
+                        <input xmlns:xhtml="http://www.w3.org/1999/xhtml" type="checkbox" value="1" __cid="cJjE3Mr" class="cJjE3Mr"></input>  
+                        <label xmlns:xhtml="http://www.w3.org/1999/xhtml" data-on="健在" data-off="已故" __cid="cJjE3Mr" class="cJjE3Mr">  
+                          <span __cid="cJjE3Mr" class="cJjE3Mr"/> 
+                        </label> 
+                      </span> 
+                    </div> 
+                  </li>  
+                  <li __cid="cJjE3Mr" class="cJjE3Mr"> 
+                    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cJjE3Mr" xid="btnSubmit" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:btnSubmitClick" data-config="{&quot;label&quot;:&quot;提交&quot;}" __cid="cJjE3Mr"> 
+                      <i xid="i1" __cid="cJjE3Mr" class="cJjE3Mr"/>  
+                      <span xid="span1" __cid="cJjE3Mr" class="cJjE3Mr">提交</span> 
+                    </a>  
+                    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cJjE3Mr" xid="btnClose" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:btnCloseClick" data-config="{&quot;label&quot;:&quot;关闭&quot;}" __cid="cJjE3Mr"> 
+                      <i xid="i1" __cid="cJjE3Mr" class="cJjE3Mr"/>  
+                      <span xid="span1" __cid="cJjE3Mr" class="cJjE3Mr">关闭</span> 
+                    </a> 
+                  </li> 
+                </ul> 
+              </div> 
+            </div>  
+            <style __cid="cJjE3Mr" class="cJjE3Mr">.x-panel.pcIfY7fu-iosstatusbar &gt;.x-panel-top {height: 0px;}.x-panel.pcIfY7fu-iosstatusbar &gt;.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.pcIfY7fu-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcIfY7fu-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcIfY7fu-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel.pcIfY7fu-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcIfY7fu-iosstatusbar &gt;.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcIfY7fu-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcIfY7fu-iosstatusbar &gt;.x-panel-content {top: 0px;}</style> 
+          </div>  
+          <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcERJz2y-iosstatusbar cJjE3Mr" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cJjE3Mr"> 
+            <div class="x-panel-content cJjE3Mr" xid="content2" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cJjE3Mr"> 
+              <canvas id="can" width="500" height="800" __cid="cJjE3Mr" class="cJjE3Mr"/> 
+            </div>  
+            <style __cid="cJjE3Mr" class="cJjE3Mr">.x-panel.pcERJz2y-iosstatusbar &gt;.x-panel-top {height: 0px;}.x-panel.pcERJz2y-iosstatusbar &gt;.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.pcERJz2y-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcERJz2y-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcERJz2y-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel.pcERJz2y-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcERJz2y-iosstatusbar &gt;.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcERJz2y-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcERJz2y-iosstatusbar &gt;.x-panel-content {top: 0px;}</style> 
+          </div> 
+        </div> 
+      </div> 
+    </div>  
+    <style __cid="cJjE3Mr" class="cJjE3Mr">.x-panel.pc3Y363a-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pc3Y363a-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pc3Y363a-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pc3Y363a-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pc3Y363a-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pc3Y363a-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pc3Y363a-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pc3Y363a-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pc3Y363a-iosstatusbar &gt;.x-panel-content {top: 48px;}</style> 
+  </div> 
+</div>

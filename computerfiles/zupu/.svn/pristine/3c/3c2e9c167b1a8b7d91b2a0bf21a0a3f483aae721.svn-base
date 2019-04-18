@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" component="$UI/system/components/justep/window/window" design="device:m;"
+  xid="window" class="window">  
+  <div component="$UI/system/components/justep/model/model" xid="model" style="height:auto;top:434px;left:243px;"
+    onActive="modelActive" onParamsReceive="modelParamsReceive"> 
+    <div component="$UI/system/components/justep/data/baasData" autoLoad="true"
+      xid="baasData1" queryAction="queryCensus" saveAction="saveCensus" url="/zupu/ZupuCRUD"
+      tableName="census" idColumn="Id"> 
+      <column label="Id" name="Id" type="Integer" xid="default1"/>  
+      <column label="户号" name="code" type="String" xid="default2"/>  
+      <column label="与户主关系" name="relation" type="String" xid="default3"/>  
+      <column label="姓名" name="name" type="String" xid="default4"/>  
+      <column label="身份证" name="idcard" type="String" xid="default5"/>  
+      <column label="性别" name="sex" type="String" xid="default6"/>  
+      <column label="出生日期" name="birthday" type="Date" xid="default7"/>  
+      <column label="民族" name="nation" type="String" xid="default8"/>  
+      <column label="村委会" name="village" type="String" xid="default17"/>  
+      <column label="居民组" name="group" type="String" xid="default18"/> 
+    </div> 
+  </div>  
+  <div component="$UI/system/components/justep/panel/panel" class="x-panel x-full"
+    xid="panel1"> 
+    <div class="x-panel-top" xid="top1"> 
+      <div component="$UI/system/components/justep/titleBar/titleBar" title="户籍信息"
+        class="x-titlebar" style="background-color:#FF0000;"> 
+        <div class="x-titlebar-left"> 
+          <a component="$UI/system/components/justep/button/button" label=""
+            class="btn btn-link btn-only-icon" icon="icon-chevron-left" onClick="{operation:'window.close'}"
+            xid="backBtn"> 
+            <i class="icon-chevron-left"/>  
+            <span/> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title"><![CDATA[户籍信息]]></div>  
+        <div class="x-titlebar-right reverse"/> 
+      </div> 
+    </div>  
+    <div class="x-panel-content" xid="content1" bind-load="content1Load"> 
+      <ul xid="" class=""> 
+        <li style="display:block"/>  
+        <li class="list-group-item" xid="li1"> 
+          <div component="$UI/system/components/justep/labelEdit/labelEdit"
+            class="x-label-edit x-label30" xid="labelEdit3"> 
+            <label class="x-label" xid="label3"><![CDATA[户号]]></label>  
+            <input component="$UI/system/components/justep/input/input" class="form-control x-edit"
+              placeholder="请输入户号（必填）" xid="inCode" dataType="String"/> 
+          </div>  
+          <div component="$UI/system/components/justep/labelEdit/labelEdit"
+            class="x-label-edit x-label30" xid="labelEdit2"> 
+            <label class="x-label" xid="label2"><![CDATA[与户主关系]]></label>  
+            <input component="$UI/system/components/justep/input/input" class="form-control x-edit"
+              placeholder="关系" xid="inRelation" valueUpdateMode="input"/> 
+          </div>  
+          <div component="$UI/system/components/justep/labelEdit/labelEdit"
+            class="x-label-edit x-label30" xid="labelEdit3"> 
+            <label class="x-label" xid="label3"><![CDATA[身份证]]></label>  
+            <input component="$UI/system/components/justep/input/input" class="form-control x-edit"
+              placeholder="请输入身份证号（必填）" xid="inIdcard"/> 
+          </div>  
+          <div component="$UI/system/components/justep/labelEdit/labelEdit"
+            class="x-label-edit x-label30" xid="labelEdit3"> 
+            <label class="x-label" xid="label3"><![CDATA[户籍类别]]></label>  
+            <input component="$UI/system/components/justep/input/input" class="form-control x-edit"
+              placeholder="户籍类别" xid="inHousetype"/> 
+          </div>  
+          <div component="$UI/system/components/justep/labelEdit/labelEdit"
+            class="x-label-edit x-label30" xid="labelEdit3"> 
+            <label class="x-label" xid="label3"><![CDATA[村社区名称]]></label>  
+            <input component="$UI/system/components/justep/input/input" class="form-control x-edit"
+              placeholder="请输入社区名称" xid="inCommunity"/> 
+          </div>  
+          <div component="$UI/system/components/justep/labelEdit/labelEdit"
+            class="x-label-edit x-label30" xid="labelEdit3"> 
+            <label class="x-label" xid="label3"><![CDATA[居民组]]></label>  
+            <input component="$UI/system/components/justep/input/input" class="form-control x-edit"
+              placeholder="请输入居民楼号" xid="inResident"/> 
+          </div> 
+        </li>  
+        <li> 
+          <div xid="div5" class="list-group-item" style="margin-top:60px;"> 
+            <a component="$UI/system/components/justep/button/button" class="btn x-red btn-block" 
+              label="保 存 " xid="btnSubmit" style="border-radius:50px;width:80%;margin:0 auto "
+              onClick="btnSaveHousehold"> 
+              <i xid="i1"/>  
+              <span xid="span2" style="font-size:2rem;margin-top:100%">保存</span> 
+            </a> 
+          </div> 
+        </li>  
+        <li class="list-group-item" xid="li1" style="text-align:center"> 
+          <input component="$UI/system/components/justep/input/input" class="form-control"
+            xid="input1" bind-ref="$model.baasData1.ref(&quot;name&quot;)" bind-visible="false"/> 
+        </li> 
+      </ul> 
+    </div>&gt;
+  </div> 
+</div>

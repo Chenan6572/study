@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/window/window" design="device:m;" xid="window" class="window ciYreUz" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="ciYreUz" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">  
+  <style xmlns="" xmlns:xhtml="http://www.w3.org/1999/xhtml">.clear.ciYreUz:after{content: ""; display: block; clear: both; height: 0; overflow: hidden; visibility: hidden} .clear.ciYreUz{zoom: 1} .content.ciYreUz{padding: 1.5rem; width: 100%} .up.ciYreUz{font-size: 1.5rem} .up_tips.ciYreUz .down.ciYreUz{font-size: 2.5rem; display: block; font-weight: 700} .yz_inputs.ciYreUz{width: 100%; height: 130px; margin-top: 5rem} .yz_inputs_left.ciYreUz{height: 5rem; width: 60%; border: 1px solid rgba(201, 201, 201, 1); border-radius: 0.6rem; float: left} .yz_inputs_left.ciYreUz:hover{border: 1px solid rgba(231, 64, 58, 1); box-shadow: 3px 3px 5px rgba(255, 215, 215, 1)} .yz_inputs_left.ciYreUz input.ciYreUz{border: none; outline: none; height: 4rem; width: 94%; font-size: 1.6rem; margin-left: 1rem; margin-top: 0.5rem} .yz_inputs_right.ciYreUz{width: 30%; height: 3rem; margin-top: 1rem; text-align: center; line-height: 3rem; background-color: rgba(231, 64, 58, 1); color: white; border-radius: 0.8rem; float: left; margin-left: 1rem} .pwd_inputs.ciYreUz{width: 100%; height: 5rem; margin-top: 2rem; border: 1px solid rgba(201, 201, 201, 1); border-radius: 0.6rem; float: left} .pwd_inputs.ciYreUz:hover{border: 1px solid rgba(231, 64, 58, 1); box-shadow: 3px 3px 5px rgba(255, 215, 215, 1)} .pwd_inputs.ciYreUz input.ciYreUz{border: none; outline: none; height: 4rem; font-size: 1.6rem; margin-left: 1rem; margin-top: 0.5rem; width: 96%} img.ciYreUz{width: 1.5rem; height: 1.5rem} .tips.ciYreUz{padding: 1rem 1rem 1rem 0.5rem} .tips.ciYreUz span.ciYreUz{color: rgb(153, 153, 153)} .down_content.ciYreUz{width: 80%; height: 4rem; background-color: rgba(231, 64, 58, 1); border-radius: 2rem; text-align: center; margin: 5rem auto} .down_content.ciYreUz span.ciYreUz{font-size: 2rem; color: white; margin: 0 auto; line-height: 4rem}</style>  
+  <div xmlns="" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:onload" __cid="ciYreUz" class="ciYreUz"/>  
+  <div xmlns="" component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcFz2M32-iosstatusbar ciYreUz" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="ciYreUz"> 
+    <div class="x-panel-top ciYreUz" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="ciYreUz"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" style="background-color:rgba(231, 64, 58, 1)" class="x-titlebar ciYreUz" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;修改密码&quot;}" __cid="ciYreUz"> 
+        <div class="x-titlebar-left ciYreUz" __cid="ciYreUz"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon ciYreUz" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'window.close'}" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;,&quot;label&quot;:&quot;&quot;}" __cid="ciYreUz"> 
+            <i class="icon-chevron-left ciYreUz" __cid="ciYreUz"/>  
+            <span __cid="ciYreUz" class="ciYreUz"/> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title ciYreUz" __cid="ciYreUz">修改密码</div>  
+        <div class="x-titlebar-right  ciYreUz" __cid="ciYreUz"> 
+          <div class="empty ciYreUz" __cid="ciYreUz"/> 
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content content ciYreUz" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="ciYreUz"> 
+      <div class="up_tips ciYreUz" __cid="ciYreUz"> 
+        <span class="up ciYreUz" __cid="ciYreUz">已发送验证码到你的手机号</span>  
+        <span class="down ciYreUz" id="tel" __cid="ciYreUz"/> 
+      </div>  
+      <div class="yz_inputs  ciYreUz" __cid="ciYreUz"> 
+        <div class="yz_inputs_left clear ciYreUz" __cid="ciYreUz"> 
+          <input type="text" placeholder="请输入验证码" id="yzInput" __cid="ciYreUz" class="ciYreUz"/> 
+        </div>  
+        <div class="yz_inputs_right clear ciYreUz" __cid="ciYreUz" data-bind="event:{click:$model._callModelFn.bind($model, 'btnGetCodeClick')}">获取验证码</div>  
+        <div class="pwd_inputs ciYreUz" __cid="ciYreUz"> 
+          <input type="password" placeholder="请输入新密码" id="new_pwd" __cid="ciYreUz" class="ciYreUz"/> 
+        </div> 
+      </div>  
+      <div class="tips ciYreUz" __cid="ciYreUz"> 
+        <img src="@justepContextPath@/v_0cfa4d261a5048b8a0ad002a811ebbbfl_zh_CNs_d_m/zupu/img/u19.png" __cid="ciYreUz" class="ciYreUz"/>  
+        <span __cid="ciYreUz" class="ciYreUz">密码长度规则说明</span> 
+      </div>  
+      <div class="down_content ciYreUz" __cid="ciYreUz" data-bind="event:{click:$model._callModelFn.bind($model, 'savebtn')}"> 
+        <span __cid="ciYreUz" class="ciYreUz">确认修改密码</span> 
+      </div> 
+    </div>  
+    <style __cid="ciYreUz" class="ciYreUz">.x-panel.pcFz2M32-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcFz2M32-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcFz2M32-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcFz2M32-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcFz2M32-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcFz2M32-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcFz2M32-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcFz2M32-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcFz2M32-iosstatusbar &gt;.x-panel-content {top: 48px;}</style> 
+  </div> 
+</div>

@@ -1,0 +1,311 @@
+define(function(require) {
+	var $ = require("jquery");
+	var justep = require("$UI/system/lib/justep");
+
+	var Model = function() {
+		this.callParent();
+		this.accountData = testData;
+	};
+	// 访问后台数据
+	var loginName = localStorage.getItem("loginName");
+	// 工作经历list
+	var zworkExperienceList = new Array();
+	// 教育信息list
+	var zeducationInfoList = new Array();
+	console.log("进入页面成功");
+	
+	//页面激活方法
+	Model.prototype.modelActive = function(event){
+	
+	console.log("进入頁面激活方法方法");
+	$.ajax({
+		headers : {
+			Authorization : "Bearer " + localStorage.getItem('Token'),
+		},
+		url : 'http://10.10.1.232:8088/YProject/api/query?login_name=' + loginName,
+		processData : false,
+		cache : false,
+		async : true,
+		global : false,
+		contentType : "application/json; charset=utf-8",
+		datatype : "json",
+		type : 'post',
+		success : function(res) {
+			$("#nameone").html(res.data.name); //姓名
+			$("#doornum").html(res.data.doornum);//户号
+			$("#birthday").html(res.data.birthday);//生日
+			$("#address").html(res.data.address);//地址
+			console.log("修改后的电话="+ res.data.phone);
+			$("#phone").html(res.data.phone);//电话
+			$("#nowaddress").html(res.data.nowaddress)//现住址
+			$("#address").html(res.data.address)//户籍住址
+			$("#register_category").html(res.data.register_category)//户籍类型	
+			
+			 // 教育信息list
+		    zeducationInfoList = res.data.zEducationInfoList;
+			//获取个人信息编辑id
+			localStorage.setItem("perid", res.data.id);
+			var link = "";
+			for (var i = 0; i < zeducationInfoList.length; i++) {
+				//获取路径
+				var img1url = require.toUrl("");
+				var id = zeducationInfoList[i].id
+				link += 	
+					 '<div class="list cI3iyuu" __cid="cI3iyuu" id="education"> '
+				       +' <div class="item cI3iyuu" __cid="cI3iyuu"> '
+				         +' <div class="media_left cI3iyuu" __cid="cI3iyuu"> '
+				           +' <span class="basic cI3iyuu">教育信息</span>  '
+				           +' <div class="media_head cI3iyuu" __cid="cI3iyuu"> '
+				             +' <img src=" '+ img1url+ ' /img/edua.png" alt="" xid="tou" class="head cI3iyuu" " __cid="cI3iyuu" __cid="cI3iyuu" id="C86069D7D880000142EB143517E01F0B_tou"/> '
+				           +' </div> '
+				        +'  </div>  '
+				        +'  <div xid="cont" title="neirong" class="media_cont cI3iyuu __cid="cI3iyuu" id="C86069D7D880000142EB143517E01F0B_cont"> '
+				            +'<div class="cI3iyuu" __cid="cI3iyuu"> '
+				           +'   <span id="name" class="cI3iyuu" __cid="cI3iyuu"/>' + zeducationInfoList[i].school_name
+				            +'  <br/>  '
+				             +' <span id="birthday" class="cI3iyuu" __cid="cI3iyuu"/> ' + zeducationInfoList[i].school_start_data
+				             +' <span id="" class="cI3iyuu" __cid="cI3iyuu"/>/'
+				             +' <span id="" class="cI3iyuu" __cid="cI3iyuu"/>' + zeducationInfoList[i].school_end_data
+				             +' <br class="cI3iyuu" __cid="cI3iyuu"/> '
+				            +'  <span id="'+'nowaddress" class="cI3iyuu" __cid="cI3iyuu"/> ' + zeducationInfoList[i].related_major
+				            +'  <span/>|'
+				             +' <span id="" class="cI3iyuu" __cid="cI3iyuu"/>' + zeducationInfoList[i].education
+				           +' </div> '
+				        +'  </div>  '
+				        +'   <div class="media_edit cI3iyuu" __cid="cI3iyuu"  onclick=\'editedu("' + id +'")\'>'
+				        +'    <img src=" '+ img1url+ ' /img/edit.png" alt="" xid="link" __cid="cI3iyuu" class="cI3iyuu" id="C86069D7D880000142EB143517E01F0B_link"/> '
+				         +' </div> '
+				       +' </div> '
+				     +' </div>  '
+			}
+
+			document.getElementById("education").innerHTML = link;
+			// 渲染工作经历信息至页面
+			zworkExperienceList = res.data.zWorkExperienceList; // 工作经历list
+			var Splicing = "";
+			for (var i = 0; i < zworkExperienceList.length; i++) {
+
+				var id = zworkExperienceList[i].id
+				
+				localStorage.setItem("id", id);
+
+				Splicing += 
+									
+				 '<div class="list cI3iyuu" __cid="cI3iyuu" id="education"> '
+			       +' <div class="item cI3iyuu" __cid="cI3iyuu"> '
+			         +' <div class="media_left cI3iyuu" __cid="cI3iyuu"> '
+			           +' <span class="basic cI3iyuu">工作经历</span>  '
+			           +' <div class="media_head cI3iyuu" __cid="cI3iyuu"> '
+			             +' <img src= " '+ img1url+ ' /img/work.png" alt="" xid="tou" class="head cI3iyuu" " __cid="cI3iyuu" __cid="cI3iyuu" id="C86069D7D880000142EB143517E01F0B_tou"/> '
+			           +' </div> '
+			        +'  </div>  '
+			        +'  <div xid="cont" title="neirong" class="media_cont cI3iyuu __cid="cI3iyuu" id="C86069D7D880000142EB143517E01F0B_cont"> '
+			            +'<div class="cI3iyuu" __cid="cI3iyuu"> '
+			           +'   <span id="name" class="cI3iyuu" __cid="cI3iyuu"/>' + zworkExperienceList[i].company_name
+			            +'  <br class="cI3iyuu" __cid="cI3iyuu"/>  '
+			             +' <span id="birthday" class="cI3iyuu" __cid="cI3iyuu"/> ' + zworkExperienceList[i].company_start_time
+			             +' <span id="" class="cI3iyuu" __cid="cI3iyuu"/>|'
+			             +' <span id="" class="cI3iyuu" __cid="cI3iyuu"/>' + zworkExperienceList[i].related_depart
+			             +' <span id="" class="cI3iyuu" __cid="cI3iyuu"/>|'
+			             +' <span id="nowaddress" class="cI3iyuu" __cid="cI3iyuu"/> ' + zworkExperienceList[i].position
+			           +' </div> '
+			        +'  </div>  '
+			        +'  <div class="media_edit cI3iyuu" __cid="cI3iyuu"  onclick="editwork()"> '
+			        +'    <img src=" '+ img1url+ ' /img/edit.png" alt="" xid="link" __cid="cI3iyuu" class="cI3iyuu" id="C86069D7D880000142EB143517E01F0B_link"/> '
+			         +' </div> '
+			       +' </div> '
+			     +' </div>  '
+			}
+			document.getElementById("workexpre").innerHTML = Splicing;
+		},
+		error : function(res) {
+			justep.Util.hint(res.message, {
+				type : 'danger',
+			});
+			console.log("测试失败");
+		}
+	});
+	
+
+	};
+	//进入onload方法	
+	Model.prototype.onload=function(event){
+
+	console.log("进入onload方法");
+	$.ajax({
+		headers : {
+			Authorization : "Bearer " + localStorage.getItem('Token'),
+		},
+		url : 'http://10.10.1.232:8088/YProject/api/query?login_name=' + loginName,
+		processData : false,
+		cache : false,
+		async : true,
+		global : false,
+		contentType : "application/json; charset=utf-8",
+		datatype : "json",
+		type : 'post',
+		success : function(res) {
+		console.log("打印数据");
+		console.log(res.data);
+			$("#nameone").html(res.data.name); //姓名
+			$("#doornum").html(res.data.doornum);//户号
+			$("#birthday").html(res.data.birthday);//生日
+			$("#address").html(res.data.address);//地址
+			$("#phone").html(res.data.phone);//电话
+			$("#nowaddress").html(res.data.nowaddress)//现住址
+			$("#address").html(res.data.address)//户籍住址
+			$("#register_category").html(res.data.register_category)//户籍类型
+			
+			 // 教育信息list
+		    zeducationInfoList = res.data.zEducationInfoList;
+			//获取个人信息编辑id
+			localStorage.setItem("perid", res.data.id);
+			var link = "";
+			for (var i = 0; i < zeducationInfoList.length; i++) {
+				//获取路径
+				var img1url = require.toUrl("");
+				var id = zeducationInfoList[i].id
+				link += 	
+					 '<div class="list cI3iyuu" __cid="cI3iyuu" id="education"> '
+				       +' <div class="item cI3iyuu" __cid="cI3iyuu"> '
+				         +' <div class="media_left cI3iyuu" __cid="cI3iyuu"> '
+				           +' <span class="basic cI3iyuu">教育信息</span>  '
+				           +' <div class="media_head cI3iyuu" __cid="cI3iyuu"> '
+				             +' <img src=" '+ img1url+ ' /img/edua.png" alt="" xid="tou" class="head cI3iyuu" " __cid="cI3iyuu" __cid="cI3iyuu" id="C86069D7D880000142EB143517E01F0B_tou"/> '
+				           +' </div> '
+				        +'  </div>  '
+				        +'  <div xid="cont" title="neirong" class="media_cont cI3iyuu __cid="cI3iyuu" id="C86069D7D880000142EB143517E01F0B_cont"> '
+				            +'<div class="cI3iyuu" __cid="cI3iyuu"> '
+				           +'   <span id="name" class="cI3iyuu" __cid="cI3iyuu"/>' + zeducationInfoList[i].school_name
+				            +'  <br/>  '
+				             +' <span id="birthday" class="cI3iyuu" __cid="cI3iyuu"/> ' + zeducationInfoList[i].school_start_data
+				             +' <span id="" class="cI3iyuu" __cid="cI3iyuu"/>/'
+				             +' <span id="" class="cI3iyuu" __cid="cI3iyuu"/>' + zeducationInfoList[i].school_end_data
+				             +' <br class="cI3iyuu" __cid="cI3iyuu"/> '
+				            +'  <span id="'+'nowaddress" class="cI3iyuu" __cid="cI3iyuu"/> ' + zeducationInfoList[i].related_major
+				            +'  <span/>|'
+				             +' <span id="" class="cI3iyuu" __cid="cI3iyuu"/>' + zeducationInfoList[i].education
+				           +' </div> '
+				        +'  </div>  '
+				        +'   <div class="media_edit cI3iyuu" __cid="cI3iyuu"  onclick=\'editedu("' + id +'")\'>'
+				        +'    <img src=" '+ img1url+ ' /img/edit.png" alt="" xid="link" __cid="cI3iyuu" class="cI3iyuu" id="C86069D7D880000142EB143517E01F0B_link"/> '
+				         +' </div> '
+				       +' </div> '
+				     +' </div>  '
+			}
+
+			document.getElementById("education").innerHTML = link;
+			// 渲染工作经历信息至页面
+			zworkExperienceList = res.data.zWorkExperienceList; // 工作经历list
+			var Splicing = "";
+			for (var i = 0; i < zworkExperienceList.length; i++) {
+
+				var id = zworkExperienceList[i].id
+				
+				localStorage.setItem("id", id);
+
+				Splicing += 
+									
+				 '<div class="list cI3iyuu" __cid="cI3iyuu" id="education"> '
+			       +' <div class="item cI3iyuu" __cid="cI3iyuu"> '
+			         +' <div class="media_left cI3iyuu" __cid="cI3iyuu"> '
+			           +' <span class="basic cI3iyuu">工作经历</span>  '
+			           +' <div class="media_head cI3iyuu" __cid="cI3iyuu"> '
+			             +' <img src= " '+ img1url+ ' /img/work.png" alt="" xid="tou" class="head cI3iyuu" " __cid="cI3iyuu" __cid="cI3iyuu" id="C86069D7D880000142EB143517E01F0B_tou"/> '
+			           +' </div> '
+			        +'  </div>  '
+			        +'  <div xid="cont" title="neirong" class="media_cont cI3iyuu __cid="cI3iyuu" id="C86069D7D880000142EB143517E01F0B_cont"> '
+			            +'<div class="cI3iyuu" __cid="cI3iyuu"> '
+			           +'   <span id="name" class="cI3iyuu" __cid="cI3iyuu"/>' + zworkExperienceList[i].company_name
+			            +'  <br class="cI3iyuu" __cid="cI3iyuu"/>  '
+			             +' <span id="birthday" class="cI3iyuu" __cid="cI3iyuu"/> ' + zworkExperienceList[i].company_start_time
+			             +' <span id="" class="cI3iyuu" __cid="cI3iyuu"/>|'
+			             +' <span id="" class="cI3iyuu" __cid="cI3iyuu"/>' + zworkExperienceList[i].related_depart
+			             +' <span id="" class="cI3iyuu" __cid="cI3iyuu"/>|'
+			             +' <span id="nowaddress" class="cI3iyuu" __cid="cI3iyuu"/> ' + zworkExperienceList[i].position
+			           +' </div> '
+			        +'  </div>  '
+			        +'  <div class="media_edit cI3iyuu" __cid="cI3iyuu"  onclick="editwork()"> '
+			        +'    <img src=" '+ img1url+ ' /img/edit.png" alt="" xid="link" __cid="cI3iyuu" class="cI3iyuu" id="C86069D7D880000142EB143517E01F0B_link"/> '
+			         +' </div> '
+			       +' </div> '
+			     +' </div>  '
+			}
+			document.getElementById("workexpre").innerHTML = Splicing;
+		},
+		error : function(res) {
+			justep.Util.hint(res.message, {
+				type : 'danger',
+			});
+			console.log("测试失败");
+		}
+	});
+	}
+	
+
+	// 跳转个人信息页
+	Model.prototype.div1Click = function(event) {
+		justep.Shell.showPage("jibenxinxi");
+	};
+	// 修改手机号
+	Model.prototype.div2Click = function(event) {
+		justep.Shell.showPage("bindphone");
+	};
+	// 编辑户籍信息
+	Model.prototype.div3Click = function(event) {
+		justep.Shell.showPage("bindhuji");
+	};
+	// 编辑教育信息
+	Model.prototype.div4Click = function(event) {
+		justep.Shell.showPage("bindeditedu");
+	};
+		
+	// 添加教育信息
+	Model.prototype.sumedu = function(event) {
+		justep.Shell.showPage("bindaddedu");
+	};
+	// 编辑工作经历
+	Model.prototype.div5Click = function(event) {
+		justep.Shell.showPage("bindeditwork");
+	};
+	// 添加工作经历
+	Model.prototype.sumwork = function(event) {
+		justep.Shell.showPage("bindaddwork");
+	};
+	// json数据
+	testData = [ {
+		fschool_name : '北华大学',
+		fschool_start_data : '1997',
+		fschool_end_data : '2000',
+		frelated_major : '软件工程',
+		feducation : '本科',
+	}, {
+		fschool_name : '55555',
+		fschool_start_data : '201309',
+		fschool_end_data : '201507',
+		frelated_major : '222',
+		feducation : '3333',
+	} ];
+	Model.prototype.modelParamsReceive = function(event){
+			console.log("测试接收子页面数据 = "+this.params.name);
+			//$("#name").val(this.params.name);
+	};
+
+	return Model;
+});
+
+//图片路径
+var	img1url = "$UI/zupu/img/edua.png"
+//编辑教育信息
+function editedu(id)
+{
+	justep.Shell.showPage("bindeditedu",{
+		childid:id	
+	});
+}
+//编辑工作经历
+function editwork()
+{
+	justep.Shell.showPage("bindeditwork");
+	
+}

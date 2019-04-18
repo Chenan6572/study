@@ -1,0 +1,154 @@
+<!DOCTYPE HTML>
+<div component="$model/UI2/system/components/justep/window/window" design="device:m;" xid="window" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cI3iyuu" class="cI3iyuu" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/bootstrap/panel/panel,">
+  <style>.cI3iyuu{margin: 0} .body.cI3iyuu{border: 0; background: rgba(231, 64, 58, 1)} .height.cI3iyuu{height: 0} .item.cI3iyuu{background: white; border-bottom: 0.5rem solid rgb(242, 242, 242); padding-left: 5%; padding-right: 5%; padding-top: 1rem; padding-bottom: 0.7rem; display: flex; height: 10rem} .media_left.cI3iyuu{display: flex; flex-direction: column; height: 8rem; width: 6rem} .basic.cI3iyuu{height: 2rem; width: 6rem; line-height: 2rem; font-size: 1.5rem; font-weight: 1000; text-align: center} .media_head.cI3iyuu{padding-left: 0.5rem; padding-right: 0.5rem; padding-top: 0.5rem; width: 6rem; height: 5.5rem} .head.cI3iyuu{width: 100%; height: 100%} .yuan.cI3iyuu{border-radius: 5rem} .media_cont.cI3iyuu{display: flex; align-items: center; width: 60%; height: 10rem; padding-left: 2rem; text-align: left} span.cI3iyuu{font-size: 1.4rem} .media_edit.cI3iyuu{width: 6rem; text-align: center; line-height: 10rem} .top_line.cI3iyuu{padding-left: 4%; width: 6rem; height: 2rem} .td1.cI3iyuu{height: 2rem; width: 6rem} .table_line.cI3iyuu{border-bottom: 0.8vw solid rgb(242, 242, 242)} .sum.cI3iyuu{background: white; padding-top: 0.5rem; padding-bottom: 0.4rem; display: flex; justify-content: center; align-items: center; border-bottom: 0.5rem solid rgb(242, 242, 242)}</style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onActive:modelActive;onInactive:modelInactive;onLoad:onload;onParamsReceive:modelParamsReceive" __cid="cI3iyuu" class="cI3iyuu"></div>  
+  <div class="panel panel-default body cI3iyuu" component="$model/UI2/system/components/bootstrap/panel/panel" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/bootstrap/panel/panel'}" __cid="cI3iyuu"> 
+    <div xid="div1" class="x-panel-top  cI3iyuu" __cid="cI3iyuu"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cI3iyuu" xid="titleBar1" style="background-color:rgba(231, 64, 58, 1);" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" __cid="cI3iyuu"> 
+        <div class="x-titlebar-left cI3iyuu" xid="left1" reverse="true" __cid="cI3iyuu"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cI3iyuu" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'window.close'}" data-config="{&#34;icon&#34;:&#34;icon-chevron-left&#34;,&#34;label&#34;:&#34;&#34;}" __cid="cI3iyuu"> 
+            <i class="icon-chevron-left cI3iyuu" __cid="cI3iyuu"></i>  
+            <span __cid="cI3iyuu" class="cI3iyuu"></span> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cI3iyuu" xid="title1" __cid="cI3iyuu">个人信息编辑</div>  
+        <div class="x-titlebar-right  cI3iyuu" xid="right1" __cid="cI3iyuu">
+          <div class="empty cI3iyuu" __cid="cI3iyuu"></div>
+        </div> 
+      </div> 
+    </div>  
+    <div __cid="cI3iyuu" class="cI3iyuu"> 
+      <div class="list cI3iyuu" __cid="cI3iyuu"> 
+        <div class="item cI3iyuu" __cid="cI3iyuu"> 
+          <div class="media_left cI3iyuu" __cid="cI3iyuu"> 
+            <span class="basic cI3iyuu" __cid="cI3iyuu">基础信息</span>  
+            <div class="media_head  cI3iyuu" __cid="cI3iyuu"> 
+              <img id="head_image" alt="" xid="tou" class="head yuan cI3iyuu" __cid="cI3iyuu"> 
+            </div> 
+          </div>  
+          <div xid="cont" title="neirong" class="media_cont cI3iyuu" __cid="cI3iyuu"> 
+            <div __cid="cI3iyuu" class="cI3iyuu"> 
+              <span id="nameone" __cid="cI3iyuu" class="cI3iyuu"></span>  
+              <span __cid="cI3iyuu" class="cI3iyuu">&nbsp;</span>  
+              <span id="birthday" __cid="cI3iyuu" class="cI3iyuu"></span>  
+              <br __cid="cI3iyuu" class="cI3iyuu">  
+              <span id="" __cid="cI3iyuu" class="cI3iyuu"></span>现住址： 
+              <span id="nowaddress" __cid="cI3iyuu" class="cI3iyuu"></span>  
+              <img src="@justepContextPath@/v_cd3c862558e447df8e02e01a1fe1d434l_zh_CNs_d_m/zupu/img/address.png" alt="" xid="image3" __cid="cI3iyuu" class="cI3iyuu"> 
+            </div> 
+          </div>  
+          <div class="media_edit cI3iyuu" __cid="cI3iyuu" data-bind="event:{click:$model._callModelFn.bind($model, 'div1Click')}"> 
+            <img src="@justepContextPath@/v_981c4c8aa10d4d149c5476fe7cb8c935l_zh_CNs_d_m/zupu/img/edit.png" alt="" xid="link" __cid="cI3iyuu" class="cI3iyuu"> 
+          </div> 
+        </div> 
+      </div>  
+      <div class="list cI3iyuu" __cid="cI3iyuu"> 
+        <div class="item cI3iyuu" __cid="cI3iyuu"> 
+          <div class="media_left cI3iyuu" __cid="cI3iyuu"> 
+            <span class="basic cI3iyuu" __cid="cI3iyuu">联系方式</span>  
+            <div class="media_head cI3iyuu" __cid="cI3iyuu"> 
+              <img src="@justepContextPath@/v_b7a3ed56635a4ab5ba1d8672053ec5ccl_zh_CNs_d_m/zupu/img/lianxi.png" alt="" xid="tou" class="head cI3iyuu" height="100%" __cid="cI3iyuu"> 
+            </div> 
+          </div>  
+          <div xid="cont" title="neirong" class="media_cont cI3iyuu" __cid="cI3iyuu"> 
+            <span id="phone" __cid="cI3iyuu" class="cI3iyuu"></span> 
+          </div>  
+          <div class="media_edit cI3iyuu" __cid="cI3iyuu" data-bind="event:{click:$model._callModelFn.bind($model, 'div2Click')}"> 
+            <img src="@justepContextPath@/v_47acdc1729cb4f41b98ff48c688ee3c9l_zh_CNs_d_m/zupu/img/edit.png" alt="" xid="link" __cid="cI3iyuu" class="cI3iyuu"> 
+          </div> 
+        </div> 
+      </div>  
+      <div class="list cI3iyuu" __cid="cI3iyuu"> 
+        <div class="item cI3iyuu" __cid="cI3iyuu"> 
+          <div class="media_left cI3iyuu" __cid="cI3iyuu"> 
+            <span class="basic cI3iyuu" __cid="cI3iyuu">户籍信息</span>  
+            <div class="media_head cI3iyuu" __cid="cI3iyuu"> 
+              <img alt="" xid="tou" class="head cI3iyuu" src="@justepContextPath@/v_94cce6776e0a482ea526ff10a57b4f73l_zh_CNs_d_m/zupu/img/idcard.png" __cid="cI3iyuu"> 
+            </div> 
+          </div>  
+          <div xid="cont" title="neirong" class="media_cont cI3iyuu" __cid="cI3iyuu"> 
+            <div __cid="cI3iyuu" class="cI3iyuu"> 
+              <span id="" __cid="cI3iyuu" class="cI3iyuu"></span>户&nbsp;号：
+              <span id="doornum" __cid="cI3iyuu" class="cI3iyuu"></span>  
+              <br __cid="cI3iyuu" class="cI3iyuu">  
+              <span id="" __cid="cI3iyuu" class="cI3iyuu"></span>户籍类型： 
+              <span id="register_category" __cid="cI3iyuu" class="cI3iyuu"></span>  
+              <br __cid="cI3iyuu" class="cI3iyuu">  
+              <span id="" __cid="cI3iyuu" class="cI3iyuu"></span>户籍地址： 
+              <span id="address" __cid="cI3iyuu" class="cI3iyuu"></span> 
+            </div> 
+          </div>  
+          <div class="media_edit cI3iyuu" __cid="cI3iyuu" data-bind="event:{click:$model._callModelFn.bind($model, 'div3Click')}"> 
+            <img src="@justepContextPath@/v_40558f9c91964a02a6bd108015faee10l_zh_CNs_d_m/zupu/img/edit.png" alt="" xid="link" __cid="cI3iyuu" class="cI3iyuu"> 
+          </div> 
+        </div> 
+      </div>  
+      <div class="list cI3iyuu" id="education" __cid="cI3iyuu"> 
+        <div class="app1 cI3iyuu" __cid="cI3iyuu"> 
+          <div class="item cI3iyuu" v-for="data in edudata" __cid="cI3iyuu"> 
+            <div class="media_left cI3iyuu" __cid="cI3iyuu"> 
+              <span class="basic cI3iyuu" __cid="cI3iyuu">教育信息</span>  
+              <div class="media_head cI3iyuu" __cid="cI3iyuu"> 
+                <img src="@justepContextPath@/v_ba973cc1080d497982a6610231b83216l_zh_CNs_d_m/zupu/img/edua.png" alt="" xid="tou" class="head cI3iyuu" __cid="cI3iyuu"> 
+              </div> 
+            </div>  
+            <div xid="cont" title="neirong" class="media_cont cI3iyuu" __cid="cI3iyuu"> 
+              <div __cid="cI3iyuu" class="cI3iyuu"> 
+                <span id="name" v-html="data.school_name" __cid="cI3iyuu" class="cI3iyuu"></span>  
+                <br __cid="cI3iyuu" class="cI3iyuu">  
+                <span id="birthday" v-html="data.school_start_data" __cid="cI3iyuu" class="cI3iyuu"></span>  
+                <span id="" __cid="cI3iyuu" class="cI3iyuu"></span>-
+                <span id="" v-html="data.school_end_data" __cid="cI3iyuu" class="cI3iyuu"></span>  
+                <br __cid="cI3iyuu" class="cI3iyuu">  
+                <span id="nowaddress" v-html="data.related_major" __cid="cI3iyuu" class="cI3iyuu"></span>  
+                <span __cid="cI3iyuu" class="cI3iyuu"></span>|
+                <span v-html="data.education" __cid="cI3iyuu" class="cI3iyuu"></span> 
+              </div> 
+            </div>  
+            <div class="media_edit div4Click cI3iyuu" __cid="cI3iyuu"> 
+              <p hidden="hidden" class="hi cI3iyuu" v-html="data.id" __cid="cI3iyuu"></p>  
+              <img src="@justepContextPath@/v_241f3aae64674786a013def8bf6e08d0l_zh_CNs_d_m/zupu/img/edit.png" alt="" xid="link" __cid="cI3iyuu" class="cI3iyuu"> 
+            </div> 
+          </div> 
+        </div> 
+      </div>  
+      <div class="sum cI3iyuu" __cid="cI3iyuu" data-bind="event:{click:$model._callModelFn.bind($model, 'sumedu')}"> 
+        <img src="@justepContextPath@/v_b9701435ee074d50868b31bbe710cf0el_zh_CNs_d_m/zupu/img/sum.png" alt="" xid="sum2" __cid="cI3iyuu" class="cI3iyuu">  
+        <span class="span_jiaoyu cI3iyuu" __cid="cI3iyuu">&nbsp;&nbsp;继续添加教育经历</span> 
+      </div>  
+      <div class="list cI3iyuu" id="workexpre" __cid="cI3iyuu"> 
+        <div class="app2 cI3iyuu" __cid="cI3iyuu"> 
+          <div class="item cI3iyuu" v-for="data in workdata" __cid="cI3iyuu"> 
+            <div class="media_left cI3iyuu" __cid="cI3iyuu"> 
+              <span class="basic cI3iyuu" __cid="cI3iyuu">工作经历</span>  
+              <div class="media_head cI3iyuu" __cid="cI3iyuu"> 
+                <img src="@justepContextPath@/v_8263b40881364ff8b5ce342f48f55031l_zh_CNs_d_m/zupu/img/work.png" alt="" xid="tou" class="head cI3iyuu" __cid="cI3iyuu"> 
+              </div> 
+            </div>  
+            <div xid="cont" title="neirong" class="media_cont cI3iyuu" __cid="cI3iyuu"> 
+              <div __cid="cI3iyuu" class="cI3iyuu"> 
+                <span id="name" v-html="data.company_name" __cid="cI3iyuu" class="cI3iyuu"></span>  
+                <br __cid="cI3iyuu" class="cI3iyuu">  
+                <span id="birthday" v-html="data.company_end_time" __cid="cI3iyuu" class="cI3iyuu"></span>  
+                <span id="" __cid="cI3iyuu" class="cI3iyuu"></span>-
+                <span id="" v-html="data.company_start_time" __cid="cI3iyuu" class="cI3iyuu"></span>  
+                <br __cid="cI3iyuu" class="cI3iyuu">  
+                <span id="nowaddress" v-html="data.related_depart" __cid="cI3iyuu" class="cI3iyuu"></span>  
+                <span __cid="cI3iyuu" class="cI3iyuu"></span>|
+                <span id="" v-html="data.position" __cid="cI3iyuu" class="cI3iyuu"></span> 
+              </div> 
+            </div>  
+            <div class="media_edit div5Click cI3iyuu" __cid="cI3iyuu"> 
+              <p hidden="hidden" class="hi cI3iyuu" v-html="data.id" __cid="cI3iyuu"></p>  
+              <img src="@justepContextPath@/v_f9469d91afc94b238cc0d94e32b4ae01l_zh_CNs_d_m/zupu/img/edit.png" alt="" xid="link" __cid="cI3iyuu" class="cI3iyuu"> 
+            </div> 
+          </div> 
+        </div> 
+      </div>  
+      <div class="sum cI3iyuu" __cid="cI3iyuu" data-bind="event:{click:$model._callModelFn.bind($model, 'sumwork')}"> 
+        <img src="@justepContextPath@/v_e8372bf41fa2436f9e1e6786aba78223l_zh_CNs_d_m/zupu/img/sum.png" alt="" xid="sum2" __cid="cI3iyuu" class="cI3iyuu">  
+        <span class="span_jiaoyu cI3iyuu" __cid="cI3iyuu">&nbsp;&nbsp;继续添加工作经历</span> 
+      </div> 
+    </div> 
+  </div> 
+</div>

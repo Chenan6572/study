@@ -1,0 +1,24 @@
+define(function(require) {
+	var $ = require("jquery");
+	var justep = require("$UI/system/lib/justep");
+	require("js/jquery.qrcode");
+	var jQuery= require("js/qrcode");
+	var Model = function() {
+		this.callParent();
+	};
+
+	Model.prototype.modelLoad = function(event) {
+		// 初始化
+		
+		var q= this.getElementByXid('qrcode');		
+		$(q).qrcode({
+			render : "img", //渲染方式
+			text : "http://192.168.90.25:8020/qrcodetest/index.html", //url地址
+			height : 250,
+			width : 250,
+			src : 'img/head.png' //头像地址
+		});
+	};
+
+	return Model;
+});

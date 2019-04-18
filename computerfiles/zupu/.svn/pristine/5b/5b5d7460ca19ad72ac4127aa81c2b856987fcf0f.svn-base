@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" component="$UI/system/components/justep/window/window" design="device:m;"
+  xid="window">  
+  <div component="$UI/system/components/justep/model/model" xid="model" style="height:auto;top:704px;left:361px;"/>  
+  <div class="panel panel-default body" component="$UI/system/components/bootstrap/panel/panel"
+    xid="panel1"> 
+    <!--  頂部顯示欄  -->  
+    <div xid="div1" class="x-panel-top "> 
+      <div component="$UI/system/components/justep/titleBar/titleBar" class="x-titlebar"
+        xid="titleBar1" style="background-color:rgba(231, 64, 58, 1);"> 
+        <div class="x-titlebar-left" xid="left1" reverse="true"> 
+          <a component="$UI/system/components/justep/button/button" label=""
+            class="btn btn-link btn-only-icon" icon="icon-chevron-left" onClick="{operation:'window.close'}"
+            xid="backBtn"> 
+            <i class="icon-chevron-left"/>  
+            <span/> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title" xid="title1"><![CDATA[个人信息编辑]]></div>  
+        <div class="x-titlebar-right reverse" xid="right1"/> 
+      </div> 
+    </div>  
+    <div> 
+      <!-- 基础信息 -->  
+      <div class="list"> 
+        <div class="media_left"> 
+          <span class="basic">基础信息</span>  
+          <div class="media_head"> 
+            <img src="$UI/zupu/img/man.png" alt="" xid="tou" class="head"/> 
+          </div> 
+        </div>  
+        <div xid="cont" title="neirong" class="media_cont"> 
+          <span id="name">小某某</span>  
+          <span>|</span>  
+          <span id="birthday">1990-06-06</span>  
+          <br/>  
+          <span id="nowaddress">吉林省-吉林市-龙潭区</span>  
+          <img src="$UI/zupu/img/address.png" alt="" xid="image3"/> 
+        </div>  
+        <div class="media_edit" bind-click="div1Click"> 
+          <img src="$UI/zupu/img/edit.png" alt="" xid="link"/> 
+        </div> 
+      </div>  
+      <!-- 联系方式-->  
+      <div class="list"> 
+        <div class="media_left"> 
+          <span class="basic">联系方式</span>  
+          <div class="media_head"> 
+            <img src="$UI/zupu/img/u2051.png" alt="" xid="tou" class="head"/> 
+          </div> 
+        </div>  
+        <div xid="cont" title="neirong" class="media_cont"> 
+          <span id="phone">130123032032</span> 
+        </div>  
+        <div class="media_edit" bind-click="div2Click"> 
+          <img src="$UI/zupu/img/edit.png" alt="" xid="link"/> 
+        </div> 
+      </div>  
+      <!-- 户籍信息 -->  
+      <div class="list"> 
+        <div class="media_left"> 
+          <span class="basic">户籍信息</span>  
+          <div class="media_head"> 
+            <img src="$UI/zupu/img/huji.png" alt="" xid="tou" class="head"/> 
+          </div> 
+        </div>  
+        <div xid="cont" title="neirong" class="media_cont"> 
+          <span id="name"/>户号： 
+          <span id="birthday"/> 2355656
+          <span id=""/>农业户口
+          <br/>  
+          <span id="nowaddress"/> 吉林省-吉林市-龙潭区
+        </div>  
+        <div class="media_edit" bind-click="div3Click"> 
+          <img src="$UI/zupu/img/edit.png" alt="" xid="link"/> 
+        </div> 
+      </div>  
+      <!-- 教育信息 -->  
+      <div class="list"> 
+        <div class="media_left"> 
+          <span class="basic">教育信息</span>  
+          <div class="media_head"> 
+            <img src="$UI/zupu/img/edu.png" alt="" xid="tou" class="head"/> 
+          </div> 
+        </div>  
+        <div xid="cont" title="neirong" class="media_cont"> 
+          <span id="name"/>北华大学
+          <br/>  
+          <span id="birthday"/> 1990/09-2016/07
+          <br/>  
+          <span id="nowaddress"/> 软件工程
+          <span/>|
+          <span id=""/>本科
+        </div>  
+        <div class="media_edit" bind-click="div4Click"> 
+          <img src="$UI/zupu/img/edit.png" alt="" xid="link"/> 
+        </div> 
+      </div>  
+      <div class="sum" bind-click="sum_edu"> 
+        <img src="$UI/zupu/img/sum.png" alt="" xid="sum2"/>  
+        <span class="span_jiaoyu">继续添加教育经历</span> 
+      </div>  
+      <!-- 工作经历 -->  
+      <div class="list"> 
+        <div class="media_left"> 
+          <span class="basic">工作经历</span>  
+          <div class="media_head"> 
+            <img src="$UI/zupu/img/work.jpg" alt="" xid="tou" class="head"/> 
+          </div> 
+        </div>  
+        <div xid="cont" title="neirong" class="media_cont"> 
+          <span id="name"/>阿里巴巴
+          <br/>  
+          <span id="birthday"/> 8个月
+          <span/>| 
+          <span id="nowaddress"/> 高级攻城狮
+          <span/>|
+          <span id=""/>研发
+        </div>  
+        <div class="media_edit" bind-click="div5Click"> 
+          <img src="$UI/zupu/img/edit.png" alt="" xid="link"/> 
+        </div> 
+      </div>  
+      <div class="sum" bind-click="sum_work"> 
+        <img src="$UI/zupu/img/sum.png" alt="" xid="sum2"/>  
+        <span class="span_jiaoyu">继续添加工作经历</span> 
+      </div> 
+    </div> 
+  </div> 
+</div>

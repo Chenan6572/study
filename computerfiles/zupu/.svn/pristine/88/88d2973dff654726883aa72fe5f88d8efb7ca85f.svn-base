@@ -1,0 +1,109 @@
+.top_image {
+	margin-left: 35%;
+	margin-right: 35%;
+	margin-top: 5%;
+	margin-bottom: 10%;
+	border-radius: 15vw;
+	text-align: center;
+}
+
+.image_tou {
+	width: 70%;
+	height: 70%;
+	border-radius: 15vw;
+}
+
+.title {
+	background-color: rgba(231, 64, 58, 1)
+}
+
+.line {
+	height: 9vh;
+	width: 80%;
+	margin-left: 10%;
+	padding-top: 5px;
+	display: flex;
+	width: 80%;
+}
+
+.frame {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border: 1px solid rgba(228, 228, 228, 1);
+}
+
+.left {
+	text-align: center;
+	flex-grow: 0.25;
+	border-right: solid 1px black;
+}
+
+.input {
+	height: 7vh;
+	outline: none;
+	text-align: center;
+	border-width: 0;
+}
+
+.line_ {
+	height: 9vh;
+	width: 80%;
+	margin-left: 10%;
+	padding-top: 5px;
+	display: flex;
+	width: 80%;
+}
+
+.input_ {
+	outline: none;
+	height: 8vh;
+	border-width: 0;
+	text-align: center;
+}
+
+.frame_ {
+	display: flex;
+	flex-grow:1;
+	align-items: center;
+	border: 1px solid rgba(228, 228, 228, 1);
+}
+
+.button_ {
+	display: flex;
+	flex-grow:0.5;
+	align-items: center;
+	justify-content: center;	
+	margin-top: 2%;
+	padding-left: 3%;
+	padding-right: 3%;
+	margin-bottom: 2%;
+	border-radius: 10%;
+	background: rgba(231, 64, 58, 1);
+	color: white;
+	font-size: 3vw;
+	margin-left: 3%;
+}
+
+.bangding {
+	height: 6vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 10%;
+	margin-left: 15%;
+	width: 70%;
+	border-radius: 4vh;
+	background: rgba(231, 64, 58, 1);
+	color: white;
+	font-size: 5vw;
+}
+
+.clause {
+	margin-left: 17%;
+	font-size: 1.5vh;
+	margin-top:0.5vh;
+	color: #999999;
+}

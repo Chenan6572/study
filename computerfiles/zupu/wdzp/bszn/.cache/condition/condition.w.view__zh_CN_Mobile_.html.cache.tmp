@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/window/window" design="device:m;" xid="window" class="window c3MZNJv" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="c3MZNJv" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">  
+  <style xmlns="" xmlns:xhtml="http://www.w3.org/1999/xhtml">.title.c3MZNJv{background-color: rgba(231, 64, 58, 1)} .condition.c3MZNJv{border-bottom: 2vw solid rgba(242, 242, 242, 1)} .span_left.c3MZNJv{flex-grow: 8} .span_right.c3MZNJv{flex-grow: 1} .a.c3MZNJv{flex-grow: 6} .input.c3MZNJv{flex-grow: 0.5} .redian.c3MZNJv{padding-top: 2vw; padding-bottom: 2vw; border-bottom: 2px solid rgba(242, 242, 242, 1); display: flex} .left_redian.c3MZNJv{width: 10%; text-align: center} .right_redian.c3MZNJv{font-size: 5vw} .image_redian.c3MZNJv{} .input_css.c3MZNJv{width: 50%; border: none; text-align: center} .font-color.c3MZNJv{color: red} .btn_.c3MZNJv{margin-left: 5vw; margin-right: 5vw; padding-top: 3vw; padding-bottom: 3vw; display: -webkit-box; -webkit-box-pack: center; -webkit-box-align: center; width: 100%; border-radius: 30px; background: rgba(231, 64, 58, 1); color: white; font-size: 4vw} .chaxun.c3MZNJv{display: flex; padding-top: 10px; padding-bottom: 10px; padding-left: 10%; padding-right: 10%; border-bottom: 2px solid rgba(242, 242, 242, 1)}</style>  
+  <div xmlns="" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="c3MZNJv" class="c3MZNJv"/>  
+  <div xmlns="" component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcBnuQzu-iosstatusbar c3MZNJv" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="c3MZNJv"> 
+    <div class="x-panel-top c3MZNJv" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="c3MZNJv"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar title c3MZNJv" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;办事指南&quot;}" __cid="c3MZNJv"> 
+        <div class="x-titlebar-left c3MZNJv" __cid="c3MZNJv"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon c3MZNJv" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'window.close'}" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;,&quot;label&quot;:&quot;&quot;}" __cid="c3MZNJv"> 
+            <i class="icon-chevron-left c3MZNJv" __cid="c3MZNJv"/>  
+            <span __cid="c3MZNJv" class="c3MZNJv"/> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title c3MZNJv" __cid="c3MZNJv">办事指南</div>  
+        <div class="x-titlebar-right  c3MZNJv" __cid="c3MZNJv"> 
+          <div class="empty c3MZNJv" __cid="c3MZNJv"/> 
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content c3MZNJv" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="c3MZNJv"> 
+      <div class="condition c3MZNJv" __cid="c3MZNJv"> 
+        <div class="chaxun c3MZNJv" __cid="c3MZNJv"> 
+          <span class="span_left  c3MZNJv" __cid="c3MZNJv">地区</span>  
+          <span class="span_right font-color c3MZNJv" __cid="c3MZNJv">吉林省</span>  
+          <a __cid="c3MZNJv" class="c3MZNJv"> 
+            <img src="@justepContextPath@/v_92872fff729f48948fadc4cdb4921198l_zh_CNs_d_m/zupu/img/sj.png" alt="" xid="image2" __cid="c3MZNJv" class="c3MZNJv"/> 
+          </a> 
+        </div>  
+        <div class="chaxun c3MZNJv" __cid="c3MZNJv" data-bind="event:{click:$model._callModelFn.bind($model, 'bumenclick')}"> 
+          <span class="span_left c3MZNJv" id="bumen_leixing" __cid="c3MZNJv">部门</span>  
+          <span class="span_right font-color c3MZNJv" id="bumen_classification" __cid="c3MZNJv">全部</span>  
+          <a __cid="c3MZNJv" class="c3MZNJv"> 
+            <img src="@justepContextPath@/v_789e04cb4be9446e945b58fafa0f05dal_zh_CNs_d_m/zupu/img/sj.png" alt="" __cid="c3MZNJv" class="c3MZNJv"/> 
+          </a> 
+        </div>  
+        <div class="chaxun c3MZNJv" __cid="c3MZNJv"> 
+          <span class="span_left c3MZNJv" __cid="c3MZNJv">关键词</span>  
+          <input type="text" placeholder="请输入关键词,如教育等" class="input_css c3MZNJv" __cid="c3MZNJv"/> 
+        </div>  
+        <div class="chaxun c3MZNJv" style="padding-left:8%; padding-right:8%;" __cid="c3MZNJv"> 
+          <div class="btn_ c3MZNJv" onClick="zfsx" __cid="c3MZNJv">查询</div> 
+        </div> 
+      </div> 
+    </div>  
+    <style __cid="c3MZNJv" class="c3MZNJv">.x-panel.pcBnuQzu-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcBnuQzu-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcBnuQzu-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcBnuQzu-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcBnuQzu-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcBnuQzu-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcBnuQzu-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcBnuQzu-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcBnuQzu-iosstatusbar &gt;.x-panel-content {top: 48px;}</style> 
+  </div> 
+</div>

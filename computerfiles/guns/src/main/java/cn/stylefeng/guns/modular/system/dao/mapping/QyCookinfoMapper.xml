@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.stylefeng.guns.modular.system.dao.QyCookinfoMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="cn.stylefeng.guns.modular.system.model.QyCookinfo">
+        <id column="id" property="id" />
+        <result column="name" property="name" />
+        <result column="sex" property="sex" />
+        <result column="image" property="image" />
+        <result column="minzu" property="minzu" />
+        <result column="birsthday" property="birsthday" />
+        <result column="idnum" property="idnum" />
+        <result column="address" property="address" />
+        <result column="fazhengjg" property="fazhengjg" />
+        <result column="guoqidate" property="guoqidate" />
+        <result column="xinzghengqh" property="xinzghengqh" />
+        <result column="healthdate" property="healthdate" />
+        <result column="idzheng" property="idzheng" />
+        <result column="idfan" property="idfan" />
+        <result column="healthy" property="healthy" />
+        <result column="singincard" property="singincard" />
+        <result column="peixuncard" property="peixuncard" />
+        <result column="examinetime" property="examinetime" />
+        <result column="examinestate" property="examinestate" />
+        <result column="examinepop" property="examinepop" />
+        <result column="audiopinion" property="audiopinion" />
+        <result column="audiresults" property="audiresults" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, name, sex, image, minzu, birsthday, idnum, address, fazhengjg, guoqidate, xinzghengqh, healthdate, idzheng, idfan, healthy, singincard, peixuncard, examinetime, examinestate, examinepop, audiopinion, audiresults
+    </sql>
+
+</mapper>

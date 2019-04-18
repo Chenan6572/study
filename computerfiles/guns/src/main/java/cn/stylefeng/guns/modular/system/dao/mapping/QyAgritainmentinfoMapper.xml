@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.stylefeng.guns.modular.system.dao.QyAgritainmentinfoMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="cn.stylefeng.guns.modular.system.model.QyAgritainmentinfo">
+        <id column="id" property="id" />
+        <result column="useraccount" property="useraccount" />
+        <result column="name" property="name" />
+        <result column="sex" property="sex" />
+        <result column="photo" property="photo" />
+        <result column="nation" property="nation" />
+        <result column="birthdate" property="birthdate" />
+        <result column="idcard" property="idcard" />
+        <result column="address" property="address" />
+        <result column="certification" property="certification" />
+        <result column="expirationdate" property="expirationdate" />
+        <result column="administrative" property="administrative" />
+        <result column="idfront" property="idfront" />
+        <result column="idreverse" property="idreverse" />
+        <result column="businesslicense" property="businesslicense" />
+        <result column="hygienelicense" property="hygienelicense" />
+        <result column="auditor" property="auditor" />
+        <result column="audittime" property="audittime" />
+        <result column="auditstate" property="auditstate" />
+        <result column="audiopinion" property="audiopinion" />
+        <result column="audiresults" property="audiresults" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, useraccount, name, sex, photo, nation, birthdate, idcard, address, certification, expirationdate, administrative, idfront, idreverse, businesslicense, hygienelicense, auditor, audittime, auditstate, audiopinion, audiresults
+    </sql>
+
+</mapper>

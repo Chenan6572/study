@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" component="$UI/system/components/justep/window/window" design="device:m;"
+  xid="window" class="window">  
+  <div component="$UI/system/components/justep/model/model" xid="model" style="top:523px;left:310px;height:auto;"> 
+    <div component="$UI/system/components/justep/data/data" autoLoad="true"
+      xid="data1" idColumn="col0"> 
+      <column label="键" name="col0" type="Integer" xid="xid1"/>  
+      <column label="值" name="col1" type="String" xid="xid2"/>  
+      <data xid="default1">[{"col0":1,"col1":"未婚"},{"col0":2,"col1":"已婚"}]</data> 
+    </div>  
+    <div component="$UI/system/components/justep/data/data" autoLoad="true"
+      xid="data2" idColumn="col0"> 
+      <column name="col0" type="Integer" xid="xid3"/>  
+      <column name="col1" type="String" xid="xid4"/>  
+      <data xid="default2">[{"col0":1,"col1":"初婚"},{"col0":2,"col1":"二婚"}]</data> 
+    </div>  
+    <div component="$UI/system/components/justep/data/baasData" autoLoad="true"
+      xid="baasData1" queryAction="queryMarryhistory" saveAction="saveMarryhistory"
+      url="/zupu/Marryhistory" tableName="marryhistory" idColumn="Id"> 
+      <column label="用户ID" name="Id" type="Integer" xid="default7"/>  
+      <column label="婚姻状态" name="married" type="String" xid="default8"/>  
+      <column label="首婚时间" name="marriedFirst" type="Date" xid="default9"/>  
+      <column label="夫妻关系" name="marriedReleation" type="String" xid="default10"/> 
+    </div> 
+  </div>  
+  <div component="$UI/system/components/justep/panel/panel" class="x-panel x-full"
+    xid="panel1"> 
+    <div class="x-panel-top" xid="top1"> 
+      <div component="$UI/system/components/justep/titleBar/titleBar" title="婚姻状况"
+        class="x-titlebar" style="background-color:red;"> 
+        <div class="x-titlebar-left"> 
+          <a component="$UI/system/components/justep/button/button" label=""
+            class="btn btn-link btn-only-icon" icon="icon-chevron-left" onClick="{operation:'window.close'}"
+            xid="backBtn"> 
+            <i class="icon-chevron-left"/>  
+            <span/> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title">婚姻状况</div>  
+        <div class="x-titlebar-right reverse"/> 
+      </div> 
+    </div>  
+    <div class="x-panel-content" xid="content1"> 
+      <ul xid="ul1" class="list-group"> 
+        <li style="display:block"/>  
+        <li class="list-group-item" xid="li1"> 
+          <div component="$UI/system/components/justep/labelEdit/labelEdit"
+            class="x-label-edit x-label30" xid="labelEdit1"> 
+            <label class="x-label"><![CDATA[婚姻状况]]></label>  
+            <select component="$UI/system/components/justep/select/select" class="form-control x-edit"
+              xid="inMarried" bind-options="data1" bind-optionsValue="col0" bind-optionsLabel="col1"/> 
+          </div>  
+          <div component="$UI/system/components/justep/labelEdit/labelEdit"
+            class="x-label-edit x-label30" xid="labelEdit2"> 
+            <label class="x-label" xid="label2"><![CDATA[夫妻关系]]></label>  
+            <select component="$UI/system/components/justep/select/select" class="form-control x-edit"
+              xid="inMarriedReleation" bind-options="data2" bind-optionsValue="col0"
+              bind-optionsLabel="col1"/> 
+          </div>  
+          <div component="$UI/system/components/justep/labelEdit/labelEdit"
+            class="x-label-edit x-label30" xid="labelEdit3"> 
+            <label class="x-label" xid="label3"><![CDATA[初婚日期]]></label>  
+            <input id="date" class="form-control x-edit" readonly="readnoly" placeholder="选择日期"/> 
+          </div> 
+        </li>  
+        <li class="list-group-item" xid="li1" > 
+          <a component="$UI/system/components/justep/button/button" class="btn x-red" style="border-radius:50px;width:60%;margin-left:20%;margin-top:60%;font-size:15px;"
+            label="保存" xid="btnSaveMarried" onClick="btnSaveMarry"> 
+            <i xid="i1"/>  
+            <span xid="span1">保存</span> 
+          </a> 
+        </li> 
+      </ul> 
+    </div> 
+  </div> 
+</div>

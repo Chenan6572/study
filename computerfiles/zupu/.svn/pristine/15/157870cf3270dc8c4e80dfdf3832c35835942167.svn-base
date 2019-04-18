@@ -1,0 +1,31 @@
+define(function(require) {
+	var $ = require("jquery");
+	var justep = require("$UI/system/lib/justep");
+	var jsonsql = require("$UI/zupu/lib/jsonsql");
+
+	var Model = function() {
+		this.callParent();
+	};
+
+	
+	// 发送短信验证码
+	Model.prototype.yzm = function(event) {
+			var phonenum =$('#phonenum').val();
+			//测试电话
+			console.log("电话"+phonenum);
+		return 0;
+		
+	};
+	// 点击提交
+	Model.prototype.subclick = function(event){
+		var url = require.toUrl('./my/information/perinfo/perinfo.w')
+		var params = {
+			phonenum : phonenum ,
+			
+		}
+		justep.Shell.showPage(url, params)
+	};
+
+
+	return Model;
+});

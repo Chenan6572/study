@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/window/window" design="device:m;" xid="window" class="window ceQfiAb" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="ceQfiAb" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">  
+  <style xmlns="" xmlns:xhtml="http://www.w3.org/1999/xhtml">.update_up.ceQfiAb{margin-top: 1rem} .update_up.ceQfiAb, .update_dowm.ceQfiAb{border-top: 1px solid rgba(242, 242, 242, 1); font-size: 1.6rem; font-weight: 500; width: 100%; height: 6rem; line-height: 3.8rem; padding: 1rem 1.3rem; background: white; font-weight: 100} img.ceQfiAb{width: 1rem; height: 1.5rem; float: right; margin-top: 1.3rem} a.ceQfiAb{color: black}</style>  
+  <div xmlns="" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="ceQfiAb" class="ceQfiAb"/>  
+  <div xmlns="" component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcaqQzMn-iosstatusbar ceQfiAb" style="background-color:rgba(242, 242, 242, 1)" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="ceQfiAb"> 
+    <div class="x-panel-top ceQfiAb" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="ceQfiAb"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" style="background-color:rgba(231, 64, 58, 1)" class="x-titlebar ceQfiAb" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;选择方式&quot;}" __cid="ceQfiAb"> 
+        <div class="x-titlebar-left ceQfiAb" __cid="ceQfiAb"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon ceQfiAb" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'window.close'}" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;,&quot;label&quot;:&quot;&quot;}" __cid="ceQfiAb"> 
+            <i class="icon-chevron-left ceQfiAb" __cid="ceQfiAb"/>  
+            <span __cid="ceQfiAb" class="ceQfiAb"/> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title ceQfiAb" __cid="ceQfiAb">选择方式</div>  
+        <div class="x-titlebar-right  ceQfiAb" __cid="ceQfiAb"> 
+          <div class="empty ceQfiAb" __cid="ceQfiAb"/> 
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content  ceQfiAb" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="ceQfiAb"> 
+      <div class="update_up ceQfiAb" __cid="ceQfiAb" data-bind="event:{click:$model._callModelFn.bind($model, 'original_pwd')}">通过旧密码方式修改
+        <img src="@justepContextPath@/v_ef1cf3c5db78450089614e5c4f5ebd3cl_zh_CNs_d_m/zupu/img/u13.png" __cid="ceQfiAb" class="ceQfiAb"/> 
+      </div>  
+      <div class="update_dowm ceQfiAb" __cid="ceQfiAb" data-bind="event:{click:$model._callModelFn.bind($model, 'yz_pwd')}">通过手机号验证修改 
+        <img src="@justepContextPath@/v_76f4ab1d44dc46a985d4f244e250a886l_zh_CNs_d_m/zupu/img/u13.png" alt="" __cid="ceQfiAb" class="ceQfiAb"/> 
+      </div> 
+    </div>  
+    <style __cid="ceQfiAb" class="ceQfiAb">.x-panel.pcaqQzMn-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcaqQzMn-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcaqQzMn-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcaqQzMn-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcaqQzMn-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcaqQzMn-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcaqQzMn-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcaqQzMn-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcaqQzMn-iosstatusbar &gt;.x-panel-content {top: 48px;}</style> 
+  </div> 
+</div>

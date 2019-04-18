@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/window/window" design="device:m;" xid="window" class="window cuUZveu" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cuUZveu" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">  
+  <style xmlns="" xmlns:xhtml="http://www.w3.org/1999/xhtml">.content.cuUZveu{padding: 1rem 1.5rem} .up_content.cuUZveu{border: 1px solid rgba(121, 121, 121, 1); width: 100%; border-radius: 1rem; padding: 1rem 1.5rem; background-color: white} .up_content_imgs.cuUZveu{height: 50%} .up_content_imgs.cuUZveu img.cuUZveu{width: 5rem; height: 5rem} .up_content_imgs.cuUZveu span.cuUZveu{font-size: 1.5rem; margin-bottom: -10rem; margin-left: 1.5rem} .up_content_message.cuUZveu{margin-top: 0.5rem; font-size: 1.5rem} .zjzp.cuUZveu{margin-top: 2rem; font-size: 1.5rem; margin-bottom: 1rem} .down_content.cuUZveu{border: 1px solid rgba(121, 121, 121, 1); height: 16rem; width: 100%; border-radius: 1rem; background-color: white; margin-bottom: 1.5rem} .down_content_imgs.cuUZveu{height: 6rem; margin: 3.5rem auto} .down_content_imgs.cuUZveu img.cuUZveu{margin: auto; margin-bottom: 0.5rem; margin-left: 41%; width: 6rem; height: 5rem} .down_content_imgs.cuUZveu span.cuUZveu{text-align: center; font-size: 1.5rem; margin-left: 32%}</style>  
+  <div xmlns="" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cuUZveu" class="cuUZveu"/>  
+  <div xmlns="" component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcUjMVze-iosstatusbar cuUZveu" style="background-color:rgba(242, 242, 242, 1)" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cuUZveu"> 
+    <div class="x-panel-top cuUZveu" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cuUZveu"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" style="background-color:rgba(231, 64, 58, 1)" class="x-titlebar cuUZveu" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;身份证&quot;}" __cid="cuUZveu"> 
+        <div class="x-titlebar-left cuUZveu" __cid="cuUZveu"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cuUZveu" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'window.close'}" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;,&quot;label&quot;:&quot;&quot;}" __cid="cuUZveu"> 
+            <i class="icon-chevron-left cuUZveu" __cid="cuUZveu"/>  
+            <span __cid="cuUZveu" class="cuUZveu"/> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cuUZveu" __cid="cuUZveu">身份证</div>  
+        <div class="x-titlebar-right  cuUZveu" __cid="cuUZveu"> 
+          <div class="empty cuUZveu" __cid="cuUZveu"/> 
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content content cuUZveu" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cuUZveu"> 
+      <div class="up_content cuUZveu" __cid="cuUZveu"> 
+        <div class="up_content_imgs cuUZveu" __cid="cuUZveu"> 
+          <img src="@justepContextPath@/v_6257_nol_zh_CNs_desktopd_pc/zupu/img/u12.png" alt="" __cid="cuUZveu" class="cuUZveu"/>  
+          <span __cid="cuUZveu" class="cuUZveu">身份证</span> 
+        </div>  
+        <div class="up_content_message cuUZveu" __cid="cuUZveu"> 
+          <span __cid="cuUZveu" class="cuUZveu">身份证号</span>  
+          <br __cid="cuUZveu" class="cuUZveu"/>  
+          <span __cid="cuUZveu" class="cuUZveu">44050***********10</span> 
+        </div> 
+      </div>  
+      <div class="zjzp cuUZveu" __cid="cuUZveu"> 
+        <span __cid="cuUZveu" class="cuUZveu">证件照片</span> 
+      </div>  
+      <div class="down_content cuUZveu" __cid="cuUZveu"> 
+        <div class="down_content_imgs cuUZveu" __cid="cuUZveu"> 
+          <img src="@justepContextPath@/v_6257_nol_zh_CNs_desktopd_pc/zupu/img/u29.png" alt="" __cid="cuUZveu" class="cuUZveu"/>  
+          <br __cid="cuUZveu" class="cuUZveu"/>  
+          <span __cid="cuUZveu" class="cuUZveu">暂无证件正面照片</span> 
+        </div> 
+      </div>  
+      <div class="down_content cuUZveu" __cid="cuUZveu"> 
+        <div class="down_content_imgs cuUZveu" __cid="cuUZveu"> 
+          <img src="@justepContextPath@/v_6257_nol_zh_CNs_desktopd_pc/zupu/img/u29.png" alt="" __cid="cuUZveu" class="cuUZveu"/>  
+          <br __cid="cuUZveu" class="cuUZveu"/>  
+          <span __cid="cuUZveu" class="cuUZveu">暂无证件反面照片</span> 
+        </div> 
+      </div> 
+    </div>  
+    <style __cid="cuUZveu" class="cuUZveu">.x-panel.pcUjMVze-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcUjMVze-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcUjMVze-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcUjMVze-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcUjMVze-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcUjMVze-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcUjMVze-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcUjMVze-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcUjMVze-iosstatusbar &gt;.x-panel-content {top: 48px;}</style> 
+  </div> 
+</div>

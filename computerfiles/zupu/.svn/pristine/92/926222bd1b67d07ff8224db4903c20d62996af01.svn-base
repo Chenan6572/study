@@ -1,0 +1,126 @@
+define(function(require){
+	var $ = require("jquery");
+	var justep = require("$UI/system/lib/justep");
+	require("$UI/zupu/js/date/datePicker");
+	require("css!$UI/zupu/css/LCalendar").load();
+	//选择开始时间
+	var calendar = new datePicker();
+	calendar.init({
+		'trigger' : '#start_date', /* 按钮选择器，用于触发弹出插件 */
+		'type' : 'date',/* 模式：date日期；datetime日期时间；time时间；ym年月； */
+		'minDate' : '1900-1-1',/* 最小日期 */
+		'maxDate' : '2100-12-31',/* 最大日期 */
+		'onSubmit' : function() {/* 确认时触发事件 */
+			var theSelectData = calendar.value;
+		},
+		'onClose' : function() {/* 取消时触发事件 */
+		}
+	});
+	//选择毕业时间
+	var calendar = new datePicker();
+	calendar.init({
+		'trigger' : '#end_date', /* 按钮选择器，用于触发弹出插件 */
+		'type' : 'date',/* 模式：date日期；datetime日期时间；time时间；ym年月； */
+		'minDate' : '1900-1-1',/* 最小日期 */
+		'maxDate' : '2100-12-31',/* 最大日期 */
+		'onSubmit' : function() {/* 确认时触发事件 */
+			var theSelectData = calendar.value;
+		},
+		'onClose' : function() {/* 取消时触发事件 */
+		}
+	});
+	var Model = function(){
+		this.callParent();
+	};
+
+	Model.prototype.btnSaveEducation = function(event){
+	
+		var userid = localStorage.getItem("ID");;
+		var company = this.comp('inCompany').val();
+		var depart = this.comp('inDepart').val();
+		var job = this.comp('inJob').val();
+		var starttime=this.comp('inStart').val();
+		var finishtime=this.comp('inFinish').val();
+		
+		var data = this.comp("baasData1");
+		
+		
+		if(this.params.data)
+		{
+			if(data.find(['Id'],[this.params.data.Id]).length!=0)
+			{
+				var row = data.getRowByID(this.params.data.Id);
+				data.setValue("userid",userid,row);
+				data.setValue("school",company,row);
+				data.setValue("subject",depart,row);
+				data.setValue("record",job,row);
+				data.setValue("starttime",starttime,row);
+				data.setValue("finishtime",finishtime,row);
+			}
+		}
+		else
+				data.newData({
+					        	"defaultValues" : //array - 新增行的默认值数组 ，数组的长度决定新增行数，数组中的对象是列的默认值
+						            [
+						                {
+						                    userid : userid,
+						                    school : company,
+						                    subject: depart,
+						                    record :job,
+						                    starttime:starttime,
+						                    finishtime:finishtime
+						                }
+						            ],
+						        "onError" : function(e){},
+						        "onSuccess" : function (e){}
+				 });
+		 
+		 
+		var option={"onSuccess":function(e){ justep.Util.hint("保存成功！", {type: 'danger'});}};
+		data.saveData(option);
+		 
+		 justep.Shell.fireEvent("onEducationChanged", {
+             "classData" :"abc"
+		 });
+		 justep.Shell.closePage();
+
+	};
+
+	Model.prototype.modelParamsReceive = function(event){
+		
+		if(this.params.data)
+		{
+			console.log(this.params.data);
+			
+			this.comp("inCompany").val(this.params.data.rowData.school.value);
+			this.comp("inDepart").val(this.params.data.rowData.subject.value);
+			this.comp("inJob").val(this.params.data.rowData.record.value);
+			this.comp("inStart").val(this.params.data.rowData.starttime.value);
+			this.comp("inFinish").val(this.params.data.rowData.finishtime.value);
+		}
+		else
+		;
+	};
+
+	Model.prototype.btnSaveWork = function(event){
+
+	};
+
+	Model.prototype.btnDeleteClick = function(event){
+
+		var data = this.comp("baasData1");
+		//data.refreshData();
+		if(data.find(['Id'],[this.params.data.Id]).length!=0)
+		{
+			var row = data.getRowByID(this.params.data.Id);
+			data.deleteData(row);
+			justep.Util.hint("删除成功！", {type: 'success'});
+			justep.Shell.fireEvent("onEducationChanged", {
+				"classData" :"abc"
+			});
+			justep.Shell.closePage();
+		}
+	};
+
+	return Model;
+});

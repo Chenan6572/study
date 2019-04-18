@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" component="$UI/system/components/justep/window/window" design="device:m;"
+  xid="window" class="window">  
+  <div component="$UI/system/components/justep/model/model" xid="model" style="top:79px;left:277px;height:auto;"
+    onParamsReceive="modelParamsReceive"> 
+    <div component="$UI/system/components/justep/data/baasData" autoLoad="true"
+      xid="baasData1" queryAction="queryEducationhistory" saveAction="saveEducationhistory"
+      url="/zupu/Educationhistory" tableName="educationhistory" idColumn="Id" directDelete="true"
+      confirmDelete="false"> 
+      <column label="Id" name="Id" type="Integer" xid="default1"/>  
+      <column label="用户ID" name="userid" type="Integer" xid="default2"/>  
+      <column label="大学" name="school" type="String" xid="default3"/>  
+      <column label="专业" name="subject" type="String" xid="default4"/>  
+      <column label="学历" name="record" type="String" xid="default5"/>  
+      <column label="开始时间" name="starttime" type="Date" xid="default6"/>  
+      <column label="结束时间" name="finishtime" type="Date" xid="default7"/>  
+      <column label="工作时长" name="howlong" type="String" xid="default8"/> 
+    </div> 
+  </div>  
+  <div component="$UI/system/components/justep/panel/panel" class="x-panel x-full"
+    xid="panel1"> 
+    <div class="x-panel-top" xid="top1"> 
+      <div component="$UI/system/components/justep/titleBar/titleBar" title="教育经历"
+        class="x-titlebar" style="background-color:#FF0000;"> 
+        <div class="x-titlebar-left"> 
+          <a component="$UI/system/components/justep/button/button" label=""
+            class="btn btn-link btn-only-icon" icon="icon-chevron-left" onClick="{operation:'window.close'}"
+            xid="backBtn"> 
+            <i class="icon-chevron-left"/>  
+            <span/> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title"><![CDATA[教育经历]]></div>  
+        <div class="x-titlebar-right reverse"/> 
+      </div> 
+    </div>  
+    <div class="x-panel-content" xid="content1"> 
+      <ul xid="ul1" class=""> 
+        <li style="display:block"/>  
+        <li class="list-group-item" xid="li1"> 
+          <div component="$UI/system/components/justep/labelEdit/labelEdit"
+            class="x-label-edit x-label30" xid="labelEdit3"> 
+            <label class="x-label" xid="label3" style="width:18%"><![CDATA[学校]]></label>  
+            <input component="$UI/system/components/justep/input/input" class=" x-edit"
+              xid="inCompany" dataType="String" style="border:none;outline:none;" placeholder="请输入学校（必填）"/> 
+          </div>  
+          <div component="$UI/system/components/justep/labelEdit/labelEdit"
+            class="x-label-edit x-label30" xid="labelEdit2"> 
+            <label class="x-label" xid="label2" style="width:18%"><![CDATA[专业]]></label>  
+            <input component="$UI/system/components/justep/input/input" class="form-control x-edit"
+              xid="inDepart" valueUpdateMode="input" placeHolder="请选择专业（必填）"/> 
+          </div>  
+          <div component="$UI/system/components/justep/labelEdit/labelEdit"
+            class="x-label-edit x-label30" xid="labelEdit3"> 
+            <label class="x-label" xid="label3" style="width:18%"><![CDATA[学历]]></label>  
+            <input component="$UI/system/components/justep/input/input" class="form-control x-edit"
+              xid="inJob" placeHolder="请选择学历（必填）"/> 
+          </div>  
+          <div component="$UI/system/components/justep/labelEdit/labelEdit"
+            class="x-label-edit x-label30" xid="labelEdit3"> 
+            <label class="x-label" xid="label3" style="width:18%"><![CDATA[时间]]></label>  
+             <input id="start_date" class="form-control x-edit" readonly="readnoly" placeholder="选择入校时间"/>   
+            <span>至</span>  
+            <input id="end_date" class="form-control x-edit" readonly="readnoly" placeholder="选择毕业时间" /> 
+          </div> 
+        </li>  
+        <li> 
+          <div xid="div5" class="list-group-item"> 
+            <a component="$UI/system/components/justep/button/button" class="btn x-red btn-block"
+              label="保存" xid="btnSubmit" onClick="btnSaveEducation" style="border-radius:50px;width:60%;margin:0 auto "> 
+              <i xid="i1"/>  
+              <span xid="span2">保存</span> 
+            </a> 
+          </div> 
+        </li>  
+        <li> 
+          <div xid="div5" class="list-group-item"> 
+            <a component="$UI/system/components/justep/button/button" class="btn x-gray btn-block"
+              label="删除" xid="btnDelete" onClick="btnDeleteClick" style="border-radius:50px;width:60%;margin:0 auto;background-color:#C0C0C0;"> 
+              <i xid="i1"/>  
+              <span xid="span2">删除</span> 
+            </a> 
+          </div> 
+        </li>  
+        <!-- <li class="list-group-item" xid="li1"></li>  --> 
+      </ul> 
+    </div> 
+  </div> 
+</div>

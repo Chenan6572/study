@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:v-bind="http://vue.sike.io/" xmlns:v-on="http://vue.sike.io/" component="$model/UI2/system/components/justep/window/window" design="device:m;" xid="window" class="window cQV7zYz" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cQV7zYz" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">  
+  <style xmlns="" xmlns:xhtml="http://www.w3.org/1999/xhtml">.pic.cQV7zYz{margin-top: 1.5rem; width: 100%; height: 10rem; border-bottom: 1px solid rgba(215, 215, 215, 1); background: white} .font_pic.cQV7zYz{width: 30%; height: 9rem; line-height: 10rem; text-align: left; font-size: 1.5rem; float: left; color: black; margin-left: 1.3rem} .imgss.cQV7zYz{width: 8rem; height: 8rem; border-radius: 4rem; margin-top: 1rem; margin-right: 1rem; float: right} .pic_pic.cQV7zYz img.cQV7zYz{width: 8rem; height: 8rem; border-radius: 4rem; float: right} .all_list_all.cQV7zYz{width: 100%; height: 5rem; border-bottom: 1px solid rgba(215, 215, 215, 1); background: white} .all_list_left.cQV7zYz{width: 25%; height: 5rem; line-height: 5rem; text-align: left; font-size: 1.5rem; float: left; color: black; direction: ltr; margin-left: 1.3rem} .all_list_right.cQV7zYz{width: 70%; height: 5rem; float: right} .all_list_right.cQV7zYz input.cQV7zYz{border: none; outline: none; font-size: 1.5rem; text-align: right; margin-right: 2rem; direction: ltr; margin-top: 0.5rem; height: 4rem; width: 80%; float: right} .btns.cQV7zYz{width: 70%; height: 4rem; line-height: 4rem; color: azure; font-size: 2rem; text-align: center; margin: 5rem auto; background-color: rgba(231, 64, 58, 1); border-radius: 10rem}</style>  
+  <div xmlns="" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:onload" __cid="cQV7zYz" class="cQV7zYz"/>  
+  <div xmlns="" component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcVZNrMf-iosstatusbar cQV7zYz" style="background:rgba(242, 242, 242, 1)" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cQV7zYz"> 
+    <div class="x-panel-top cQV7zYz" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cQV7zYz"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cQV7zYz" style="background-color: rgba(231, 64, 58, 1);" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;基础信息&quot;}" __cid="cQV7zYz"> 
+        <div class="x-titlebar-left cQV7zYz" __cid="cQV7zYz"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cQV7zYz" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'window.close'}" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;,&quot;label&quot;:&quot;&quot;}" __cid="cQV7zYz"> 
+            <i class="icon-chevron-left cQV7zYz" __cid="cQV7zYz"/>  
+            <span __cid="cQV7zYz" class="cQV7zYz"/> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cQV7zYz" __cid="cQV7zYz">基础信息</div>  
+        <div class="x-titlebar-right  cQV7zYz" __cid="cQV7zYz"> 
+          <div class="empty cQV7zYz" __cid="cQV7zYz"/> 
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content cQV7zYz" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cQV7zYz"> 
+      <div class="content cQV7zYz" __cid="cQV7zYz"> 
+        <div class="pic cQV7zYz" __cid="cQV7zYz"> 
+          <div class="font_pic cQV7zYz" __cid="cQV7zYz">头像</div>  
+          <div class="pic_pic cQV7zYz" __cid="cQV7zYz"> 
+            <div component="$model/UI2/system/components/justep/button/button" class="imgss cQV7zYz" id="imageOutput" xid="div1_1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:getPicturesClick" __cid="cQV7zYz"> 
+              <img src="" xid="image1" id="imagetou" alt="图片" __cid="cQV7zYz" class="cQV7zYz"/> 
+            </div> 
+          </div> 
+        </div>  
+        <div class="all_list_all cQV7zYz" __cid="cQV7zYz"> 
+          <div class="all_list_left cQV7zYz" __cid="cQV7zYz">姓名</div>  
+          <div class="all_list_right cQV7zYz" __cid="cQV7zYz"> 
+            <input type="text" id="names" placeholder="" __cid="cQV7zYz" class="cQV7zYz"/> 
+          </div> 
+        </div>  
+        <div class="all_list_all cQV7zYz" __cid="cQV7zYz"> 
+          <div class="all_list_left cQV7zYz" __cid="cQV7zYz">性别</div>  
+          <div class="all_list_right cQV7zYz" id="showUserPicker" __cid="cQV7zYz"> 
+            <input type="text" id="sex" placeholder="性别" __cid="cQV7zYz" class="cQV7zYz"/> 
+          </div> 
+        </div>  
+        <div class="all_list_all cQV7zYz" __cid="cQV7zYz"> 
+          <div class="all_list_left cQV7zYz" __cid="cQV7zYz">出生日期</div>  
+          <div class="all_list_right cQV7zYz" __cid="cQV7zYz"> 
+            <input id="birthdate" type="text" placeholder="出生日期" readonly="true" __cid="cQV7zYz" class="cQV7zYz"/> 
+          </div> 
+        </div>  
+        <div class="all_list_all cQV7zYz" __cid="cQV7zYz"> 
+          <div class="all_list_left cQV7zYz" __cid="cQV7zYz">祖籍</div>  
+          <div class="all_list_right cQV7zYz" __cid="cQV7zYz"> 
+            <input type="text" placeholder="祖籍" id="register_address" __cid="cQV7zYz" class="cQV7zYz"/> 
+          </div> 
+        </div>  
+        <div class="all_list_all cQV7zYz" __cid="cQV7zYz"> 
+          <div class="all_list_left cQV7zYz" __cid="cQV7zYz">现居住地</div>  
+          <div class="all_list_right cQV7zYz" __cid="cQV7zYz"> 
+            <input type="text" placeholder="请输入居住地" id="nowsaddress" __cid="cQV7zYz" class="cQV7zYz"/> 
+          </div> 
+        </div>  
+        <div class="all_list_all cQV7zYz" __cid="cQV7zYz"> 
+          <div class="all_list_left cQV7zYz" __cid="cQV7zYz">简介</div>  
+          <div class="all_list_right cQV7zYz" __cid="cQV7zYz"> 
+            <input type="text" placeholder="" id="introductions" __cid="cQV7zYz" class="cQV7zYz"/> 
+          </div> 
+        </div>  
+        <div class="btns cQV7zYz" __cid="cQV7zYz" data-bind="event:{click:$model._callModelFn.bind($model, 'savebtn')}">保 存</div> 
+      </div> 
+    </div>  
+    <style __cid="cQV7zYz" class="cQV7zYz">.x-panel.pcVZNrMf-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcVZNrMf-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcVZNrMf-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcVZNrMf-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcVZNrMf-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcVZNrMf-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcVZNrMf-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcVZNrMf-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcVZNrMf-iosstatusbar &gt;.x-panel-content {top: 48px;}</style> 
+  </div> 
+</div>

@@ -1,0 +1,105 @@
+define(function (require) {
+	var $ = require("jquery");
+	var justep = require("$UI/system/lib/justep");
+	var UserID = "";
+	var Model = function () {
+		this.callParent();
+		this.loadUser = true;
+	};
+
+	// Model.prototype.modelLoad = function (event) {
+
+	// 	return;
+	// 	this.comp("baasData1").setFilter("filter1",
+	// 		"UserID='" + localStorage.getItem("ID") + "'");
+	// 	if (this.loadUser) {
+	// 		var userBindDate = this.comp("baasData1");
+	// 		userBindDate.refreshData();
+	// 		// 如果是第一次使用，没有返回数据则添加一条记录
+	// 		if (userBindDate.getCount() == 0) {
+	// 			userBindDate.newData({
+	// 				defaultValues: [{
+	// 					"UserID": localStorage.getItem("ID"),
+	// 					"Name": localStorage.getItem("ID")
+	// 				}]
+	// 			});
+	// 			this.loadUser = false;
+	// 		}
+	// 	}
+	// };
+
+	Model.prototype.bindClick = function (event) {
+		var loginName = localStorage.getItem("loginName");
+		var name = document.getElementById("name").value;
+		var idcard = document.getElementById("idcard").value;
+		console.log("Token = "+localStorage.getItem('Token'));
+		console.log(loginName);
+		$.ajax({
+			headers:{
+				Authorization: "Bearer " + localStorage.getItem('Token'),
+			},
+			url: 'http://10.10.1.198:8088/YProject/api/verification?login_name='+loginName+'&name='+name+'&idcard='+idcard,
+			processData: false,
+			cache: false,
+			async: true,
+			global: false,
+			contentType: "application/json; charset=utf-8",
+			datatype: "json",
+			type: 'get',
+			success: function (res) {
+				if (res.state==="200"){	
+					justep.Util.hint(res.message, {
+						type: 'danger'	
+					});	
+					justep.Shell.showPage("main");				
+				}else{
+					justep.Util.hint(res.message, {
+					type: 'danger'	
+				});				
+				}	
+			},
+			error: function (res) {
+				justep.Util.hint(res.message, {
+					type: 'danger'
+				});
+			}
+		});
+		return;
+	}
+
+	// justep.Shell.showPage("main")
+	// return;
+
+	/*justep.Baas.sendRequest({
+		"url" : "/zupu/User",
+		"action" : "BindIDCard",
+		"async" : false,
+		"params" : {
+			"Name" : name,
+			"IDcard" : idcard,
+			"LoginName" : loginName
+		},
+		"success" : function(data) {
+			if (data.code == "1") {
+				localStorage.setItem("Username", name);
+				localStorage.setItem("NickName", name);
+				// justep.Shell.showPage("main") ;
+				justep.Shell.fireEvent("onClassChanged", {});
+				// justep.Portal.openWindow("main");
+				justep.Shell.showPage("main").done(function() {
+					// justep.Shell.closePage();
+				});
+
+				// return;
+				// justep.Shell.setIsSinglePage();
+				// justep.Shell.closeAllOpendedPages();
+
+			} else
+				justep.Util.hint("姓名与身份证号不匹配，绑定失败！", {
+					type : 'danger'
+				});
+		}
+	});
+};*/
+return Model;
+});

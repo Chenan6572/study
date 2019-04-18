@@ -1,0 +1,19 @@
+define(function(require) {
+	var $ = require("jquery");
+	var justep = require("$UI/system/lib/justep");
+
+	var Model = function() {
+		this.callParent();
+	};
+	var bumen_leixing =$("#bumen_leixing").text();
+	var bumen_classification = $("#bumen_classification").text();
+	//跳转进入选项卡
+	Model.prototype.bumenclick = function(event){
+		/*justep.Shell.showPage("bumenclick",{
+			bumen_leixing :bumen_leixing,
+			bumen_classification :bumen_classification,
+		});*/
+
+	};
+	return Model;
+});

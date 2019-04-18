@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/window/window" design="device:m;" xid="window" class="window cMfQnU3" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cMfQnU3" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">  
+  <style xmlns="" xmlns:xhtml="http://www.w3.org/1999/xhtml">.title.cMfQnU3{background-color: rgba(231, 64, 58, 1)} .condition.cMfQnU3{border-bottom: 2vw solid rgba(242, 242, 242, 1)} .span_left.cMfQnU3{flex-grow: 8} .span_right.cMfQnU3{flex-grow: 1} .a.cMfQnU3{flex-grow: 6} .input.cMfQnU3{flex-grow: 0.5} .redian.cMfQnU3{padding-top: 2vw; padding-bottom: 2vw; border-bottom: 2px solid rgba(242, 242, 242, 1); display: flex} .left_redian.cMfQnU3{width: 10%; text-align: center} .right_redian.cMfQnU3{font-size: 5vw} .image_redian.cMfQnU3{} .input_css.cMfQnU3{width: 50%; border: none; text-align: center} .font-color.cMfQnU3{color: red} .btn_.cMfQnU3{margin-left: 5vw; margin-right: 5vw; padding-top: 3vw; padding-bottom: 3vw; display: -webkit-box; -webkit-box-pack: center; -webkit-box-align: center; width: 100%; border-radius: 30px; background: rgba(231, 64, 58, 1); color: white; font-size: 4vw} .chaxun.cMfQnU3{display: flex; padding-top: 10px; padding-bottom: 10px; padding-left: 10%; padding-right: 10%; border-bottom: 2px solid rgba(242, 242, 242, 1)}</style>  
+  <div xmlns="" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onActive:modelActive;onLoad:modelLoad;onParamsReceive:modelParamsReceive" __cid="cMfQnU3" class="cMfQnU3"/>  
+  <div xmlns="" component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcuUvE73-iosstatusbar cMfQnU3" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cMfQnU3"> 
+    <div class="x-panel-top cMfQnU3" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cMfQnU3"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar title cMfQnU3" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;办事指南&quot;}" __cid="cMfQnU3"> 
+        <div class="x-titlebar-left cMfQnU3" __cid="cMfQnU3"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cMfQnU3" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'window.close'}" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;,&quot;label&quot;:&quot;&quot;}" __cid="cMfQnU3"> 
+            <i class="icon-chevron-left cMfQnU3" __cid="cMfQnU3"/>  
+            <span __cid="cMfQnU3" class="cMfQnU3"/> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cMfQnU3" __cid="cMfQnU3">办事指南</div>  
+        <div class="x-titlebar-right  cMfQnU3" __cid="cMfQnU3"> 
+          <div class="empty cMfQnU3" __cid="cMfQnU3"/> 
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content cMfQnU3" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cMfQnU3"> 
+      <div class="condition cMfQnU3" __cid="cMfQnU3"> 
+        <div class="chaxun cMfQnU3" __cid="cMfQnU3"> 
+          <span class="span_left  cMfQnU3" __cid="cMfQnU3">地区</span>  
+          <span class="span_right font-color cMfQnU3" __cid="cMfQnU3">吉林省</span>  
+          <a __cid="cMfQnU3" class="cMfQnU3"> 
+            <img src="@justepContextPath@/v_6257_nol_zh_CNs_desktopd_pc/zupu/img/sj.png" alt="" xid="image2" __cid="cMfQnU3" class="cMfQnU3"/> 
+          </a> 
+        </div>  
+        <div class="chaxun cMfQnU3" __cid="cMfQnU3" data-bind="event:{click:$model._callModelFn.bind($model, 'bumenclick')}"> 
+          <span class="span_left cMfQnU3" id="bumen_leixing" __cid="cMfQnU3">部门</span>  
+          <span class="span_right font-color cMfQnU3" id="bumen_classification" __cid="cMfQnU3">全部</span>  
+          <a __cid="cMfQnU3" class="cMfQnU3"> 
+            <img src="@justepContextPath@/v_6257_nol_zh_CNs_desktopd_pc/zupu/img/sj.png" alt="" __cid="cMfQnU3" class="cMfQnU3"/> 
+          </a> 
+        </div>  
+        <div class="chaxun cMfQnU3" __cid="cMfQnU3"> 
+          <span class="span_left cMfQnU3" __cid="cMfQnU3">关键词</span>  
+          <input type="text" placeholder="请输入关键词,如教育等" class="input_css cMfQnU3" __cid="cMfQnU3"/> 
+        </div>  
+        <div class="chaxun cMfQnU3" style="padding-left:8%; padding-right:8%;" __cid="cMfQnU3"> 
+          <div class="btn_ cMfQnU3" __cid="cMfQnU3" data-bind="event:{click:$model._callModelFn.bind($model, 'search')}">查询</div> 
+        </div> 
+      </div> 
+    </div>  
+    <style __cid="cMfQnU3" class="cMfQnU3">.x-panel.pcuUvE73-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcuUvE73-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcuUvE73-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcuUvE73-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcuUvE73-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcuUvE73-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcuUvE73-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcuUvE73-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcuUvE73-iosstatusbar &gt;.x-panel-content {top: 48px;}</style> 
+  </div> 
+</div>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/window/window" design="device:m;" xid="window" class="window cee2Mfi" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cee2Mfi" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">  
+  <style xmlns="" xmlns:xhtml="http://www.w3.org/1999/xhtml">.clear.cee2Mfi:after{content: ""; display: block; clear: both; height: 0; overflow: hidden; visibility: hidden} .clear.cee2Mfi{zoom: 1} .up_content.cee2Mfi, .middle_content.cee2Mfi, .down_content.cee2Mfi{width: 100%; padding: 0.5rem 2rem} .txt_tips.cee2Mfi{margin-top: 2rem} .txt_tips.cee2Mfi img.cee2Mfi{margin-top: -6px; width: 2rem; height: 2rem; margin-left: 1rem} .txt_tips.cee2Mfi span.cee2Mfi{font-size: 2rem} .inputs.cee2Mfi{margin-top: 2rem; width: 100%; height: 5.6rem; direction: ltr; border: 1px solid rgba(201, 201, 201, 1); padding: 1rem; border-radius: 1rem} .inputs.cee2Mfi:hover{border: 1px solid rgba(231, 64, 58, 1)} .name_inputs.cee2Mfi{width: 30%; margin-top: 1rem; height: 2rem; line-height: 1.8rem; font-size: 2rem} input.cee2Mfi{margin-top: -3.2rem; float: right; width: 69%; height: 4rem; border: none; outline: none; font-size: 1.5rem} .up_de.cee2Mfi{width: 100%; margin-top: 1rem} .upload_imgs.cee2Mfi{float: left; width: 80%} .delete_tips.cee2Mfi{float: left; width: 20%} .delete_tips.cee2Mfi img.cee2Mfi{width: 30%; margin-top: 3rem; margin-left: 1rem} .delete_tips.cee2Mfi img.cee2Mfi{display: block} .upload_imgs.cee2Mfi img.cee2Mfi{width: 90%; margin-left: 1rem} .down_content.cee2Mfi{width: 80%; height: 4rem; background-color: rgba(231, 64, 58, 1); border-radius: 2rem; text-align: center; margin: 2rem auto} .down_content.cee2Mfi span.cee2Mfi{font-size: 2rem; color: white; margin: 0 auto; line-height: 3rem}</style>  
+  <div xmlns="" component="$model/UI2/system/components/justep/model/model" xid="model1" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cee2Mfi" class="cee2Mfi"/>  
+  <div xmlns="" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cee2Mfi" class="cee2Mfi"/>  
+  <div xmlns="" component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcviAfym-iosstatusbar cee2Mfi" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cee2Mfi"> 
+    <div class="x-panel-top cee2Mfi" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cee2Mfi"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" style="background-color:rgba(231, 64, 58, 1)" class="x-titlebar cee2Mfi" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;预审填写&quot;}" __cid="cee2Mfi"> 
+        <div class="x-titlebar-left cee2Mfi" __cid="cee2Mfi"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cee2Mfi" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'window.close'}" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;,&quot;label&quot;:&quot;&quot;}" __cid="cee2Mfi"> 
+            <i class="icon-chevron-left cee2Mfi" __cid="cee2Mfi"/>  
+            <span __cid="cee2Mfi" class="cee2Mfi"/> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cee2Mfi" __cid="cee2Mfi">预审填写</div>  
+        <div class="x-titlebar-right  cee2Mfi" __cid="cee2Mfi"> 
+          <div class="empty cee2Mfi" __cid="cee2Mfi"/> 
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content cee2Mfi" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cee2Mfi"> 
+      <div class="up_content cee2Mfi" __cid="cee2Mfi"> 
+        <div class="txt_tips cee2Mfi" __cid="cee2Mfi"> 
+          <img src="@justepContextPath@/v_a811dbf2612e4f229540346517a3bca6l_zh_CNs_d_m/zupu/img/u41.png" __cid="cee2Mfi" class="cee2Mfi"/>  
+          <span __cid="cee2Mfi" class="cee2Mfi">申请人信息</span> 
+        </div>  
+        <div class="inputs clear cee2Mfi" __cid="cee2Mfi"> 
+          <div class="name_inputs cee2Mfi" __cid="cee2Mfi">姓名</div>  
+          <input type="text" placeholder="请输入您的姓名" id="names" __cid="cee2Mfi" class="cee2Mfi"/> 
+        </div>  
+        <div class="inputs cee2Mfi" __cid="cee2Mfi"> 
+          <div class="name_inputs cee2Mfi" __cid="cee2Mfi">电话</div>  
+          <input type="text" placeholder="请输入您的电话" id="phones" __cid="cee2Mfi" class="cee2Mfi"/> 
+        </div>  
+        <div class="inputs cee2Mfi" __cid="cee2Mfi"> 
+          <div class="name_inputs cee2Mfi" __cid="cee2Mfi">身份证</div>  
+          <input type="text" placeholder="请输入您的身份证号" id="idcards" __cid="cee2Mfi" class="cee2Mfi"/> 
+        </div> 
+      </div>  
+      <div class="middle_content cee2Mfi" __cid="cee2Mfi"> 
+        <div class="txt_tips cee2Mfi" __cid="cee2Mfi"> 
+          <img src="@justepContextPath@/v_19eb2435bd0047569afa1806b9a98660l_zh_CNs_d_m/zupu/img/u44.png" __cid="cee2Mfi" class="cee2Mfi"/>  
+          <span __cid="cee2Mfi" class="cee2Mfi">申请人资料信息</span> 
+        </div>  
+        <div class="up_de clear cee2Mfi" __cid="cee2Mfi"> 
+          <div class="upload_imgs cee2Mfi" __cid="cee2Mfi"> 
+            <a href="" __cid="cee2Mfi" class="cee2Mfi"> 
+              <img src="@justepContextPath@/v_be06eaa8a6184531b1fdd54cd71a5074l_zh_CNs_d_m/zupu/img/u16.png" __cid="cee2Mfi" class="cee2Mfi" data-bind="event:{click:$model._callModelFn.bind($model, 'message')}"/> 
+            </a> 
+          </div>  
+          <div class="delete_tips cee2Mfi" __cid="cee2Mfi"> 
+            <a href="" __cid="cee2Mfi" class="cee2Mfi"> 
+              <img src="@justepContextPath@/v_9171af296edd4faf9899ad94243aeaffl_zh_CNs_d_m/zupu/img/u48.png" __cid="cee2Mfi" class="cee2Mfi"/> 
+            </a>  
+            <a href="" __cid="cee2Mfi" class="cee2Mfi"> 
+              <img src="@justepContextPath@/v_431d8f555007475482a798fb80f7bbc5l_zh_CNs_d_m/zupu/img/u47.png" __cid="cee2Mfi" class="cee2Mfi" data-bind="event:{click:$model._callModelFn.bind($model, 'btndelete')}"/> 
+            </a> 
+          </div> 
+        </div> 
+      </div>  
+      <div class="down_content cee2Mfi" __cid="cee2Mfi" data-bind="event:{click:$model._callModelFn.bind($model, 'savebtn')}"> 
+        <span __cid="cee2Mfi" class="cee2Mfi">提交</span> 
+      </div> 
+    </div>  
+    <style __cid="cee2Mfi" class="cee2Mfi">.x-panel.pcviAfym-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcviAfym-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcviAfym-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcviAfym-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcviAfym-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcviAfym-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcviAfym-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcviAfym-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcviAfym-iosstatusbar &gt;.x-panel-content {top: 48px;}</style> 
+  </div> 
+</div>

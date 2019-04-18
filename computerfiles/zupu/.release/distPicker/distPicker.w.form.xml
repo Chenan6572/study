@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:v-bind="http://vue.sike.io/" xmlns:v-on="http://vue.sike.io/" component="$model/UI2/system/components/justep/window/window" design="device:m;" xid="window" class="window ci6FfMn" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="ci6FfMn" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/distpicker/distpicker2,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">null</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onActive:modelActive;onLoad:modelLoad" __cid="ci6FfMn" class="ci6FfMn"/>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcVNJj2e-iosstatusbar ci6FfMn" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="ci6FfMn"> 
+    <div class="x-panel-top ci6FfMn" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="ci6FfMn"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar ci6FfMn" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;标题&quot;}" __cid="ci6FfMn"> 
+        <div class="x-titlebar-left ci6FfMn" __cid="ci6FfMn"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon ci6FfMn" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'window.close'}" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;,&quot;label&quot;:&quot;&quot;}" __cid="ci6FfMn"> 
+            <i class="icon-chevron-left ci6FfMn" __cid="ci6FfMn"/>  
+            <span __cid="ci6FfMn" class="ci6FfMn"/> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title ci6FfMn" __cid="ci6FfMn">标题</div>  
+        <div class="x-titlebar-right  ci6FfMn" __cid="ci6FfMn">
+          <div class="empty ci6FfMn" __cid="ci6FfMn"/>
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content ci6FfMn" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="ci6FfMn"> 
+      <input component="$model/UI2/system/components/justep/input/input" class="form-control ci6FfMn" xid="input1" bind-click="input1Click" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" data-config="{&quot;readonly&quot;:true}" __cid="ci6FfMn"/>  
+      <div class="list ci6FfMn" id="education" __cid="ci6FfMn"> 
+        <div class="app1 ci6FfMn" __cid="ci6FfMn"> 
+          <div class="item ci6FfMn" v-for="data in edudata" __cid="ci6FfMn"> 
+            <div class="media_left ci6FfMn" __cid="ci6FfMn"> 
+              <span class="basic ci6FfMn" __cid="ci6FfMn">教育信息</span>  
+              <div class="media_head ci6FfMn" __cid="ci6FfMn"> 
+                <img src="$model/UI2/zupuYG/img/edua.png" alt="" xid="tou" class="head ci6FfMn" height="40px" style="width:40px;" __cid="ci6FfMn"/> 
+              </div> 
+            </div>  
+            <div xid="cont" title="neirong" class="media_cont ci6FfMn" __cid="ci6FfMn"> 
+              <div __cid="ci6FfMn" class="ci6FfMn"> 
+                <span id="name" v-html="data.message" __cid="ci6FfMn" class="ci6FfMn"/>  
+                <br __cid="ci6FfMn" class="ci6FfMn"/>  
+                <span v-html="data.education" __cid="ci6FfMn" class="ci6FfMn"/> {{"--" + data.message + "---"}}
+              </div> 
+            </div>  
+            <div class="media_edit div4Click ci6FfMn" __cid="ci6FfMn"> 
+              <p hidden="hidden" class="hi ci6FfMn" v-html="data.id" __cid="ci6FfMn"/>  
+              <img src="$model/UI2/zupu/img/edit.png" alt="" xid="link" v-bind:src="data.message" __cid="ci6FfMn" class="ci6FfMn"/> 
+            </div> 
+          </div> 
+        </div> 
+      </div>  
+      <div id="picture" class="mui-popover mui-popover-action  ci6FfMn" style="left:0;" __cid="ci6FfMn"> 
+        <ul class="mui-table-view ci6FfMn" __cid="ci6FfMn"> 
+          <li class="mui-table-view-cell ci6FfMn" __cid="ci6FfMn"> 
+            <a href="" __cid="ci6FfMn" class="ci6FfMn">男</a> 
+          </li>  
+          <li class="mui-table-view-cell ci6FfMn" __cid="ci6FfMn"> 
+            <a __cid="ci6FfMn" class="ci6FfMn">女</a> 
+          </li> 
+        </ul> 
+      </div>  
+      <div class="all_list_all ci6FfMn" __cid="ci6FfMn"> 
+        <div class="all_list_left ci6FfMn" __cid="ci6FfMn">性别</div>  
+        <div class="all_list_right ci6FfMn" id="showUserPicker" __cid="ci6FfMn"> 
+          <a href="#picture" __cid="ci6FfMn" class="ci6FfMn"> 
+            <input type="text" id="sex" placeholder="性别" __cid="ci6FfMn" class="ci6FfMn"/> 
+          </a> 
+        </div> 
+      </div> 
+    </div>  
+    <style __cid="ci6FfMn" class="ci6FfMn">.x-panel.pcVNJj2e-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcVNJj2e-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcVNJj2e-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcVNJj2e-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcVNJj2e-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcVNJj2e-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcVNJj2e-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcVNJj2e-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcVNJj2e-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+  </div>  
+  <div component="$model/UI2/system/components/justep/distpicker/distpicker2" class="x-popPicker ci6FfMn" xid="distpicker21" data-bind="component:{name:'$model/UI2/system/components/justep/distpicker/distpicker2'}" __cid="ci6FfMn"> 
+    <div class="x-popPicker-overlay ci6FfMn" xid="div1" __cid="ci6FfMn"/>  
+    <div class="x-popPicker-content ci6FfMn" xid="div2" __cid="ci6FfMn"> 
+      <div class="x-poppicker-header ci6FfMn" xid="div3" __cid="ci6FfMn"> 
+        <button class="btn btn-default x-btn-ok ci6FfMn" xid="button1" bind-click="button1Click" __cid="ci6FfMn">确定</button> 
+      </div> 
+    </div> 
+  </div> 
+</div>

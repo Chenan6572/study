@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" component="$UI/system/components/justep/window/window" design="device:m;"
+  xid="window" class="window">  
+  <div component="$UI/system/components/justep/model/model" xid="model" style="top:625px;left:590px;height:auto;"/>  
+  <div component="$UI/system/components/justep/panel/panel" class="x-panel x-full"
+    xid="panel1"> 
+    <div class="x-panel-top" xid="top1"> 
+      <div component="$UI/system/components/justep/titleBar/titleBar" title="绑定手机号码"
+        class="x-titlebar title"> 
+        <div class="x-titlebar-left"> 
+          <a component="$UI/system/components/justep/button/button" label=""
+            class="btn btn-link btn-only-icon" icon="icon-chevron-left" onClick="{operation:'window.close'}"
+            xid="backBtn"> 
+            <i class="icon-chevron-left"/>  
+            <span/> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title"><![CDATA[绑定手机号码]]></div>  
+        <div class="x-titlebar-right reverse"/> 
+      </div> 
+    </div>  
+    <div class="x-panel-content"> 
+      <div class="top_image"> 
+        <img src="$UI/zupu/img/logo.png" class="image_tou"/> 
+      </div>  
+      <div class="line"> 
+        <div class="frame"> 
+          <span class="left">+86</span>  
+          <input class="input" placeholder="请输入您的手机号" name="phonenum" /> 
+        </div> 
+      </div>  
+      <div class="line_"> 
+        <div class="frame_"> 
+          <input class="input" placeholder="输入验证码"/> 
+        </div>  
+        <div class="button_" bind-click="yzm"> 
+          <span>获取验证码</span> 
+        </div> 
+      </div>  
+      <div class="bangding" onclick="subclick">
+        <span>绑定手机号码</span>
+      </div>  
+      <div class="clause">账号激活需要绑定手机号</div> 
+    </div> 
+  </div> 
+</div>

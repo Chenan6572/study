@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/window/window" design="device:m;" xid="window" class="window czUFrya" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="czUFrya" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">.content.czUFrya{padding-top: 1.5rem} .all_list_all.czUFrya{width: 100%; height: 5rem; border-bottom: 1px solid rgba(215, 215, 215, 1); background: white} .all_list_left.czUFrya{width: 25%; height: 5rem; line-height: 5rem; text-align: left; font-size: 1.5rem; float: left; color: black; direction: ltr; margin-left: 1.3rem} .all_list_right.czUFrya{width: 70%; height: 5rem; float: right} .all_list_right.czUFrya input.czUFrya{border: none; outline: none; font-size: 1.5rem; text-align: right; margin-right: 1rem; direction: ltr; margin-top: 1.5rem; height: 2rem; width: 80%; float: right} .btns.czUFrya{width: 70%; height: 4rem; line-height: 4rem; color: azure; font-size: 2rem; text-align: center; margin: 5rem auto; background-color: rgba(231, 64, 58, 1); border-radius: 10rem} .start_inputs.czUFrya{width: 30%; height: 3rem; margin-top: 1rem; direction: ltr; border: none; outline: none; font-size: 1.5rem} .end_inputs.czUFrya{width: 30%; height: 3rem; margin-top: 1rem; direction: rtl; border: none; outline: none; font-size: 1.5rem}</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:onload" __cid="czUFrya" class="czUFrya"/>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcz26jUr-iosstatusbar czUFrya" style="background-color:rgba(242, 242, 242, 1)" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="czUFrya"> 
+    <div class="x-panel-top czUFrya" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="czUFrya"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" style="background-color:rgba(231, 64, 58, 1)" class="x-titlebar czUFrya" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;添加教育经历&quot;}" __cid="czUFrya"> 
+        <div class="x-titlebar-left czUFrya" __cid="czUFrya"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon czUFrya" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'window.close'}" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;,&quot;label&quot;:&quot;&quot;}" __cid="czUFrya"> 
+            <i class="icon-chevron-left czUFrya" __cid="czUFrya"/>  
+            <span __cid="czUFrya" class="czUFrya"/> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title czUFrya" __cid="czUFrya">添加教育经历</div>  
+        <div class="x-titlebar-right  czUFrya" __cid="czUFrya">
+          <div class="empty czUFrya" __cid="czUFrya"/>
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content content czUFrya" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="czUFrya"> 
+      <div class="all_list_all czUFrya" __cid="czUFrya"> 
+        <div class="all_list_left czUFrya" __cid="czUFrya">学校</div>  
+        <div class="all_list_right czUFrya" __cid="czUFrya"> 
+          <input type="text" required="true" placeholder="请输入学校（必填）" id="school_name" __cid="czUFrya" class="czUFrya"/> 
+        </div> 
+      </div>  
+      <div class="all_list_all czUFrya" __cid="czUFrya"> 
+        <div class="all_list_left czUFrya" __cid="czUFrya">专业</div>  
+        <div class="all_list_right czUFrya" __cid="czUFrya"> 
+          <input type="text" required="true" placeholder="请输入专业（必填）" id="related_major" __cid="czUFrya" class="czUFrya"/> 
+        </div> 
+      </div>  
+      <div class="all_list_all czUFrya" __cid="czUFrya"> 
+        <div class="all_list_left czUFrya" __cid="czUFrya">学历</div>  
+        <div class="all_list_right czUFrya" __cid="czUFrya"> 
+          <input type="text" required="true" placeholder="请选择学历（必填）" id="educations" __cid="czUFrya" class="czUFrya"/> 
+        </div> 
+      </div>  
+      <div class="all_list_all czUFrya" __cid="czUFrya"> 
+        <div class="all_list_left czUFrya" __cid="czUFrya">时间</div>  
+        <div class="all_list_right_time czUFrya" __cid="czUFrya"> 
+          <input class="start_inputs czUFrya" id="start_date" required="true" readonly="readonly" placeholder="选择入校时间" __cid="czUFrya"/>  
+          <span __cid="czUFrya" class="czUFrya">至</span>  
+          <input class="end_inputs czUFrya" id="end_date" required="true" readonly="readonly" placeholder="选择毕业时间" __cid="czUFrya"/> 
+        </div> 
+      </div>  
+      <div class="btns czUFrya" bind-click="savebtn" __cid="czUFrya">保 存</div> 
+    </div>  
+    <style __cid="czUFrya" class="czUFrya">.x-panel.pcz26jUr-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcz26jUr-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcz26jUr-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcz26jUr-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcz26jUr-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcz26jUr-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcz26jUr-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcz26jUr-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcz26jUr-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+  </div> 
+</div>

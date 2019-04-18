@@ -1,0 +1,74 @@
+define(function(require) {
+	var id=null;
+	var $ = require("jquery");
+	var justep = require("$UI/system/lib/justep");
+
+	var Model = function() {
+		this.callParent();
+	};
+
+	var a = function() {
+		var loginName = localStorage.getItem("loginName");
+		
+		$.ajax({
+			headers:{
+				Authorization: "Bearer " + localStorage.getItem('Token'),
+			},
+			url : 'http://10.10.1.198:8088/YProject/api/query?login_name='+loginName,
+			processData : false,
+			cache : false,
+			async : true,
+			global : false,
+			contentType : "application/json; charset=utf-8",
+			datatype : "json",
+			type : 'post',
+			success : function(res) {
+				$("#name").html(res.data.name);
+				$("#doornum").html(res.data.doornum);
+				$("#birthday").html(res.data.birthday);
+				$("#address").html(res.data.address);
+				$("#phone").html(res.data.phone);
+				$("#register_category").html(res.data.register_category);
+				localStorage.setItem("id",res.data.id);
+			},
+			error : function(res) {
+				justep.Util.hint(res.message, {
+					type: 'danger',	
+				});
+				console.log("测试失败");
+			}
+		});
+
+	}();
+	// 基本信息编辑界面
+	Model.prototype.div1Click = function(event) {
+		justep.Shell.showPage("jibenxinxi");
+
+	};
+	// 绑定手机号界面
+	Model.prototype.div2Click = function(event) {
+		justep.Shell.showPage("bindphone");
+	};
+	// 编辑户籍信息
+
+	Model.prototype.div3Click = function(event) {
+		justep.Shell.showPage("bindhuji");
+	};
+	// 编辑教育信息
+	Model.prototype.div4Click = function(event) {
+		justep.Shell.showPage("bindedu");
+	};
+	// 编辑工作经历
+	Model.prototype.div5Click = function(event) {
+		justep.Shell.showPage("bindwork");
+	};
+	// 添加教育信息
+	Model.prototype.sum_edu = function(event) {
+		justep.Shell.showPage("bindedu");
+	};
+	// 添加工作经历
+	Model.prototype.sum_work = function(event) {
+		justep.Shell.showPage("bindwork","id");
+	return Model;
+	};
+});

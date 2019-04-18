@@ -1,0 +1,117 @@
+define(function (require) {
+	var $ = require("jquery");
+	var justep = require("$UI/system/lib/justep");
+	require("$UI/zupu/js/date/datePicker");
+	require("css!$UI/zupu/css/LCalendar").load();
+
+	require("cordova!com.synconset.imagepicker");
+	// var ImagesZoom = require("plugin/scale");
+	require("$UI/system/lib/cordova/cordova");
+	require("cordova!cordova-plugin-camera"); //调用摄像头类
+	require("cordova!cordova-plugin-file"); //调用本地文件上传类
+	require("cordova!cordova-plugin-file-transfer"); //调用文件上传转换类
+	var UUID = require("$UI/system/lib/base/uuid");
+
+	//日期格式
+	var calendar = new datePicker();
+	calendar.init({
+		'trigger': '#birthdate',
+		/* 按钮选择器，用于触发弹出插件 */
+		'type': 'date',
+		/* 模式：date日期；datetime日期时间；time时间；ym年月； */
+		'minDate': '1900-1-1',
+		/* 最小日期 */
+		'maxDate': '2100-12-31',
+		/* 最大日期 */
+		'onSubmit': function () {
+			/* 确认时触发事件 */
+			var theSelectData = calendar.value;
+		},
+		'onClose': function () {
+			/* 取消时触发事件 */
+		}
+	});
+	var Model = function () {
+		this.callParent();
+	};
+	//图库选择图片
+	// Model.prototype.getPicturesClick = function (event) {
+	// 	document.addEventListener("deviceready", androidOnDeviceReady, false);
+	// 	function androidOnDeviceReady() {
+	// 		imagePicker.getPictures(androidSuccessCallback, errorCallback, {
+	// 			"maximumImagesCount": 10,
+	// 			"width": 800,
+	// 			"height": 800,
+	// 			"quallity": 100,
+	// 			"outputType": window.imagePicker.OutputType.FILE_URI
+	// 		});
+	// 	}
+	// 	function androidSuccessCallback(result) {
+	// 		if (result.length > 0) {
+	// 			var content = '';
+	// 			var dfds = [];
+	// 			for (var i = 0; i < result.length; i++) {
+	// 				(function () {
+	// 					var dfd = $.Deferred();
+	// 					dfds.push(dfd);
+	// 					window.resolveLocalFileSystemURI(result[i], function (entry) {
+	// 						content += '<img src="' + entry.toInternalURL() + '" style="max-width:10rem;float:right;margin-top:0.5rem;margin-right:2rem"/>';
+	// 						dfd.resolve();
+	// 					}, function () {
+	// 						dfd.resolve();
+	// 					});
+	// 				})();
+	// 			}
+	// 			$.when.apply($, dfds).done(function () {
+	// 				document.getElementById("imageOutput").innerHTML = content;
+	// 			});
+	// 		} else {
+	// 			// picker was cancelled
+	// 			console.log("没有选择图片");
+	// 		}
+	// 	}
+	// 	function errorCallback(error) {
+	// 		alert("错误信息: " + JSON.stringify(error));
+	// 	}
+	// }
+	Model.prototype.getPicturesClick = function(event) {
+		// 拍照
+		var _this = this;
+		document.addEventListener("deviceready", onDeviceReady, false);
+		function onDeviceReady() {
+			navigator.camera.getPicture(onLoadImageSuccess, onLoadImageFail, {
+				destinationType : navigator.camera.DestinationType.DATA_URL,// DATA_URL
+				quality : 100,
+				targetWidth : 200,
+				targetHeight : 200,
+				saveToPhotoAlbum : true,
+				// allowEdit : true,
+				sourceType : 2
+			// 0、2为从相册文件中选择，1为拍照
+			});
+			// 拍照成功后回调
+			function onLoadImageSuccess(imageData) {// imageURI imageData
+				// console.log(imageData);
+				document.getElementById(me.getIDByXID("imgPhoto")).src = "data:image/jpeg;base64," + imageData;
+
+				justep.Baas.sendRequest({
+					"url" : "/zupu/User",
+					"action" : "uploadUserPhoto",
+					"params" : {
+						loginname : localStorage.getItem("Loginname"),
+						picdata : imageData
+					},
+					"success" : function(resultData) {
+						console.log(resultData);
+					}
+				});
+			}
+			function onLoadImageFail(error) {
+				// alert(error);
+			}
+		}
+
+	};
+
+	return Model;
+});

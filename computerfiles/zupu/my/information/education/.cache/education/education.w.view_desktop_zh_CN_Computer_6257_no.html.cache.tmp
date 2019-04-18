@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/window/window" design="device:m;" xid="window" class="window cQ3eM7n" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cQ3eM7n" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">  
+  <style xmlns="" xmlns:xhtml="http://www.w3.org/1999/xhtml">.content.cQ3eM7n{padding-top: 1.5rem} .all_list_all.cQ3eM7n{width: 100%; height: 5rem; border-bottom: 1px solid rgba(215, 215, 215, 1); background: white} .all_list_left.cQ3eM7n{width: 25%; height: 5rem; line-height: 5rem; text-align: left; font-size: 1.5rem; float: left; color: black; direction: ltr; margin-left: 1.3rem} .all_list_right.cQ3eM7n{width: 70%; height: 5rem; float: right} .all_list_right.cQ3eM7n input.cQ3eM7n{border: none; outline: none; font-size: 1.5rem; text-align: right; margin-right: 2rem; direction: ltr; margin-top: 1.5rem; height: 2rem; width: 80%; float: right} .savebtns.cQ3eM7n{width: 70%; height: 4rem; line-height: 4rem; color: azure; font-size: 2rem; text-align: center; margin-top: 15rem; margin-left: 4.8rem; background-color: rgba(231, 64, 58, 1); border-radius: 10rem} .deletebtns.cQ3eM7n{width: 70%; height: 4rem; line-height: 4rem; color: azure; font-size: 2rem; text-align: center; margin-top: 2rem; margin-left: 4.8rem; background-color: rgba(153, 153, 153, 1); border-radius: 10rem} .start_inputs.cQ3eM7n{width: 32%; height: 3rem; margin-top: 1rem; direction: ltr; padding-left: 2rem; border: none; outline: none; font-size: 1.5rem} .end_inputs.cQ3eM7n{width: 32%; height: 3rem; margin-top: 1rem; direction: rtl; padding-right: 2rem; border: none; outline: none; font-size: 1.5rem}</style>  
+  <div xmlns="" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:onload;onParamsReceive:modelParamsReceive" __cid="cQ3eM7n" class="cQ3eM7n"/>  
+  <div xmlns="" component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcZjUvUf-iosstatusbar cQ3eM7n" style="background-color:rgba(242, 242, 242, 1)" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cQ3eM7n"> 
+    <div class="x-panel-top cQ3eM7n" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cQ3eM7n"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" style="background-color:rgba(231, 64, 58, 1)" class="x-titlebar cQ3eM7n" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;编辑教育经历&quot;}" __cid="cQ3eM7n"> 
+        <div class="x-titlebar-left cQ3eM7n" __cid="cQ3eM7n"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cQ3eM7n" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'window.close'}" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;,&quot;label&quot;:&quot;&quot;}" __cid="cQ3eM7n"> 
+            <i class="icon-chevron-left cQ3eM7n" __cid="cQ3eM7n"/>  
+            <span __cid="cQ3eM7n" class="cQ3eM7n"/> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cQ3eM7n" __cid="cQ3eM7n">编辑教育经历</div>  
+        <div class="x-titlebar-right  cQ3eM7n" __cid="cQ3eM7n"> 
+          <div class="empty cQ3eM7n" __cid="cQ3eM7n"/> 
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content content cQ3eM7n" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cQ3eM7n"> 
+      <div class="all_list_all cQ3eM7n" __cid="cQ3eM7n"> 
+        <div class="all_list_left cQ3eM7n" __cid="cQ3eM7n">学校</div>  
+        <div class="all_list_right cQ3eM7n" __cid="cQ3eM7n"> 
+          <input type="text" required="true" placeholder="请输入学校（必填）" id="school_name" __cid="cQ3eM7n" class="cQ3eM7n"/> 
+        </div> 
+      </div>  
+      <div class="all_list_all cQ3eM7n" __cid="cQ3eM7n"> 
+        <div class="all_list_left cQ3eM7n" __cid="cQ3eM7n">专业</div>  
+        <div class="all_list_right cQ3eM7n" __cid="cQ3eM7n"> 
+          <input type="text" required="true" placeholder="请输入专业（必填）" id="related_major" __cid="cQ3eM7n" class="cQ3eM7n"/> 
+        </div> 
+      </div>  
+      <div class="all_list_all cQ3eM7n" __cid="cQ3eM7n"> 
+        <div class="all_list_left cQ3eM7n" __cid="cQ3eM7n">学历</div>  
+        <div class="all_list_right cQ3eM7n" __cid="cQ3eM7n"> 
+          <input type="text" required="true" placeholder="请选择学历（必填）" id="educations" __cid="cQ3eM7n" class="cQ3eM7n"/> 
+        </div> 
+      </div>  
+      <div class="all_list_all cQ3eM7n" __cid="cQ3eM7n"> 
+        <div class="all_list_left cQ3eM7n" __cid="cQ3eM7n">时间</div>  
+        <div class="all_list_right_time cQ3eM7n" __cid="cQ3eM7n"> 
+          <input class="start_inputs cQ3eM7n" id="start_date" type="text" required="true" readonly="readonly" placeholder="选择入校时间" __cid="cQ3eM7n"/>  
+          <span __cid="cQ3eM7n" class="cQ3eM7n">至</span>  
+          <input class="end_inputs cQ3eM7n" id="end_date" type="text" required="true" readonly="readonly" placeholder="选择毕业时间" __cid="cQ3eM7n"/> 
+        </div> 
+      </div>  
+      <div class="savebtns cQ3eM7n" __cid="cQ3eM7n" data-bind="event:{click:$model._callModelFn.bind($model, 'savebtn')}">保 存</div>  
+      <div class="deletebtns cQ3eM7n" __cid="cQ3eM7n" data-bind="event:{click:$model._callModelFn.bind($model, 'deletebtn')}">删 除</div> 
+    </div>  
+    <style __cid="cQ3eM7n" class="cQ3eM7n">.x-panel.pcZjUvUf-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcZjUvUf-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcZjUvUf-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcZjUvUf-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcZjUvUf-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcZjUvUf-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcZjUvUf-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcZjUvUf-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcZjUvUf-iosstatusbar &gt;.x-panel-content {top: 48px;}</style> 
+  </div> 
+</div>

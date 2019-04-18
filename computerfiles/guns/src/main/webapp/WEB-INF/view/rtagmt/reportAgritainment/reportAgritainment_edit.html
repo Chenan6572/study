@@ -1,0 +1,52 @@
+@layout("/common/_container.html"){
+<div class="ibox float-e-margins">
+    <div class="ibox-content">
+        <div class="form-horizontal">
+
+            <div class="row">
+                <div class="col-sm-6 b-r">
+                            <#input id="id" name="主键" value="${item.id}" underline="true"/>
+                            <#input id="useraccount" name="关联用户" value="${item.useraccount}" underline="true"/>
+                            <#input id="name" name="姓名" value="${item.name}" underline="true"/>
+                            <#input id="tel" name="手机号" value="${item.tel}" underline="true"/>
+                            <#input id="administrative" name="行政区划" value="${item.administrative}" underline="true"/>
+                            <#input id="address" name="详细地址" value="${item.address}" underline="true"/>
+                            <#input id="banquetstart" name="办宴开始时间" value="${item.banquetstart}" underline="true"/>
+                            <#input id="banquetdays" name="办宴天数" value="${item.banquetdays}" underline="true"/>
+                            <#input id="banquettype" name="办宴类型" value="${item.banquettype}" underline="true"/>
+                            <#input id="numbereat" name="就餐人数" value="${item.numbereat}" underline="true"/>
+                            <#input id="choosehelper" name="选择帮厨" value="${item.choosehelper}" underline="true"/>
+                            <#input id="watersource" name="水源" value="${item.watersource}" underline="true"/>
+                            <#input id="tablewaredis" name="餐具消毒方式" value="${item.tablewaredis}" underline="true"/>
+                            <#input id="retaining" name="留样设施" value="${item.retaining}" />
+                </div>
+
+                <div class="col-sm-6">
+                            <#input id="toxicwup" name="有毒有害物品" value="${item.toxicwup}" underline="true"/>
+                            <#input id="tablewareclean" name="餐具保洁柜" value="${item.tablewareclean}" underline="true"/>
+                            <#input id="refrigeratornum" name="冰箱数量" value="${item.refrigeratornum}" underline="true"/>
+                            <#input id="disinfectionnum" name="专用消毒柜数量" value="${item.disinfectionnum}" underline="true"/>
+                            <#input id="retainingnum" name="食品留样柜数量" value="${item.retainingnum}" underline="true"/>
+                            <#input id="trashnum" name="垃圾桶数量" value="${item.trashnum}" underline="true"/>
+                            <#input id="protectnum" name="防鼠防蝇防尘设施数量" value="${item.protectnum}" underline="true"/>
+                            <#input id="washnum" name="专用洗菜洗肉洗鱼池数量" value="${item.washnum}" underline="true"/>
+                            <#input id="auditor" name="审核人" value="${item.auditor}" underline="true"/>
+                            <#input id="audittime" name="审核时间" value="${item.audittime}" underline="true"/>
+                            <#input id="auditstate" name="审核状态" value="${item.auditstate}" underline="true"/>
+                            <#input id="audiopinion" name="审核意见" value="${item.audiopinion}" underline="true"/>
+                            <#input id="audiresults" name="审核结果" value="${item.audiresults}" />
+                </div>
+            </div>
+
+            <div class="row btn-group-m-t">
+                <div class="col-sm-10">
+                    <#button btnCss="info" name="提交" id="ensure" icon="fa-check" clickFun="ReportAgritainmentInfoDlg.editSubmit()"/>
+                    <#button btnCss="danger" name="取消" id="cancel" icon="fa-eraser" clickFun="ReportAgritainmentInfoDlg.close()"/>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<script src="${ctxPath}/static/modular/rtagmt/reportAgritainment/reportAgritainment_info.js"></script>
+@}

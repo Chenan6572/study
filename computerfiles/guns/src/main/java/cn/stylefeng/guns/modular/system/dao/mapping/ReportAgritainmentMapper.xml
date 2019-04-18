@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.stylefeng.guns.modular.system.dao.ReportAgritainmentMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="cn.stylefeng.guns.modular.system.model.ReportAgritainment">
+        <id column="id" property="id" />
+        <result column="useraccount" property="useraccount" />
+        <result column="name" property="name" />
+        <result column="tel" property="tel" />
+        <result column="administrative" property="administrative" />
+        <result column="address" property="address" />
+        <result column="banquetstart" property="banquetstart" />
+        <result column="banquetdays" property="banquetdays" />
+        <result column="banquettype" property="banquettype" />
+        <result column="numbereat" property="numbereat" />
+        <result column="choosehelper" property="choosehelper" />
+        <result column="watersource" property="watersource" />
+        <result column="tablewaredis" property="tablewaredis" />
+        <result column="retaining" property="retaining" />
+        <result column="toxicwup" property="toxicwup" />
+        <result column="tablewareclean" property="tablewareclean" />
+        <result column="refrigeratornum" property="refrigeratornum" />
+        <result column="disinfectionnum" property="disinfectionnum" />
+        <result column="retainingnum" property="retainingnum" />
+        <result column="trashnum" property="trashnum" />
+        <result column="protectnum" property="protectnum" />
+        <result column="washnum" property="washnum" />
+        <result column="auditor" property="auditor" />
+        <result column="audittime" property="audittime" />
+        <result column="auditstate" property="auditstate" />
+        <result column="audiopinion" property="audiopinion" />
+        <result column="audiresults" property="audiresults" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, useraccount, name, tel, administrative, address, banquetstart, banquetdays, banquettype, numbereat, choosehelper, watersource, tablewaredis, retaining, toxicwup, tablewareclean, refrigeratornum, disinfectionnum, retainingnum, trashnum, protectnum, washnum, auditor, audittime, auditstate, audiopinion, audiresults
+    </sql>
+
+</mapper>

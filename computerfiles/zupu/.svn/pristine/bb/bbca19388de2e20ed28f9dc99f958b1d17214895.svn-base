@@ -1,0 +1,77 @@
+* {	margin: 0;
+	padding: 0;
+}
+.body{
+	border:0;
+	background:rgba(231, 64, 58, 1);
+}
+.height{
+	height:0;
+}
+/* 表格行容器 */
+.list {
+	background: white;
+	border-bottom: 0.5rem solid #f2f2f2;
+	padding-left: 5%;
+	padding-right:5%;
+	padding-top: 1rem;
+	padding-bottom:0.7rem;
+	display: flex;
+	height:10rem;
+}
+/* 左侧容器 */
+.media_left {
+	display:flex;
+	flex-direction: column;	
+	height:8rem;
+	width:6rem;
+}
+/* 左侧头信息文字 */
+.basic {
+	height:2rem;
+	width:6rem;
+	line-height:2rem;
+	font-size: 1.2rem;
+	font-weight:1000;
+	text-align:center;
+}
+/* 左侧头像容器 */
+.media_head{
+	width:6rem;
+	height:6rem;
+	border-radius:5px;
+}
+/* 头像沾满 */
+.head{
+	width:100%;
+	height:100%;
+}
+/* 信息容器 */
+.media_cont {
+	width:60%;
+	height:7rem;
+	line-height:3.2rem;
+	text-align:left;
+	font-size: 1.3rem;
+}
+
+/* 跳转链接接容器 */
+.media_edit {
+	width:6rem;
+	text-align:center;
+	height:7rem;
+	line-height:5rem;
+}
+
+/* 续添加显示下划线 */
+.border-bottom{
+	border-bottom: 0.8vw solid #f2f2f2;
+}
+
+.sum {
+	background:white;
+	display: flex;
+	justify-content: center;
+	align-items:center;
+	border-bottom: 0.5rem solid #f2f2f2;
+}

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/window/window" design="device:m;" xid="window" class="window ca6JBni" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="ca6JBni" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">.content.ca6JBni{padding-top: 1.5rem} .all_list_all.ca6JBni{width: 100%; height: 5rem; border-bottom: 1px solid rgba(215, 215, 215, 1); background: white} .all_list_left.ca6JBni{width: 25%; height: 5rem; line-height: 5rem; text-align: left; font-size: 1.5rem; float: left; color: black; direction: ltr; margin-left: 1.3rem} .all_list_right.ca6JBni{width: 70%; height: 5rem; float: right} .all_list_right.ca6JBni input.ca6JBni{border: none; outline: none; font-size: 1.5rem; text-align: right; margin-right: 2rem; direction: ltr; margin-top: 1.5rem; height: 2rem; width: 80%; float: right} .savebtns.ca6JBni{width: 70%; height: 4rem; line-height: 4rem; color: azure; font-size: 2rem; text-align: center; margin-top: 15rem; margin-left: 4.8rem; background-color: rgba(231, 64, 58, 1); border-radius: 10rem} .deletebtns.ca6JBni{width: 70%; height: 4rem; line-height: 4rem; color: azure; font-size: 2rem; text-align: center; margin-top: 2rem; margin-left: 4.8rem; background-color: rgba(153, 153, 153, 1); border-radius: 10rem} .start_inputs.ca6JBni{width: 32%; height: 3rem; margin-top: 1rem; direction: ltr; padding-left: 2rem; border: none; outline: none; font-size: 1.5rem} .end_inputs.ca6JBni{width: 32%; height: 3rem; margin-top: 1rem; direction: rtl; padding-right: 2rem; border: none; outline: none; font-size: 1.5rem}</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:onload" __cid="ca6JBni" class="ca6JBni"/>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pczUFJZf-iosstatusbar ca6JBni" style="background-color:rgba(242, 242, 242, 1)" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="ca6JBni"> 
+    <div class="x-panel-top ca6JBni" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="ca6JBni"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" style="background-color:rgba(231, 64, 58, 1)" class="x-titlebar ca6JBni" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;编辑工作经历&quot;}" __cid="ca6JBni"> 
+        <div class="x-titlebar-left ca6JBni" __cid="ca6JBni"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon ca6JBni" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'window.close'}" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;,&quot;label&quot;:&quot;&quot;}" __cid="ca6JBni"> 
+            <i class="icon-chevron-left ca6JBni" __cid="ca6JBni"/>  
+            <span __cid="ca6JBni" class="ca6JBni"/> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title ca6JBni" __cid="ca6JBni">编辑工作经历</div>  
+        <div class="x-titlebar-right  ca6JBni" __cid="ca6JBni">
+          <div class="empty ca6JBni" __cid="ca6JBni"/>
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content content ca6JBni" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="ca6JBni"> 
+      <div class="all_list_all ca6JBni" __cid="ca6JBni"> 
+        <div class="all_list_left ca6JBni" __cid="ca6JBni">公司</div>  
+        <div class="all_list_right ca6JBni" __cid="ca6JBni"> 
+          <input type="text" required="required" placeholder="请输入公司（必填）" id="company_name" __cid="ca6JBni" class="ca6JBni"/> 
+        </div> 
+      </div>  
+      <div class="all_list_all ca6JBni" __cid="ca6JBni"> 
+        <div class="all_list_left ca6JBni" __cid="ca6JBni">部门</div>  
+        <div class="all_list_right ca6JBni" __cid="ca6JBni"> 
+          <input type="text" placeholder="请输入部门（必填）" id="related_depart" __cid="ca6JBni" class="ca6JBni"/> 
+        </div> 
+      </div>  
+      <div class="all_list_all ca6JBni" __cid="ca6JBni"> 
+        <div class="all_list_left ca6JBni" __cid="ca6JBni">职位</div>  
+        <div class="all_list_right ca6JBni" __cid="ca6JBni"> 
+          <input type="text" placeholder="请选择职位（必填）" id="position" __cid="ca6JBni" class="ca6JBni"/> 
+        </div> 
+      </div>  
+      <div class="all_list_all ca6JBni" __cid="ca6JBni"> 
+        <div class="all_list_left ca6JBni" __cid="ca6JBni">时间</div>  
+        <div class="all_list_right_time ca6JBni" __cid="ca6JBni"> 
+          <input class="start_inputs ca6JBni" id="start_date" type="text" readonly="readonly" placeholder="选择入校时间" __cid="ca6JBni"/>  
+          <span __cid="ca6JBni" class="ca6JBni">至</span>  
+          <input class="end_inputs ca6JBni" id="end_date" type="text" readonly="readonly" placeholder="选择毕业时间" __cid="ca6JBni"/> 
+        </div> 
+      </div>  
+      <div class="savebtns ca6JBni" bind-click="savebtns" __cid="ca6JBni">保 存</div>  
+      <div class="deletebtns ca6JBni" bind-click="deletebtns" __cid="ca6JBni">删 除</div> 
+    </div>  
+    <style __cid="ca6JBni" class="ca6JBni">.x-panel.pczUFJZf-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pczUFJZf-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pczUFJZf-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pczUFJZf-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pczUFJZf-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pczUFJZf-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pczUFJZf-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pczUFJZf-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pczUFJZf-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+  </div> 
+</div>

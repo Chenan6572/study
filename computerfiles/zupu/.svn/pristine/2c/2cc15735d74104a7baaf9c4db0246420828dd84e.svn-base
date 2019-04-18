@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" component="$UI/system/components/justep/window/window" design="device:m;"
+  xid="window" class="window">  
+  <div component="$UI/system/components/justep/model/model" xid="model" style="left:18px;top:83px;height:244px;" />
+
+  <div component="$UI/system/components/justep/panel/panel" class="x-panel x-full" style="background:rgba(242, 242, 242, 1)"
+    xid="panel1"> 
+    <div class="x-panel-top" xid="top1"> 
+      <div component="$UI/system/components/justep/titleBar/titleBar" title="基础信息"
+        class="x-titlebar" style="background-color: rgba(231, 64, 58, 1);"> 
+        <div class="x-titlebar-left"> 
+          <a component="$UI/system/components/justep/button/button" label=""
+            class="btn btn-link btn-only-icon" icon="icon-chevron-left" onClick="{operation:'window.close'}"
+            xid="backBtn"> 
+            <i class="icon-chevron-left"/>  
+            <span/> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title">基础信息</div>  
+        <div class="x-titlebar-right reverse"/> 
+      </div> 
+    </div>  
+    <div class="x-panel-content" xid="content1"> 
+      <div class="content"> 
+        <div class="pic"> 
+          <div class="font_pic">头像</div>  
+             <div class="pic_pic" > 
+                <div id="imageOutput" xid="div1_1">   
+                 <img src="../../../img/u16.png"  alt="图片" />
+                 </div> 
+                <!-- <a component="$UI/system/components/justep/button/button"
+                  class="btn btn-link btn-sm" label="拍照" xid="button1" icon="icon-camera"
+                  onClick="button1Click"> 
+                  <i xid="image1" class="icon-camera"/>  
+                  <span xid="span11">拍照</span>
+                </a> -->
+                <a component="$UI/system/components/justep/button/button"
+                  class="btn btn-link btn-sm" label="相册" xid="button2" icon="icon-android-image"
+                  onClick="getPicturesClick"> 
+                  <i xid="i3" class="icon-android-image"/>  
+                  <span xid="span12">相册</span>
+                </a>   
+             </div> 
+        </div>  
+        <div class="all_list_all"> 
+          <div class="all_list_left">姓名</div>  
+          <div class="all_list_right"> 
+            <input type="text" placeholder="姓名"/> 
+          </div> 
+        </div>  
+        <div class="all_list_all"> 
+          <div class="all_list_left">性别</div>  
+          <div class="all_list_right"> 
+            <input type="text" id="sex" placeholder="性别"/> 
+          </div> 
+        </div>  
+        <div class="all_list_all"> 
+          <div class="all_list_left">出生日期</div>  
+          <div class="all_list_right"> 
+            <input id="birthdate" readonly="readonly" type="text" placeholder="出生日期"/> 
+          </div> 
+        </div>  
+        <div class="all_list_all"> 
+          <div class="all_list_left">祖籍</div>  
+          <div class="all_list_right"> 
+            <input type="text" placeholder="吉林省-吉林市"/> 
+          </div> 
+        </div>  
+        <div class="all_list_all"> 
+          <div class="all_list_left">简介</div>  
+          <div class="all_list_right"> 
+            <input type="text" placeholder="简介..."/> 
+          </div> 
+        </div>  
+        <div class="btns">保 存</div> 
+      </div> 
+    </div> 
+  </div> 
+</div>

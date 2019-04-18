@@ -1,0 +1,95 @@
+define(function(require) {
+	var Vue = require("$UI/zupu/js/vue");
+	require("$UI/zupu/layer/model/layui");
+	require("css!$UI/zupu/layer/model/css/layui").load();
+	var Model = function() {
+		this.callParent();
+	};
+	Model.prototype.modelLoad = function(event){
+		console.log("进入onload方法");
+		var loginName = localStorage.getItem("loginName");
+		// ajax访问数据
+		$.ajax({
+			headers: {
+				Authorization: "Bearer " + localStorage.getItem('Token'),
+			},
+			url: 'http://10.10.1.232:8088/YProject/api/query_self?loginname=' + loginName,
+			processData: false,
+			cache: false,
+			async: false,
+			global: false,
+			contentType: "application/json; charset=utf-8",
+			datatype: "json",
+			type: 'post',
+			success: function (res) {
+			console.log(res.data);
+				//使用Vue渲染列表
+				new Vue({
+					el: '.appp',
+					data: {
+						datas: []
+						
+					},
+					created: function () {
+						this.datas = res.data;
+					}
+				});
+			},
+			error: function (res) {
+				console.log("访问失败数据");
+				console.log(res.message);
+			}
+		});
+		//点击进入已上传的材料
+		$("#material").on('click',function(){
+			justep.Shell.showPage("material");
+		});
+		//点击进入查看事项
+		$("#matter").on('click',function(){
+			justep.Shell.showPage("matter");
+		});
+		//弹窗
+		layui.use('layer', function() {
+		var $ = layui.jquery;
+		var layer = layui.layer;
+		$(".popup").on('click', function() {
+		  //示范一个公告层
+	      layer.open({
+	        type: 0
+	        ,skin:'' //传入弹窗样式
+	        ,title: ['预审结果','font-size:1.3rem;' ]
+	        ,area: ['25rem','28rem']
+	        ,shade: 0.7 //阴影
+	        ,btn: 0   //关闭按钮
+	        ,moveType: 0 //拖拽模式，0或者1
+	        ,content: '<div>审核人：<span id="auditor"></span></div><div>审核时间：<span id="auditortime"></span></div><div>审核结果：<span id="auditorresult"></span></div><div>留言：<div ></div></div>'
+	        ,anim:0   //弹出动画
+	        ,icon:5
+	      });
+		
+		})
+	});
+	};
+	
+	var is_pass;
+	// $UI/zupu/img/sh_fail.png 未通过图片
+	// $UI/zupu/img/sh_succ.png 未通过图片
+	// $UI/zupu/img/sh_ongo.png 审核中图片
+	if (is_pass === 0) {
+		document.getElementById('album').src = '$UI/zupu/img/fail_ongo.png';
+		document.getElementById('material').style.color = "rgb(56, 137, 255)";
+		document.getElementById('is_color_2').style.color = "rgb(56, 137, 255)";
+		document.getElementById('is_color_3').style.color = "rgb(56, 137, 255)";
+	} else if (is_pass === 1) {
+		document.getElementById('album').src = '$UI/zupu/img/sh_succ.png';
+		document.getElementById('is_color_1').style.color = "red";
+		document.getElementById('is_color_2').style.color = "red";
+		document.getElementById('is_color_3').style.color = "red";
+	} else if (is_pass === 2) {
+		document.getElementById('album').src = '$UI/zupu/img/sh_ongo.png';
+		document.getElementById('is_color_1').style.color = "#999999";
+		document.getElementById('is_color_2').style.color = "#999999";
+		document.getElementById('is_color_3').style.color = "#999999";
+	}
+	return Model;
+});

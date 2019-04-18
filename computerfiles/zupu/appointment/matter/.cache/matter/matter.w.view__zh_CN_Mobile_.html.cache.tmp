@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/window/window" design="device:m;" xid="window" class="window cq67z2u" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cq67z2u" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">  
+  <style xmlns="" xmlns:xhtml="http://www.w3.org/1999/xhtml">.cq67z2u{margin: 0} .title.cq67z2u{background: rgba(231, 64, 58, 1)} .list_container.cq67z2u{height: 11rem; display: flex; align-items: center; justify-content: center; border-bottom: 0.5rem solid rgb(242, 242, 242)} .media_cont.cq67z2u{margin-left: 1.5rem; width: 15rem; height: 10rem; line-height: 2.3rem; flex-grow: 3; display: flex; justify-content: center; flex-direction: column} span.cq67z2u{font-size: 1.35rem} .media_img.cq67z2u{display: flex; align-items: center; justify-content: center; width: 4.5rem; height: 4.5rem; margin-right: 0.4rem} .image_.cq67z2u{width: 100%; height: 100%} .media_state.cq67z2u{margin-left: 0.5rem; margin-right: 1rem; border-left: 2px solid rgba(242, 242, 242, 1); display: flex; align-items: center; justify-content: center; flex-direction: column; width: 7rem; height: 9rem; flex-grow: 2}</style>  
+  <div xmlns="" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onActive:modelActive;onLoad:modelLoad" __cid="cq67z2u" class="cq67z2u"/>  
+  <div xmlns="" component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcMbmqEj-iosstatusbar cq67z2u" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cq67z2u"> 
+    <div class="x-panel-top cq67z2u" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cq67z2u"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar title cq67z2u" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;我的预约&quot;}" __cid="cq67z2u"> 
+        <div class="x-titlebar-left cq67z2u" __cid="cq67z2u"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cq67z2u" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'window.close'}" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;,&quot;label&quot;:&quot;&quot;}" __cid="cq67z2u"> 
+            <i class="icon-chevron-left cq67z2u" __cid="cq67z2u"/>  
+            <span __cid="cq67z2u" class="cq67z2u"/> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cq67z2u" __cid="cq67z2u">我的预约</div>  
+        <div class="x-titlebar-right  cq67z2u" __cid="cq67z2u"> 
+          <div class="empty cq67z2u" __cid="cq67z2u"/> 
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content cq67z2u" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cq67z2u"> 
+      <div class="appp cq67z2u" __cid="cq67z2u"> 
+        <div class="list_container stylecontro cq67z2u" v-for="(value,key) in datas" __cid="cq67z2u"> 
+          <div class="media_cont cq67z2u" __cid="cq67z2u"> 
+            <div __cid="cq67z2u" class="cq67z2u"> 
+              <span class="sx cq67z2u" __cid="cq67z2u">事项名称：</span>  
+              <span id="matter_name" class="media_color cq67z2u" v-text="value.matter_name" __cid="cq67z2u"/> 
+            </div>  
+            <div __cid="cq67z2u" class="cq67z2u"> 
+              <span class="sx cq67z2u" __cid="cq67z2u">事项编号：</span>  
+              <span id="matter_number" class="media_color cq67z2u" v-text="value.matter_code" __cid="cq67z2u"/> 
+            </div>  
+            <div __cid="cq67z2u" class="cq67z2u"> 
+              <span class="sx cq67z2u" __cid="cq67z2u">申请时间：</span>  
+              <span id="application_time " class="media_color cq67z2u" v-text="value.uqtime" __cid="cq67z2u"/> 
+            </div> 
+          </div>  
+          <div class="media_img cq67z2u" __cid="cq67z2u"> 
+            <span style="display:none" v-text="value.state" class="imgtu cq67z2u" __cid="cq67z2u"/>  
+            <img id="album" class="image_  cq67z2u" src="@justepContextPath@/v_c1bd496da6c149d680c9cb73c9969b54l_zh_CNs_d_m/zupu/img/yuyue/u201.png" __cid="cq67z2u"/> 
+          </div>  
+          <div class="media_state cq67z2u" component="$model/UI2/system/components/justep/button/button" xid="orderData" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" __cid="cq67z2u"> 
+            <div onclick="jumpvale1(this.children[0].text)" __cid="cq67z2u" class="cq67z2u"> 
+              <span style="display:none" v-text="value.yVwuxBlclListDto" __cid="cq67z2u" class="cq67z2u"/>  
+              <span id="material" class="media_right cq67z2u" __cid="cq67z2u">已上传的材料</span> 
+            </div>  
+            <div onclick="jumpvale2(this.children[0].text)" __cid="cq67z2u" class="cq67z2u"> 
+              <span style="display:none" v-text="value.id" __cid="cq67z2u" class="cq67z2u"/>  
+              <span id="matter" class="media_right cq67z2u" __cid="cq67z2u">查看事项</span> 
+            </div>  
+            <div __cid="cq67z2u" class="cq67z2u"> 
+              <span id="examine_details" class="media_right popup cq67z2u" data-type="audit" __cid="cq67z2u">审核详情</span> 
+            </div> 
+          </div> 
+        </div> 
+      </div> 
+    </div>  
+    <style __cid="cq67z2u" class="cq67z2u">.x-panel.pcMbmqEj-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcMbmqEj-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcMbmqEj-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcMbmqEj-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcMbmqEj-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcMbmqEj-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcMbmqEj-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcMbmqEj-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcMbmqEj-iosstatusbar &gt;.x-panel-content {top: 48px;}</style> 
+  </div> 
+</div>

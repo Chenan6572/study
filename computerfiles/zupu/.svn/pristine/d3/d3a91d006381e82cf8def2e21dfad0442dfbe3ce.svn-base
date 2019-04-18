@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" component="$UI/system/components/justep/window/window" design="device:m;"
+  xid="window" class="window">  
+  <div component="$UI/system/components/justep/model/model" xid="model" style="top:757px;left:403px;height:auto;"/>  
+  <div component="$UI/system/components/justep/panel/panel" class="x-panel x-full"
+    xid="panel1"> 
+    <div class="x-panel-top" xid="top1"> 
+      <div component="$UI/system/components/justep/titleBar/titleBar" title="我的预约"
+        class="x-titlebar"> 
+        <div class="x-titlebar-left"> 
+          <a component="$UI/system/components/justep/button/button" label=""
+            class="btn btn-link btn-only-icon" icon="icon-chevron-left" onClick="{operation:'window.close'}"
+            xid="backBtn"> 
+            <i class="icon-chevron-left"/>  
+            <span/> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title"><![CDATA[我的预约]]></div>  
+        <div class="x-titlebar-right reverse"/> 
+      </div> 
+    </div>  
+    <div class="x-panel-content" xid="content1"> 
+      <div class="container"> 
+        <div class="cont"> 
+          <div> 
+            <span class="shi">事项名称：</span>  
+            <span>病残儿省级医学鉴定</span>  
+            <br/>  
+            <span class="shi">事项编号：</span>  
+            <span>12313212113211</span>  
+            <br/>  
+            <span class="shi">申请时间：</span>  
+            <span>2019-02-21</span> 
+          </div>  
+          <div class="img_sh center"> 
+            
+            <img   id="img_"/> 
+          </div> 
+        </div>  
+        <div class="center is_color"> 
+          <a id="is_color_1">已上传的材料</a>  
+          <br/>  
+          <a id="is_color_2">查看事项</a>  
+          <br/>  
+          <a id="is_color_3">审核详情</a> 
+        </div> 
+      </div>  
+      <style>.color1{color:#999999}.color2{color:#3889FF} .shi{font-size:4.2vw;color:#999999}.cont{border-right: 3px solid #f2f2f2;display:flex;} a{font-size:3.2vw;} .center{ margin:auto;align-items: center; justify-content: center; text-align:center; } .container{justify-content:center;display:flex;padding-top:30px; padding-bottom:20px;border-bottom: 8px solid #f2f2f2;border-top: 6px solid #f2f2f2}</style>  
+      <script>
+      var is_pass = 2;
+      <!--is_pass = 后台传值  -->
+      if(is_pass===0){
+     	 document.getElementById('img_').src='./img/sh_fail.png';
+     	 document.getElementById('is_color_1').style.color="rgb(56, 137, 255)";
+     	 document.getElementById('is_color_2').style.color="rgb(56, 137, 255)";
+     	 document.getElementById('is_color_3').style.color="rgb(56, 137, 255)";
+     	 }
+     else if(is_pass===1){
+     	 document.getElementById('img_').src='./img/sh_succ.png';
+     	 document.getElementById('is_color_1').style.color="red";
+     	 document.getElementById('is_color_2').style.color="red";
+     	 document.getElementById('is_color_3').style.color="red";
+     	 }
+     	else if(is_pass===2){
+     	document.getElementById('img_').src='./img/.png';
+     	document.getElementById('is_color_1').style.color="#999999";
+     	 document.getElementById('is_color_2').style.color="#999999";
+     	 document.getElementById('is_color_3').style.color="#999999";
+     	}
+      </script>
+    </div> 
+  </div> 
+</div>

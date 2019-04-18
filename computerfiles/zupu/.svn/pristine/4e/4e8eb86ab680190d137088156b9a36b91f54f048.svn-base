@@ -1,0 +1,19 @@
+input {
+	outline: none;
+	border: none;
+	text-align: right;
+	direction: ltr;
+	
+}
+input:focus {
+	border: 1px solid #03a9f4;
+	/* box-shadow: 0 0 15px #03a9f4; */
+}
+input::-webkit-input-placeholder {
+	/* placeholder��ɫ  */ 
+	color: red;  
+	/* placeholder�����С  */ 
+	font-size: 120px;  
+	/* placeholderλ��  */ 
+	text-align: right;
+}

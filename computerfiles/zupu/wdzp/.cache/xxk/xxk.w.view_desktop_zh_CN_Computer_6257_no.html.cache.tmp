@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/window/window" design="device:m;" xid="window" class="window czeEbMn" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="czeEbMn" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">  
+  <style xmlns="" xmlns:xhtml="http://www.w3.org/1999/xhtml">.czeEbMn{margin: 0px} .back.czeEbMn{display: flex; background-color: rgba(228, 228, 228, 1)} .title.czeEbMn{background-color: rgba(231, 64, 58, 1)} ul.czeEbMn{list-style: none} li.czeEbMn{height: 4.5rem; font-size: 1.5rem; font-weight: 600; line-height: 4.5rem; text-align: center; cursor: default} ._left.czeEbMn{width: 7rem; height: 100%} ._right.czeEbMn{height: 100%; flex-grow: 3} .p.czeEbMn{height: 100%; display: none} .bg_color.czeEbMn{background: white; color: black} .line.czeEbMn{padding-left: 1rem; font-size: 1.3rem; height: 4.7rem; background: white; line-height: 4.5rem; border-bottom: rgba(228, 228, 228, 1) solid 2px}</style>  
+  <div xmlns="" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onParamsReceive:modelParamsReceive" __cid="czeEbMn" class="czeEbMn"/>  
+  <div xmlns="" component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcMRZne2-iosstatusbar czeEbMn" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="czeEbMn"> 
+    <div class="x-panel-top czeEbMn" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="czeEbMn"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar title czeEbMn" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;办事指南&quot;}" __cid="czeEbMn"> 
+        <div class="x-titlebar-left czeEbMn" __cid="czeEbMn"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon czeEbMn" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'window.close'}" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;,&quot;label&quot;:&quot;&quot;}" __cid="czeEbMn"> 
+            <i class="icon-chevron-left czeEbMn" __cid="czeEbMn"/>  
+            <span __cid="czeEbMn" class="czeEbMn"/> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title czeEbMn" __cid="czeEbMn">办事指南</div>  
+        <div class="x-titlebar-right  czeEbMn" __cid="czeEbMn"> 
+          <div class="empty czeEbMn" __cid="czeEbMn"/> 
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content back czeEbMn" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="czeEbMn"> 
+      <div class="_left czeEbMn" __cid="czeEbMn"> 
+        <ul class="_ul czeEbMn" __cid="czeEbMn"> 
+          <li class="left czeEbMn" id="tab1" __cid="czeEbMn">按部门</li>  
+          <li class="left czeEbMn" id="tab2" __cid="czeEbMn">按主题</li>  
+          <li class="left czeEbMn" id="tab3" __cid="czeEbMn">按生命周期</li> 
+        </ul> 
+      </div>  
+      <div class="_right czeEbMn" __cid="czeEbMn"> 
+        <div name="p" class="p czeEbMn" __cid="czeEbMn"> 
+          <div class="line czeEbMn" id="display" __cid="czeEbMn">市发展和改革委员会</div>  
+          <div class="line czeEbMn" __cid="czeEbMn">市教育厅</div>  
+          <div class="line czeEbMn" __cid="czeEbMn">市科学技术厅</div>  
+          <div class="line czeEbMn" __cid="czeEbMn">市工业和信息化委员会</div>  
+          <div class="line czeEbMn" __cid="czeEbMn">市民族事务委员会</div>  
+          <div class="line czeEbMn" __cid="czeEbMn">市民政厅</div>  
+          <div class="line czeEbMn" __cid="czeEbMn">市司法厅</div>  
+          <div class="line czeEbMn" __cid="czeEbMn">市财务厅</div>  
+          <div class="line czeEbMn" __cid="czeEbMn">市国土资源厅</div>  
+          <div class="line czeEbMn" __cid="czeEbMn">市环境保护厅</div>  
+          <div class="line czeEbMn" __cid="czeEbMn">市住房与城乡建设厅</div> 
+        </div>  
+        <div name="p" class="p czeEbMn" __cid="czeEbMn"> 
+          <div class="line  czeEbMn" __cid="czeEbMn">生育收养</div>  
+          <div class="line czeEbMn" __cid="czeEbMn">户籍办理</div>  
+          <div class="line czeEbMn" __cid="czeEbMn">民族宗教</div>  
+          <div class="line czeEbMn" __cid="czeEbMn">入伍服役</div>  
+          <div class="line czeEbMn" __cid="czeEbMn">就业创业</div>  
+          <div class="line czeEbMn" __cid="czeEbMn">设立变更</div>  
+          <div class="line czeEbMn" __cid="czeEbMn">准营准办</div>  
+          <div class="line czeEbMn" __cid="czeEbMn">抵押质押</div>  
+          <div class="line czeEbMn" __cid="czeEbMn">职业资格</div>  
+          <div class="line czeEbMn" __cid="czeEbMn">行业缴费</div>  
+          <div class="line czeEbMn" __cid="czeEbMn">婚姻登记</div> 
+        </div>  
+        <div name="p" class="p czeEbMn" __cid="czeEbMn"> 
+          <div class="line  czeEbMn" __cid="czeEbMn">升学</div>  
+          <div class="line czeEbMn" __cid="czeEbMn">工作</div>  
+          <div class="line czeEbMn" __cid="czeEbMn">购房</div>  
+          <div class="line czeEbMn" __cid="czeEbMn">结婚</div>  
+          <div class="line czeEbMn" __cid="czeEbMn">生育</div>  
+          <div class="line czeEbMn" __cid="czeEbMn">失业</div>  
+          <div class="line czeEbMn" __cid="czeEbMn">创业</div>  
+          <div class="line czeEbMn" __cid="czeEbMn">迁居</div>  
+          <div class="line czeEbMn" __cid="czeEbMn">退休</div>  
+          <div class="line czeEbMn" __cid="czeEbMn">后事</div>  
+          <div class="line czeEbMn" __cid="czeEbMn">其他</div> 
+        </div> 
+      </div> 
+    </div>  
+    <style __cid="czeEbMn" class="czeEbMn">.x-panel.pcMRZne2-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcMRZne2-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcMRZne2-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcMRZne2-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcMRZne2-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcMRZne2-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcMRZne2-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcMRZne2-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcMRZne2-iosstatusbar &gt;.x-panel-content {top: 48px;}</style> 
+  </div> 
+</div>

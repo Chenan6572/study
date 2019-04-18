@@ -1,0 +1,54 @@
+define(function(require) {
+	var $ = require("jquery");
+	var justep = require("$UI/system/lib/justep");
+	var li = document.getElementsByTagName('li');
+	var p = document.getElementsByName('p');
+	li[0].classList.add('bg_color');
+	p[0].style.display = 'block';
+
+	var _bumen = '民政';
+	var banshi = '全部';
+
+	var Model = function() {
+		this.callParent();
+	};
+
+	$(".line").click(function(e) {
+		banshi = $(e.target).text();
+	});
+
+	$("._line").click(function(e) {
+		_bumen = $(e.target).text();
+
+	});
+	Model.prototype.buttonClick = function(event) {
+		var params = {
+			banshi : banshi,
+			_bumen : _bumen,
+		}
+		justep.Shell.showPage("banshizhinan", params)
+		// window.history.go(-1);//返回上一页
+	};
+	// css样式控制
+
+	// 点击效果
+	for (var i = 0; i < li.length; i++) {
+		(function(n) {
+			li[n].addEventListener('click', function() {
+				for (var j = 0; j < li.length; j++) {
+					li[j].classList.remove('bg_color');
+					p[j].style.display = 'none';
+
+				}
+				this.classList.add('bg_color');
+				p[n].style.display = 'block';
+				_bumen = li[n].innerHTML;
+				console.log(_bumen);
+				console.log(banshi);
+			}, false)
+		}(i))
+	}
+	;
+
+	return Model;
+});

@@ -1,0 +1,47 @@
+@layout("/common/_container.html"){
+<div class="ibox float-e-margins">
+    <div class="ibox-content">
+        <div class="form-horizontal">
+
+            <div class="row">
+                <div class="col-sm-6 b-r">
+                            <#input id="id" name="主键" value="${item.id}" underline="true"/>
+                            <#input id="name" name="姓名" value="${item.name}" underline="true"/>
+                            <#input id="sex" name="性别" value="${item.sex}" underline="true"/>
+                            <#input id="image" name="头像" value="${item.image}" underline="true"/>
+                            <#input id="minzu" name="民族" value="${item.minzu}" underline="true"/>
+                            <#input id="birsthday" name="出生日期" value="${item.birsthday}" underline="true"/>
+                            <#input id="idnum" name="身份证号" value="${item.idnum}" underline="true"/>
+                            <#input id="address" name="地址" value="${item.address}" underline="true"/>
+                            <#input id="fazhengjg" name="发证机关" value="${item.fazhengjg}" underline="true"/>
+                            <#input id="guoqidate" name="过期时间" value="${item.guoqidate}" underline="true"/>
+                            <#input id="xinzghengqh" name="行政区划" value="${item.xinzghengqh}" />
+                </div>
+
+                <div class="col-sm-6">
+                            <#input id="healthdate" name="健康证有效期" value="${item.healthdate}" underline="true"/>
+                            <#input id="idzheng" name="身份证正面照" value="${item.idzheng}" underline="true"/>
+                            <#input id="idfan" name="身份证反面照" value="${item.idfan}" underline="true"/>
+                            <#input id="healthy" name="健康证" value="${item.healthy}" underline="true"/>
+                            <#input id="singincard" name="登记卡" value="${item.singincard}" underline="true"/>
+                            <#input id="peixuncard" name="培训证" value="${item.peixuncard}" underline="true"/>
+                            <#input id="examinetime" name="审核时间" value="${item.examinetime}" underline="true"/>
+                            <#input id="examinestate" name="审核状态" value="${item.examinestate}" underline="true"/>
+                            <#input id="examinepop" name="审核人" value="${item.examinepop}" underline="true"/>
+                            <#input id="audiopinion" name="审核意见" value="${item.audiopinion}" underline="true"/>
+                            <#input id="audiresults" name="审核结果" value="${item.audiresults}" />
+                </div>
+            </div>
+
+            <div class="row btn-group-m-t">
+                <div class="col-sm-10">
+                    <#button btnCss="info" name="提交" id="ensure" icon="fa-check" clickFun="QyCookinfoInfoDlg.editSubmit()"/>
+                    <#button btnCss="danger" name="取消" id="cancel" icon="fa-eraser" clickFun="QyCookinfoInfoDlg.close()"/>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<script src="${ctxPath}/static/modular/cook/qyCookinfo/qyCookinfo_info.js"></script>
+@}

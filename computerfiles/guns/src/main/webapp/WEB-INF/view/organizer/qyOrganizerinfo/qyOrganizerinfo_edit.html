@@ -1,0 +1,45 @@
+@layout("/common/_container.html"){
+<div class="ibox float-e-margins">
+    <div class="ibox-content">
+        <div class="form-horizontal">
+
+            <div class="row">
+                <div class="col-sm-6 b-r">
+                            <#input id="id" name="主键" value="${item.id}" underline="true"/>
+                            <#input id="useraccount" name="关联用户" value="${item.useraccount}" underline="true"/>
+                            <#input id="name" name="姓名" value="${item.name}" underline="true"/>
+                            <#input id="tel" name="手机号" value="${item.tel}" underline="true"/>
+                            <#input id="sex" name="性别" value="${item.sex}" underline="true"/>
+                            <#input id="photo" name="照片" value="${item.photo}" underline="true"/>
+                            <#input id="nation" name="民族" value="${item.nation}" underline="true"/>
+                            <#input id="birthdate" name="出生日期" value="${item.birthdate}" underline="true"/>
+                            <#input id="idcard" name="身份证" value="${item.idcard}" underline="true"/>
+                            <#input id="address" name="详细地址" value="${item.address}" />
+                </div>
+
+                <div class="col-sm-6">
+                            <#input id="certification" name="发证机关" value="${item.certification}" underline="true"/>
+                            <#input id="expirationdate" name="过期时间" value="${item.expirationdate}" underline="true"/>
+                            <#input id="administrative" name="行政区划" value="${item.administrative}" underline="true"/>
+                            <#input id="idfront" name="身份证正面" value="${item.idfront}" underline="true"/>
+                            <#input id="idreverse" name="身份证反面" value="${item.idreverse}" underline="true"/>
+                            <#input id="auditor" name="审核人" value="${item.auditor}" underline="true"/>
+                            <#input id="audittime" name="审核时间" value="${item.audittime}" underline="true"/>
+                            <#input id="auditstate" name="审核状态" value="${item.auditstate}" underline="true"/>
+                            <#input id="audiopinion" name="审核意见" value="${item.audiopinion}" underline="true"/>
+                            <#input id="audiresults" name="审核结果" value="${item.audiresults}" />
+                </div>
+            </div>
+
+            <div class="row btn-group-m-t">
+                <div class="col-sm-10">
+                    <#button btnCss="info" name="提交" id="ensure" icon="fa-check" clickFun="QyOrganizerinfoInfoDlg.editSubmit()"/>
+                    <#button btnCss="danger" name="取消" id="cancel" icon="fa-eraser" clickFun="QyOrganizerinfoInfoDlg.close()"/>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<script src="${ctxPath}/static/modular/organizer/qyOrganizerinfo/qyOrganizerinfo_info.js"></script>
+@}

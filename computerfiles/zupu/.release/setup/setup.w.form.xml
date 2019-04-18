@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window c6RRjeu" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="c6RRjeu" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/bootstrap/row/row,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/data/baasData,$model/UI2/system/components/justep/panel/panel,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">null</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="c6RRjeu" class="c6RRjeu"/>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcYZFrIf-iosstatusbar c6RRjeu" xid="panel1" style="background-color:#F2F2F2;" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="c6RRjeu"> 
+    <div class="x-panel-top c6RRjeu" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="c6RRjeu"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar c6RRjeu" xid="titleBar1" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" __cid="c6RRjeu"> 
+        <div class="x-titlebar-left c6RRjeu" xid="left1" __cid="c6RRjeu">
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon c6RRjeu" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'window.close'}" data-config="{&quot;icon&quot;:&quot;icon-arrow-left-c&quot;,&quot;label&quot;:&quot;返回&quot;}" __cid="c6RRjeu"> 
+            <i xid="i2" class="icon-arrow-left-c c6RRjeu" __cid="c6RRjeu"/>  
+            <span xid="span5" __cid="c6RRjeu" class="c6RRjeu">返回</span>
+          </a>
+        </div>  
+        <div class="x-titlebar-title c6RRjeu" xid="title1" __cid="c6RRjeu">
+          <span xid="span4" __cid="c6RRjeu" class="c6RRjeu">设置</span>
+        </div>  
+        <div class="x-titlebar-right  c6RRjeu" xid="right1" __cid="c6RRjeu">
+          <div class="empty c6RRjeu" __cid="c6RRjeu"/>
+        </div> 
+      </div>
+    </div>  
+    <div class="x-panel-content c6RRjeu" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="c6RRjeu"> 
+      <ul component="$model/UI2/system/components/justep/list/list" class="x-list x-list-template hide c6RRjeu" xid="list1" bind-foreach="{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)}" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;autoLoad&quot;:true,&quot;data&quot;:&quot;baasData1&quot;}" __cid="c6RRjeu"> 
+        <li xid="li2" __cid="c6RRjeu" class="c6RRjeu">
+          <div component="$model/UI2/system/components/bootstrap/row/row" class="row c6RRjeu" xid="row1" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="c6RRjeu"> 
+            <div class="col col-xs-4 c6RRjeu" xid="col1" __cid="c6RRjeu">
+              <input component="$model/UI2/system/components/justep/input/input" class="form-control c6RRjeu" xid="input1" bind-text="ref('memberName')" data-bind="component:{ref:$model.baasData1,name:'$model/UI2/system/components/justep/input/input'}" __cid="c6RRjeu"/>
+            </div>  
+            <div class="col col-xs-4 c6RRjeu" xid="col2" __cid="c6RRjeu"/>  
+            <div class="col col-xs-4 c6RRjeu" xid="col3" __cid="c6RRjeu"/>
+          </div>
+        </li>
+      </ul>
+      <div component="$model/UI2/system/components/justep/panel/panel" class="panel panel-default x-card pcYby6fi-iosstatusbar c6RRjeu" xid="panel3" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="c6RRjeu"> 
+        <ul xid="ul1" class="list-group c6RRjeu" __cid="c6RRjeu"> 
+          <li class="list-group-item c6RRjeu" xid="li1" __cid="c6RRjeu"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon pull-right c6RRjeu" xid="button12" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-ios7-arrow-right&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="c6RRjeu"> 
+              <i xid="i18" class="icon-ios7-arrow-right text-muted c6RRjeu" __cid="c6RRjeu"/>  
+              <span xid="span17" __cid="c6RRjeu" class="c6RRjeu"/> 
+            </a>  
+            <span xid="span16" __cid="c6RRjeu" class="c6RRjeu">开通会员</span> 
+          </li>  
+          <li class="list-group-item c6RRjeu" xid="li1" __cid="c6RRjeu"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon pull-right c6RRjeu" xid="button14" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-ios7-arrow-right&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="c6RRjeu"> 
+              <i xid="i27" class="icon-ios7-arrow-right text-muted c6RRjeu" __cid="c6RRjeu"/>  
+              <span xid="span20" __cid="c6RRjeu" class="c6RRjeu"/> 
+            </a>  
+            <span xid="span19" __cid="c6RRjeu" class="c6RRjeu">实名认证</span> 
+          </li>  
+          <li class="list-group-item c6RRjeu" xid="li1" __cid="c6RRjeu"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon pull-right c6RRjeu" xid="button16" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-ios7-arrow-right&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="c6RRjeu"> 
+              <i xid="i29" class="icon-ios7-arrow-right text-muted c6RRjeu" __cid="c6RRjeu"/>  
+              <span xid="span23" __cid="c6RRjeu" class="c6RRjeu"/> 
+            </a>  
+            <span xid="span22" __cid="c6RRjeu" class="c6RRjeu">安全认证</span> 
+          </li>  
+          <li class="list-group-item c6RRjeu" xid="li4" __cid="c6RRjeu"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon pull-right c6RRjeu" xid="button2" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-ios7-arrow-right&quot;}" __cid="c6RRjeu"> 
+              <i xid="i1" class="icon-ios7-arrow-right c6RRjeu" __cid="c6RRjeu"/>  
+              <span xid="span1" __cid="c6RRjeu" class="c6RRjeu"/>
+            </a>  
+            <span xid="span2" __cid="c6RRjeu" class="c6RRjeu">安全设置</span>
+          </li>
+        </ul>  
+        <style __cid="c6RRjeu" class="c6RRjeu">.x-panel.pcYby6fi-iosstatusbar &gt;.x-panel-top {height: 0px;}.x-panel.pcYby6fi-iosstatusbar &gt;.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.pcYby6fi-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcYby6fi-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcYby6fi-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel.pcYby6fi-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcYby6fi-iosstatusbar &gt;.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcYby6fi-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcYby6fi-iosstatusbar &gt;.x-panel-content {top: 0px;}</style>
+      </div>  
+      <div component="$model/UI2/system/components/justep/panel/panel" class="panel panel-default x-card pcFnANZb-iosstatusbar c6RRjeu" xid="panel4" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="c6RRjeu"> 
+        <div class="list-group-item c6RRjeu" xid="div10" __cid="c6RRjeu"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon pull-right c6RRjeu" xid="button18" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-ios7-arrow-right&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="c6RRjeu"> 
+            <i xid="i31" class="icon-ios7-arrow-right text-muted c6RRjeu" __cid="c6RRjeu"/>  
+            <span xid="span26" __cid="c6RRjeu" class="c6RRjeu"/> 
+          </a>  
+          <span xid="span25" __cid="c6RRjeu" class="c6RRjeu">设置锁屏图案</span> 
+        </div>  
+        <style __cid="c6RRjeu" class="c6RRjeu">.x-panel.pcFnANZb-iosstatusbar &gt;.x-panel-top {height: 0px;}.x-panel.pcFnANZb-iosstatusbar &gt;.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.pcFnANZb-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcFnANZb-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcFnANZb-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel.pcFnANZb-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcFnANZb-iosstatusbar &gt;.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcFnANZb-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcFnANZb-iosstatusbar &gt;.x-panel-content {top: 0px;}</style>
+      </div>  
+      <div component="$model/UI2/system/components/justep/panel/panel" class="panel panel-default x-card pcnIn6fa-iosstatusbar c6RRjeu" xid="panel2" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="c6RRjeu"> 
+        <div class="list-group-item c6RRjeu" xid="div1" align="center" __cid="c6RRjeu"> 
+          <span xid="quit" __cid="c6RRjeu" class="c6RRjeu">退出登录</span> 
+        </div>  
+        <style __cid="c6RRjeu" class="c6RRjeu">.x-panel.pcnIn6fa-iosstatusbar &gt;.x-panel-top {height: 0px;}.x-panel.pcnIn6fa-iosstatusbar &gt;.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.pcnIn6fa-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcnIn6fa-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcnIn6fa-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel.pcnIn6fa-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcnIn6fa-iosstatusbar &gt;.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcnIn6fa-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcnIn6fa-iosstatusbar &gt;.x-panel-content {top: 0px;}</style>
+      </div> 
+    </div>  
+    <style __cid="c6RRjeu" class="c6RRjeu">.x-panel.pcYZFrIf-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcYZFrIf-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcYZFrIf-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcYZFrIf-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcYZFrIf-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcYZFrIf-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcYZFrIf-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcYZFrIf-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcYZFrIf-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+  </div> 
+</div>

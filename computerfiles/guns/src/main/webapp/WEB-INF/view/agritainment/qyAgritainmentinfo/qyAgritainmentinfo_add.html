@@ -1,0 +1,44 @@
+@layout("/common/_container.html"){
+<div class="ibox float-e-margins">
+    <div class="ibox-content">
+        <div class="form-horizontal">
+
+            <div class="row">
+                <div class="col-sm-6 b-r">
+                            <#input id="id" name="主键" underline="true"/>
+                            <#input id="useraccount" name="关联用户" underline="true"/>
+                            <#input id="name" name="姓名" underline="true"/>
+                            <#input id="sex" name="性别" underline="true"/>
+                            <#input id="photo" name="照片" underline="true"/>
+                            <#input id="nation" name="民族" underline="true"/>
+                            <#input id="birthdate" name="出生日期" underline="true"/>
+                            <#input id="idcard" name="身份证" underline="true"/>
+                            <#input id="address" name="详细地址" underline="true"/>
+                            <#input id="certification" name="发证机关"/>
+                </div>
+
+                <div class="col-sm-6">
+                            <#input id="expirationdate" name="过期时间" underline="true"/>
+                            <#input id="administrative" name="行政区划" underline="true"/>
+                            <#input id="idfront" name="身份证正面" underline="true"/>
+                            <#input id="idreverse" name="身份证反面" underline="true"/>
+                            <#input id="businesslicense" name="营业执照" underline="true"/>
+                            <#input id="hygienelicense" name="卫生许可证" underline="true"/>
+                            <#input id="auditor" name="审核人" underline="true"/>
+                            <#input id="audittime" name="审核时间" underline="true"/>
+                            <#input id="auditstate" name="审核状态" underline="true"/>
+                </div>
+            </div>
+
+            <div class="row btn-group-m-t">
+                <div class="col-sm-10">
+                    <#button btnCss="info" name="提交" id="ensure" icon="fa-check" clickFun="QyAgritainmentinfoInfoDlg.addSubmit()"/>
+                    <#button btnCss="danger" name="取消" id="cancel" icon="fa-eraser" clickFun="QyAgritainmentinfoInfoDlg.close()"/>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<script src="${ctxPath}/static/modular/agritainment/qyAgritainmentinfo/qyAgritainmentinfo_info.js"></script>
+@}

@@ -1,0 +1,151 @@
+*{
+	margin:0;
+}
+.top_image {
+	width: 100%;
+	text-align: center;
+	margin-top:2.5rem;
+	margin-bottom:2.5rem;
+}
+.clear:after {
+    content: '';
+    display: block;
+    clear: both;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+.clear {
+    zoom: 1;
+}
+.image_tou {
+	vertical-align: middle;
+}
+
+.title {
+	background-color: rgba(231, 64, 58, 1)
+}
+.frame{
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	margin:0.5rem 2.5rem 0.5rem 2.5rem;
+	height:6rem;	
+	
+}
+.frame_border{
+	border-radius:0.5rem;
+	width:100%;
+	height:5rem;
+	padding-left:0.4rem;
+	border:1px solid rgba(201, 201, 201, 0.5);
+	box-shadow: 1px 1px 1px rgba(201, 201, 201, 1);
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	
+}
+
+.frame_border:hover {
+    border: 1px solid rgba(231, 64, 58, 0.5);
+    box-shadow: 3px 3px 5px rgba(255, 215, 215, 1);
+}
+
+.frame_border_:hover {
+    border: 1px solid rgba(231, 64, 58, 0.5);
+    box-shadow: 3px 3px 5px rgba(255, 215, 215, 1);
+}
+.frame_border_{
+	border-radius:0.5rem;
+	width:70%;
+	height:5rem;
+	
+	padding-left:0.4rem;
+	border:1px solid rgba(201, 201, 201, 0.5);
+	box-shadow: 1px 1px 1px rgba(201, 201, 201, 1);
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	
+}
+.img_left{
+	height:4rem;
+	width:2rem;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+.img_img{
+	height:60%;
+}
+.cont{
+	width:3rem;
+	height:2rem;
+	border-right:2px solid rgba(153, 153, 153, 1);
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	font-size:1.5rem;
+}
+.cont_phone{
+	width:6rem;
+	height:2.5rem;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+.input{
+	height:3.5rem;
+	width:18rem;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	border:none;
+	outline:none;
+}
+.input_{
+	height:3.5rem;
+	width:10rem;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	border:none;
+	outline:none;
+}
+.seize_seat{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	width:8rem;
+	height:3.5rem;
+	font-size:1.4rem;
+	margin-left:0.5rem;
+	margin-right:0.5rem;
+	background-color:rgba(231, 64, 58, 1);
+	border-radius:1rem;
+	color:white;
+}
+
+.bangding {
+	height: 4rem;
+	margin-left: 10%;
+	width: 80%;
+	margin-bottom: 1rem;
+	margin-top: 3rem;
+	border-radius: 5rem;
+	background: rgba(231, 64, 58, 1);
+	color: white;
+	font-size: 1.5rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.clause {
+	margin-left: 15%;
+	font-size: 1.3rem;
+	margin-top: 1rem;
+	color: #999999;
+	font-weight: 300
+}

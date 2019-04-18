@@ -1,0 +1,19 @@
+define(function(require){
+	var $ = require("jquery");
+	var justep = require("$UI/system/lib/justep");
+
+	var Model = function(){
+		this.callParent();
+	};
+	//退出登录
+	Model.prototype.setting = function(event){
+		localStorage.setItem("Token","");
+		localStorage.setItem("loginName","");
+		justep.Shell.showPage("login");
+	};
+	//修改密码
+	Model.prototype.selecttype = function(event){
+		justep.Shell.showPage("selecttype");
+	};
+	return Model;
+});

@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/window/window" design="device:m;" xid="window" class="window cMNzu2m" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cMNzu2m" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">.x-nav-guide.cMNzu2m{margin-top: 8px} .x-nav-guide.cMNzu2m .btn-link.cMNzu2m{font-weight: normal; color: rgb(0, 0, 0)} .x-nav-guide.cMNzu2m .btn.cMNzu2m{height: 40px; border-top: 0} .x-nav-guide.cMNzu2m .btn.active.cMNzu2m{border-bottom: 2px solid rgb(255, 0, 0); color: rgb(255, 0, 0)} .basic.cMNzu2m{margin-top: 1rem; margin-right: 5px; width: 8px; height: 22px; background-color: rgba(231, 64, 58, 1); float: left} .all.cMNzu2m{margin-top: 12px; margin-left: 0px; width: 6px; height: 16px; background-color: rgba(231, 64, 58, 1); float: left} .frames.cMNzu2m{width: 100%; height: 14px; background-color: rgba(242, 242, 242, 1); border: 1px solid rgba(242, 242, 242, 1)} .imgs.cMNzu2m{float: right; margin-right: 2rem} .imgs.cMNzu2m img.cMNzu2m{height: 2rem; width: 2rem} .spans.cMNzu2m{position: absolute; display: block; margin-bottom: 0.5rem; bottom: 10px; right: 10px; width: 6rem; height: 6rem; border-radius: 3rem; font-size: 1.5rem; color: white} .list_tables.cMNzu2m{border-top: 1px solid rgba(215, 215, 215, 1)}</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:onload" __cid="cMNzu2m" class="cMNzu2m"/>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcaum2Mn-iosstatusbar cMNzu2m" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cMNzu2m"> 
+    <div class="x-panel-top cMNzu2m" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cMNzu2m"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cMNzu2m" style="background-color:#FF0000;" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;卫健委事项详情&quot;}" __cid="cMNzu2m"> 
+        <div class="x-titlebar-left cMNzu2m" __cid="cMNzu2m"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cMNzu2m" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'window.close'}" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;,&quot;label&quot;:&quot;&quot;}" __cid="cMNzu2m"> 
+            <i class="icon-chevron-left cMNzu2m" __cid="cMNzu2m"/>  
+            <span __cid="cMNzu2m" class="cMNzu2m"/> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cMNzu2m" __cid="cMNzu2m">卫健委事项消息</div>  
+        <div class="x-titlebar-right  cMNzu2m" __cid="cMNzu2m">
+          <div class="empty cMNzu2m" __cid="cMNzu2m"/>
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content cl_list_table cMNzu2m" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cMNzu2m"> 
+      <div component="$model/UI2/system/components/justep/list/list" class="x-list cMNzu2m" xid="matterDetail" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;autoLoad&quot;:false,&quot;data&quot;:&quot;dataMatter&quot;,&quot;limit&quot;:10}" __cid="cMNzu2m"> 
+        <ul xid="listTemplateUl3" __cid="cMNzu2m" class="cMNzu2m"> 
+          <li xid="li3" class="takeout-list-row cMNzu2m" __cid="cMNzu2m"> 
+            <div component="$model/UI2/system/components/justep/row/row" class="x-row cMNzu2m" xid="row7" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cMNzu2m"> 
+              <div xid="col13" __cid="cMNzu2m" class="cMNzu2m"> 
+                <div class="basic cMNzu2m" __cid="cMNzu2m"/>  
+                <span xid="span17" style="font-weight:bold;width:10rem;font-size:2rem;" class="x-output cMNzu2m" __cid="cMNzu2m">基本信息</span> 
+              </div>  
+              <div class="x-col cMNzu2m" xid="col32" __cid="cMNzu2m"/>
+            </div>  
+            <div component="$model/UI2/system/components/justep/row/row" class="x-row cMNzu2m" xid="row8" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cMNzu2m"> 
+              <div xid="col20" __cid="cMNzu2m" class="cMNzu2m"> 
+                <span xid="span16" style="margin-left:15px;" class="x-output cMNzu2m" __cid="cMNzu2m">事项名称：</span> 
+              </div>  
+              <div xid="col21" __cid="cMNzu2m" class="cMNzu2m"> 
+                <span class="x-output cMNzu2m" id="sxname" __cid="cMNzu2m"/> 
+              </div> 
+            </div>  
+            <div component="$model/UI2/system/components/justep/row/row" class="x-row cMNzu2m" xid="row9" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cMNzu2m"> 
+              <div xid="col23" __cid="cMNzu2m" class="cMNzu2m"> 
+                <span xid="span116" style="margin-left:15px" class="x-output cMNzu2m" __cid="cMNzu2m">事项类型：</span> 
+              </div>  
+              <div xid="col24" __cid="cMNzu2m" class="cMNzu2m"> 
+                <span class="x-output cMNzu2m" id="sxtype" __cid="cMNzu2m"></span> 
+              </div> 
+            </div>  
+            <div component="$model/UI2/system/components/justep/row/row" class="x-row cMNzu2m" xid="row10" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cMNzu2m"> 
+              <div xid="col26" style="margin-left:15px;color:#FF8040;" __cid="cMNzu2m" class="cMNzu2m"> 
+                <span xid="span117" class="x-output cMNzu2m" __cid="cMNzu2m">办理对象：</span> 
+              </div>  
+              <div xid="col27" __cid="cMNzu2m" class="cMNzu2m"> 
+                <span class="x-output cMNzu2m" id="sxobject" __cid="cMNzu2m"></span> 
+              </div> 
+            </div>  
+            <div component="$model/UI2/system/components/justep/row/row" class="x-row cMNzu2m" xid="row11" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cMNzu2m"> 
+              <div xid="col28" style="margin-left:15px;color:#FF8040;" __cid="cMNzu2m" class="cMNzu2m"> 
+                <span xid="span119" class="x-output cMNzu2m" __cid="cMNzu2m">申请期限：</span> 
+              </div>  
+              <div xid="col29" __cid="cMNzu2m" class="cMNzu2m"> 
+                <span xid="span120" class="x-output cMNzu2m" id="sqterm" __cid="cMNzu2m"></span> 
+              </div> 
+            </div>  
+            <div component="$model/UI2/system/components/justep/row/row" class="x-row cMNzu2m" xid="row12" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cMNzu2m"> 
+              <div xid="col36" style="margin-left:15px;color:#FF8040;" __cid="cMNzu2m" class="cMNzu2m"> 
+                <span xid="span19" class="x-output cMNzu2m" __cid="cMNzu2m">法定办理时限：</span> 
+              </div>  
+              <div xid="col37" __cid="cMNzu2m" class="cMNzu2m"> 
+                <span class="x-output cMNzu2m" id="fdterm" __cid="cMNzu2m"></span> 
+              </div> 
+            </div>  
+            <div component="$model/UI2/system/components/justep/row/row" class="x-row cMNzu2m" xid="row13" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cMNzu2m"> 
+              <div xid="col36" style="margin-left:15px;color:#FF8040;" __cid="cMNzu2m" class="cMNzu2m"> 
+                <span xid="span19" class="x-output cMNzu2m" __cid="cMNzu2m">承诺办理时限：</span> 
+              </div>  
+              <div xid="col37" __cid="cMNzu2m" class="cMNzu2m"> 
+                <span class="x-output cMNzu2m" id="cnterm" __cid="cMNzu2m"></span> 
+              </div> 
+            </div>  
+            <div component="$model/UI2/system/components/justep/row/row" class="x-row cMNzu2m" xid="row14" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cMNzu2m"> 
+              <div xid="col36" style="margin-left:15px;color:#FF8040;" __cid="cMNzu2m" class="cMNzu2m"> 
+                <span xid="span19" class="x-output cMNzu2m" __cid="cMNzu2m">办理形式：</span> 
+              </div>  
+              <div xid="col37" __cid="cMNzu2m" class="cMNzu2m"> 
+                <span class="x-output cMNzu2m" id="bltype" __cid="cMNzu2m"/> 
+              </div> 
+            </div>  
+            <div component="$model/UI2/system/components/justep/row/row" class="x-row cMNzu2m" xid="row15" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cMNzu2m"> 
+              <div xid="col36" style="margin-left:15px;color:#FF8040;" __cid="cMNzu2m" class="cMNzu2m"> 
+                <span xid="span19" class="x-output cMNzu2m" __cid="cMNzu2m">办理机构：</span> 
+              </div>  
+              <div xid="col37" __cid="cMNzu2m" class="cMNzu2m"> 
+                <span class="x-output cMNzu2m" id="blmechanism" __cid="cMNzu2m"/> 
+              </div> 
+            </div>  
+            <div component="$model/UI2/system/components/justep/row/row" class="x-row cMNzu2m" xid="row16" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cMNzu2m"> 
+              <div xid="col36" style="margin-left:15px;color:#FF8040;" __cid="cMNzu2m" class="cMNzu2m"> 
+                <span xid="span19" class="x-output cMNzu2m" __cid="cMNzu2m">办理地点：</span> 
+              </div>  
+              <div xid="col37" __cid="cMNzu2m" class="cMNzu2m"> 
+                <span class="x-output cMNzu2m" id="bladdress" __cid="cMNzu2m"/> 
+              </div> 
+            </div> 
+          </li>  
+          <div class="layui-tab layui-tab-brief cMNzu2m" lay-filter="tabtest" __cid="cMNzu2m"> 
+            <div class="frames cMNzu2m" __cid="cMNzu2m"/>  
+            <ul class="layui-tab-title cMNzu2m" style="" __cid="cMNzu2m"> 
+              <li class="layui-this cMNzu2m" __cid="cMNzu2m">受理条件</li>  
+              <li __cid="cMNzu2m" class="cMNzu2m">办理材料</li>  
+              <li __cid="cMNzu2m" class="cMNzu2m">办理流程</li> 
+            </ul>  
+            <div class="frames cMNzu2m" __cid="cMNzu2m"/>  
+            <div class="layui-tab-content cMNzu2m" style="padding:0" __cid="cMNzu2m"> 
+              <div class="layui-tab-item layui-show cMNzu2m" __cid="cMNzu2m"> 
+                <div component="$model/UI2/system/components/justep/row/row" class="x-row cMNzu2m" xid="row18" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cMNzu2m"> 
+                  <div class="x-col cMNzu2m" xid="col41" style="padding-top:15px" __cid="cMNzu2m"> 
+                    <span xid="span21" style="margin-top:15px;" id="slcondition" __cid="cMNzu2m" class="cMNzu2m"/> 
+                  </div> 
+                </div> 
+              </div>  
+              <div class="layui-tab-item  cMNzu2m" __cid="cMNzu2m"> 
+                <div v-for="sz in yVwuxBlclListDto" class="list_tables cMNzu2m" __cid="cMNzu2m"> 
+                  <div component="$model/UI2/system/components/justep/row/row" class="x-row cMNzu2m" xid="row2" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cMNzu2m"> 
+                    <div class="x-col cMNzu2m" xid="col4" __cid="cMNzu2m"> 
+                      <span xid="span16" style="margin-left:15px;display:inline;" class="x-output cMNzu2m" __cid="cMNzu2m">材料名称:</span>  
+                      <span xid="span16" class="x-output cMNzu2m" id="clname" style="display:inline;" __cid="cMNzu2m">{{sz.name}}</span> 
+                    </div> 
+                  </div>  
+                  <div component="$model/UI2/system/components/justep/row/row" class="x-row cMNzu2m" xid="row3" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cMNzu2m"> 
+                    <div class="x-col cMNzu2m" xid="col7" __cid="cMNzu2m"> 
+                      <span xid="span16" style="margin-left:15px;display:inline;" class="x-output cMNzu2m" __cid="cMNzu2m">材料来源:</span>  
+                      <span xid="span16" class="x-output cMNzu2m" id="clllyr" style="display:inline;" __cid="cMNzu2m">{{sz.llyr}}</span> 
+                    </div> 
+                  </div>  
+                  <div component="$model/UI2/system/components/justep/row/row" class="x-row cMNzu2m" xid="row22" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cMNzu2m"> 
+                    <div xid="col21" class="x-col cMNzu2m" __cid="cMNzu2m"> 
+                      <span xid="span16" style="margin-left:15px;display:inline;" class="x-output cMNzu2m" __cid="cMNzu2m">复印件:</span>  
+                      <span xid="span16" class="x-output cMNzu2m" id="copy_num" style="display:inline;" __cid="cMNzu2m">{{sz.copy_num}}</span> 
+                    </div>  
+                    <div class="x-col cMNzu2m" xid="col21" __cid="cMNzu2m"> 
+                      <span xid="span16" style="margin-left:15px;display:inline;" class="x-output cMNzu2m" __cid="cMNzu2m">原件:</span>  
+                      <span xid="span16" class="x-output cMNzu2m" id="num" style="display:inline;" __cid="cMNzu2m">{{sz.num}}</span> 
+                    </div> 
+                  </div>  
+                  <div component="$model/UI2/system/components/justep/row/row" class="x-row cMNzu2m" xid="row23" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cMNzu2m"> 
+                    <div class="x-col cMNzu2m" xid="col21" __cid="cMNzu2m"> 
+                      <span xid="span16" style="margin-left:15px;display:inline;" class="x-output cMNzu2m" __cid="cMNzu2m">是否为必备材料:</span>  
+                      <span xid="span16" class="x-output cMNzu2m" id="isbibz" style="display:inline;" __cid="cMNzu2m">{{sz.isbibz}}</span> 
+                    </div>  
+                    <div class="x-col cMNzu2m" xid="col21" __cid="cMNzu2m"> 
+                      <span xid="span16" style="margin-left:15px;display:inline;" class="x-output cMNzu2m" __cid="cMNzu2m">是否需要电子版:</span>  
+                      <span xid="span16" class="x-output cMNzu2m" id="isdmzi" style="display:inline;" __cid="cMNzu2m">{{sz.isdmzi}}</span> 
+                    </div> 
+                  </div>  
+                  <div component="$model/UI2/system/components/justep/row/row" class="x-row cMNzu2m" xid="row24" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cMNzu2m"> 
+                    <div class="x-col cMNzu2m" xid="col21" __cid="cMNzu2m"> 
+                      <span xid="span16" style="margin-left:15px;display:inline;" class="x-output cMNzu2m" __cid="cMNzu2m">申请表样： 
+                        <span onClick="downLoadFiles()" style="color:#3889FF" __cid="cMNzu2m" class="cMNzu2m">下载</span> 
+                      </span> 
+                    </div>  
+                    <div class="x-col cMNzu2m" xid="col21" __cid="cMNzu2m"> 
+                      <span xid="span16" style="margin-left:15px;display:inline;" class="x-output cMNzu2m" __cid="cMNzu2m">材料表样： 
+                        <a bind-click="downLoadFile" style="color:#3889FF" id="cl_file" __cid="cMNzu2m" class="cMNzu2m">下载</a> 
+                      </span> 
+                    </div> 
+                  </div> 
+                </div> 
+              </div>  
+              <div class="layui-tab-item cMNzu2m" __cid="cMNzu2m"> 
+                <div v-for="process in yVwuxLqifListDto" class="list_tables cMNzu2m" __cid="cMNzu2m"> 
+                  <div component="$model/UI2/system/components/justep/row/row" class="x-row cMNzu2m" xid="row26" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cMNzu2m"> 
+                    <div class="x-col cMNzu2m" xid="col76" __cid="cMNzu2m"> 
+                      <span xid="span16" style="margin-left:15px;display:inline;" class="x-output cMNzu2m" __cid="cMNzu2m">环节:</span>  
+                      <span xid="span16" class="x-output cMNzu2m" id="hrjx" style="display:inline;" __cid="cMNzu2m">{{process.hrjx}}</span> 
+                    </div>  
+                    <div class="imgs cMNzu2m" __cid="cMNzu2m"> 
+                      <a bind-click="downLoadFile" __cid="cMNzu2m" class="cMNzu2m"> 
+                        <img src="$model/UI2/zupu/img/u71.png" __cid="cMNzu2m" class="cMNzu2m"/> 
+                      </a> 
+                    </div> 
+                  </div>  
+                  <div component="$model/UI2/system/components/justep/row/row" class="x-row cMNzu2m" xid="row3" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cMNzu2m"> 
+                    <div class="x-col cMNzu2m" xid="col7" __cid="cMNzu2m"> 
+                      <span xid="span16" style="margin-left:15px;display:inline;" class="x-output cMNzu2m" __cid="cMNzu2m">承诺时间:</span>  
+                      <span xid="span16" class="x-output cMNzu2m" id="in_date" style="display:inline;" __cid="cMNzu2m">{{process.in_date}}</span> 
+                    </div> 
+                  </div>  
+                  <div component="$model/UI2/system/components/justep/row/row" class="x-row cMNzu2m" xid="row3" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cMNzu2m"> 
+                    <div class="x-col cMNzu2m" xid="col7" __cid="cMNzu2m"> 
+                      <span xid="span16" style="margin-left:15px;display:inline;" class="x-output cMNzu2m" __cid="cMNzu2m">说明:</span>  
+                      <span xid="span16" class="x-output cMNzu2m" id="demo" style="display:inline;" __cid="cMNzu2m"/> 
+                    </div> 
+                  </div> 
+                </div> 
+              </div> 
+            </div> 
+          </div>  
+          <li xid="li1" class="takeout-list-row cMNzu2m" __cid="cMNzu2m"> 
+            <div style="height:50px" xid="div1" __cid="cMNzu2m" class="cMNzu2m"/> 
+          </li> 
+        </ul> 
+      </div> 
+    </div>  
+    <a component="$model/UI2/system/components/justep/button/button" class="btn x-red pull-right spans cMNzu2m" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:btnNewMatterClick" __cid="cMNzu2m"> 
+      <p __cid="cMNzu2m" class="cMNzu2m"> 
+        <span xid="span1" __cid="cMNzu2m" class="cMNzu2m">我要</span> 
+      </p>  
+      <p __cid="cMNzu2m" class="cMNzu2m"> 
+        <span xid="span2" __cid="cMNzu2m" class="cMNzu2m">办理</span> 
+      </p> 
+    </a>  
+    <style __cid="cMNzu2m" class="cMNzu2m">.x-panel.pcaum2Mn-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcaum2Mn-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcaum2Mn-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcaum2Mn-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcaum2Mn-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcaum2Mn-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcaum2Mn-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcaum2Mn-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcaum2Mn-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+  </div> 
+</div>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/window/window" design="device:m;" xid="window" class="window cURNZJv" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cURNZJv" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">  
+  <style xmlns="" xmlns:xhtml="http://www.w3.org/1999/xhtml">.content.cURNZJv{padding-top: 1.5rem} .all_list_all.cURNZJv{width: 100%; height: 5rem; border-bottom: 1px solid rgba(215, 215, 215, 1); background: white} .all_list_left.cURNZJv{width: 25%; height: 5rem; line-height: 5rem; text-align: left; font-size: 1.5rem; float: left; color: black; direction: ltr; margin-left: 1.3rem} .all_list_right.cURNZJv{width: 70%; height: 5rem; float: right} .all_list_right.cURNZJv input.cURNZJv{border: none; outline: none; font-size: 1.5rem; text-align: right; margin-right: 2rem; direction: ltr; margin-top: 1.5rem; height: 2rem; width: 80%; float: right} .btns.cURNZJv{width: 70%; height: 4rem; line-height: 4rem; color: azure; font-size: 2rem; text-align: center; margin: 5rem auto; background-color: rgba(231, 64, 58, 1); border-radius: 10rem}</style>  
+  <div xmlns="" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:onload" __cid="cURNZJv" class="cURNZJv"/>  
+  <div xmlns="" component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcuIbYry-iosstatusbar cURNZJv" style="background-color:rgba(242, 242, 242, 1)" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cURNZJv"> 
+    <div class="x-panel-top cURNZJv" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cURNZJv"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" style="background-color:rgba(231, 64, 58, 1)" class="x-titlebar cURNZJv" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;户籍信息&quot;}" __cid="cURNZJv"> 
+        <div class="x-titlebar-left cURNZJv" __cid="cURNZJv"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cURNZJv" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'window.close'}" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;,&quot;label&quot;:&quot;&quot;}" __cid="cURNZJv"> 
+            <i class="icon-chevron-left cURNZJv" __cid="cURNZJv"/>  
+            <span __cid="cURNZJv" class="cURNZJv"/> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cURNZJv" __cid="cURNZJv">户籍信息</div>  
+        <div class="x-titlebar-right  cURNZJv" __cid="cURNZJv"> 
+          <div class="empty cURNZJv" __cid="cURNZJv"/> 
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content content cURNZJv" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cURNZJv"> 
+      <div class="all_list_all cURNZJv" __cid="cURNZJv"> 
+        <div class="all_list_left cURNZJv" __cid="cURNZJv">户号</div>  
+        <div class="all_list_right cURNZJv" __cid="cURNZJv"> 
+          <input type="text" placeholder="户号" id="doornums" __cid="cURNZJv" class="cURNZJv"/> 
+        </div> 
+      </div>  
+      <div class="all_list_all cURNZJv" __cid="cURNZJv"> 
+        <div class="all_list_left cURNZJv" __cid="cURNZJv">与户主关系</div>  
+        <div class="all_list_right cURNZJv" __cid="cURNZJv"> 
+          <input type="text" placeholder="与户主关系" id="hpopulation" __cid="cURNZJv" class="cURNZJv"/> 
+        </div> 
+      </div>  
+      <div class="all_list_all cURNZJv" __cid="cURNZJv"> 
+        <div class="all_list_left cURNZJv" __cid="cURNZJv">身份证号</div>  
+        <div class="all_list_right cURNZJv" __cid="cURNZJv"> 
+          <input type="text" placeholder="身份证" id="idcard" __cid="cURNZJv" class="cURNZJv"/> 
+        </div> 
+      </div>  
+      <div class="all_list_all cURNZJv" __cid="cURNZJv"> 
+        <div class="all_list_left cURNZJv" __cid="cURNZJv">户籍类别</div>  
+        <div class="all_list_right cURNZJv" __cid="cURNZJv"> 
+          <input type="text" placeholder="户籍类别" id="registercategory" __cid="cURNZJv" class="cURNZJv"/> 
+        </div> 
+      </div>  
+      <div class="all_list_all cURNZJv" __cid="cURNZJv"> 
+        <div class="all_list_left cURNZJv" __cid="cURNZJv">村社区名称</div>  
+        <div class="all_list_right cURNZJv" __cid="cURNZJv"> 
+          <input type="text" placeholder="村社区名称" id="addresss" __cid="cURNZJv" class="cURNZJv"/> 
+        </div> 
+      </div>  
+      <div class="all_list_all cURNZJv" __cid="cURNZJv"> 
+        <div class="all_list_left cURNZJv" __cid="cURNZJv">居民组</div>  
+        <div class="all_list_right cURNZJv" __cid="cURNZJv"> 
+          <input type="text" placeholder="居民组" id="residents_group" __cid="cURNZJv" class="cURNZJv"/> 
+        </div> 
+      </div>  
+      <div class="btns cURNZJv" __cid="cURNZJv" data-bind="event:{click:$model._callModelFn.bind($model, 'savebtn')}">保 存</div> 
+    </div>  
+    <style __cid="cURNZJv" class="cURNZJv">.x-panel.pcuIbYry-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcuIbYry-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcuIbYry-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcuIbYry-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcuIbYry-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcuIbYry-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcuIbYry-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcuIbYry-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcuIbYry-iosstatusbar &gt;.x-panel-content {top: 48px;}</style> 
+  </div> 
+</div>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/window/window" design="device:m;" xid="window" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cbE7BJ3" class="cbE7BJ3" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/bootstrap/panel/panel,">  
+  <style xmlns="" xmlns:xhtml="http://www.w3.org/1999/xhtml">.cbE7BJ3{margin: 0; padding: 0} .body.cbE7BJ3{border: 0; background: rgba(231, 64, 58, 1)} .height.cbE7BJ3{height: 0} .list.cbE7BJ3{background: white; border-bottom: 0.5rem solid rgb(242, 242, 242); padding-left: 5%; padding-right: 5%; padding-top: 1rem; padding-bottom: 0.7rem; display: flex; height: 10rem} .media_left.cbE7BJ3{display: flex; flex-direction: column; height: 8rem; width: 6rem} .basic.cbE7BJ3{height: 2rem; width: 6rem; line-height: 2rem; font-size: 1.2rem; font-weight: 1000; text-align: center} .media_head.cbE7BJ3{width: 6rem; height: 6rem; border-radius: 5px} .head.cbE7BJ3{width: 100%; height: 100%} .media_cont.cbE7BJ3{width: 60%; height: 7rem; line-height: 3.2rem; text-align: left; font-size: 1.3rem} .media_edit.cbE7BJ3{width: 6rem; text-align: center; height: 7rem; line-height: 5rem} .border-bottom.cbE7BJ3{border-bottom: 0.8vw solid rgb(242, 242, 242)} .sum.cbE7BJ3{background: white; display: flex; justify-content: center; align-items: center; border-bottom: 0.5rem solid rgb(242, 242, 242)}</style>  
+  <div xmlns="" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cbE7BJ3" class="cbE7BJ3"/>  
+  <div xmlns="" class="panel panel-default body cbE7BJ3" component="$model/UI2/system/components/bootstrap/panel/panel" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/bootstrap/panel/panel'}" __cid="cbE7BJ3"> 
+    <div xid="div1" class="x-panel-top  cbE7BJ3" __cid="cbE7BJ3"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cbE7BJ3" xid="titleBar1" style="background-color:rgba(231, 64, 58, 1);" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" __cid="cbE7BJ3"> 
+        <div class="x-titlebar-left cbE7BJ3" xid="left1" reverse="true" __cid="cbE7BJ3"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cbE7BJ3" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'window.close'}" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;,&quot;label&quot;:&quot;&quot;}" __cid="cbE7BJ3"> 
+            <i class="icon-chevron-left cbE7BJ3" __cid="cbE7BJ3"/>  
+            <span __cid="cbE7BJ3" class="cbE7BJ3"/> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cbE7BJ3" xid="title1" __cid="cbE7BJ3">个人信息编辑</div>  
+        <div class="x-titlebar-right  cbE7BJ3" xid="right1" __cid="cbE7BJ3"> 
+          <div class="empty cbE7BJ3" __cid="cbE7BJ3"/> 
+        </div> 
+      </div> 
+    </div>  
+    <div __cid="cbE7BJ3" class="cbE7BJ3"> 
+      <div class="list cbE7BJ3" __cid="cbE7BJ3"> 
+        <div class="media_left cbE7BJ3" __cid="cbE7BJ3"> 
+          <span class="basic cbE7BJ3" __cid="cbE7BJ3">基础信息</span>  
+          <div class="media_head cbE7BJ3" __cid="cbE7BJ3"> 
+            <img src="@justepContextPath@/v_6257_nol_zh_CNs_desktopd_pc/zupu/img/man.png" alt="" xid="tou" class="head cbE7BJ3" __cid="cbE7BJ3"/> 
+          </div> 
+        </div>  
+        <div xid="cont" title="neirong" class="media_cont cbE7BJ3" __cid="cbE7BJ3"> 
+          <span id="name" __cid="cbE7BJ3" class="cbE7BJ3">小某某</span>  
+          <span __cid="cbE7BJ3" class="cbE7BJ3">|</span>  
+          <span id="birthday" __cid="cbE7BJ3" class="cbE7BJ3">1990-06-06</span>  
+          <br __cid="cbE7BJ3" class="cbE7BJ3"/>  
+          <span id="nowaddress" __cid="cbE7BJ3" class="cbE7BJ3">吉林省-吉林市-龙潭区</span>  
+          <img src="@justepContextPath@/v_6257_nol_zh_CNs_desktopd_pc/zupu/img/address.png" alt="" xid="image3" __cid="cbE7BJ3" class="cbE7BJ3"/> 
+        </div>  
+        <div class="media_edit cbE7BJ3" __cid="cbE7BJ3" data-bind="event:{click:$model._callModelFn.bind($model, 'div1Click')}"> 
+          <img src="@justepContextPath@/v_6257_nol_zh_CNs_desktopd_pc/zupu/img/edit.png" alt="" xid="link" __cid="cbE7BJ3" class="cbE7BJ3"/> 
+        </div> 
+      </div>  
+      <div class="list cbE7BJ3" __cid="cbE7BJ3"> 
+        <div class="media_left cbE7BJ3" __cid="cbE7BJ3"> 
+          <span class="basic cbE7BJ3" __cid="cbE7BJ3">联系方式</span>  
+          <div class="media_head cbE7BJ3" __cid="cbE7BJ3"> 
+            <img src="@justepContextPath@/v_6257_nol_zh_CNs_desktopd_pc/zupu/img/u2051.png" alt="" xid="tou" class="head cbE7BJ3" __cid="cbE7BJ3"/> 
+          </div> 
+        </div>  
+        <div xid="cont" title="neirong" class="media_cont cbE7BJ3" __cid="cbE7BJ3"> 
+          <span id="phone" __cid="cbE7BJ3" class="cbE7BJ3">130123032032</span> 
+        </div>  
+        <div class="media_edit cbE7BJ3" __cid="cbE7BJ3" data-bind="event:{click:$model._callModelFn.bind($model, 'div2Click')}"> 
+          <img src="@justepContextPath@/v_6257_nol_zh_CNs_desktopd_pc/zupu/img/edit.png" alt="" xid="link" __cid="cbE7BJ3" class="cbE7BJ3"/> 
+        </div> 
+      </div>  
+      <div class="list cbE7BJ3" __cid="cbE7BJ3"> 
+        <div class="media_left cbE7BJ3" __cid="cbE7BJ3"> 
+          <span class="basic cbE7BJ3" __cid="cbE7BJ3">户籍信息</span>  
+          <div class="media_head cbE7BJ3" __cid="cbE7BJ3"> 
+            <img src="@justepContextPath@/v_6257_nol_zh_CNs_desktopd_pc/zupu/img/huji.png" alt="" xid="tou" class="head cbE7BJ3" __cid="cbE7BJ3"/> 
+          </div> 
+        </div>  
+        <div xid="cont" title="neirong" class="media_cont cbE7BJ3" __cid="cbE7BJ3"> 
+          <span id="name" __cid="cbE7BJ3" class="cbE7BJ3"/>户号： 
+          <span id="birthday" __cid="cbE7BJ3" class="cbE7BJ3"/> 2355656
+          <span id="" __cid="cbE7BJ3" class="cbE7BJ3"/>农业户口
+          <br __cid="cbE7BJ3" class="cbE7BJ3"/>  
+          <span id="nowaddress" __cid="cbE7BJ3" class="cbE7BJ3"/> 吉林省-吉林市-龙潭区
+        </div>  
+        <div class="media_edit cbE7BJ3" __cid="cbE7BJ3" data-bind="event:{click:$model._callModelFn.bind($model, 'div3Click')}"> 
+          <img src="@justepContextPath@/v_6257_nol_zh_CNs_desktopd_pc/zupu/img/edit.png" alt="" xid="link" __cid="cbE7BJ3" class="cbE7BJ3"/> 
+        </div> 
+      </div>  
+      <div class="list cbE7BJ3" __cid="cbE7BJ3"> 
+        <div class="media_left cbE7BJ3" __cid="cbE7BJ3"> 
+          <span class="basic cbE7BJ3" __cid="cbE7BJ3">教育信息</span>  
+          <div class="media_head cbE7BJ3" __cid="cbE7BJ3"> 
+            <img src="@justepContextPath@/v_6257_nol_zh_CNs_desktopd_pc/zupu/img/edu.png" alt="" xid="tou" class="head cbE7BJ3" __cid="cbE7BJ3"/> 
+          </div> 
+        </div>  
+        <div xid="cont" title="neirong" class="media_cont cbE7BJ3" __cid="cbE7BJ3"> 
+          <span id="name" __cid="cbE7BJ3" class="cbE7BJ3"/>北华大学
+          <br __cid="cbE7BJ3" class="cbE7BJ3"/>  
+          <span id="birthday" __cid="cbE7BJ3" class="cbE7BJ3"/> 1990/09-2016/07
+          <br __cid="cbE7BJ3" class="cbE7BJ3"/>  
+          <span id="nowaddress" __cid="cbE7BJ3" class="cbE7BJ3"/> 软件工程
+          <span __cid="cbE7BJ3" class="cbE7BJ3"/>|
+          <span id="" __cid="cbE7BJ3" class="cbE7BJ3"/>本科
+        </div>  
+        <div class="media_edit cbE7BJ3" __cid="cbE7BJ3" data-bind="event:{click:$model._callModelFn.bind($model, 'div4Click')}"> 
+          <img src="@justepContextPath@/v_6257_nol_zh_CNs_desktopd_pc/zupu/img/edit.png" alt="" xid="link" __cid="cbE7BJ3" class="cbE7BJ3"/> 
+        </div> 
+      </div>  
+      <div class="sum cbE7BJ3" __cid="cbE7BJ3" data-bind="event:{click:$model._callModelFn.bind($model, 'sum_edu')}"> 
+        <img src="@justepContextPath@/v_6257_nol_zh_CNs_desktopd_pc/zupu/img/sum.png" alt="" xid="sum2" __cid="cbE7BJ3" class="cbE7BJ3"/>  
+        <span class="span_jiaoyu cbE7BJ3" __cid="cbE7BJ3">继续添加教育经历</span> 
+      </div>  
+      <div class="list cbE7BJ3" __cid="cbE7BJ3"> 
+        <div class="media_left cbE7BJ3" __cid="cbE7BJ3"> 
+          <span class="basic cbE7BJ3" __cid="cbE7BJ3">工作经历</span>  
+          <div class="media_head cbE7BJ3" __cid="cbE7BJ3"> 
+            <img src="@justepContextPath@/v_6257_nol_zh_CNs_desktopd_pc/zupu/img/work.jpg" alt="" xid="tou" class="head cbE7BJ3" __cid="cbE7BJ3"/> 
+          </div> 
+        </div>  
+        <div xid="cont" title="neirong" class="media_cont cbE7BJ3" __cid="cbE7BJ3"> 
+          <span id="name" __cid="cbE7BJ3" class="cbE7BJ3"/>阿里巴巴
+          <br __cid="cbE7BJ3" class="cbE7BJ3"/>  
+          <span id="birthday" __cid="cbE7BJ3" class="cbE7BJ3"/> 8个月
+          <span __cid="cbE7BJ3" class="cbE7BJ3"/>| 
+          <span id="nowaddress" __cid="cbE7BJ3" class="cbE7BJ3"/> 高级攻城狮
+          <span __cid="cbE7BJ3" class="cbE7BJ3"/>|
+          <span id="" __cid="cbE7BJ3" class="cbE7BJ3"/>研发
+        </div>  
+        <div class="media_edit cbE7BJ3" __cid="cbE7BJ3" data-bind="event:{click:$model._callModelFn.bind($model, 'div5Click')}"> 
+          <img src="@justepContextPath@/v_6257_nol_zh_CNs_desktopd_pc/zupu/img/edit.png" alt="" xid="link" __cid="cbE7BJ3" class="cbE7BJ3"/> 
+        </div> 
+      </div>  
+      <div class="sum cbE7BJ3" __cid="cbE7BJ3" data-bind="event:{click:$model._callModelFn.bind($model, 'sum_work')}"> 
+        <img src="@justepContextPath@/v_6257_nol_zh_CNs_desktopd_pc/zupu/img/sum.png" alt="" xid="sum2" __cid="cbE7BJ3" class="cbE7BJ3"/>  
+        <span class="span_jiaoyu cbE7BJ3" __cid="cbE7BJ3">继续添加工作经历</span> 
+      </div> 
+    </div> 
+  </div> 
+</div>

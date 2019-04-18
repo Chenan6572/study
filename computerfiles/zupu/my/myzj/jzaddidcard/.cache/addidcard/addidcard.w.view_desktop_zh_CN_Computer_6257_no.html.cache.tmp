@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/window/window" design="device:m;" xid="window" class="window cQRZB3a" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cQRZB3a" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">  
+  <style xmlns="" xmlns:xhtml="http://www.w3.org/1999/xhtml">.all_list_all.cQRZB3a{width: 100%; height: 6rem; border-bottom: 1px solid rgba(215, 215, 215, 1); background-color: white} .all_list_left.cQRZB3a{width: 25%; height: 6rem; line-height: 6rem; text-align: left; font-size: 1.5rem; float: left; color: black; direction: ltr; margin-left: 1.3rem} .all_list_right.cQRZB3a{width: 70%; height: 6rem; float: right} .all_list_right.cQRZB3a input.cQRZB3a{border: none; outline: none; font-size: 1.5rem; text-align: right; margin-right: 2rem; direction: ltr; margin-top: 2rem; height: 2rem; width: 80%; float: right} .middle_content.cQRZB3a{margin-top: 2rem; background-color: white; height: 14rem; padding-top: 1rem} .middle_content.cQRZB3a span.cQRZB3a{font-size: 1.5rem; margin-left: 1.3rem; color: black} .zjimg_content.cQRZB3a{margin-top: 0.5rem; margin-left: 6.5rem; height: 10rem} .zjimg.cQRZB3a{border: 1px solid rgba(121, 121, 121, 1); border-radius: 1rem; margin-right: 1rem; width: 45%; height: 8rem; float: left} .zjimg.cQRZB3a img.cQRZB3a{margin: auto; margin-top: 2.5rem; margin-left: 35%; width: 4rem; height: 3rem} .zjimg.cQRZB3a span.cQRZB3a{text-align: center; font-size: 1rem; margin-left: 20%} .down_content.cQRZB3a{background: white; margin-top: 2rem; padding: 1rem 2rem 0 2rem; height: 6rem} .btnsure.cQRZB3a{width: 100%; height: 3rem; line-height: 3rem; background-color: rgba(231, 64, 58, 1); text-align: center; margin: 0 auto; font-size: 2rem; color: white; border-radius: 0.1rem}</style>  
+  <div xmlns="" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cQRZB3a" class="cQRZB3a"/>  
+  <div xmlns="" component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcAbi2u2-iosstatusbar cQRZB3a" style="background-color:rgba(242, 242, 242, 1)" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cQRZB3a"> 
+    <div class="x-panel-top cQRZB3a" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cQRZB3a"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" style="background-color:rgba(231, 64, 58, 1)" class="x-titlebar cQRZB3a" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;添加身份证&quot;}" __cid="cQRZB3a"> 
+        <div class="x-titlebar-left cQRZB3a" __cid="cQRZB3a"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cQRZB3a" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'window.close'}" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;,&quot;label&quot;:&quot;&quot;}" __cid="cQRZB3a"> 
+            <i class="icon-chevron-left cQRZB3a" __cid="cQRZB3a"/>  
+            <span __cid="cQRZB3a" class="cQRZB3a"/> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cQRZB3a" __cid="cQRZB3a">添加身份证</div>  
+        <div class="x-titlebar-right  cQRZB3a" __cid="cQRZB3a"> 
+          <div class="empty cQRZB3a" __cid="cQRZB3a"/> 
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content content cQRZB3a" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cQRZB3a"> 
+      <div class="all_list_all cQRZB3a" __cid="cQRZB3a"> 
+        <div class="all_list_left cQRZB3a" __cid="cQRZB3a">姓名</div>  
+        <div class="all_list_right cQRZB3a" __cid="cQRZB3a"> 
+          <input type="text" placeholder="请输入姓名" __cid="cQRZB3a" class="cQRZB3a"/> 
+        </div> 
+      </div>  
+      <div class="all_list_all cQRZB3a" __cid="cQRZB3a"> 
+        <div class="all_list_left cQRZB3a" __cid="cQRZB3a">身份证号</div>  
+        <div class="all_list_right cQRZB3a" __cid="cQRZB3a"> 
+          <input type="text" placeholder="请输入身份证号" __cid="cQRZB3a" class="cQRZB3a"/> 
+        </div> 
+      </div>  
+      <div class="all_list_all cQRZB3a" __cid="cQRZB3a"> 
+        <div class="all_list_left cQRZB3a" __cid="cQRZB3a">生效日期</div>  
+        <div class="all_list_right cQRZB3a" __cid="cQRZB3a"> 
+          <input id="start_date" readonly="readonly" type="text" placeholder="请选择生效日期" __cid="cQRZB3a" class="cQRZB3a"/> 
+        </div> 
+      </div>  
+      <div class="all_list_all cQRZB3a" __cid="cQRZB3a"> 
+        <div class="all_list_left cQRZB3a" __cid="cQRZB3a">失效日期</div>  
+        <div class="all_list_right cQRZB3a" __cid="cQRZB3a"> 
+          <input id="end_date" readonly="readonly" type="text" placeholder="请选择失效日期" __cid="cQRZB3a" class="cQRZB3a"/> 
+        </div> 
+      </div>  
+      <div class="all_list_all cQRZB3a" __cid="cQRZB3a"> 
+        <div class="all_list_left cQRZB3a" __cid="cQRZB3a">民族</div>  
+        <div class="all_list_right cQRZB3a" __cid="cQRZB3a"> 
+          <input type="text" placeholder="请选择民族" __cid="cQRZB3a" class="cQRZB3a"/> 
+        </div> 
+      </div>  
+      <div class="all_list_all cQRZB3a" __cid="cQRZB3a"> 
+        <div class="all_list_left cQRZB3a" __cid="cQRZB3a">地址</div>  
+        <div class="all_list_right cQRZB3a" __cid="cQRZB3a"> 
+          <input type="text" placeholder="请输入地址" __cid="cQRZB3a" class="cQRZB3a"/> 
+        </div> 
+      </div>  
+      <div class="all_list_all cQRZB3a" __cid="cQRZB3a"> 
+        <div class="all_list_left cQRZB3a" __cid="cQRZB3a">签发机构</div>  
+        <div class="all_list_right cQRZB3a" __cid="cQRZB3a"> 
+          <input type="text" placeholder="请输入签发机构" __cid="cQRZB3a" class="cQRZB3a"/> 
+        </div> 
+      </div>  
+      <div class="middle_content cQRZB3a" __cid="cQRZB3a"> 
+        <div __cid="cQRZB3a" class="cQRZB3a"> 
+          <span __cid="cQRZB3a" class="cQRZB3a">证件照片</span> 
+        </div>  
+        <div class="zjimg_content cQRZB3a" __cid="cQRZB3a"> 
+          <div class="zjimg cQRZB3a" __cid="cQRZB3a"> 
+            <img src="@justepContextPath@/v_6257_nol_zh_CNs_desktopd_pc/zupu/img/u29.png" alt="" __cid="cQRZB3a" class="cQRZB3a"/>  
+            <br __cid="cQRZB3a" class="cQRZB3a"/>  
+            <span __cid="cQRZB3a" class="cQRZB3a">上传证件正面照片</span> 
+          </div>  
+          <div class="zjimg cQRZB3a" __cid="cQRZB3a"> 
+            <img src="@justepContextPath@/v_6257_nol_zh_CNs_desktopd_pc/zupu/img/u29.png" alt="" __cid="cQRZB3a" class="cQRZB3a"/>  
+            <br __cid="cQRZB3a" class="cQRZB3a"/>  
+            <span __cid="cQRZB3a" class="cQRZB3a">上传证件反面照片</span> 
+          </div> 
+        </div> 
+      </div>  
+      <div class="down_content cQRZB3a" __cid="cQRZB3a"> 
+        <div class="btnsure cQRZB3a" __cid="cQRZB3a">确认添加</div> 
+      </div> 
+    </div>  
+    <style __cid="cQRZB3a" class="cQRZB3a">.x-panel.pcAbi2u2-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcAbi2u2-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcAbi2u2-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcAbi2u2-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcAbi2u2-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcAbi2u2-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcAbi2u2-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcAbi2u2-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcAbi2u2-iosstatusbar &gt;.x-panel-content {top: 48px;}</style> 
+  </div> 
+</div>

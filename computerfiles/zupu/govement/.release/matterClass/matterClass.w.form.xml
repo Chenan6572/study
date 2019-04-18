@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/window/window" design="device:m;" xid="window" class="window c7bqeQ3" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="c7bqeQ3" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/shell/shell,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">null</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="c7bqeQ3" class="c7bqeQ3"> 
+    <div component="$model/UI2/system/components/justep/shell/shell" xid="shell" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/shell/shell'}" __cid="c7bqeQ3" class="c7bqeQ3"/>
+  </div>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcJjiEzu-iosstatusbar c7bqeQ3" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="c7bqeQ3"> 
+    <div class="x-panel-top c7bqeQ3" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="c7bqeQ3"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar c7bqeQ3" style="background-color:#FF0000;" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;政府事项消息&quot;}" __cid="c7bqeQ3"> 
+        <div class="x-titlebar-left c7bqeQ3" __cid="c7bqeQ3"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon c7bqeQ3" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'window.close'}" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;,&quot;label&quot;:&quot;&quot;}" __cid="c7bqeQ3"> 
+            <i class="icon-chevron-left c7bqeQ3" __cid="c7bqeQ3"/>  
+            <span __cid="c7bqeQ3" class="c7bqeQ3"/> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title c7bqeQ3" __cid="c7bqeQ3">政府事项消息</div>  
+        <div class="x-titlebar-right  c7bqeQ3" __cid="c7bqeQ3">
+          <div class="empty c7bqeQ3" __cid="c7bqeQ3"/>
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content c7bqeQ3" xid="content5" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="c7bqeQ3"> 
+      <ul xid="ul1" class="list-group c7bqeQ3" bind-click="{&quot;operation&quot;:&quot;shell.showPage&quot;,&quot;args&quot;:{&quot;url&quot;:&quot;js:$model.toUrl('./matterList.w')&quot;}}" __cid="c7bqeQ3"> 
+        <li class="list-group-item c7bqeQ3" xid="li1" __cid="c7bqeQ3"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon pull-right c7bqeQ3" xid="button12" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-ios7-arrow-right&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="c7bqeQ3"> 
+            <i xid="i18" class="icon-ios7-arrow-right text-muted c7bqeQ3" __cid="c7bqeQ3"/>  
+            <span xid="span17" __cid="c7bqeQ3" class="c7bqeQ3"/> 
+          </a>  
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon c7bqeQ3" xid="button13" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-bag&quot;}" __cid="c7bqeQ3"> 
+            <i xid="i26" class="icon-bag text-warning c7bqeQ3" __cid="c7bqeQ3"/>  
+            <span xid="span18" __cid="c7bqeQ3" class="c7bqeQ3"/> 
+          </a>  
+          <span xid="span16" __cid="c7bqeQ3" class="c7bqeQ3">卫健委</span> 
+        </li>  
+        <li class="list-group-item c7bqeQ3" xid="li1" __cid="c7bqeQ3"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon pull-right c7bqeQ3" xid="button14" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-ios7-arrow-right&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="c7bqeQ3"> 
+            <i xid="i27" class="icon-ios7-arrow-right text-muted c7bqeQ3" __cid="c7bqeQ3"/>  
+            <span xid="span20" __cid="c7bqeQ3" class="c7bqeQ3"/> 
+          </a>  
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon c7bqeQ3" xid="button13" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-bag&quot;}" __cid="c7bqeQ3"> 
+            <i xid="i26" class="icon-bag text-warning c7bqeQ3" __cid="c7bqeQ3"/>  
+            <span xid="span18" __cid="c7bqeQ3" class="c7bqeQ3"/> 
+          </a>  
+          <span xid="span19" __cid="c7bqeQ3" class="c7bqeQ3">公安</span> 
+        </li>  
+        <li class="list-group-item c7bqeQ3" xid="li1" __cid="c7bqeQ3"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon pull-right c7bqeQ3" xid="button16" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-ios7-arrow-right&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="c7bqeQ3"> 
+            <i xid="i29" class="icon-ios7-arrow-right text-muted c7bqeQ3" __cid="c7bqeQ3"/>  
+            <span xid="span23" __cid="c7bqeQ3" class="c7bqeQ3"/> 
+          </a>  
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon c7bqeQ3" xid="button13" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-bag&quot;}" __cid="c7bqeQ3"> 
+            <i xid="i26" class="icon-bag text-warning c7bqeQ3" __cid="c7bqeQ3"/>  
+            <span xid="span18" __cid="c7bqeQ3" class="c7bqeQ3"/> 
+          </a>  
+          <span xid="span22" __cid="c7bqeQ3" class="c7bqeQ3">残联</span> 
+        </li>  
+        <li class="list-group-item c7bqeQ3" xid="li1" __cid="c7bqeQ3"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon pull-right c7bqeQ3" xid="button16" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-ios7-arrow-right&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="c7bqeQ3"> 
+            <i xid="i29" class="icon-ios7-arrow-right text-muted c7bqeQ3" __cid="c7bqeQ3"/>  
+            <span xid="span23" __cid="c7bqeQ3" class="c7bqeQ3"/> 
+          </a>  
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon c7bqeQ3" xid="button13" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-bag&quot;}" __cid="c7bqeQ3"> 
+            <i xid="i26" class="icon-bag text-warning c7bqeQ3" __cid="c7bqeQ3"/>  
+            <span xid="span18" __cid="c7bqeQ3" class="c7bqeQ3"/> 
+          </a>  
+          <span xid="span22" __cid="c7bqeQ3" class="c7bqeQ3">其它</span> 
+        </li> 
+      </ul> 
+    </div>  
+    <style __cid="c7bqeQ3" class="c7bqeQ3">.x-panel.pcJjiEzu-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcJjiEzu-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcJjiEzu-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcJjiEzu-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcJjiEzu-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcJjiEzu-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcJjiEzu-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcJjiEzu-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcJjiEzu-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+  </div>
+</div>
