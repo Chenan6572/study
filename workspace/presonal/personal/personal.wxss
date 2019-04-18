@@ -1,0 +1,48 @@
+/* presonal/personal/personal.wxss */
+page{
+  width: 100%;
+  height: 100%;
+}
+.homepage{
+ 
+  
+}
+.img1{
+  margin-top:20rpx;
+  width: 80rpx;
+  height:80rpx;
+  border-radius: 340rpx; 
+  
+}
+.sy{
+  width: 100%;
+  height: 300rpx;
+}
+.personalimage{
+  position: fixed;
+  top: 2%;
+  left: 34%;
+  text-align: center;
+}
+.typeface{
+  font-family: monospace;
+  font-size:50rpx; 
+}
+.dingdan{
+  display:flex;
+  width:44rpx;
+  height:44rpx;
+  float: left;
+} 
+.dingdan_left{
+float: left;
+}
+.chankan_right{
+float: right;
+}
+.pict{
+  height: 80rpx;
+  width: 80rpx;
+  float: left;
+ 
+}

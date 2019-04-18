@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="js/Vue2.6.10.js"></script>
+</head>
+<body>
+    <div id="app">
+        <my-div></my-div>
+        <my-date></my-date>
+    </div>
+
+    <script>
+    // 一、全局组件
+    //      1、创建组件构造器
+        // 注册一个全局组件
+        // let profie1 = Vue.extend({
+        //     template:' <div>今天可真好</div>'
+        // })
+        let profie1 = {
+            template:' <div>今天可真好</div>'
+        }
+        Vue.component('my-div',profie1);
+        // 定义一个局部组件
+        let profie = {
+            template:'<input type="date">'
+        }
+        new Vue({
+            el:"#app",
+            // 注册一个局部组件
+            components:{
+                'my-date':profie
+            }
+        })
+    </script>
+</body>
+</html>

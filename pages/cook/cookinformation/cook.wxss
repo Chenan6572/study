@@ -1,0 +1,4 @@
+/* pages/cook/cookinformation/cook.wxss */
+.itemView{
+  display: flex;
+}

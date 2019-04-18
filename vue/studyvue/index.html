@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="js/Vue2.6.10.js"></script>
+    <style>
+        img {
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="app">
+        <!-- v-text  与{{}}  值一样  不同的是 v-test可以覆盖标签内的初始值，而{{}}不可以 -->
+        <p v-once>初始值：{{message}}</p>
+        <p>变化值：{{message}}</p>
+        <input type="text" v-model="message">
+    </div>
+    -------------------------------------------------------------------
+    <!-- v-if 与v-show判断 -->
+    <div class="app1">
+        <!-- v-if 与 v-show  都是进行表达式判断（true或者false） 
+        不同点：v-if  结果是进行注释，v-show  是进行css改变 其为display:none   -->
+        <p v-if="height>1.80">小明的身高为：{{height}}m</p>
+        <p v-else>小明的身高不足1.80m</p>
+        <!-- v-for循环 -->
+        <p v-for="sc in scores">{{sc}}</p>
+        <!-- :src="imagesSrc"  相当于v-bind:src="imagesSrc" -->
+        <img :src="imagesSrc" alt="">
+        <p>{{weather}}</p>
+        <!-- v-on:click="changeButton()"相当于@click="changeButton()" -->
+        <button @click="changeButton()">改变内容</button>
+    </div>
+--------------------------------------------------------------------------------------------------------------
+    <!-- 运用全局组件 -->
+    <div class="app1">
+        <my-p></my-p>
+    </div>
+    <script>
+        let vm = new Vue({
+            el: ".app",
+            data: {
+                message: "明天过后",
+            }
+        });
+
+        // 全局组件  1、创建组件构造器
+        let profire = Vue.extend({
+            // 1.1 模板选项
+            template:
+            <div><p>今天天气不错</p></div>  
+        })
+        // 2、注册一个全局组件
+        Vue.component ('my-p',profire)
+
+
+        //v-if 与v-show判断
+        let vm1 = new Vue({
+            el: ".app1",
+            data: {
+                height: 1.55,
+                scores: [100, 87], //循环数组
+                imagesSrc: 'images/01.jpg', //v-bind  绑定属性
+                weather: '今天天气很好啊',
+
+            },
+            methods: {
+                changeButton() {
+                    this.weather = "今天的天气不好啊";
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>       
+        #scoretips {
+            color: darkgray;
+        }
+        #score {
+            border: 1px solid darkgray;
+        }
+        .right {
+            background: url(images/right.jpg) no-repeat 3px center; 
+            background-size: 15px 15px;
+            padding-left: 20px;
+            color: lightgreen !important;
+        }
+        .error {
+            background: url(images/error.jpg) no-repeat 3px center; 
+            background-size: 15px 15px;
+            padding-left: 20px;
+            color: red !important;
+        }
+    </style>
+</head>
+<body>
+    <label>
+        <span>成绩：</span>
+        <input type="text" placeholder="请输入成绩" id="score">
+        <span id="scoretips">请输入成绩</span>
+    </label>
+    <script>
+        window.onload = function(){
+            //1、当输入框失去焦点时
+            $('score').onblur = function(){
+                var value = parseFloat($('score').value);
+            //2、验证    
+                if(isNaN(value)){ //不是一个数   
+                    dealstyle("输入成绩不正确", "error", "red");
+                }else if(value >= 0 && value <= 100){
+                    dealstyle("输入成绩正确", "right", "lightgreen");
+                }else {
+                    dealstyle("请输入您的成绩", "", "darkgray");
+                    $('srore').style.outline = "none";
+                    $('srore').value = "";
+                }
+            }
+            //当输入框获取焦点
+            $('score').onfocus = function(){
+                $('scoretips').innerText = "成绩必须在0-100之间";
+                $('scoretips').className = "";
+            }
+            
+            /**
+             * 处理公共样式
+             * @param {string}msg
+             * @param {string}className
+             * @param {string}color
+            */
+            function dealstyle(msg, className, color) {
+                $('scoretips').innerText = msg;
+                $('scoretips').className = className;
+                $('srore').style.borderColor = color;
+                
+            }
+        }
+         function $(id){
+             return typeof id ==="string"?document.getElementById(id):null;
+         }
+    </script>
+</body>
+</html>

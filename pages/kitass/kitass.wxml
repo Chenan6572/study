@@ -1,0 +1,4 @@
+<!--pages/kitass/kitass/kitass.wxml-->
+<view>
+<button type="primary" bindtap="logBtn">添加帮厨</button>
+</view>

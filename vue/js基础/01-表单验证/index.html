@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        div  {
+            width: 120px;
+            height: 120px;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <button id="bt1">改变颜色</button>
+    <button id="bt2">改变长度</button>
+    <div id="box"></div>
+
+    <script>
+        var bt1 = document.getElementById("bt1");
+        var bt2 = document.getElementById("bt2");
+        var box = document.getElementById("box");
+        //改变背景颜色
+        bt1.onclick = function(){
+            changeCssStyle(box,'background-color','green');
+        }
+        //改变长度
+        bt2.onclick = function(){
+            changeCssStyle(box,'width','300px');
+        }
+        function changeCssStyle(obj,attr,value){
+            obj.style[attr] = value;
+        } 
+
+        var arry = [1,5,36,58];
+        arry.forEach(function(item,index){
+            console.log(item,index);   
+        });
+
+        function tags(params) {
+            console.log(10);
+        }
+        tags();
+
+        //匿名函数   定时函数
+
+        setInterval(() => {
+            
+        }, 1000);
+        window.document.querySelector 
+        
+    </script>
+</body>
+</html>

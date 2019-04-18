@@ -1,0 +1,26 @@
+
+/* 声明字体图标 */
+@font-face {
+    font-family: "icomoon";
+    src: url("../fonts/icomoon.eot"),
+         url("../fonts/icomoon.ttf"),
+         url("../fonts/icomoon.woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+li a h5::before {
+    font-family: "icomoon";
+    font-size: 40px;
+    content: "\e9e3";
+    color: #2E75C4;
+    display: block;
+    text-align: center;
+}
+
+/* ul li .icons {
+    font-family: "icomoon";
+    font-size: 30px;
+    text-align: center;
+    color: #2E75C4;
+} */

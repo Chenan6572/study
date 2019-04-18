@@ -1,0 +1,235 @@
+/* 中间分类模块 */
+.grid {
+    height: 480px;
+}
+
+.grid-col1 {
+    width: 190px;
+    height: 100%;
+    color: #626262;
+    background-color: #FEFEFE;
+    font-size: 14px;
+}
+
+.grid-col1 a {
+    color: #626262;
+    font-size: 14px;
+    margin: 0 3px;
+}
+.grid-col1 a:hover {
+    color: #f10215;
+}
+.grid-col1 ul {
+    padding: 10px 0;
+}
+.grid-col1 ul li {
+    padding-left: 12px;
+    height: 29px;
+    line-height: 29px;
+}
+.grid-col1 ul li:hover {
+    background-color: #d9d9d9;
+}
+.grid-col2 {
+    width: 790px;
+    height: 100%;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.grid-col3 {
+    width: 190px;
+    height: 100%;
+    margin-top: 10px;
+}
+/* banner部分 */
+/* 箭头部分 */
+.grid-col2-l {
+    position: relative;
+    height: 470px;
+    overflow: hidden;
+}
+/* .grid-col2-l ul li img {
+    width: 590px;
+    height: 470px;
+    position: absolute;
+    top: 0;
+    left: 0;
+} */
+.arrow-l,
+.arrow-r {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 60px;
+    line-height: 60px;
+    background: rgba(0, 0, 0, .3);
+    text-align: center;
+    font-size: 20px;
+    color: rgba(255, 255, 255, .6);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+}
+.arrow-l{
+    left: 0;
+}
+.arrow-r {
+    right: 200px;
+}
+.circle {
+    width: 175px;
+    height: 20px;
+    background:rgba(0, 0, 0, -0.3);
+    position: absolute;
+    left: 20%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    border-radius: 10px;
+    padding-left: 8px;
+    box-sizing: border-box;
+}
+.circle li {
+    width: 12px;
+    height: 12px;
+    background-color:rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    float: left;
+    margin: 4px;
+    cursor: pointer;
+}
+.circle .current {
+    background-color: deepskyblue
+}
+/* 右边模块 */
+.grid-col3{
+    background-color: #fff;
+}
+.login {
+    height: 150px;
+    padding: 10px;
+    box-sizing: border-box;
+
+}
+.login-t img{
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    display: block;
+    margin: -26px auto 10px;
+    border: 5px solid #e3e1df;
+    box-shadow: 3px 6px 8px rgba(0, 0, 0, .3);
+}
+.login-t span {
+    font-size: 14px;
+    color: #ABABAB;
+    display: block;
+    line-height: 20px;
+    text-align: center;
+}
+.login-t p {
+    line-height: 20px;
+    margin: 0 auto;
+    text-align: center;
+}
+.login-t a {
+    color: #666;
+}
+.login-b {
+    margin-top: 10px;
+    display: inline-block;
+    height: 25px;
+}
+.login-b a {
+    display: inline-block;
+    margin: 0 5px;
+    width: 70px;
+    height: 25px;
+    line-height: 25px;
+    font-size: 12px;
+    text-align: center;
+    border-radius: 13px;
+    box-shadow: 6px 8px 20px rgba(45,45,45,.15);
+}
+.login-b a:nth-child(1) {
+    color: #f10215;
+}
+.login-b a:nth-child(2) {
+    background: #363634;
+    color: #e5d790;
+}
+.login-b a:hover {
+    background-color: #f10215;
+    color: #fff;
+}
+.news {
+    height: 154px;
+    padding: 7px 13px 0;
+    box-sizing: border-box;
+    border-bottom: 1px solid #ccc;
+}
+.news-t {
+    height: 19px;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+}
+.news-t a {
+    float: left;
+    height: 17px;
+    line-height: 17px;
+}
+.cuxiao {
+    width: 38px; 
+    border-right: 1px solid #ccc;
+}
+.gg {
+    margin-left: 15px;
+}
+.news-t .more {
+    float: right;
+}
+.news-t div {
+    width: 28px;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+}
+.news-b {
+    padding-top: 15px;
+}
+.news-b li {
+    height: 23px;
+    line-height: 23px;
+}
+.expand {
+    height: 209px;
+    overflow: hidden;
+}
+.expand ul {
+    width: 195px;
+}
+.expand li {
+    width: 47px;
+    height: 58px;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    float: left;
+}
+.expand li a {
+    display: block;
+    padding-top: 10px;
+    text-align: center;
+}
+.expand li i {
+    display: block; 
+    margin:0 auto ;
+    margin-bottom: 10px;    
+    background: url() no-repeat;
+}
+.expand li a:first-child i{
+    width: 18px;
+    height: 23px;
+    background-color: #e5d790;
+    display: block;
+}

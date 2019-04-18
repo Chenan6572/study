@@ -1,0 +1,58 @@
+/* pages/cook/cookinformation/cook.wxss */
+.maincon{
+  display: flex;
+}
+.mainer{
+  margin-left: 20rpx;
+}
+.btnupload button{
+
+  height: 60rpx;
+  width: 150rpx;
+  text-align: center;
+  line-height: 60rpx;
+  font-size: 30rpx;
+  background-color: deepskyblue;
+  margin-top: 100rpx;
+}
+.conterpic{
+  text-align: center;
+}
+.itemView{
+  height: 80rpx;
+  line-height: 80rpx;
+  display: flex;
+  font-size: 36rpx;
+  font-family: "宋体";
+  color: dodgerblue;
+}
+.itemView input {
+  height: 80rpx;
+  font-size: 36rpx;
+}
+
+
+.itemView label{
+  color:black;
+}
+.savebtn{
+  width:90%;
+  margin-top: 600rpx;
+}
+.door{
+  height: 5px;
+  width: 80%;
+}
+
+.pic text{
+  color: white;
+}
+
+.userinfo-avatar{
+  width: 150rpx;
+  height: 150rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+  justify-content: center;
+
+}
